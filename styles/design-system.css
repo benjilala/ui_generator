@@ -1,0 +1,610 @@
+/* ═══════════════════════════════════════════════════════════════════
+   CLOUDBET DESIGN TOKEN SYSTEM — authoritative token and theme layer
+   ───────────────────────────────────────────────────────────────────
+   Two parallel vocabularies, bridged here:
+
+   1. ShadCN variables  — --background, --primary, --accent, etc.
+      Used by shadcn/ui primitives in components/ui/
+
+   2. Cloudbet tokens   — --cb-surface-N, --cb-primary, --cb-live, etc.
+      Used by domain components in components/cloudbet/
+
+   The .dark block is the production theme. :root (light) is a
+   fallback and is not actively used in the Cloudbet product.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────
+   :root — light mode fallback (not primary theme)
+   ───────────────────────────────────────────── */
+
+:root {
+  /* ── Cloudbet surface tokens (light fallback) ── */
+  --cb-surface-0:         oklch(0.97 0 0);
+  --cb-surface-1:         oklch(0.96 0 0);
+  --cb-surface-2:         oklch(0.94 0 0);
+  --cb-surface-3:         oklch(0.92 0 0);
+  --cb-surface-4:         oklch(0.90 0 0);
+  --cb-surface-5:         oklch(0.88 0 0);
+  --cb-surface-6:         oklch(0.86 0 0);
+
+  /* ── Legacy surface aliases (mapped to scale) ── */
+  --cb-background:        var(--cb-surface-1);
+  --cb-surface:           var(--cb-surface-2);
+  --cb-card:              var(--cb-surface-0);
+
+  /* ── Brand colors ── */
+  --cb-primary:           oklch(0.542 0.207 299);    /* #8346D4 — vivid purple */
+  --cb-primary-fg:        oklch(1 0 0);
+  --cb-secondary:         oklch(0.90 0 0);
+  --cb-secondary-fg:      oklch(0.2 0 0);
+  --cb-accent:            oklch(0.942 0.192 119);    /* #DFFD51 — lime / betting highlight */
+  --cb-accent-fg:         oklch(0.15 0 0);
+  --cb-muted:             oklch(0.94 0 0);
+  --cb-muted-fg:          oklch(0.5 0 0);
+
+  /* ── Foreground scale ── */
+  --cb-foreground:          oklch(0.15 0 0);
+  --cb-foreground-muted:    oklch(0.45 0 0);
+  --cb-foreground-disabled: oklch(0.65 0 0);
+
+  /* ── Border scale ── */
+  --cb-border-subtle:     oklch(0.5 0 0 / 8%);
+  --cb-border:            oklch(0.5 0 0 / 14%);
+  --cb-border-visible:    oklch(0.75 0 0);
+  --cb-border-strong:     oklch(0.55 0 0);
+
+  /* ── Betting states ── */
+  --cb-odds-up:           oklch(0.65 0.2 145);
+  --cb-odds-up-bg:        oklch(0.65 0.2 145 / 12%);
+  --cb-odds-down:         oklch(0.6 0.22 25);
+  --cb-odds-down-bg:      oklch(0.6 0.22 25 / 12%);
+  --cb-market-live:       oklch(0.942 0.192 119);    /* #DFFD51 — lime */
+  --cb-market-live-bg:    oklch(0.942 0.192 119 / 18%);
+  --cb-market-suspended:  oklch(0.75 0.16 75);       /* amber */
+  --cb-market-suspended-bg: oklch(0.75 0.16 75 / 15%);
+  --cb-live:              oklch(0.942 0.192 119);
+  --cb-live-bg:           oklch(0.942 0.192 119 / 18%);
+
+  /* ── Financial states ── */
+  --cb-profit:            oklch(0.65 0.2 145);
+  --cb-profit-bg:         oklch(0.65 0.2 145 / 10%);
+  --cb-loss:              oklch(0.6 0.22 25);
+  --cb-loss-bg:           oklch(0.6 0.22 25 / 10%);
+
+  /* ── Casino ── */
+  --cb-jackpot:           oklch(0.788 0.155 70);     /* #F8A631 — gold */
+  --cb-jackpot-fg:        oklch(0.15 0 0);
+  --cb-jackpot-from:      oklch(0.74 0.14 70);
+  --cb-jackpot-to:        oklch(0.82 0.16 72);
+  --cb-jackpot-glow:      oklch(0.788 0.155 70 / 40%);
+  --cb-jackpot-amount-size: 2.5rem;
+  --cb-featured-game:     oklch(0.6 0.28 0);         /* #FD2A7F — hot pink */
+  --cb-featured-game-fg:  oklch(1 0 0);
+  --cb-featured:          oklch(0.6 0.28 0);
+  --cb-featured-bg:       oklch(0.6 0.28 0 / 15%);
+  --cb-featured-border:   oklch(0.6 0.28 0 / 30%);
+
+  /* ── Warning ── */
+  --cb-warning:           oklch(0.78 0.18 75);
+  --cb-warning-bg:        oklch(0.78 0.18 75 / 10%);
+  --cb-warning-border:    oklch(0.78 0.18 75 / 30%);
+
+  /* ── Typography ── */
+  /* midnightSansST is the live site's proprietary display font (weight 800 only).
+     It is used for hero headings and large promotional text.
+     Fallback chain mirrors the live site's --font-midnight variable. */
+  --cb-font-display: "midnightSansST", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+  --cb-font-sans:    var(--font-inter, "Helvetica Neue", Inter, ui-sans-serif, system-ui, sans-serif);
+  --cb-font-mono:    var(--font-mono, "Noto Sans Mono", ui-monospace, monospace);
+  --cb-font-number:  var(--font-mono, "Noto Sans Mono", ui-monospace, monospace);
+
+  /* ── Spacing scale ── */
+  --cb-space-2:  0.125rem;
+  --cb-space-4:  0.25rem;
+  --cb-space-8:  0.5rem;
+  --cb-space-10: 0.625rem;
+  --cb-space-12: 0.75rem;
+  --cb-space-16: 1rem;
+  --cb-space-24: 1.5rem;
+  --cb-space-32: 2rem;
+  --cb-space-48: 3rem;
+
+  /* ── Border radius ── */
+  --cb-radius-sm:  0.25rem;   /*  4px */
+  --cb-radius-md:  0.75rem;   /* 12px — matches live site */
+  --cb-radius-lg:  1rem;      /* 16px */
+  --cb-radius-xl:  1.5rem;    /* 24px */
+  --cb-radius-2xl: 2rem;      /* 32px */
+
+  /* ── Motion ── */
+  --cb-duration-instant:  75ms;
+  --cb-duration-fast:     150ms;
+  --cb-duration-base:     200ms;
+  --cb-duration-slow:     350ms;
+  --cb-duration-flash:    700ms;
+  --cb-ease-default:      cubic-bezier(0.4, 0, 0.2, 1);
+  --cb-ease-out:          cubic-bezier(0, 0, 0.2, 1);
+  --cb-ease-spring:       cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Micro-typography ── */
+  --cb-text-2xs: 0.625rem;   /* 10px */
+  --cb-text-3xs: 0.5rem;     /*  8px */
+
+  /* ── Letter spacing ── */
+  --cb-tracking-label: 0.08em;
+  --cb-tracking-caps:  0.12em;
+
+  /* ── Surface overlays ── */
+  --cb-overlay-subtle: oklch(0.5 0 0 / 3%);
+  --cb-overlay-hover:  oklch(0.5 0 0 / 6%);
+  --cb-overlay-active: oklch(0.5 0 0 / 9%);
+
+  /* ── Component sizes — Casino Content Engine ── */
+  --cb-game-card-w:        10rem;
+  --cb-game-card-w-lg:     13rem;
+  --cb-game-card-radius:   var(--cb-radius-lg);
+  --cb-game-img-ratio:     3 / 4;
+  --cb-game-card-info-h:   4rem;
+  --cb-chip-h:             2rem;
+  --cb-carousel-gap:       var(--cb-space-12);
+  --cb-carousel-arrow-size: 2rem;
+  --cb-carousel-fade-w:    3.5rem;
+
+  /* ── Component sizes — Feed Engine ── */
+  --cb-feed-item-h:       3rem;
+  --cb-feed-dot-size:     0.375rem;
+  --cb-live-dot-sm:       0.375rem;
+  --cb-live-dot-md:       0.5rem;
+  --cb-live-dot-lg:       0.625rem;
+
+  /* ── Activity event type colors ── */
+  --cb-event-bet:         oklch(0.6 0.22 255);
+  --cb-event-bet-bg:      oklch(0.6 0.22 255 / 10%);
+  --cb-event-win:         oklch(0.65 0.2 145);
+  --cb-event-win-bg:      oklch(0.65 0.2 145 / 10%);
+  --cb-event-cashout:     oklch(0.65 0.2 200);
+  --cb-event-cashout-bg:  oklch(0.65 0.2 200 / 10%);
+  --cb-event-void:        oklch(0.55 0 0);
+  --cb-event-void-bg:     oklch(0.55 0 0 / 10%);
+}
+
+/* ─────────────────────────────────────────────
+   .dark — PRIMARY production theme
+   Verified against live cloudbet.com/en/casino CSS (2026-03-16)
+   Surface hue: ~309° (blue-purple), brand purple: ~299°, lime: ~119°
+   ───────────────────────────────────────────── */
+
+.dark {
+  /* ── 7-level surface elevation scale ──────────────────────────────
+     surface-0 = deepest (sidebar, overlays)       live: #1A161D
+     surface-1 = page background                   live: #211C25
+     surface-2 = main content bg                   live: #26202B
+     surface-3 = card / panel                      live: #2C2532
+     surface-4 = elevated card                     live: #32293A
+     surface-5 = bet slip / modal                  live: #382E40
+     surface-6 = tooltip / popover (blue-grey)     live: #323B46
+  ─────────────────────────────────────────────────────────────────── */
+  --cb-surface-0:  oklch(0.208 0.015 310);   /* #1A161D — deepest bg */
+  --cb-surface-1:  oklch(0.236 0.018 310);   /* #211C25 — page background */
+  --cb-surface-2:  oklch(0.255 0.022 309);   /* #26202B — main content bg */
+  --cb-surface-3:  oklch(0.278 0.025 309);   /* #2C2532 — card / panel */
+  --cb-surface-4:  oklch(0.298 0.033 309);   /* #32293A — elevated card */
+  --cb-surface-5:  oklch(0.320 0.034 310);   /* #382E40 — bet slip / modal */
+  --cb-surface-6:  oklch(0.349 0.023 254);   /* #323B46 — tooltip / popover (blue-grey) */
+
+  /* ── Surface aliases — alias back to shadcn vars so theme generators cascade ── */
+  --cb-background-base: oklch(0.190 0.012 310);  /* #141114 — true page canvas (CDS "background") */
+  --cb-background:  var(--background);            /* aliases shadcn --background */
+  --cb-surface:     var(--cb-surface-3);
+  --cb-card:        var(--cb-surface-4);
+
+  /* ── Brand / interaction colors ── */
+  --cb-primary:      oklch(0.542 0.207 299);  /* #8346D4 — vivid purple (CDS "secondary" / Purple 80) */
+  --cb-primary-fg:   oklch(0.972 0.012 303);  /* #F8F2FF — on-secondary */
+  --cb-purple-50:    oklch(0.680 0.175 299);  /* #A067EB — Purple 50 (CDS extended palette, AA 5.64:1) */
+  --cb-on-primary-inverse: oklch(0.521 0 0);  /* #696969 — disabled/inverse primary context */
+  --cb-secondary:    var(--cb-surface-5);
+  --cb-secondary-fg: var(--primary-foreground); /* #F8F2FF — aliases shadcn --primary-foreground */
+  --cb-accent:       oklch(0.942 0.192 119);  /* #DFFD51 — lime (CDS "primary") */
+  --cb-accent-fg:    oklch(0 0 0);            /* #000000 — on-primary */
+  --cb-muted:        var(--cb-surface-3);
+  --cb-muted-fg:     oklch(0.650 0 0);
+
+  /* ── Foreground scale ── */
+  --cb-foreground:          oklch(0.907 0 0);  /* #E0E0E0 — on-surface-1 */
+  --cb-foreground-2:        oklch(0.780 0 0);  /* #C4C4C4 — on-surface-2 (mid grey) */
+  --cb-foreground-3:        oklch(0.680 0 0);  /* #A6A6A6 — on-tertiary-3 (tertiary text) */
+  --cb-foreground-muted:    oklch(0.650 0 0);  /* #8F8F8F — on-surface-3 */
+  --cb-foreground-disabled: oklch(0.521 0 0);  /* #696969 — surface-disabled */
+
+  /* ── Border scale — alias to shadcn vars so theme generators cascade ── */
+  --cb-border-subtle:   oklch(0.907 0 0 / 8%);
+  --cb-border:          var(--border);           /* aliases shadcn --border = outline-1 #211C25 */
+  --cb-border-visible:  var(--input);            /* aliases shadcn --input  = outline-2 #26202B */
+  --cb-border-strong:   oklch(0.62 0.005 299);
+
+  /* ── Feedback / semantic status (Figma CDS verified) ── */
+  --cb-info:        oklch(0.62 0.18 255);   /* #6981FA — info blue */
+  --cb-info-fg:     oklch(0.18 0.04 255);   /* #1B2036 — on-info */
+  --cb-success:     oklch(0.68 0.13 154);   /* #55A370 — success green (CDS "success") */
+  --cb-success-fg:  oklch(0.17 0.03 154);   /* #1E2420 — on-success */
+  --cb-error:       oklch(0.65 0.18 25);    /* #E35F5D — error (alias of odds-down) */
+  --cb-error-fg:    oklch(0.227 0.022 15);  /* #381A19 — on-error */
+
+  /* ── Betting states ── */
+  --cb-odds-up:           oklch(0.68 0.13 154);    /* #55A370 — green (corrected to CDS success) */
+  --cb-odds-up-bg:        oklch(0.68 0.13 154 / 15%);
+  --cb-odds-down:         oklch(0.65 0.18 25);     /* #E35F5D — red */
+  --cb-odds-down-bg:      oklch(0.65 0.18 25 / 15%);
+  --cb-market-live:       oklch(0.942 0.192 119);  /* #DFFD51 — lime */
+  --cb-market-live-bg:    oklch(0.942 0.192 119 / 18%);
+  --cb-market-suspended:  oklch(0.75 0.16 75);     /* amber */
+  --cb-market-suspended-bg: oklch(0.75 0.16 75 / 15%);
+  --cb-live:              oklch(0.942 0.192 119);
+  --cb-live-bg:           oklch(0.942 0.192 119 / 18%);
+
+  /* ── Financial states ── */
+  --cb-profit:     oklch(0.68 0.13 154);   /* #55A370 — corrected to CDS success green */
+  --cb-profit-bg:  oklch(0.68 0.13 154 / 12%);
+  --cb-loss:       oklch(0.65 0.18 25);
+  --cb-loss-bg:    oklch(0.65 0.18 25 / 12%);
+
+  /* ── Casino ── */
+  --cb-jackpot:           oklch(0.788 0.155 70);    /* #F8A631 — gold */
+  --cb-jackpot-fg:        oklch(0.15 0 0);
+  --cb-jackpot-from:      oklch(0.74 0.14 70);
+  --cb-jackpot-to:        oklch(0.82 0.16 72);
+  --cb-jackpot-glow:      oklch(0.788 0.155 70 / 40%);
+  --cb-featured-game:     oklch(0.6 0.28 0);        /* #FD2A7F — hot pink */
+  --cb-featured-game-fg:  oklch(1 0 0);
+  --cb-featured:          oklch(0.6 0.28 0);
+  --cb-featured-bg:       oklch(0.6 0.28 0 / 15%);
+  --cb-featured-border:   oklch(0.6 0.28 0 / 30%);
+
+  /* ── Warning (corrected to CDS warning-80 = #B28809) ── */
+  --cb-warning:        oklch(0.62 0.12 75);   /* #B28809 — warning (darker/more muted per CDS) */
+  --cb-warning-fg:     oklch(0.18 0.03 75);   /* #292210 — on-warning */
+  --cb-warning-bg:     oklch(0.62 0.12 75 / 12%);
+  --cb-warning-border: oklch(0.62 0.12 75 / 30%);
+
+  /* ── Surface overlays ── */
+  --cb-overlay-subtle: oklch(1 0 0 / 3%);
+  --cb-overlay-hover:  oklch(1 0 0 / 6%);
+  --cb-overlay-active: oklch(1 0 0 / 9%);
+
+  /* ── Icon system (matches live .default-icon / .primary-icon etc.) ── */
+  --cb-icon-default:   oklch(0.792 0.129 303);  /* #CCA6FF — purple tint */
+  --cb-icon-primary:   oklch(0.942 0.192 119);  /* #DFFD51 — lime */
+  --cb-icon-muted:     oklch(0.650 0 0);         /* #8F8F8F */
+  --cb-icon-success:   oklch(0.68 0.13 154);    /* #55A370 — corrected to CDS success green */
+
+  /* ── Activity event type colors ── */
+  --cb-event-bet:         oklch(0.6 0.22 255);
+  --cb-event-bet-bg:      oklch(0.6 0.22 255 / 10%);
+  --cb-event-win:         oklch(0.68 0.13 154);   /* #55A370 — corrected to CDS success green */
+  --cb-event-win-bg:      oklch(0.68 0.13 154 / 10%);
+  --cb-event-cashout:     oklch(0.65 0.2 200);
+  --cb-event-cashout-bg:  oklch(0.65 0.2 200 / 10%);
+  --cb-event-void:        oklch(0.521 0 0);
+  --cb-event-void-bg:     oklch(0.521 0 0 / 10%);
+}
+
+/* ─────────────────────────────────────────────
+   ShadCN base variables
+   Mapped to Cloudbet values — purple primary, lime accent
+   ───────────────────────────────────────────── */
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.542 0.207 299);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.942 0.192 119);
+  --accent-foreground: oklch(0.12 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.542 0.207 299);
+  --chart-1: oklch(0.809 0.105 251.813);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.546 0.245 262.881);
+  --chart-4: oklch(0.488 0.243 264.376);
+  --chart-5: oklch(0.424 0.199 265.638);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.542 0.207 299);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.542 0.207 299);
+}
+
+.dark {
+  /* ── Core semantic roles — source of truth for shadcn primitives ──
+     All values verified against Cloudbet Design System (Figma, 2026-03-16).
+     Theme generators (shadcnstudio etc.) can replace this block wholesale;
+     --cb-* tokens below alias back to these vars and will update automatically.
+  ─────────────────────────────────────────────────────────────────── */
+
+  /* Page canvas — CDS "background" = #141114, below all surfaces */
+  --background:            oklch(0.190 0.012 310);  /* #141114 */
+  --foreground:            oklch(0.907 0 0);         /* #E0E0E0 — on-background */
+
+  /* Cards sit on surface-3 per CDS */
+  --card:                  oklch(0.278 0.025 309);   /* #2C2532 — surface-3 */
+  --card-foreground:       oklch(0.907 0 0);
+
+  /* Popovers/dropdowns use surface-2 per CDS */
+  --popover:               oklch(0.255 0.022 309);   /* #26202B — surface-2 */
+  --popover-foreground:    oklch(0.907 0 0);
+
+  /* CDS "secondary" (purple) maps to shadcn --primary for action buttons */
+  --primary:               oklch(0.542 0.207 299);   /* #8346D4 — purple */
+  --primary-foreground:    oklch(0.972 0.012 303);   /* #F8F2FF — on-secondary */
+
+  /* shadcn --secondary = surface-1 (one step above background) */
+  --secondary:             oklch(0.236 0.018 310);   /* #211C25 — surface-1 */
+  --secondary-foreground:  oklch(0.907 0 0);
+
+  /* Muted = surface-2, one step lighter than card */
+  --muted:                 oklch(0.255 0.022 309);   /* #26202B — surface-2 */
+  --muted-foreground:      oklch(0.650 0 0);         /* #8F8F8F — on-surface-3 */
+
+  /* CDS "primary" (lime) maps to shadcn --accent for the CTA colour */
+  --accent:                oklch(0.942 0.192 119);   /* #DFFD51 — lime */
+  --accent-foreground:     oklch(0 0 0);             /* #000000 — on-primary */
+
+  /* Error / danger */
+  --destructive:           oklch(0.65 0.18 25);      /* #E35F5D — error */
+  --destructive-foreground: oklch(0.227 0.022 15);   /* #381A19 — on-error */
+
+  /* Borders use solid CDS outline tokens, not alpha-white */
+  --border:                oklch(0.236 0.018 310);   /* #211C25 — outline-1 */
+  --input:                 oklch(0.255 0.022 309);   /* #26202B — outline-2 */
+
+  /* Focus ring uses lime (CDS primary action colour) */
+  --ring:                  oklch(0.942 0.192 119);   /* #DFFD51 */
+
+  /* Charts — unchanged */
+  --chart-1: oklch(0.809 0.105 251.813);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.546 0.245 262.881);
+  --chart-4: oklch(0.488 0.243 264.376);
+  --chart-5: oklch(0.424 0.199 265.638);
+
+  /* Sidebar */
+  --sidebar:                      oklch(0.208 0.015 310);  /* #1A161D — surface-0 */
+  --sidebar-foreground:           oklch(0.907 0 0);        /* #E0E0E0 */
+  --sidebar-primary:              oklch(0.942 0.192 119);  /* #DFFD51 — lime active */
+  --sidebar-primary-foreground:   oklch(0 0 0);            /* #000000 */
+  --sidebar-accent:               oklch(0.255 0.022 309);  /* #26202B — surface-2 */
+  --sidebar-accent-foreground:    oklch(0.907 0 0);
+  --sidebar-border:               oklch(0.236 0.018 310);  /* #211C25 — outline-1 */
+  --sidebar-ring:                 oklch(0.942 0.192 119);  /* #DFFD51 */
+}
+
+/* ─────────────────────────────────────────────
+   @theme inline — expose tokens as Tailwind utilities
+   ───────────────────────────────────────────── */
+
+@theme inline {
+  /* ── ShadCN base tokens ── */
+  --color-background:              var(--background);
+  --color-foreground:              var(--foreground);
+  --color-card:                    var(--card);
+  --color-card-foreground:         var(--card-foreground);
+  --color-popover:                 var(--popover);
+  --color-popover-foreground:      var(--popover-foreground);
+  --color-primary:                 var(--primary);
+  --color-primary-foreground:      var(--primary-foreground);
+  --color-secondary:               var(--secondary);
+  --color-secondary-foreground:    var(--secondary-foreground);
+  --color-muted:                   var(--muted);
+  --color-muted-foreground:        var(--muted-foreground);
+  --color-accent:                  var(--accent);
+  --color-accent-foreground:       var(--accent-foreground);
+  --color-destructive:             var(--destructive);
+  --color-destructive-foreground:  var(--destructive-foreground);
+  --color-border:                  var(--border);
+  --color-input:                   var(--input);
+  --color-ring:                    var(--ring);
+  --color-chart-1:                 var(--chart-1);
+  --color-chart-2:                 var(--chart-2);
+  --color-chart-3:                 var(--chart-3);
+  --color-chart-4:                 var(--chart-4);
+  --color-chart-5:                 var(--chart-5);
+  --font-sans:                     var(--cb-font-sans);
+  --font-mono:                     var(--cb-font-mono);
+
+  /* ── Sidebar tokens ── */
+  --color-sidebar:                       var(--sidebar);
+  --color-sidebar-foreground:            var(--sidebar-foreground);
+  --color-sidebar-primary:               var(--sidebar-primary);
+  --color-sidebar-primary-foreground:    var(--sidebar-primary-foreground);
+  --color-sidebar-accent:                var(--sidebar-accent);
+  --color-sidebar-accent-foreground:     var(--sidebar-accent-foreground);
+  --color-sidebar-border:                var(--sidebar-border);
+  --color-sidebar-ring:                  var(--sidebar-ring);
+
+  /* ── Radius ── */
+  --radius-sm:  calc(var(--radius) * 0.5);
+  --radius-md:  calc(var(--radius) * 0.75);
+  --radius-lg:  var(--radius);
+  --radius-xl:  calc(var(--radius) * 1.33);
+  --radius-2xl: calc(var(--radius) * 1.67);
+  --radius-3xl: calc(var(--radius) * 2);
+  --radius-4xl: calc(var(--radius) * 2.67);
+
+  /* ── Cloudbet surface scale ── */
+  --color-cb-surface-0:  var(--cb-surface-0);
+  --color-cb-surface-1:  var(--cb-surface-1);
+  --color-cb-surface-2:  var(--cb-surface-2);
+  --color-cb-surface-3:  var(--cb-surface-3);
+  --color-cb-surface-4:  var(--cb-surface-4);
+  --color-cb-surface-5:  var(--cb-surface-5);
+  --color-cb-surface-6:  var(--cb-surface-6);
+
+  /* ── Cloudbet surface aliases ── */
+  --color-cb-background-base: var(--cb-background-base);
+  --color-cb-background:      var(--cb-background);
+  --color-cb-surface:         var(--cb-surface);
+  --color-cb-card:            var(--cb-card);
+
+  /* ── Cloudbet brand colors ── */
+  --color-cb-primary:             var(--cb-primary);
+  --color-cb-primary-fg:          var(--cb-primary-fg);
+  --color-cb-purple-50:           var(--cb-purple-50);
+  --color-cb-on-primary-inverse:  var(--cb-on-primary-inverse);
+  --color-cb-secondary:           var(--cb-secondary);
+  --color-cb-secondary-fg:        var(--cb-secondary-fg);
+  --color-cb-accent:              var(--cb-accent);
+  --color-cb-accent-fg:           var(--cb-accent-fg);
+  --color-cb-muted:               var(--cb-muted);
+  --color-cb-muted-fg:            var(--cb-muted-fg);
+
+  /* ── Cloudbet icon system ── */
+  --color-cb-icon-default:  var(--cb-icon-default);
+  --color-cb-icon-primary:  var(--cb-icon-primary);
+  --color-cb-icon-muted:    var(--cb-icon-muted);
+  --color-cb-icon-success:  var(--cb-icon-success);
+
+  /* ── Cloudbet foreground scale ── */
+  --color-cb-foreground:          var(--cb-foreground);
+  --color-cb-foreground-2:        var(--cb-foreground-2);
+  --color-cb-foreground-3:        var(--cb-foreground-3);
+  --color-cb-foreground-muted:    var(--cb-foreground-muted);
+  --color-cb-foreground-disabled: var(--cb-foreground-disabled);
+
+  /* ── Cloudbet border scale ── */
+  --color-cb-border-subtle:   var(--cb-border-subtle);
+  --color-cb-border:          var(--cb-border);
+  --color-cb-border-visible:  var(--cb-border-visible);
+  --color-cb-border-strong:   var(--cb-border-strong);
+
+  /* ── Betting states ── */
+  --color-cb-odds-up:              var(--cb-odds-up);
+  --color-cb-odds-up-bg:           var(--cb-odds-up-bg);
+  --color-cb-odds-down:            var(--cb-odds-down);
+  --color-cb-odds-down-bg:         var(--cb-odds-down-bg);
+  --color-cb-market-live:          var(--cb-market-live);
+  --color-cb-market-live-bg:       var(--cb-market-live-bg);
+  --color-cb-market-suspended:     var(--cb-market-suspended);
+  --color-cb-market-suspended-bg:  var(--cb-market-suspended-bg);
+  --color-cb-live:                 var(--cb-live);
+  --color-cb-live-bg:              var(--cb-live-bg);
+
+  /* ── Financial states ── */
+  --color-cb-profit:    var(--cb-profit);
+  --color-cb-profit-bg: var(--cb-profit-bg);
+  --color-cb-loss:      var(--cb-loss);
+  --color-cb-loss-bg:   var(--cb-loss-bg);
+
+  /* ── Casino ── */
+  --color-cb-jackpot:           var(--cb-jackpot);
+  --color-cb-jackpot-fg:        var(--cb-jackpot-fg);
+  --color-cb-jackpot-from:      var(--cb-jackpot-from);
+  --color-cb-jackpot-to:        var(--cb-jackpot-to);
+  --color-cb-jackpot-glow:      var(--cb-jackpot-glow);
+  --color-cb-featured-game:     var(--cb-featured-game);
+  --color-cb-featured-game-fg:  var(--cb-featured-game-fg);
+  --color-cb-featured:          var(--cb-featured);
+  --color-cb-featured-bg:       var(--cb-featured-bg);
+  --color-cb-featured-border:   var(--cb-featured-border);
+
+  /* ── Feedback / semantic status ── */
+  --color-cb-info:        var(--cb-info);
+  --color-cb-info-fg:     var(--cb-info-fg);
+  --color-cb-success:     var(--cb-success);
+  --color-cb-success-fg:  var(--cb-success-fg);
+  --color-cb-error:       var(--cb-error);
+  --color-cb-error-fg:    var(--cb-error-fg);
+
+  /* ── Warning ── */
+  --color-cb-warning:        var(--cb-warning);
+  --color-cb-warning-fg:     var(--cb-warning-fg);
+  --color-cb-warning-bg:     var(--cb-warning-bg);
+  --color-cb-warning-border: var(--cb-warning-border);
+
+  /* ── Surface overlays ── */
+  --color-cb-overlay-subtle: var(--cb-overlay-subtle);
+  --color-cb-overlay-hover:  var(--cb-overlay-hover);
+  --color-cb-overlay-active: var(--cb-overlay-active);
+
+  /* ── Activity event type colors ── */
+  --color-cb-event-bet:        var(--cb-event-bet);
+  --color-cb-event-bet-bg:     var(--cb-event-bet-bg);
+  --color-cb-event-win:        var(--cb-event-win);
+  --color-cb-event-win-bg:     var(--cb-event-win-bg);
+  --color-cb-event-cashout:    var(--cb-event-cashout);
+  --color-cb-event-cashout-bg: var(--cb-event-cashout-bg);
+  --color-cb-event-void:       var(--cb-event-void);
+  --color-cb-event-void-bg:    var(--cb-event-void-bg);
+
+  /* ── Typography ── */
+  --font-cb-display: var(--cb-font-display);
+  --font-cb-sans:    var(--cb-font-sans);
+  --font-cb-mono:    var(--cb-font-mono);
+  --font-cb-number:  var(--cb-font-number);
+
+  /* ── Spacing ── */
+  --spacing-cb-2:  var(--cb-space-2);
+  --spacing-cb-4:  var(--cb-space-4);
+  --spacing-cb-8:  var(--cb-space-8);
+  --spacing-cb-10: var(--cb-space-10);
+  --spacing-cb-12: var(--cb-space-12);
+  --spacing-cb-16: var(--cb-space-16);
+  --spacing-cb-24: var(--cb-space-24);
+  --spacing-cb-32: var(--cb-space-32);
+  --spacing-cb-48: var(--cb-space-48);
+
+  /* ── Cloudbet border radius ── */
+  --radius-cb-sm:  var(--cb-radius-sm);
+  --radius-cb-md:  var(--cb-radius-md);
+  --radius-cb-lg:  var(--cb-radius-lg);
+  --radius-cb-xl:  var(--cb-radius-xl);
+  --radius-cb-2xl: var(--cb-radius-2xl);
+
+  /* ── Motion ── */
+  --duration-cb-instant: var(--cb-duration-instant);
+  --duration-cb-fast:    var(--cb-duration-fast);
+  --duration-cb-base:    var(--cb-duration-base);
+  --duration-cb-slow:    var(--cb-duration-slow);
+  --duration-cb-flash:   var(--cb-duration-flash);
+  --ease-cb-default:     var(--cb-ease-default);
+  --ease-cb-out:         var(--cb-ease-out);
+  --ease-cb-spring:      var(--cb-ease-spring);
+
+  /* ── Micro-typography ── */
+  --text-cb-2xs: var(--cb-text-2xs);
+  --text-cb-3xs: var(--cb-text-3xs);
+
+  /* ── CDS display size (3.779rem base / 60.47px desktop) ── */
+  --text-display: 3.779rem;
+}
+
+/* ─────────────────────────────────────────────
+   Base layer
+   ───────────────────────────────────────────── */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}

@@ -1,26 +1,282 @@
+@import "../styles/design-system.css";
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:is(.dark *));
+
+/* ─────────────────────────────────────────────
+   Global behavior — html / body
+   ───────────────────────────────────────────── */
+
+html {
+  -webkit-print-color-scheme: dark;
+  color-scheme: dark;
+  overflow-x: hidden;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html.scroll-lock {
+  position: relative;
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Touch devices: no margin when scroll is locked */
+@media (pointer: coarse) {
+  html.scroll-lock {
+    margin-right: 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Suppress tap highlight on interactive elements */
+textarea, input, select, div, span, button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #111;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ─────────────────────────────────────────────
+   Scrollbar utilities
+   ───────────────────────────────────────────── */
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: oklch(0.88 0 0 / 20%);
+    border-radius: 5px;
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.88 0 0 / 35%);
+  }
+
+  /* Touch devices: hide custom scrollbar */
+  @media (pointer: coarse) and (-webkit-min-device-pixel-ratio: 0) {
+    .scrollbar-custom::-webkit-scrollbar {
+      -webkit-appearance: none;
+      display: none;
+    }
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Gradient utilities
+   ───────────────────────────────────────────── */
+
+.promo-gradient {
+  background: linear-gradient(
+    3.8deg,
+    var(--cb-surface-1) 19.9%,
+    transparent 95.55%
+  );
+}
+
+@media (max-width: 568px) {
+  .promo-gradient {
+    background: linear-gradient(
+      79.78deg,
+      var(--cb-surface-1) 19.74%,
+      transparent 115.92%
+    );
+  }
+}
+
+.theme-gradient {
+  background: linear-gradient(
+    190deg,
+    oklch(0.165 0.018 285 / 11%) -75.95%,
+    var(--cb-surface-1) 74.64%
+  );
+}
+
+.leader-gradient {
+  background: linear-gradient(180deg, transparent 15.31%, var(--cb-surface-1) 100%);
+}
+
+/* ─────────────────────────────────────────────
+   Interaction utilities
+   ───────────────────────────────────────────── */
+
+@layer components {
+  .state-layer {
+    @apply absolute inset-0 transition-all duration-200 ease-out rounded-full bg-white opacity-0;
+  }
+  .state-layer-hover {
+    @apply group-hover:opacity-[0.06] group-active:opacity-[0.12];
+  }
+  .state-layer-hover-alt {
+    @apply group-hover:opacity-[0.08] group-active:opacity-[0.16];
+  }
+}
+
+/* ─────────────────────────────────────────────
+   Typography utilities
+   ───────────────────────────────────────────── */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ─────────────────────────────────────────────
+   Casino Content Engine — animations
+   ───────────────────────────────────────────── */
+
+@keyframes cb-jackpot-pulse {
+  0%, 100% {
+    text-shadow:
+      0 0 12px var(--cb-jackpot-glow),
+      0 0 24px var(--cb-jackpot-glow);
+  }
+  50% {
+    text-shadow:
+      0 0 24px var(--cb-jackpot-glow),
+      0 0 48px var(--cb-jackpot-glow),
+      0 0 64px var(--cb-jackpot-glow);
+  }
+}
+
+.cb-jackpot-pulse {
+  animation: cb-jackpot-pulse 2.4s var(--cb-ease-default) infinite;
+}
+
+@keyframes cb-digit-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes cb-digit-down {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+.cb-digit-up   { animation: cb-digit-up   var(--cb-duration-slow) var(--cb-ease-spring) forwards; }
+.cb-digit-down { animation: cb-digit-down var(--cb-duration-slow) var(--cb-ease-spring) forwards; }
+
+/* ─────────────────────────────────────────────
+   Market Engine — odds flash animations
+   ───────────────────────────────────────────── */
+
+@keyframes cb-flash-up {
+  0%, 60% {
+    background-color: var(--cb-odds-up-bg);
+    border-color: var(--cb-odds-up);
+    color: var(--cb-odds-up);
+  }
+  100% {
+    background-color: transparent;
+    border-color: inherit;
+    color: inherit;
+  }
+}
+
+@keyframes cb-flash-down {
+  0%, 60% {
+    background-color: var(--cb-odds-down-bg);
+    border-color: var(--cb-odds-down);
+    color: var(--cb-odds-down);
+  }
+  100% {
+    background-color: transparent;
+    border-color: inherit;
+    color: inherit;
+  }
+}
+
+.cb-flash-up   { animation: cb-flash-up   var(--cb-duration-flash) var(--cb-ease-out) forwards; }
+.cb-flash-down { animation: cb-flash-down var(--cb-duration-flash) var(--cb-ease-out) forwards; }
+
+/* ─────────────────────────────────────────────
+   Glow utilities
+   ───────────────────────────────────────────── */
+
+.text-glow-primary {
+  text-shadow: 0 2px 26px oklch(0.52 0.22 285);
+}
+
+.filter-glow-primary {
+  filter: drop-shadow(0 2px 26px oklch(0.52 0.22 285));
+}
+
+/* ─────────────────────────────────────────────
+   Autofill reset
+   ───────────────────────────────────────────── */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: oklch(0.88 0 0);
+  -webkit-box-shadow: 0 0 0px 1000px var(--cb-surface-2) inset;
+  box-shadow: 0 0 0px 1000px var(--cb-surface-2) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ─────────────────────────────────────────────
+   Layout utilities
+   ───────────────────────────────────────────── */
+
+@layer components {
+  .inset-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+@theme inline {
+  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite alternate;
+  --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
+  --animate-gradient: gradient 8s linear infinite;
+  @keyframes shimmer-slide {
+  to {
+    transform: translate(calc(100cqw - 100%), 0);
+    }
+  }
+  @keyframes spin-around {
+  0% {
+    transform: translateZ(0) rotate(0);
+    }
+  15%, 35% {
+    transform: translateZ(0) rotate(90deg);
+    }
+  65%, 85% {
+    transform: translateZ(0) rotate(270deg);
+    }
+  100% {
+    transform: translateZ(0) rotate(360deg);
+    }
+  }
+  @keyframes gradient {
+  to {
+    background-position: var(--bg-size, 300%) 0;
+    }
+  }
 }
