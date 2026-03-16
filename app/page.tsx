@@ -438,7 +438,7 @@ export default function LabIndexPage() {
         {/* ── Agent-Driven UI Generation ── */}
         <section>
           <SectionIntro
-            label="Section 02"
+            label=""
             title="Cloudbet UI Lab running as an agent"
             description="The lab is not just for humans clicking around. Because Cloudbet styles, tokens, components, and patterns are mapped into a machine-readable system, agents can interrogate the design system and compose UI autonomously — without starting from scratch on every request."
             badge={{ label: "In progress", variant: "next" }}
@@ -454,7 +454,7 @@ export default function LabIndexPage() {
         <section>
           <SectionIntro
             as="h1"
-            label="Section 03"
+            label=""
             title="From UI generation to feature generation"
             description="The bigger leverage is not only generating screens, but generating entire product features: UI, states, interactions, data contracts, and implementation structure. This is the next evolution of the lab — where the system moves from composing individual screens to delivering implementation-ready product feature slices."
             badge={{ label: "Next evolution", variant: "future" }}
@@ -470,7 +470,7 @@ export default function LabIndexPage() {
       <section className="border-t border-cb-border bg-cb-surface-0">
         <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10">
           <SectionIntro
-            label="Reference"
+            label=""
             title="Resource and reference files"
             description="The files, prompts, tokens, and system definitions that make the lab work — organised by layer."
           />
@@ -515,9 +515,11 @@ function SectionIntro({
   return (
     <div className="flex flex-col gap-1.5 max-w-2xl">
       <div className="flex items-center gap-2">
-        <span className="text-[10px] font-semibold text-cb-foreground-disabled uppercase tracking-widest">
-          {label}
-        </span>
+        {label && (
+          <span className="text-[10px] font-semibold text-cb-foreground-disabled uppercase tracking-widest">
+            {label}
+          </span>
+        )}
         {badge && (
           <span
             className={`inline-flex items-center rounded-full border px-1.5 py-px text-[9px] font-medium uppercase tracking-wider ${badgeClass}`}
