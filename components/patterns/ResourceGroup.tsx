@@ -63,7 +63,7 @@ function ResourceEntryRow({ entry }: { entry: ResourceEntry }) {
         <span
           className={cn(
             "text-[11px] font-medium leading-tight",
-            isLink ? "text-white group-hover:text-white/80 transition-colors" : "text-cb-foreground-muted",
+            isLink ? "text-foreground group-hover:text-foreground/80 transition-colors" : "text-cb-foreground-muted",
           )}
         >
           {entry.title}
@@ -92,7 +92,7 @@ function ResourceEntryRow({ entry }: { entry: ResourceEntry }) {
 export function ResourceGroup({ heading, entries, className }: ResourceGroupProps) {
   return (
     <div className={cn("flex flex-col", className)}>
-      <h3 className="text-[10px] font-semibold text-white/50 uppercase tracking-widest mb-1">
+      <h3 className="text-[10px] font-semibold text-foreground/50 uppercase tracking-widest mb-1">
         {heading}
       </h3>
       <ul className="flex flex-col">

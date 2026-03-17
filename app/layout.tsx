@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import { Toaster } from "sonner"
+import { ThemeProvider } from "@/components/providers/ThemeProvider"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("dark", inter.variable)} suppressHydrationWarning>
       <body className="antialiased font-sans bg-background text-foreground min-h-screen">
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
         <Toaster theme="dark" position="bottom-right" richColors={false} />
       </body>
     </html>

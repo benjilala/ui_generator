@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ThemeLogo } from "@/components/cloudbet/ThemeLogo"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { FlowList, type FlowCardStatus } from "@/components/patterns/FlowCard"
@@ -388,13 +389,9 @@ export default function LabIndexPage() {
           {/* Logo row */}
           <div className="flex items-center gap-4 mb-4">
             {/* Cloudbet logo */}
-            <img
-              src="/cloudbet-logo.png"
-              alt="Cloudbet"
-              className="h-5 w-auto"
-            />
+            <ThemeLogo className="h-5 w-auto" />
             <div className="h-5 w-px bg-cb-border" aria-hidden />
-            <span className="text-base font-bold text-white tracking-wide uppercase">
+            <span className="text-base font-bold text-cb-foreground tracking-wide uppercase">
               UI Lab
             </span>
             <span className="text-[10px] text-cb-foreground-disabled uppercase tracking-wider">
@@ -554,7 +551,7 @@ function AreaCard({ area }: { area: AnyArea }) {
     >
       {/* Status badge */}
       <div className="flex items-center justify-between">
-        <h2 className="text-sm font-semibold text-cb-foreground group-hover:text-white transition-colors">
+        <h2 className="text-sm font-semibold text-cb-foreground group-hover:text-foreground transition-colors">
           {area.title}
         </h2>
         <Badge

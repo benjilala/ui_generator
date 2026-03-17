@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import { useTheme, THEMES, type ThemeId } from "@/components/providers/ThemeProvider"
 import {
   ArrowLeft,
   Check,
@@ -181,6 +182,72 @@ import {
 
 // ─── Section wrapper ──────────────────────────────────────────────────────────
 
+// ─── Themes section ───────────────────────────────────────────────────────────
+
+function ThemesSection() {
+  const { theme, setTheme } = useTheme()
+
+  return (
+    <Section
+      id="themes"
+      title="Themes"
+      subtitle="Switch the active token set — all components update instantly"
+    >
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {THEMES.map((t) => {
+          const isActive = theme === t.id
+          return (
+            <button
+              key={t.id}
+              onClick={() => setTheme(t.id as ThemeId)}
+              className={[
+                "group relative flex flex-col gap-4 rounded-[var(--cb-radius-lg)] border p-5 text-left transition-all duration-150",
+                isActive
+                  ? "border-cb-primary bg-cb-surface-3 shadow-[0_0_0_1px_var(--cb-primary)]"
+                  : "border-cb-border bg-cb-surface-2 hover:border-cb-border-visible hover:bg-cb-surface-3",
+              ].join(" ")}
+            >
+              {/* Swatches */}
+              <div className="flex gap-2">
+                {t.swatches.map((color, i) => (
+                  <div
+                    key={i}
+                    className="h-8 flex-1 rounded-[var(--cb-radius-md)]"
+                    style={{ background: color }}
+                  />
+                ))}
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-semibold text-cb-foreground">{t.label}</span>
+                  {isActive && (
+                    <span className="text-[9px] font-semibold uppercase tracking-widest text-cb-primary border border-cb-primary/30 bg-cb-primary/10 rounded-full px-1.5 py-px">
+                      Active
+                    </span>
+                  )}
+                  {t.id === "cloudbet" && !isActive && (
+                    <span className="text-[9px] font-semibold uppercase tracking-widest text-cb-foreground-disabled border border-cb-border rounded-full px-1.5 py-px">
+                      Default
+                    </span>
+                  )}
+                </div>
+                <p className="text-[10px] text-cb-foreground-disabled leading-relaxed">{t.description}</p>
+              </div>
+            </button>
+          )
+        })}
+      </div>
+
+      <p className="mt-4 text-[10px] text-cb-foreground-disabled">
+        Theme is persisted to <span className="font-mono">localStorage</span>. New themes can be added by appending a{" "}
+        <span className="font-mono">.dark[data-theme="name"]</span> block to{" "}
+        <span className="font-mono">styles/design-system.css</span> — or generated via the shadcn Studio IDE extension.
+      </p>
+    </Section>
+  )
+}
+
 function Section({
   id,
   title,
@@ -348,7 +415,7 @@ export default function UICheatSheetPage() {
   const [searchValue, setSearchValue] = React.useState("")
   const [selectedProvider, setSelectedProvider] = React.useState("all")
   const [progress, setProgress] = React.useState(62)
-  const [activeSection, setActiveSection] = React.useState("foundations")
+  const [activeSection, setActiveSection] = React.useState("themes")
 
   // Synchronously reset scroll before first paint so the browser never
   // has a chance to restore a previous position.
@@ -358,7 +425,7 @@ export default function UICheatSheetPage() {
   }, [])
 
   React.useEffect(() => {
-    const sectionIds = ["foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations"]
+    const sectionIds = ["themes", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations"]
     let observers: IntersectionObserver[] = []
 
     // Two rAF frames: first lets Next.js finish any internal scroll work,
@@ -414,6 +481,7 @@ export default function UICheatSheetPage() {
           {/* Sidebar nav */}
           <aside className="hidden lg:flex flex-col gap-1 w-44 shrink-0 sticky top-20 self-start">
             {[
+              { id: "themes", label: "Themes" },
               { id: "foundations", label: "Foundations" },
               { id: "primitives", label: "Primitives" },
               { id: "cloudbet", label: "Cloudbet" },
@@ -442,6 +510,9 @@ export default function UICheatSheetPage() {
 
           {/* Main content */}
           <main className="flex-1 min-w-0 flex flex-col gap-14">
+
+            {/* ── 0. THEMES ──────────────────────────────────────────── */}
+            <ThemesSection />
 
             {/* ── 1. FOUNDATIONS ─────────────────────────────────────── */}
             <Section
