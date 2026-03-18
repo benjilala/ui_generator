@@ -1,0 +1,16 @@
+{
+  "title": "Selamat Bergabung",
+  "onboarding": {
+    "tellUsMore": "Tell us a bit more about yourself.",
+    "complete": {
+      "accept_major_cryptos": "We accept 40+ cryptocurrencies and top payment providers.",
+      "deposit_to_unlock": "Deposit untuk membuka",
+      "add_funds_to_start": "Add funds to start playing",
+      "skip_for_now": "Skip for now"
+    },
+    "errors": {
+      "nickname_taken": "Nama panggilan ini sudah digunakan",
+      "dob_invalid": "Mohon masukan tanggal lahir yang valid"
+    }
+  }
+}

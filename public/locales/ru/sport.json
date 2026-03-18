@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "Азиатские линии",
+      "cards": "Карты",
+      "corners": "Угловые",
+      "goals": "Голы",
+      "half": "Тайм",
+      "main": "Главные",
+      "more": "Еще",
+      "specials": "Специальные",
+      "popular": "Популярное",
+      "firstHalf": "Первый тайм",
+      "secondHalf": "Второй тайм",
+      "points": "Очки",
+      "quarters": "Четверти",
+      "players": "Игроки",
+      "sets": "Сеты",
+      "games": "Геймы",
+      "hitsAndRuns": "Хиты и раны",
+      "playerProps": "Ставки на игроков",
+      "extraTime": "Дополнительное время",
+      "kills": "Убийства",
+      "match": "Матч",
+      "player": "Игрок",
+      "team": "Команда",
+      "mainMarkets": "Основные рынки",
+      "matchMarkets": "Рынки ставок на матчи",
+      "mapN": "Карта {{mapNumber}}",
+      "firstInnings": "1-й иннингс",
+      "all": "Все рынки",
+      "betBuilder": "Конструктор ставок"
+    },
+    "stats": {
+      "notAvailable": "Статистика недоступна",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "Конструктор ставок доступен",
+      "loginToBetDescription": "Формируйте индивидуальные ставки, комбинируя прогнозы из одного события.\nНаслаждайтесь большим контролем и преимуществами в избранных лигах.",
+      "loginToBetButton": "Войдите в аккаунт, чтобы начать",
+      "genericError": {
+        "titleWithCode": "Что-то пошло не так ({{code}})",
+        "title": "Что-то пошло не так",
+        "description": "Попробуйте еще раз. Если ошибка повторится, обратитесь в службу поддержки."
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "Заменить существующий конструктор ставок?",
+        "description": "В вашем купоне может быть размещен только один конструктор ставок. Добавление нового заменит текущий.",
+        "cancelCta": "Отменить",
+        "replaceCta": "Заменить"
+      },
+      "shortened": "конструктор ставок",
+      "betBuilderPromo": "Конструктор ставок уже доступен.\nБыстрый и основанный на ваших предпочтениях.",
+      "betBuilderAlertBanner": {
+        "title2": "Выиграйте x100 с конструктором ставок",
+        "body2": "Соберите экспресс-ставку от 1 $ в эти выходные — 10 счастливчиков получат 100-кратный выигрыш (до 100 $)."
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "Любое время",
+            "first": "Первый",
+            "last": "Последний",
+            "teamFirst": "Первая команда",
+            "teamLast": "Последняя команда",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "Удар головой",
+            "scoreOutsideOfTheBox": "За пределами штрафной"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "Когда игрок забьет?",
+            "when-will-player-score-team": "Когда игрок забьет (команда)?",
+            "how-many-player-goals": "Сколько голов у игрока?",
+            "how-will-player-score": "Как игрок забьет гол?",
+            "player-assists": "Передачи игрока",
+            "player-to-be-carded-team": "Игрок получит карточку (команда)",
+            "player-to-be-shown-a-card": "Игроку покажут карточку",
+            "total-cards-team": "Тотал карточек (команда)",
+            "both-team-total-cards": "Тотал карточек обеих команд",
+            "both-teams-total-goals": "Тотал голов обеих команд",
+            "total-goals-team": "Тотал голов (команда)",
+            "both-teams-total-corners": "Тотал угловых обеих команд",
+            "total-corners-team": "Тотал угловых (команда)",
+            "both-teams-score": "Обе команды забьют",
+            "player-to-be-sent-off": "Игрок будет удален с поля",
+            "player-total-fouls-committed": "Тотал фолов игрока",
+            "player-total-saves": "Тотал сейвов игрока",
+            "player-total-shots": "Тотал ударов игрока",
+            "player-total-shots-on-target": "Тотал ударов игрока в створ",
+            "player-total-tackles": "Тотал отборов игрока",
+            "player-total-passes": "Тотал пасов игрока",
+            "to-happen-in-the-match-team": "Произойдет в матче (команда)",
+            "method-of-victory": "Способ победы",
+            "total-shots-team": "Тотал ударов (команда)",
+            "team-with-most-bookings": "Команда с большинством очков за карточки",
+            "total-shots-on-target-team": "Тотал ударов в створ (команда)",
+            "total-goals-over-slash-under-after-10-minutes": "Тотал голов больше/меньше спустя 10 минут",
+            "asian-handicap-after-10-minutes": "Азиатский гандикап спустя 10 минут",
+            "correct-score": "Точный счет",
+            "most-cards": "Больше всего карточек",
+            "most-corners": "Больше всего угловых",
+            "double-chance": "Двойной шанс",
+            "winning-margin": "Выигрышная маржа",
+            "total-goals": "Тотал голов",
+            "total-exact-goals": "Точный тотал голов",
+            "total-exact-goals-team": "Точный тотал голов (команда)",
+            "total-bookings-points": "Тотал очков за карточки",
+            "total-bookings-points-team": "Тотал очков за карточки (команда)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "Тотал очков и подборов игрока",
+            "player-total-points": "Тотал очков игрока",
+            "player-total-3-point-field-goals": "Тотал 3-очковых бросков игрока",
+            "player-total-rebounds": "Тотал подборов игрока",
+            "player-total-assists-and-rebounds": "Тотал передач и подборов игрока",
+            "player-total-assists": "Тотал передач игрока",
+            "player-total-points-and-assists": "Тотал очков и передач игрока",
+            "player-total-points-assists-and-rebounds": "Тотал очков, передач и подборов игрока",
+            "player-to-achieve-a-double-double": "Игрок сделает дабл-дабл",
+            "player-to-achieve-a-triple-double": "Игрок сделает трипл-дабл",
+            "player-total-3-pointers-over-under": "Тотал 3-очковых игрока (больше/меньше)",
+            "player-total-assists-and-rebounds-over-under": "Тотал передач и подборов игрока (больше/меньше)",
+            "player-total-assists-over-under": "Тотал передач игрока (больше/меньше)",
+            "player-total-points-over-under": "Тотал очков игрока (больше/меньше)",
+            "player-total-rebounds-over-under": "Тотал подборов игрока (больше/меньше)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "Делайте ставки на {{eventName}} в криптовалюте",
+      "soccerDescription": "Фанатов ждет захватывающий матч: {{home}} встретится с {{away}} {{date}} в {{time}} в рамках {{competition}}. На Cloudbet можно собрать экспресс на один матч, комбинируя ставки на голы, угловые и карточки. Делайте ставки до начала матча или следите за действием в реальном времени.",
+      "basketballDescription": "Матч в рамках {{competition}} между {{home}} и {{away}} стартует {{date}} в {{time}}. Игра обещает быть захватывающей с самого первого броска до финальной сирены. Экспрессы на один матч позволяют объединять ставки на очки, подборы и передачи для еще большего азарта. Делайте ставки до игры или во время прямой трансляции.",
+      "americanFootballDescription": "{{home}} и {{away}} встретятся в рамках {{competition}}. Матч начнется {{date}} в {{time}}. На Cloudbet можно собирать экспрессы на исходы одного матча — от тачдаунов до пройденных ярдов — для еще большего азарта. Делайте ставки до стартового удара или пользуйтесь live-коэффициентами по ходу игры.",
+      "tennisDescription": "Матч между {{home}} и {{away}} в рамках {{competition}} состоится {{date}} в {{time}}. Оба игрока известны своей формой и мастерством на покрытии {{surface}}. Экспрессы на один матч позволяют объединять ставки на победителей сетов, тотал геймов и эйсы. Делайте ставки до первой подачи или прямо по ходу матча.",
+      "baseballDescription": "{{home}} встретится с {{away}} в рамках {{competition}} {{date}} в {{time}}. Экспрессы на один матч позволяют объединять в одной ставке несколько исходов, например хиты, страйк-ауты и раны. Делайте ставки заранее или ставьте на каждый иннинг по мере развития матча.",
+      "iceHockeyDescription": "Матч в рамках {{competition}} между {{home}} и {{away}} начнется {{date}} в {{time}}. Экспрессы на один матч позволяют объединять ставки на голы, результативные передачи и пенальти для еще большего азарта. Делайте ставки до первого вбрасывания шайбы или прямо по ходу игры.",
+      "rugbyDescription": "{{home}} встретится с {{away}} в рамках {{competition}} {{date}} в {{time}}. Готовьтесь к мощным захватам и зрелищным попыткам. На Cloudbet можно собирать экспрессы на один матч, объединяя ставки на попытки, реализации и тотал очков. Делайте ставки до первого удара или следите за каждой схваткой в реальном времени.",
+      "cricketDescription": "{{home}} встретится с {{away}} в рамках {{competition}}. Матч состоится {{date}} в {{time}}. Ожидайте множество пробежек и калиток. На Cloudbet можно собирать экспрессы на один матч, объединяя ставки на пробежки, калитки и границы. Делайте ставки до первого броска или ставьте на каждый овер по ходу матча.",
+      "horseRacingDescription": "{{competition}} состоится {{date}} в {{time}}. Фанатов ждет напряженная гонка с участием лучших скакунов. На Cloudbet можно поставить на фаворита или собрать экспресс на несколько забегов. Делайте ставки до открытия стартовых ворот или прямо во время скачек.",
+      "mmaDescription": "{{home}} и {{away}} встретятся {{date}} в {{time}} в рамках {{competition}}. Бой обещает массу зрелищных моментов в клетке. На Cloudbet можно собирать экспрессы на один бой, объединяя ставки на нокдауны, раунды и способы победы. Заключайте пари заранее или делайте ставки в реальном времени по мере развития боя.",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "коэффициенты на киберспорт",
+          "cs2": "Ставки на киберспорт: CS2",
+          "dota2": "коэффициенты",
+          "valorant": "Коэффициенты ставок на Valorant",
+          "fifa": "Коэффициенты ставок на киберспорт FIFA"
+        },
+        "titleV2": "Делайте ставки на матч {{home}} — {{away}}: {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "Делайте ставки на матч {{home}} — {{away}} в рамках {{competition}}. Когда: {{date}} в {{time}}. Cloudbet предлагает конкурентные коэффициенты на киберспорт. В этом матче LoL доступны все крипторынки для ставок на киберспорт, включая {{markets}}.",
+        "cs2Description": "Делайте ставки на матч {{home}} — {{away}} в рамках {{competition}}. Когда: {{date}} в {{time}}. Делайте ставки в криптовалюте на рынки CS2, включая {{markets}}. Идеально для ставок на киберспорт в реальном времени — только на Cloudbet.",
+        "dota2Description": "Делайте ставки на матч {{home}} — {{away}} в рамках Dota 2 {{competition}}. Когда: {{date}} в {{time}}. Доступны крипторынки: {{markets}}. Ставьте на Dota 2 на топовом сайте для ставок на киберспорт и получайте денежные награды.",
+        "valorantDescription": "Делайте ставки на матч {{home}} — {{away}} в рамках {{competition}}. Когда: {{date}} в {{time}}. Присоединяйтесь к действию и ставьте на Valorant в BTC, ETH и USDT на рынках {{markets}} — только на Cloudbet.",
+        "fifaDescription": "Делайте ставки на матч {{home}} — {{away}} в рамках {{competition}}. Когда: {{date}} в {{time}}. Поддержите своего фаворита в FIFA eSports на таких рынках, как {{markets}}. Ставить онлайн на киберспорт проще простого с Cloudbet."
+      }
+    },
+    "nbaPromo": {
+      "title": "Новое для НБА: конструктор ставок и пропы на игроков",
+      "body": "Собирайте экспрессы на один матч с помощью конструктора ставок и заглядывайте на новую вкладку с пропами на игроков."
+    },
+    "playerProps": {
+      "avgPer5Game": "Средн. {{stats}} за 5 игр",
+      "avgInRegSeason": "Сред. {{stats}} в регулярном сезоне"
+    }
+  },
+  "common": {
+    "today": "Сегодня",
+    "partial": "Частично",
+    "instantGames": "Мгновенные игры",
+    "inPlay": "Сейчас",
+    "tomorrow": "Завтра",
+    "competitions": "Соревнования",
+    "highlights": "Главное",
+    "outrights": "Аутрайты",
+    "virtuals": "Виртуальные игры",
+    "liveStream": "Прямая трансляция",
+    "events": "События",
+    "games": "Игры",
+    "nextToJump": "Следующий прыгнет",
+    "noLimitBets": "Безлимитные ставки",
+    "virtualSoccer": "Виртуальный футбол",
+    "virtualBasketball": "Виртуальный баскетбол",
+    "betsClosed": "Завершенные ставки",
+    "virtualsUpNext": "Следующие виртуальные виды спорта",
+    "simPlay": "Симуляционная игра",
+    "fullMatchup": "Все встречи",
+    "browseNow": "Просмотреть сейчас",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "Потенциальный возврат: {{amount}}",
+    "toReturnTitle": "Вернется",
+    "toReturnSubtitle": "{{stake}} с возвратом {{payout}}",
+    "summary": {
+      "reuseSelections": "Использовать выбор повторно",
+      "acceptAndPlace": "Принять и поставить {{value}} ",
+      "sameGameMultiPlaced": "Размещен конструктор ставок"
+    },
+    "parlay": {
+      "legs": "Событий: {{count}}"
+    },
+    "maxBet": {
+      "noLimit": "Макс. на ставку: <0>{{currency}}{{stake}}</0>",
+      "nolimitTitle": "Максимальная сумма ставки:",
+      "default": "Макс. ставка: <0>{{currency}}{{stake}}</0>",
+      "defaultLocalized": "Макс. ставка: <0>{{value}}</0>",
+      "defaultTitle": "Макс. ставка:"
+    },
+    "errors": {
+      "maxBetIs": "Макс. ставка: <0>{{stake}} {{currency}}</0>",
+      "minBetIs": "Мин. ставка: <0>{{stake}} {{currency}}</0>",
+      "maxBet": "Макс. ставка",
+      "minBet": "Мин. ставка"
+    },
+    "summeryErrors": {
+      "marketClosed": "Рынок закрыт",
+      "limitExceeds": "Лимит превышен",
+      "maxStakeReached": "Достигнута макс. ставка",
+      "restricted": "Ограничено",
+      "restrictedGeoBlocked": "Доступ из вашего региона запрещен. Отключите VPN и повторите попытку.",
+      "restrictedGeoBlockedShorten": "Регион запрещен",
+      "minStakeChanged": "Мин. ставка изменилась",
+      "maxStakeChanged": "Макс. ставка изменилась",
+      "unknownError": "Неизвестная ошибка",
+      "suspended": "Неактивно",
+      "unauthorized": "Не авторизовано",
+      "stakeAboveMax": "Уменьшите ставку.",
+      "stakeBelowMin": "Увеличьте ставку.",
+      "priceAboveMarket": "Коэффициенты поменялись.",
+      "betPending": "Нестабильное соединение. Проверьте статус ставки в разделе \"Мои ставки\"."
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "Снова сформируйте конструктор ставок",
+        "timedOutTitle": "Ставка не найдена",
+        "timedOutDescription": "Ставка не найдена. Проверьте \"Мои ставки\" или свяжитесь со службой поддержки, прежде чем размещать ее снова.",
+        "unknownError": "Что-то пошло не так",
+        "unknownErrorDescription": "Проверьте \"Мои ставки\" или свяжитесь со службой поддержки, прежде чем размещать ее снова.",
+        "limitsExceeded": "Лимиты превышены"
+      },
+      "actions": {
+        "clearSGP": "Сбросить конструктор ставок",
+        "reviewChangesInBetslip": "Просмотрите изменения в купоне"
+      }
+    },
+    "placeBet": "Сделать ставку",
+    "placeParlay": "Разместить экспресс-ставку {{amount}}",
+    "betBuilder": {
+      "placeBetValid": "Разместить конструктор ставок {{amount}}",
+      "placeBetSubmitting": "Размещается конструктор ставок {{amount}}",
+      "betBuilderItemMarketUnavailable": "Рынок временно заблокирован. <0>Повторите</0> или <1>удалите</1>",
+      "error": {
+        "parlayRestricted": "Связанные выборы нельзя объединить",
+        "marketSuspended": "Рынок временно закрыт."
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "Коэффициенты поменялись.",
+      "oddsHaveChangedAccept": "Коэффициенты поменялись. <0>Принять</0>",
+      "oddsHaveChangedToReturn": "Коэффициенты поменялись. Потенциальный возврат: {{payout}}",
+      "oddsHaveChangedToReturnTitle": "Коэффициенты поменялись. Потенциальный возврат:",
+      "marketIsSuspendedWaitOrRemove": "Рынок временно заблокирован. Подождите или <0>удалите</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "Рынок временно заблокирован. Подождите или удалите...",
+      "marketIsClosedRemove": "Рынок закрыт. <0>Удалить</0>",
+      "selectionCorrelated": "Этот выбор связан с другим. <0>Удалить</0>",
+      "parlayRestricted": "Этот выбор нельзя добавить в экспресс-ставку. <0>Удалить</0>",
+      "dangerBall": "Гол может быть забит в ближайшее время. Ваша ставка может быть принята в течение 5 минут."
+    },
+    "consent": {
+      "acceptAllChanges": "Принять все изменения"
+    },
+    "insufficientBalanceAlert": {
+      "title": "Недостаточно средств",
+      "description": "<0>Внесите депозит</0>, чтобы продолжить делать ставки."
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "Показать весь {{sport}}"
+  },
+  "betBuilder": {
+    "reviewBet": "Посмотреть ставку",
+    "title": "Конструктор ставок"
+  },
+  "myBets": {
+    "noBets": "Нет доступных ставок",
+    "checkOut": "Ознакомьтесь с сегодняшними играми или предстоящими событиями, чтобы найти следующую возможность для ставок.",
+    "viewBetHistory": "Посмотреть историю ставок",
+    "browseInplay": "Обзор живых событий",
+    "loadError": "Невозможно загрузить эту ставку",
+    "id": "Идентификатор",
+    "viewAllSettledBetsInfo": "Просмотреть все завершенные ставки в истории ставок.",
+    "onlyLast72HoursBetsInfo": "Показаны только ставки за последние 72 часа. Смотрите все завершенные ставки в истории."
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "Больше {{over}}",
+      "gameOversAndDeliveries": "Больше {{over}}.{{delivery}}",
+      "gameTargetRunsAndBalls": "Команде {{teamName}} нужно {{runs}} из {{balls}}",
+      "gameTrailByRuns": "{{teamName}} отстает на {{runs}}",
+      "gameLeadByRuns": "{{teamName}} ведет с перевесом в {{runs}}",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "Twenty20",
+      "gameTypeTest": "Тестовый",
+      "matchDay": "День {{matchDay}}.",
+      "endOfMatchDay": "Конец дня {{matchDay}}.",
+      "wonDefault": "Команда {{winner}} победила",
+      "matchDrawn": "Ничья",
+      "wonByRuns": "Команда {{winner}} выиграла с разницей в {{wonBy}} ранов",
+      "wonByRunsAndInning": "Команда {{winner}} выиграла иннингсом и {{wonBy}} ранами",
+      "wonByWickets": "Команда {{winner}} выиграла с разницей в калитках: {{wonBy}}"
+    },
+    "racing": {
+      "running": "Бег",
+      "runners": "Участники",
+      "scratched": "Выбывшие",
+      "horseRacingWithdrawnDescription": "Лошадь была снята с соревнований из-за травмы, болезни, состояния трассы или решения тренера. Коэффициенты были скорректированы, и если вы сделали ставку, ваш выигрыш может быть немного уменьшен. Ставки, сделанные на выбывшую лошадь, будут возвращены.",
+      "greyhoundsWithdrawnDescription": "Собака была снята с соревнований из-за травмы, болезни, состояния трассы или решения тренера. Коэффициенты были скорректированы, и если вы сделали ставку, ваш выигрыш может быть немного уменьшен. Ставки, сделанные на выбывшую собаку, будут возвращены.",
+      "age": "Возраст:<0>{{age}}</0>",
+      "weightShorten": "W:<0>{{weight}}</0>фунтов",
+      "formShorten": "F:<0>{{form}}</0>",
+      "horseJockeyShorten": "J:<0>{{jockey}}</0>",
+      "horseTrainerShorten": "Т:<0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "Текущие результаты недоступны"
+    }
+  },
+  "betHistory": {
+    "typeBet": "Ставка",
+    "typeCashout": "Кэшаут",
+    "typeSettlement": "Расчет ставок",
+    "noBetHistory": "История ставок недоступна",
+    "hintV2": "\"История ставок\" показывает детали завершенных ставок, включая результаты матчей и исходы ставок. Чтобы просмотреть активные или ожидающие ставки, перейдите в раздел {{link}}.",
+    "allBets": "Все ставки",
+    "singles": "Одиночные",
+    "parlays": "Экспресс-ставки",
+    "betBuilders": "Конструкторы ставок",
+    "outrights": "Аутрайты"
+  },
+  "fightCenter": {
+    "rootTitle": "Бои",
+    "mainCard": "Основные карды",
+    "prelims": "Предварительные бои",
+    "taleOfTheTape": "Статистика",
+    "fighterProfile": "Профиль бойца",
+    "height": "Рост",
+    "weight": "Вес",
+    "armReach": "Досягаемость руки",
+    "legReach": "Досягаемость ноги",
+    "winRate": "Коэффициент побед",
+    "stats": "Статистика",
+    "age": "Возраст",
+    "record": "Данные",
+    "byKo": "Нокаутом",
+    "bySubmission": "Болевым приемом",
+    "byDecision": "Решением",
+    "koTko": "Нокаут/Технический Нокаут",
+    "submission": "SUB",
+    "decision": "DEC",
+    "next": "Следующая",
+    "draw": "Ничья",
+    "streamIn": "Трансляция:",
+    "liveDefault": "Live",
+    "officialGlobalSportsbook": "Официальный глобальный букмекер для",
+    "official": "Официальный",
+    "globalSportsbook": "глобальный букмекер",
+    "expertPicks": {
+      "viewExpertPicks": "Посмотрите выбор экспертов",
+      "banner": {
+        "title": "Выбор экспертов",
+        "availableIn": "Доступно через"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} раундов",
+        "mma.winner": "Выигрышей: {{outcome}}",
+        "mma.winning_method": "{{outcome}} по {{value}}"
+      },
+      "genericError": {
+        "title": "Возникла проблема",
+        "description": "Возникла проблема. Мы работаем над ее устранением и скоро вы снова получите доступ."
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "Ставки на победителя матча",
+    "cricket_over_team_total": "Тотал матча {{overNumber}} — тотал ранов — команды",
+    "cricket_player_total": "Количество ранов бэттера в матче",
+    "cricket_player_to_score_milestone": "Игрок наберет {{milestone}}",
+    "cricket_player_total_fours": "Тотал четырех очковых игрока",
+    "cricket_player_total_player_performance": "Уровень эффективности игрока",
+    "cricket_team_total_fours": "Тотал четырех очковых команды",
+    "cricket_team_total_sixes": "Тотал шести очковых команды",
+    "cricket_innings_over_x_team_total": "Иннингс {{inningsNumber}} овер {{overNumber}} — тотал ранов — команды",
+    "cricket_innings_overs_0_to_x_team_total": "Иннингс {{inningsNumber}} овер от 0 до {{overNumber}} — тотал ранов — команды",
+    "cricket_innings_player_total_deliveries_faced": "Иннингс {{inningsNumber}} тотал подач игрока",
+    "cricket_team_total_from_0_over_to_x_over": "Овер от 0 до {{overNumber}} — тотал ранов — команды",
+    "cricket_team_total_in_highest_scoring_over": "Команда, набравшая наибольшее количество оверов",
+    "cricket_team_total_at_dismissal": "Тотал команды при выбывании {{dismissalNumber}}",
+    "cricket_innings_player_to_score_milestone": "Иннингс {{inningsNumber}} — игрок наберет {{milestone}}",
+    "cricket_test_match_player_total": "Иннингс {{inningsNumber}} — тотал игрока",
+    "cricket_innings_player_total_fours": "Иннингс {{inningsNumber}} — тотал четырех очковых игрока "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "Текущ. кол-во голов: {{total}} <0>({{home}}:{{away}})</0>",
+    "soccer.team_total_goals_home": "Текущий счет: {{home}}:<0>{{away}}></0>",
+    "soccer.team_total_goals_away": "Текущий счет: <0>{{home}}</0>:{{away}}",
+    "soccer.total_corners": "Текущ. кол-во угловых: <0>{{total}}</0>",
+    "tennis.total_games": "Текущ. кол-во геймов: {{total}}",
+    "tennis.total_games_in_set": "Текущ. кол-во геймов в сете {{setCount}}: {{total}}\n<0>({{gamesHome}}:{{gamesAway}})</0>"
+  },
+  "outcome": {
+    "draw": "Ничья"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "хард",
+        "clay": "грунт",
+        "grass": "трава",
+        "carpet": "ковер"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "Включить режим кита",
+    "buildPosition": "Построить позицию",
+    "currentOdds": "Текущие кэфы",
+    "decrementOdds": "Уменьшить кэфы",
+    "incrementOdds": "Увеличить кэфы",
+    "inProgress": {
+      "averageOdds": "Средние кэфы",
+      "filledAmount": "Заполненная сумма",
+      "minOdds": "Мин. кэфы",
+      "of": "из",
+      "remaining": "Осталось",
+      "sheetFooter": {
+        "completedTitle": "Завершено",
+        "executionStoppedTitle": "Выполнение остановлено",
+        "marketClosedTitle": "Рынок закрыт",
+        "oddsBelowMinimumTitle": "Коэффициенты ниже минимума",
+        "failedTitle": "Не удалось разместить ставку",
+        "trackPosition": "Отслеживать позицию в <0>Моих ставках</0>"
+      },
+      "stopRemaining": "Остановить оставшиеся",
+      "timeElapsed": "Прошло времени",
+      "toReturn": "Вернется"
+    },
+    "minOdds": "Мин. кэфы",
+    "needBiggerStake": "Хотите поставить больше?",
+    "noLimitBetting": "Ставки без лимита",
+    "stakeExceededDescription": "Превышен макс. размер ставки на этом рынке",
+    "status": {
+      "cancelled": "Остановлено",
+      "completed": "Завершено",
+      "failed": "Сбой",
+      "failedMarketClosed": "Рынок закрыт",
+      "failedOddsUnderMin": "Коэффициенты поменялись",
+      "running": "Выполняется"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "Player Leaderboards",
+      "trendsAndFavorites": "Trends & Fan Favorites"
+    },
+    "columns": {
+      "player": "Игрок",
+      "name": "Имя"
+    },
+    "footer": "Data reflects settled {{sportName}} bets during {{dateRange}}. All figures in USD equivalent. Only public profiles are displayed.",
+    "leaderboards": {
+      "sharpest": {
+        "title": "Sharpest Bettors",
+        "subtitle": "Best ROI on {{sportName}} bets"
+      },
+      "earners": {
+        "title": "Top Earners",
+        "subtitle": "Highest {{sportName}} profits in {{year}}"
+      },
+      "parlayKings": {
+        "title": "Parlay Kings",
+        "subtitle": "Top parlay profit leaders"
+      },
+      "livePros": {
+        "title": "Live Betting Legends",
+        "subtitle": "In-play profit leaders"
+      },
+      "uclMasters": {
+        "title": "Champions League Masters",
+        "subtitle": "UCL betting specialists"
+      },
+      "sgpWizards": {
+        "title": "SGP Wizards",
+        "subtitle": "Same Game Parlay masters"
+      },
+      "crazyParlays": {
+        "title": "Craziest Parlay Wins",
+        "subtitle": "Wildest multi-legs that hit"
+      },
+      "hotMatches": {
+        "title": "Hottest Matches",
+        "subtitle": "Most wagered {{sportName}} fixtures"
+      },
+      "backedTeams": {
+        "title": "Most Backed Teams",
+        "subtitle": "Fan favorites to bet on"
+      },
+      "goalscorers": {
+        "title": "Goalscorer Favorites",
+        "subtitle": "Most bet-on {{sportName}} stars"
+      },
+      "trendingLeagues": {
+        "title": "Trending Leagues",
+        "subtitle": "Most popular competitions"
+      },
+      "backedPlayers": {
+        "title": "Most Backed Players",
+        "subtitle": "Fan favorite players to bet on"
+      },
+      "trendingTournaments": {
+        "title": "Trending Tournaments",
+        "subtitle": "Most popular tournaments"
+      },
+      "backedFighters": {
+        "title": "Most Backed Fighters",
+        "subtitle": "Fan favorite fighters to bet on"
+      },
+      "trendingPromotions": {
+        "title": "Trending Promotions",
+        "subtitle": "Most popular MMA promotions"
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "Прибыль",
+      "bets": "Ставки",
+      "liveProfit": "Live Profit",
+      "uclProfit": "UCL Profit",
+      "sgpProfit": "SGP Profit",
+      "multiplier": "Множитель",
+      "payout": "Выплата",
+      "totalWagered": "Total Wagered",
+      "betsPlaced": "Bets Placed",
+      "turnover": "Turnover",
+      "goalscorerBets": "Goalscorer Bets",
+      "totalBets": "Total Bets",
+      "volume": "Volume"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: Top Earners",
+    "heroCta": "{{sportName}} — See who's winning",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI",
+    "bettingTrends": {
+      "title": "Тенденции ставок на НБА",
+      "teamColumnLabel": "Команда",
+      "tables": {
+        "winLoss": {
+          "title": "Топ команд по выигрышам/проигрышам",
+          "subtitle": "Лучшие показатели в НБА в этом сезоне",
+          "recordLabel": "В/П",
+          "percentageLabel": "% побед"
+        },
+        "ats": {
+          "title": "Топ команд по ATS",
+          "subtitle": "Лучшие по ставкам против спреда в этом сезоне",
+          "recordLabel": "Статистика ATS",
+          "percentageLabel": "% покрытия"
+        },
+        "over": {
+          "title": "Топ команд \"больше\"",
+          "subtitle": "Матчи с этими командами чаще всего заканчиваются тоталом больше",
+          "recordLabel": "Статистика \"больше\"",
+          "percentageLabel": "% больше"
+        },
+        "under": {
+          "title": "Топ команд \"меньше\"",
+          "subtitle": "Матчи с этими командами чаще всего заканчиваются тоталом меньше",
+          "recordLabel": "Статистика \"меньше\"",
+          "percentageLabel": "% меньше"
+        }
+      }
+    }
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "Все"
+  }
+}

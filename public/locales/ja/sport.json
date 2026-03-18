@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "アジアンライン",
+      "cards": "カード",
+      "corners": "コーナーキック数",
+      "goals": "ゴール数",
+      "half": "ハーフタイム",
+      "main": "メイン",
+      "more": "その他",
+      "specials": "スペシャル",
+      "popular": "人気",
+      "firstHalf": "前半",
+      "secondHalf": "後半",
+      "points": "点数",
+      "quarters": "クォーター",
+      "players": "選手",
+      "sets": "セット",
+      "games": "ゲーム",
+      "hitsAndRuns": "ヒット＆ラン",
+      "playerProps": "プレイヤープロップ",
+      "extraTime": "延長時間",
+      "kills": "キル",
+      "match": "マッチ",
+      "player": "プレイヤー",
+      "team": "チーム",
+      "mainMarkets": "主要マーケット",
+      "matchMarkets": "試合マーケット",
+      "mapN": "マップ {{mapNumber}}",
+      "firstInnings": "第1イニング",
+      "all": "全マーケット",
+      "betBuilder": "SGP"
+    },
+    "stats": {
+      "notAvailable": "統計情報は利用できません",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "ベットビルダー利用可能",
+      "loginToBetDescription": "1試合から複数の選択を組み合わせて、自分だけのカスタムベットを作成できます。\n対応リーグで利用可能。より自由に、より高いリターンを狙いましょう。",
+      "loginToBetButton": "サインインして始めよう",
+      "genericError": {
+        "titleWithCode": "エラーが発生しました ({{code}})",
+        "title": "エラーが発生しました",
+        "description": "エラーが発生しました。問題が解決しない場合は、カスタマーサポートまでお問い合わせください。"
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "既存のベットビルダーを入れ替えますか？",
+        "description": "ベットビルダーは1つのみベットできます。追加すると現在のベットに入れ替わります。",
+        "cancelCta": "キャンセル",
+        "replaceCta": "入れ替える"
+      },
+      "shortened": "BB",
+      "betBuilderPromo": "同じ試合のパーレイで、オッズをもっと大きくしましょう。",
+      "betBuilderAlertBanner": {
+        "title2": "100倍ベットビルダーのラッキードロー",
+        "body2": "今週末、1ドル以上のパーレイを組むと、当選者10名にベット額の100倍（最大100ドル）をプレゼントします。"
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "いつでも",
+            "first": "最初",
+            "last": "最後",
+            "teamFirst": "先攻チーム",
+            "teamLast": "後攻チーム",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "ヘディング",
+            "scoreOutsideOfTheBox": "ペナルティエリア外"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "選手はいつ得点する？",
+            "when-will-player-score-team": "選手（チーム）はいつ得点する？",
+            "how-many-player-goals": "選手は何ゴール決める？",
+            "how-will-player-score": "選手はどのように得点する？",
+            "player-assists": "選手のアシスト数",
+            "player-to-be-carded-team": "カードを受ける選手（チーム）",
+            "player-to-be-shown-a-card": "カードを受ける選手",
+            "total-cards-team": "合計カード数（チーム）",
+            "both-team-total-cards": "両チーム合計カード数",
+            "both-teams-total-goals": "両チーム合計ゴール数",
+            "total-goals-team": "合計ゴール数（チーム）",
+            "both-teams-total-corners": "両チーム合計コーナー数",
+            "total-corners-team": "合計コーナー数（チーム）",
+            "both-teams-score": "両チームが得点する",
+            "player-to-be-sent-off": "退場する選手",
+            "player-total-fouls-committed": "選手のファウル総数",
+            "player-total-saves": "選手のセーブ総数",
+            "player-total-shots": "選手のシュート総数",
+            "player-total-shots-on-target": "選手の枠内シュート総数",
+            "player-total-tackles": "選手のタックル総数",
+            "player-total-passes": "選手のパス総数",
+            "to-happen-in-the-match-team": "試合中に起こること（チーム）",
+            "method-of-victory": "勝利方法",
+            "total-shots-team": "合計シュート数（チーム）",
+            "team-with-most-bookings": "最もカードを受けるチーム",
+            "total-shots-on-target-team": "枠内シュート総数（チーム）",
+            "total-goals-over-slash-under-after-10-minutes": "10分経過後の合計ゴール数オーバー／アンダー",
+            "asian-handicap-after-10-minutes": "10分後のアジアンハンディキャップ",
+            "correct-score": "正確なスコア",
+            "most-cards": "カード最多",
+            "most-corners": "コーナー最多",
+            "double-chance": "ダブルチャンス",
+            "winning-margin": "勝利差",
+            "total-goals": "合計ゴール数",
+            "total-exact-goals": "正確な合計ゴール数",
+            "total-exact-goals-team": "正確な合計ゴール数（チーム）",
+            "total-bookings-points": "累計警告ポイント",
+            "total-bookings-points-team": "累計警告ポイント（チーム）"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "選手の合計得点＆リバウンド数",
+            "player-total-points": "選手の合計得点",
+            "player-total-3-point-field-goals": "選手の3ポイント成功数",
+            "player-total-rebounds": "選手のリバウンド数",
+            "player-total-assists-and-rebounds": "選手のアシスト＆リバウンド数",
+            "player-total-assists": "プレイヤーのアシスト数",
+            "player-total-points-and-assists": "選手の合計得点＆アシスト数",
+            "player-total-points-assists-and-rebounds": "選手の合計得点、アシスト＆リバウンド数",
+            "player-to-achieve-a-double-double": "選手のダブルダブル達成",
+            "player-to-achieve-a-triple-double": "選手のトリプルダブル達成",
+            "player-total-3-pointers-over-under": "選手の3ポイント成功数（オーバー／アンダー）",
+            "player-total-assists-and-rebounds-over-under": "選手のアシスト＆リバウンド数（オーバー／アンダー）",
+            "player-total-assists-over-under": "選手のアシスト数（オーバー／アンダー）",
+            "player-total-points-over-under": "選手の合計得点（オーバー／アンダー）",
+            "player-total-rebounds-over-under": "選手のリバウンド数（オーバー／アンダー）"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "仮想通貨で{{eventName}}にベットする",
+      "soccerDescription": "ファンの皆さんは、{{date}} {{time}}に{{competition}}で{{home}}対{{away}}の熱い激突を楽しめます。クラウドベットでは、同一試合のパーレイを組んで、得点、コーナーキック、カードなどを組み合わせてさらに盛り上がれます。\nキックオフ前にベットするか、ライブで試合を追いかけながら賭けを楽しみましょう。",
+      "basketballDescription": "{{competition}}の{{home}}対{{away}}の試合は、{{date}}の{{time}}に始まります。この試合は、開始から終了のブザーまで見逃せないアクション満載です。同一試合のパーレイでは、選手の得点、リバウンド、アシストを組み合わせて、さらに大きな賭けを楽しめます。試合前でもライブ中でもベットして参加できます。",
+      "americanFootballDescription": "{{competition}}で{{home}}対{{away}}の対戦が、{{date}}の{{time}}にキックオフします。クラウドベットでは、タッチダウンからパス獲得ヤードまで、同一試合内の複数ベットを組み合わせて楽しめます。キックオフ前にベットするか、試合の進行に合わせてライブオッズを活用しましょう。",
+      "tennisDescription": "{{competition}}の{{home}}対{{away}}の対戦は、{{date}}の{{time}}に{{surface}}で行われます。両選手はフォームと技術で知られており、見応えのある試合が期待できます。同一試合パーレイでは、セットの勝者、合計ゲーム数、エース数などを一つのベットに組み合わせられます。試合開始前に予想を決めるか、流れに合わせてライブベットを楽しみましょう。",
+      "baseballDescription": "{{competition}}で{{home}}対{{away}}の対戦が{{date}}の{{time}}に行われます。同一試合パーレイでは、ヒット、三振、得点を組み合わせて一度に賭けられます。早めにベットするか、イニングごとのライブベットで楽しみましょう。",
+      "iceHockeyDescription": "{{competition}}の{{home}}対{{away}}の対戦が、{{date}}の{{time}}にアイスリンクで行われます。同一試合パーレイでは、ゴール、アシスト、ペナルティを組み合わせて、さらにスリル満点のベットが楽しめます。パックが落ちる前にベットするか、ライブで試合の流れに乗りましょう。",
+      "rugbyDescription": "{{competition}}で{{home}}対{{away}}の対戦が{{date}}の{{time}}に行われます。\n激しいタックルや驚きのトライが期待されます。クラウドベットでは、トライ、コンバージョン、合計得点を組み合わせた同一試合パーレイを作成できます。キックオフ前にベットするか、スクラムのたびにライブベットをお楽しみください。",
+      "cricketDescription": "{{competition}}の{{home}}対{{away}}の試合が、{{date}}の{{time}}に行われます。多くのランやウィケットが期待される熱戦です。クラウドベットの同一試合パーレイなら、ラン、ウィケット、バウンダリーを組み合わせて一つのベットにできます。ファーストボール前に予想を立てるか、1オーバーごとのライブベットをお楽しみください。",
+      "horseRacingDescription": "{{competition}}は{{date}}の{{time}}に開催されます。一流の競走馬たちが出走予定で、ゴールまでのハイレベルな駆け引きが期待されます。クラウドベットでは、あなたの本命馬に単勝で賭けることも、複数のレースを組み合わせたカスタムパーレイを楽しむことも可能です。ゲートが開く前の事前ベットはもちろん、レース中のライブベットにも対応しています。",
+      "mmaDescription": "{{competition}}で行われる{{home}}対{{away}}の一戦は、{{date}}の{{time}}にライブ開催されます。ケージの中で火花散る激闘が期待される注目のカードです。クラウドベットでは、ノックダウン数、ラウンド別の勝敗予想、勝利方法などを組み合わせた同一試合パーレイが可能となります。試合前にベットを確定させるもよし、戦いの流れを見ながらライブで賭けて楽しむこともできます。",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "eスポーツのオッズ",
+          "cs2": "CS2 eスポーツベッティング",
+          "dota2": "オッズ",
+          "valorant": "Valorantベットオッズ",
+          "fifa": "FIFA eスポーツベッティングオッズ"
+        },
+        "titleV2": "{{home}}対{{away}}にベット – {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "{{competition}}が始まったら{{home}}対{{away}}に{{date}}の{{time}}からベット！クラウドベットでは競争力のあるeスポーツオッズを提供。LoLのこの対戦では、{{markets}}を含む仮想通貨対応のフルマーケットでベッティング可能です。",
+        "cs2Description": "{{competition}}の{{home}}対{{away}}戦が{{date}}の{{time}}に開始！CS2のマーケット{{markets}}で仮想通貨ベット！eスポーツのライブベットにも最適なクラウドベットで楽しみましょう。",
+        "dota2Description": "{{competition}}のDota 2 {{home}}対{{away}}戦が{{date}}の{{time}}に開始！{{markets}}で仮想通貨マーケット対応。トップeスポーツサイトでリアルキャッシュ報酬付きのDota 2ベットを楽しみましょう。",
+        "valorantDescription": "{{competition}}の{{home}}対{{away}}戦が{{date}}の{{time}}に開始！試合の熱戦を見ながら、Valorantの{{markets}}でBTC、ETH、USDTを使ってベット — クラウドベットだけで楽しめます。",
+        "fifaDescription": "{{date}}の{{time}}に開始の{{competition}}、{{home}}対{{away}}戦でお気に入りチームを応援しよう！{{markets}}などのマーケットでFIFA eスポーツにベット — クラウドベットなら簡単にオンラインで楽しめます。"
+      }
+    },
+    "nbaPromo": {
+      "title": "NBAに新登場：ベットビルダー＆プレイヤープロップ",
+      "body": "ベットビルダーで同一試合パー レイを作成し、新しく追加されたプレイヤープロップのタブでプロップベットをチェックしましょう。"
+    },
+    "playerProps": {
+      "avgPer5Game": "5試合の平均{{stats}}",
+      "avgInRegSeason": "レギュラーシーズンの平均 {{stats}}"
+    }
+  },
+  "common": {
+    "today": "本日",
+    "partial": "一部",
+    "instantGames": "インスタントゲーム",
+    "inPlay": "インプレイ",
+    "tomorrow": "明日",
+    "competitions": "試合",
+    "highlights": "ハイライト",
+    "outrights": "アウトライト",
+    "virtuals": "バーチャル",
+    "liveStream": "ライブストリーム",
+    "events": "イベント",
+    "games": "ゲーム",
+    "nextToJump": "次にジャンプ",
+    "noLimitBets": "上限なしのベット",
+    "virtualSoccer": "バーチャルサッカー",
+    "virtualBasketball": "バーチャルバスケットボール",
+    "betsClosed": "ベット終了",
+    "virtualsUpNext": "次のバーチャル",
+    "simPlay": "シムプレイ",
+    "fullMatchup": "フルマッチアップ",
+    "browseNow": "今すぐ閲覧する",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "戻り金額：{{amount}}",
+    "toReturnTitle": "払戻予定額",
+    "toReturnSubtitle": "{{stake}}のベットで{{payout}}の払戻し",
+    "summary": {
+      "reuseSelections": "セレクションを再利用",
+      "acceptAndPlace": "承認して{{value}}ベットする",
+      "sameGameMultiPlaced": "ベットビルダーを配置しました"
+    },
+    "parlay": {
+      "legs": "{{count}} レッグ"
+    },
+    "maxBet": {
+      "noLimit": "1ベット当たりの最大額: <0>{{currency}}{{stake}}</0>",
+      "nolimitTitle": "各ベット最大額：",
+      "default": "最大ベット額: <0>{{currency}}{{stake}}</0>",
+      "defaultLocalized": "最大ベット額：<0>{{value}}</0>",
+      "defaultTitle": "最大ベット額："
+    },
+    "errors": {
+      "maxBetIs": "最高ベット額は<0>{{currency}} {{stake}}</0>です。",
+      "minBetIs": "最低ベット額は<0>{{currency}} {{stake}}</0>です。",
+      "maxBet": "最大ベット",
+      "minBet": "最小ベット"
+    },
+    "summeryErrors": {
+      "marketClosed": "マーケット終了",
+      "limitExceeds": "限度額越え",
+      "maxStakeReached": "最高賭け額に達しました",
+      "restricted": "規制中",
+      "restrictedGeoBlocked": "この地域からはご利用いただけません。VPNをオフにして、再度お試しください。",
+      "restrictedGeoBlockedShorten": "この地域は許可されていません",
+      "minStakeChanged": "最低賭け額が変わりました。",
+      "maxStakeChanged": "最高賭け額が変わりました。",
+      "unknownError": "不明なエラー",
+      "suspended": "停止中",
+      "unauthorized": "権限無し",
+      "stakeAboveMax": "賭け金を減らしてください",
+      "stakeBelowMin": "賭け金を増やしてください",
+      "priceAboveMarket": "オッズが変更されました",
+      "betPending": "接続が不安定です。「マイベット」でベット状況をご確認ください。"
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "ベットをやり直してください",
+        "timedOutTitle": "ベットが見つかりませんでした",
+        "timedOutDescription": "ベットが見つかりませんでした。「マイベット」を確認するか、カスタマーサポートへご連絡ください。",
+        "unknownError": "エラーが発生しました",
+        "unknownErrorDescription": "「マイベット」を確認するか、サポートに連絡してから再度お試しください。",
+        "limitsExceeded": "上限を超えました"
+      },
+      "actions": {
+        "clearSGP": "ベットビルダーをリセットする",
+        "reviewChangesInBetslip": "ベットスリップの変更を確認する"
+      }
+    },
+    "placeBet": "賭ける",
+    "placeParlay": "パーレイ {{amount}} を賭ける",
+    "betBuilder": {
+      "placeBetValid": "BB {{amount}}をベットする",
+      "placeBetSubmitting": "BB {{amount}}をベットする",
+      "betBuilderItemMarketUnavailable": "このマーケットは一時停止中です。<0>再試行</0>または<1>削除</1>",
+      "error": {
+        "parlayRestricted": "関連する選択肢は組み合わせできません",
+        "marketSuspended": "マーケットが一時停止中です。"
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "オッズが変更されました",
+      "oddsHaveChangedAccept": "オッズが変わりました。<0>承認する</0>",
+      "oddsHaveChangedToReturn": "オッズが変わりました。戻り金額：{{payout}}",
+      "oddsHaveChangedToReturnTitle": "オッズが変更されました。払戻金額：",
+      "marketIsSuspendedWaitOrRemove": "このマーケットは一時的に中止しています。待つ、または<0>取り消す</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "このマーケットは一時停止中です。待機または削除してください…",
+      "marketIsClosedRemove": "このマーケットは終了しました。<0>取り消す</0>",
+      "selectionCorrelated": "この選択は別の選択と関連付けられています。<0>削除</0>",
+      "parlayRestricted": "この選択はパーレイできません。<0>削除</0>",
+      "dangerBall": "まもなくゴールが決まる可能性があります。ベットの受理には最大 5 分 かかる場合があります。"
+    },
+    "consent": {
+      "acceptAllChanges": "すべての変更を承認する"
+    },
+    "insufficientBalanceAlert": {
+      "title": "資金が不足しています",
+      "description": "<0>今すぐ入金</0>して、ベットを続ける"
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "すべての {{sport}}を見る"
+  },
+  "betBuilder": {
+    "reviewBet": "ベット内容を確認",
+    "title": "SGP"
+  },
+  "myBets": {
+    "noBets": "ベットは利用できません",
+    "checkOut": "今日の試合や今後のイベントをチェックして、次のベットのチャンスを見つけましょう。",
+    "viewBetHistory": "ベット履歴を表示",
+    "browseInplay": "ライブイベントを見る",
+    "loadError": "このベットを読み込めませんでした",
+    "id": "ID",
+    "viewAllSettledBetsInfo": "精算済みのベットは、ベット履歴から確認できます。",
+    "onlyLast72HoursBetsInfo": "過去72時間のベットのみ表示されています。全ての精算済みベットは履歴をご覧ください。"
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "オーバー {{over}}",
+      "gameOversAndDeliveries": "オーバー {{over}}.{{delivery}}",
+      "gameTargetRunsAndBalls": "{{teamName}} は {{balls}} 球で {{runs}} 点が必要",
+      "gameTrailByRuns": "{{teamName}} は {{runs}} 点差で負けている",
+      "gameLeadByRuns": "{{teamName}} は {{runs}} 点差でリード",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "Т10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "テスト",
+      "matchDay": "第 {{matchDay}} 日。",
+      "endOfMatchDay": "第 {{matchDay}} 日終了。",
+      "wonDefault": "{{winner}} の勝利",
+      "matchDrawn": "引き分け",
+      "wonByRuns": "{{winner}} が {{wonBy}} ラン差で勝利",
+      "wonByRunsAndInning": "{{winner}} が {{wonBy}} ラン差でイニング勝ち",
+      "wonByWickets": "{{winner}} が {{wonBy}} ウィケット差で勝利"
+    },
+    "racing": {
+      "running": "ランニング",
+      "runners": "ランナー",
+      "scratched": "スクラッチ",
+      "horseRacingWithdrawnDescription": "馬が負傷、病気、馬場状態、または調教師の判断により出走を取り消しました。オッズが調整され、ベット済みの場合は賞金が若干減少する可能性があります。スクラッチされた馬へのベットは払い戻されます。",
+      "greyhoundsWithdrawnDescription": "犬が負傷、病気、トラック状態、または調教師の判断により出走を取り消しました。オッズが調整され、ベット済みの場合は賞金が若干減少する可能性があります。スクラッチされた犬へのベットは払い戻されます。",
+      "age": "年齢: <0>{{age}}</0>",
+      "weightShorten": "体重: <0>{{weight}}</0> ポンド",
+      "formShorten": "フォーム: <0>{{form}}</0>",
+      "horseJockeyShorten": "騎手: <0>{{jockey}}</0>",
+      "horseTrainerShorten": "調教師: <0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "ライブスコアは利用できません"
+    }
+  },
+  "betHistory": {
+    "typeBet": "ベット",
+    "typeCashout": "キャッシュアウト",
+    "typeSettlement": "決済",
+    "noBetHistory": "ベット履歴はありません",
+    "hintV2": "「ベット履歴」では、試合結果やベットの結果など、決済済みのベット詳細を確認できます。有効または未決済のベットを確認するには {{link}} セクションをご覧ください。",
+    "allBets": "すべてのベット",
+    "singles": "シングルス",
+    "parlays": "パーレー",
+    "betBuilders": "ベットビルダー",
+    "outrights": "アウトライト"
+  },
+  "fightCenter": {
+    "rootTitle": "ファイトセンター",
+    "mainCard": "メインカード",
+    "prelims": "プレリム",
+    "taleOfTheTape": "テイル・オブ・ザ・テープ",
+    "fighterProfile": "ファイタープロフィール",
+    "height": "高さ",
+    "weight": "重さ",
+    "armReach": "アームリーチ",
+    "legReach": "レッグリーチ",
+    "winRate": "勝率",
+    "stats": "統計",
+    "age": "年齢",
+    "record": "戦績",
+    "byKo": "KO勝ち",
+    "bySubmission": "サブミッション勝ち",
+    "byDecision": "判定勝ち",
+    "koTko": "KO/TKO",
+    "submission": "サブ",
+    "decision": "判定",
+    "next": "次へ",
+    "draw": "引き分け",
+    "streamIn": "ストリーム開始:",
+    "liveDefault": "ライブ",
+    "officialGlobalSportsbook": "公式グローバルスポーツブック",
+    "official": "公式",
+    "globalSportsbook": "グローバル・スポーツブック",
+    "expertPicks": {
+      "viewExpertPicks": "エキスパート予想を見る",
+      "banner": {
+        "title": "プロの予想",
+        "availableIn": "に利用可能"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} ラウンド",
+        "mma.winner": "{{outcome}} 勝利",
+        "mma.winning_method": "{{value}}差で{{outcome}}"
+      },
+      "genericError": {
+        "title": "エラーが発生しました",
+        "description": "システムに問題が発生しています。現在復旧作業を行っておりますので、しばらくお待ちください。"
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "マッチに勝つには",
+    "cricket_over_team_total": "マッチオーバー {{overNumber}} - 総ラン - チーム",
+    "cricket_player_total": "バッターマッチラン",
+    "cricket_player_to_score_milestone": "プレーヤーが{{milestone}}を獲得",
+    "cricket_player_total_fours": "プレイヤーの合計フォア",
+    "cricket_player_total_player_performance": "プレイヤーのパフォーマンス",
+    "cricket_team_total_fours": "チーム合計フォア",
+    "cricket_team_total_sixes": "チーム合計シックス",
+    "cricket_innings_over_x_team_total": "イニング数{{inningsNumber}}オーバー{{overNumber}} - 総ラン - チーム",
+    "cricket_innings_overs_0_to_x_team_total": "イニング数{{inningsNumber}}0以上{{overNumber}} - 総ラン - チーム",
+    "cricket_innings_player_total_deliveries_faced": "イニング数{{inningsNumber}}プレイヤーの総デリバリー数",
+    "cricket_team_total_from_0_over_to_x_over": "0以上{{overNumber}} - 総ラン - チーム",
+    "cricket_team_total_in_highest_scoring_over": "チーム最高得点オーバー",
+    "cricket_team_total_at_dismissal": "アウトのチーム合計{{dismissalNumber}}\n",
+    "cricket_innings_player_to_score_milestone": "第{{inningsNumber}}イニング：選手の{{milestone}}得点達成予想",
+    "cricket_test_match_player_total": "第{{inningsNumber}}イニング：選手の合計得点",
+    "cricket_innings_player_total_fours": "第{{inningsNumber}}イニング：選手のトータル・フォー "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "現在のゴール数：{{total}} <0>({{home}}-{{away}})</0>",
+    "soccer.team_total_goals_home": "現在のスコア： {{home}}-<0>{{away}}</0>",
+    "soccer.team_total_goals_away": "現在のスコア： <0>{{home}}</0>-{{away}}",
+    "soccer.total_corners": "現在のコーナーキック数：<0>{{total}}</0>",
+    "tennis.total_games": "現在の総ゲーム数： {{total}}",
+    "tennis.total_games_in_set": "第{{setCount}}セットの現在の総ゲーム数：{{total}} <0>（{{gamesHome}}-{{gamesAway}}）</0>"
+  },
+  "outcome": {
+    "draw": "タイ"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "ハードコート",
+        "clay": "クレーコート",
+        "grass": "芝コート",
+        "carpet": "カーペットコート"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "ホエールモード開始",
+    "buildPosition": "ポジション選択",
+    "currentOdds": "現在のオッズ",
+    "decrementOdds": "オッズを下げる",
+    "incrementOdds": "オッズを上げる",
+    "inProgress": {
+      "averageOdds": "平均オッズ",
+      "filledAmount": "約定数量",
+      "minOdds": "最低オッズ",
+      "of": "の",
+      "remaining": "残り",
+      "sheetFooter": {
+        "completedTitle": "完了",
+        "executionStoppedTitle": "実行停止",
+        "marketClosedTitle": "マーケット終了",
+        "oddsBelowMinimumTitle": "最低オッズ未満",
+        "failedTitle": "ベットに失敗しました",
+        "trackPosition": "<0>マイベット</0>からポジションを確認"
+      },
+      "stopRemaining": "残るのを停止する",
+      "timeElapsed": "経過時間",
+      "toReturn": "払戻し"
+    },
+    "minOdds": "最低オッズ",
+    "needBiggerStake": "ベット額を増やしますか？",
+    "noLimitBetting": "ノーリミットベッティング",
+    "stakeExceededDescription": "このマーケットの最大ベット額を超えています",
+    "status": {
+      "cancelled": "停止",
+      "completed": "完了",
+      "failed": "失敗",
+      "failedMarketClosed": "マーケット終了",
+      "failedOddsUnderMin": "オッズが変わりました",
+      "running": "処理中"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "プレイヤーランキング",
+      "trendsAndFavorites": "トレンド＆ファン人気"
+    },
+    "columns": {
+      "player": "プレイヤー",
+      "name": "名前"
+    },
+    "footer": "このデータは{{dateRange}}期間中に確定した{{sportName}}のベットを反映しています。すべて米ドル換算です。表示されるのは公開プロフィールのみです。",
+    "leaderboards": {
+      "sharpest": {
+        "title": "上級ベッター",
+        "subtitle": "{{sportName}}ベットで最も高いROI"
+      },
+      "earners": {
+        "title": "高額獲得者",
+        "subtitle": "{{year}}年の{{sportName}}での最高利益"
+      },
+      "parlayKings": {
+        "title": "パーレイキングス",
+        "subtitle": "パーレイ利益上位者"
+      },
+      "livePros": {
+        "title": "ライブベットレジェンド",
+        "subtitle": "インプレイ利益上位者"
+      },
+      "uclMasters": {
+        "title": "チャンピオンズリーグマスターズ",
+        "subtitle": "UCLベットのスペシャリスト"
+      },
+      "sgpWizards": {
+        "title": "SGPウィザーズ",
+        "subtitle": "同一ゲームマルチベットマスターズ"
+      },
+      "crazyParlays": {
+        "title": "クレイジー・パーレイ勝利",
+        "subtitle": "荒れたマルチレッグ的中"
+      },
+      "hotMatches": {
+        "title": "注目試合",
+        "subtitle": "最も賭けられいている{{sportName}}の試合"
+      },
+      "backedTeams": {
+        "title": "人気チーム",
+        "subtitle": "ファン人気チーム"
+      },
+      "goalscorers": {
+        "title": "ゴールスコアラー人気選手",
+        "subtitle": "最も賭けられている{{sportName}}のスター選手"
+      },
+      "trendingLeagues": {
+        "title": "注目リーグ",
+        "subtitle": "人気大会"
+      },
+      "backedPlayers": {
+        "title": "人気選手",
+        "subtitle": "ファン人気選手"
+      },
+      "trendingTournaments": {
+        "title": "注目トーナメント",
+        "subtitle": "人気トーナメント"
+      },
+      "backedFighters": {
+        "title": "人気ファイター",
+        "subtitle": "ファン人気ファイター"
+      },
+      "trendingPromotions": {
+        "title": "注目団体",
+        "subtitle": "人気MMA団体"
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "利益",
+      "bets": "ベット",
+      "liveProfit": "リアルタイム利益",
+      "uclProfit": "UCL利益",
+      "sgpProfit": "SGP利益",
+      "multiplier": "マルチプライヤー",
+      "payout": "配当",
+      "totalWagered": "総ベット額",
+      "betsPlaced": "ベット済み",
+      "turnover": "ターンオーバー",
+      "goalscorerBets": "ゴールスコアラーベット",
+      "totalBets": "総ベット数",
+      "volume": "総額"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: 上位獲得者",
+    "heroCta": "{{sportName}} — 勝者を確認する",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI",
+    "bettingTrends": {
+      "title": "NBA Betting Trends",
+      "teamColumnLabel": "チーム",
+      "tables": {
+        "winLoss": {
+          "title": "Straight Up Leaders",
+          "subtitle": "The league's most dominant teams by pure winning percentage.",
+          "recordLabel": "W-L",
+          "percentageLabel": "Win %"
+        },
+        "ats": {
+          "title": "Spread Kings",
+          "subtitle": "Teams currently outperforming their projected point spreads.",
+          "recordLabel": "ATS Record",
+          "percentageLabel": "Cover %"
+        },
+        "over": {
+          "title": "Pace Setters",
+          "subtitle": "High-octane offenses and loose defenses that consistently beat the total.",
+          "recordLabel": "Over Record",
+          "percentageLabel": "Over %"
+        },
+        "under": {
+          "title": "Lockdown Units",
+          "subtitle": "Defensive-minded teams that keep scoring low and stay under the line.",
+          "recordLabel": "Under Record",
+          "percentageLabel": "Under %"
+        }
+      }
+    }
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "全て"
+  }
+}

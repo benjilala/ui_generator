@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Soyez récompensé·e :",
+      "subtitle": "<0>Argent réel</0> dès le 1er jour",
+      "body": "Voici exactement comment votre Kit de bienvenue de 30 jours se déroule sur Cloudbet :",
+      "card1Title": "Déposer",
+      "card1Body": "Votre premier dépôt marque le coup d'envoi. Les vraies récompenses sont activées dès le premier jour.",
+      "card2Title": "Pariez & réclamez",
+      "card2Body": "Remportez du rakeback et des bonus quotidiens (dans le casino) et hebdomadaires (avec les paris sportifs).",
+      "card3Title": "Déverrouillez le Coffre-fort",
+      "card3Body": "Votre plus grande récompense vous est offerte le 30e jour. Puis vous continuez avec les Récompenses Cloudbet.",
+      "signUpButton": "Démarrer avec mon Kit de bienvenue"
+    },
+    "perks": {
+      "title": "La plupart des sites vous font tourner en rond. <br/><0>Pas nous.</0>",
+      "body": "Dès votre premier pari, vous jouez pour gagner pour de vrai. Pas de crédit. Pas de monnaie bizarre. De l'argent réel que vous pouvez retirer ou miser de nouveau instantanément.",
+      "signUpButton": "Rejoignez Cloudbet aujourd'hui",
+      "compare1": {
+        "title": "Autres sites",
+        "list1": "Bonus verrouillés, argent dont vous ne verrez jamais la couleur",
+        "list2": "Exigences de mises qui font mal",
+        "list3": "Bonus unique",
+        "list4": "La promotion se termine dès que le compte est créé"
+      },
+      "compare2": {
+        "list1": "Des récompenses en argent réel. Jusqu'à 2 500 $",
+        "list1b": "(équivalent à environ {{amount}})",
+        "list2": "Pas de piège ni de conditions",
+        "list3": "10 % rakeback + prix quotidiens sur le casino dès le jour 1",
+        "list4": "Coffre-fort d'argent réel versé instantanément le jour 30 (ou lorsqu'il est plein)"
+      },
+      "first30Days": {
+        "title": "Vos <0>30 premiers jours</0> ressemblent à ça :",
+        "list1": "<0>Prix en argent quotidiens sur le casino :</0> pariez aujourd'hui, réclamez votre argent demain.",
+        "list2": "<0>Rakeback sur le casino :</0> 10 % de l'avantage de la maison qui vous reviennent à chaque pari. Une partie est envoyée dans votre portefeuille directement, tandis que le reste est déverrouillé chaque jour dans votre Calendrier des récompenses.",
+        "list3": "<0>Prix en argent hebdomadaires sur les paris sportifs :</0> de l'argent est débloqué instantanément chaque vendredi.",
+        "list4": "<0>Le Coffre-fort :</0> une récompense en argent qui augmente avec vos mises et qui est débloquée le 30e jour.",
+        "body": "Les joueurs peuvent débloquer jusqu'à 2 500 $ en prix et rakeback de casino, avant même que le Coffre-fort ne soit déverrouillé."
+      }
+    },
+    "rewards": {
+      "title": "<0>Tout commence</0> le 31e jour",
+      "body": "À l'issue de votre Kit de bienvenue, vous accédez aux <0>Récompenses Cloudbet</0>, le programme de fidélité le plus généreux d'internet.",
+      "card1Title": "Rakeback amélioré",
+      "card1Body": "Remportez jusqu'à 25 % de rakeback amélioré sur chaque pari de casino lorsque vous jouez avec TURBO.",
+      "card2Title": "Récompenses de passage au niveau supérieur en cash",
+      "card2Body": "Recevez de l'argent instantanément lorsque vous passez au rang supérieur, d'Argent à Diamant bleu, et chaque rang intermédiaire.",
+      "card3Title": "Bonus Diamant bleu",
+      "card3Body": "Atteignez le rang Diamant bleu et débloquez des récompenses de rang intermédiaire allant jusqu'à 9,97 millions de $.",
+      "morePerksTitle": "Et encore plus d'avantages",
+      "morePerksBody": "Continuez à profiter des prix en argent sur le casino et les paris sportifs que vous aimiez tant avec le Kit de bienvenue Cloudbet."
+    },
+    "faq": {
+      "title": "FAQ sur le Kit de bienvenue",
+      "q1": "Est-ce que les 2 500 $ comprennent le Coffre-fort ?",
+      "a1": "Non. Le Coffre-fort est ajouté en plus de vos récompenses quotidiennes.",
+      "q2": "Dois-je m'inscrire ?",
+      "a2": "Non. Votre premier dépôt l'active automatiquement.",
+      "q3": "Que se passe-t-il si je n'atteins pas 2 500 $ en 30 jours ?",
+      "a3": "Vous gardez tout ce que vous avez réclamé et accédez aux Récompenses Cloudbet.",
+      "q4": "Puis-je en profiter à nouveau ?",
+      "a4": "Non, c'est un kit unique. Les Récompenses Cloudbet sont là pour prendre le relai.",
+      "q5": "Combien de temps dure le Kit de bienvenue ?",
+      "a5": "Le kit de bienvenue est valable 30 jours à partir de votre premier dépôt, ou jusqu'à ce que vous atteigniez la limite de 2 500 $, au premier des deux cas.",
+      "q6": "Quand puis-je obtenir du rakeback ?",
+      "a6": "Une partie est instantanément envoyée dans votre portefeuille. Le reste est déverrouillé tous les jours dans votre Calendrier des récompenses. Il y a donc toujours de l'argent qui vous attend."
+    },
+    "cta": {
+      "title": "N'attendez pas de récompense fantôme.",
+      "subtitle": "Obtenez de l'<0>argent réel</0> dès votre premier pari."
+    }
+  }
+}

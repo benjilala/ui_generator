@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Ricevi una ricompensa:",
+      "subtitle": "<0>Denaro reale</0> dal primo giorno",
+      "body": "Ecco come il tuo Pacchetto di benvenuto di 30 giorni funziona su Cloudbet:",
+      "card1Title": "Deposita",
+      "card1Body": "Il tuo primo deposito da via a tutto il resto e attiva le ricompense reali dal Giorno 1.",
+      "card2Title": "Scommetti e richiedi",
+      "card2Body": "Guadagna rakeback e ricariche giornaliere al casinò, più ricariche settimanali per Sport.",
+      "card3Title": "Sblocca la Cassaforte dei contanti",
+      "card3Body": "Il giorno 30 riceverai la tua ricompensa più grande, prima di buttarti nelle Ricompense Cloudbet.",
+      "signUpButton": "Avvia il mio Pacchetto di benvenuto"
+    },
+    "perks": {
+      "title": "La maggior parte dei siti ti obbliga a passare per un percorso a ostacoli.<br/><0>Noi no!</0>",
+      "body": "Dalla tua prima scommessa, stai giocando per denaro reale. Non crediti. Non soldi finti. In denaro reale puoi prelevare o continuare a scommettere immediatamente.",
+      "signUpButton": "Unisciti a Cloudbet ora",
+      "compare1": {
+        "title": "Altri siti",
+        "list1": "Bonus bloccati, denaro reale che non vedrai mai",
+        "list2": "Requisiti di scommessa di un certo livello",
+        "list3": "Bonus unico",
+        "list4": "La promozione termina dopo la registrazione"
+      },
+      "compare2": {
+        "list1": "Ricompense in denaro reale — fino a un totale di 2.500$",
+        "list1b": "(equivalente a st. {{amount}})",
+        "list2": "Nessun inganno, nessuna clausola nosconsta",
+        "list3": "10% di rakeback + cash drop giornalieri su Casinò dal primo giorno",
+        "list4": "I premi in denero reale della Cassaforte verranno pagati istantaneamente il giorno 30 (o al raggiungimento del massimo)"
+      },
+      "first30Days": {
+        "title": "Eccoti una panoramica dei tuoi <0>primi 30 giorni</0>:",
+        "list1": "<0>Cash drop giornalieri per Casinò:</0> Scommetti oggi, richiedi denaro reale domani.",
+        "list2": "<0>Rakeback del Casinò:</0> ricevi il 10% del margine della casa di ritorno su ogni scommessa. Parte finisce nel tuo portafoglio istantaneamente, e il resto verrà sbloccato ogni giorno sul tuo Calendario Ricompense.",
+        "list3": "<0>Cash drop settimanali per Sport:</0> Denaro reale istantaneo che viene sbloccato ogni venerdì.",
+        "list4": "<0>La Cassaforte dei contanti:</0> Una ricompensa in denaro reale che cresce con il tuo gioco e viene sbloccata il giorno 30.",
+        "body": "I giocatori possono sbloccare fino a 2.500$ in ricariche e rakeback del casinò, prima ancora che la Cassaforte si apra."
+      }
+    },
+    "rewards": {
+      "title": "Il giorno 31 è quando le cose <0>migliorano davvero</0>",
+      "body": "Dopo il tuo Pacchetto di benvenuto, verrai inserito nel programma <0>Cloudbet Ricompense</0>, il programma di fidelizzazione più generoso del web.",
+      "card1Title": "Turbo Rakeback potenziato",
+      "card1Body": "Guadagna fino al 25% di rakeback potenziato su ogni scommessa del casinò quando giochi con TURBO.",
+      "card2Title": "Premi in denaro di livello",
+      "card2Body": "Ottieni denaro istantaneo ogni volta che sali di livello, passando dall'Argento fino ad arrivare al Diamante Blu.",
+      "card3Title": "Cascata di diamanti blu",
+      "card3Body": "Sali fino al livello Diamante Blu e sblocca i premi di livello lunga la strada fino a 9.97 milioni di dollari.",
+      "morePerksTitle": "In più, ancora più vantaggi",
+      "morePerksBody": "Continua a goderti tutti i tuoi cash drop per Casinò e Sport che ti sono piaciuti dal Pacchetto di benvenuto di Cloudbet."
+    },
+    "faq": {
+      "title": "Domande frequenti del Pacchetto di benvenuto",
+      "q1": "I 2.500 dollari includono la Cassaforte?",
+      "a1": "No. Riceverai la cassaforte in aggiunta alle tue ricompense giornaliere.",
+      "q2": "Ho bisogno di effettuare la partecipazione?",
+      "a2": "No. Il tuo primo deposito lo attiva automaticamente.",
+      "q3": "Cosa succede se non ho raggiunto i 2.500 dollari in 30 giorni?",
+      "a3": "Terrai tutto quello che hai richiesto e verrai incluso nel programma di Ricompense Cloudbet.",
+      "q4": "Lo posso fare di nuovo?",
+      "a4": "No, è un pacchetto unico, ma i pagamenti di Cloudbet Ricompense sono infiniti.",
+      "q5": "Quanto dura il Pacchetto di benvenuto?",
+      "a5": "Il Pacchetto di benvenuto è valido per 30 giorni dal momento del tuo primo deposito, o fino al raggiungimento dei 2.500$ di premi, a seconda di che traguardo tu raggiunga per primo.",
+      "q6": "Quando ottengo il mio rakeback?",
+      "a6": "Una porzione verrà istantaneamente inviata al tuo portafoglio. Il resto verrà sbloccato ogni giorno attraverso il tuo Calendario delle Ricompense, quindi aspettati sempre nuovi premi in denaro."
+    },
+    "cta": {
+      "title": "Non aspettarti ricompense che \"un giorno\" potrebbero arrivare.",
+      "subtitle": "Ottieni <0>denaro reale</0> dalla tua prima scommessa."
+    }
+  }
+}

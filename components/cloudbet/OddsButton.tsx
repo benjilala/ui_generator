@@ -1,57 +1,44 @@
 "use client"
 
 import * as React from "react"
-import { cva, type VariantProps } from "class-variance-authority"
-
+import { Lock } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-// CDS Odds Button — Cloudbet Design System (Figma, 2026-03-16)
-// Sports-specific bet-selection button displaying a market label + odds value.
-// Flash states animate when odds change:
-//   up   — green flash (#55A370 / --cb-odds-up)
-//   down — red flash   (#E35F5D / --cb-odds-down)
-// States: Default, Hovered, Selected, Suspended, Disabled
-const oddsButtonVariants = cva(
-  [
-    "group/odds relative inline-flex flex-col items-center justify-center gap-0.5",
-    "min-w-[64px] rounded-xl border px-3 py-2",
-    "cursor-pointer select-none transition-all duration-150 ease-out",
-    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--cb-accent)] focus-visible:ring-offset-1 focus-visible:ring-offset-transparent",
-    "active:scale-95",
-  ].join(" "),
-  {
-    variants: {
-      state: {
-        default:
-          "border-[var(--cb-border-visible)] bg-[var(--cb-surface-3)] text-[var(--cb-foreground)] hover:border-[var(--cb-accent)]/40 hover:bg-[var(--cb-surface-4)]",
-        selected:
-          "border-[var(--cb-accent)] bg-[var(--cb-accent)]/10 text-[var(--cb-accent)]",
-        suspended:
-          "cursor-not-allowed border-[var(--cb-border-subtle)] bg-[var(--cb-surface-2)] text-[var(--cb-foreground-disabled)]",
-        disabled:
-          "pointer-events-none cursor-not-allowed border-[var(--cb-border-subtle)] bg-[var(--cb-surface-2)] opacity-40",
-      },
-    },
-    defaultVariants: {
-      state: "default",
-    },
-  }
-)
+/*
+ * OddsButton — matches Valhalla OddsButtonV3 / OddsButtonUI
+ *
+ * Layout rules (keep in sync with competition-card.tsx):
+ *   Wrapper:  w-full flex-1 flex justify-center
+ *   Button:   w-full h-full min-h-11 rounded-xl border py-1 px-0.5
+ *   Inner:    mx-auto → flex flex-col items-center justify-center
+ *   Label:    text-sm font-medium text-cb-foreground  (optional — omit when header provides context)
+ *   Value:    h-7 flex items-center justify-center → text-sm font-medium text-cb-accent
+ *
+ * States:
+ *   default   — border-transparent
+ *   selected  — border-cb-primary
+ *   suspended — lock icon, no button interaction
+ *   closed    — blank space (no icon)
+ *   trend up  — value text-cb-success
+ *   trend down — value text-cb-danger
+ */
 
 export type OddsDirection = "up" | "down" | null
 
 export interface OddsButtonProps
   extends Omit<React.ComponentProps<"button">, "children"> {
-  // Market label (e.g. "Home", "Draw", "Over 2.5")
-  label: string
-  // Formatted odds value (e.g. "2.45", "1/2", "-110")
+  /** Odds value e.g. "2.45" */
   odds: string
-  // Whether this selection is currently in the bet slip
+  /** Optional line label shown above the value. Omit when the market header already names the outcome. */
+  label?: string
+  /** Whether this selection is currently in the bet slip */
   selected?: boolean
-  // Whether the market is temporarily suspended
+  /** Market is temporarily suspended — shows lock icon */
   suspended?: boolean
-  // Flash direction when odds change — triggers a brief colour animation
-  flashDirection?: OddsDirection
+  /** Market is closed (post-match) — shows blank space */
+  closed?: boolean
+  /** Flash direction when odds change */
+  trend?: OddsDirection
 }
 
 export function OddsButton({
@@ -60,80 +47,76 @@ export function OddsButton({
   odds,
   selected = false,
   suspended = false,
-  flashDirection = null,
+  closed = false,
+  trend = null,
   disabled,
   onClick,
   ...props
 }: OddsButtonProps) {
-  const [flash, setFlash] = React.useState<OddsDirection>(null)
-  const prevOdds = React.useRef(odds)
+  if (closed) {
+    return (
+      <div className={cn("w-full flex-1 flex justify-center", className)}>
+        <div className="w-full h-full min-h-11" />
+      </div>
+    )
+  }
 
-  // Trigger flash animation when odds value changes externally
-  React.useEffect(() => {
-    if (odds !== prevOdds.current && flashDirection) {
-      setFlash(flashDirection)
-      const t = setTimeout(() => setFlash(null), 700)
-      prevOdds.current = odds
-      return () => clearTimeout(t)
-    }
-    prevOdds.current = odds
-  }, [odds, flashDirection])
-
-  const resolvedState = disabled
-    ? "disabled"
-    : suspended
-    ? "suspended"
-    : selected
-    ? "selected"
-    : "default"
+  if (suspended) {
+    return (
+      <div className={cn("w-full flex-1 flex justify-center", className)}>
+        <div className="w-full h-full min-h-11 flex items-center justify-center">
+          <Lock className="size-[18px] text-cb-foreground-disabled" />
+        </div>
+      </div>
+    )
+  }
 
   return (
-    <button
-      data-slot="odds-button"
-      data-state={resolvedState}
-      data-flash={flash ?? undefined}
-      type="button"
-      disabled={disabled || suspended}
-      aria-pressed={selected}
-      onClick={onClick}
-      className={cn(
-        oddsButtonVariants({ state: resolvedState }),
-        // Flash overlays — brief bg tint using keyframe animation
-        flash === "up" && "animate-[oddsUp_700ms_ease-out]",
-        flash === "down" && "animate-[oddsDown_700ms_ease-out]",
-        className
-      )}
-      {...props}
-    >
-      <span className="text-[11px] font-medium leading-none text-[var(--cb-foreground-muted)] group-data-[state=selected]/odds:text-[var(--cb-accent)]/70">
-        {suspended ? "Suspended" : label}
-      </span>
-      <span
+    <div className={cn("w-full flex-1 flex justify-center", className)}>
+      <button
+        data-slot="odds-button"
+        data-state={selected ? "selected" : "default"}
+        type="button"
+        disabled={disabled}
+        aria-pressed={selected}
+        onClick={onClick}
         className={cn(
-          "text-[13.5px] font-bold leading-none tabular-nums",
-          flash === "up" && "text-[var(--cb-odds-up)]",
-          flash === "down" && "text-[var(--cb-odds-down)]"
+          "w-full h-full min-h-11 rounded-xl border",
+          "py-1 px-0.5",
+          "transition-colors duration-300 ease-in-out select-none cursor-pointer",
+          "hover:bg-cb-primary/[0.08] active:bg-cb-primary/[0.16]",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-primary focus-visible:ring-offset-1 focus-visible:ring-offset-cb-surface-2",
+          selected ? "border-cb-primary" : "border-transparent",
+          disabled && "pointer-events-none opacity-40",
         )}
+        {...props}
       >
-        {odds}
-      </span>
-    </button>
+        <div className="mx-auto">
+          <div className="flex flex-col items-center justify-center font-medium">
+            {label && (
+              <span className="text-sm font-medium text-cb-foreground leading-none text-center">
+                {label}
+              </span>
+            )}
+            <div className="h-7 flex items-center justify-center">
+              <span
+                className={cn(
+                  "text-sm font-medium text-cb-accent leading-none tabular-nums",
+                  trend === "up" && "text-cb-success",
+                  trend === "down" && "text-cb-danger",
+                )}
+              >
+                {odds}
+              </span>
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
   )
 }
 
-// Flash keyframes are injected as a global style so they work without Tailwind config changes.
-// In production these would live in design-system.css.
+// Kept for backwards compatibility — no longer needed since flash is handled via trend prop + text colour
 export function OddsButtonStyles() {
-  return (
-    <style>{`
-      @keyframes oddsUp {
-        0%   { background-color: var(--cb-odds-up-bg); }
-        100% { background-color: transparent; }
-      }
-      @keyframes oddsDown {
-        0%   { background-color: var(--cb-odds-down-bg); }
-        100% { background-color: transparent; }
-      }
-    `}</style>
-  )
+  return null
 }

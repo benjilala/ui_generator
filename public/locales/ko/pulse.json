@@ -1,0 +1,137 @@
+{
+  "brandName": "Pulse",
+  "brandNameFull": "Cloudbet Pulse",
+  "nav": {
+    "forYou": "For You",
+    "explore": "살펴보기"
+  },
+  "actions": {
+    "like": "Like",
+    "comment": "Comment",
+    "writeReply": "Write a reply...",
+    "follow": "Follow",
+    "following": "Following",
+    "followBack": "Follow back",
+    "unfollow": "Unfollow",
+    "followTarget": "Follow {{name}}",
+    "unfollowTarget": "Unfollow {{name}}",
+    "followAll": "Follow All",
+    "subscribed": "Subscribed",
+    "refreshFeed": "Refresh feed",
+    "viewEvent": "View event",
+    "viewAllReplies": "View all {{count}} replies",
+    "backToExplore": "Back to Explore",
+    "backToFeed": "Back to Feed",
+    "backToPulse": "Back to Pulse",
+    "backToFeedLower": "Back to feed",
+    "confirmRemove": "Confirm remove",
+    "moderationActions": "Moderation actions",
+    "replyPosted": "Reply posted",
+    "remove": "제거",
+    "showLess": "줄이기",
+    "sendReply": "Send reply"
+  },
+  "profile": {
+    "myProfile": "My Profile",
+    "followers": "Followers",
+    "following": "Following",
+    "thisMonth": "this month",
+    "notFound": "Player not found",
+    "notFoundDescription": "This player may not exist or their profile is private.",
+    "noActivity": "No activity yet for this player.",
+    "loadMore": "더 불러오기",
+    "statsNotAvailable": "Stats are not available yet for this player. Check back later.",
+    "statsLoading": "스탯 불러오는 중...",
+    "noFollowersYet": "No followers yet",
+    "notFollowingYet": "Not following anyone yet"
+  },
+  "feed": {
+    "empty": "Your feed is empty",
+    "emptyDescription": "Follow bettors to see their activity here.",
+    "allCaughtUp": "You're all caught up",
+    "suggestedFollows": "Suggested follows",
+    "signInToPersonalise": "Sign in to personalise your feed",
+    "signInDescription": "Follow the sharpest bettors and build a feed tailored to you."
+  },
+  "explore": {
+    "suggestedFollows": "Suggested Follows",
+    "lists": "Lists",
+    "topBettorsDescription": "Top bettors worth adding to your feed.",
+    "stats30d": "30d stats",
+    "noSuggestions": "No suggestions available yet.",
+    "followListDescription": "Follow a list to add all its bettors to your feed at once.",
+    "noCuratedLists": "No curated lists available yet.",
+    "listNotFound": "List not found.",
+    "members": "Members",
+    "bettorsCount": "{{count}} bettors"
+  },
+  "errors": {
+    "actionFailed": "Action failed. Try again.",
+    "failedToRemovePost": "Failed to remove post",
+    "failedToRemoveComment": "Failed to remove comment"
+  },
+  "messages": {
+    "postRemoved": "Post removed",
+    "commentRemoved": "Comment removed"
+  },
+  "post": {
+    "notFound": "Post not found",
+    "notFoundDescription": "This post may have been removed or the link is invalid."
+  },
+  "hashtag": {
+    "noPostsYet": "No posts yet",
+    "noPostsDescription": "Posts tagged #{{tag}} will appear here."
+  },
+  "leaderboard": {
+    "topBettors": "Top Bettors",
+    "topWinners": "Top Winners",
+    "wagered": "베팅함",
+    "wins": "Wins",
+    "roi": "ROI",
+    "winPct": "Win %",
+    "record": "기록",
+    "communityWinRate": "Community win rate:",
+    "mostBackedThisWeek": "Most Backed This Week",
+    "mostBackedInSport": "Most Backed in {{sport}}",
+    "liveParlay": "Live Parlay Leaderboard",
+    "biggestWins": "Biggest Wins",
+    "winner": "Winner",
+    "multi": "Multi",
+    "payout": "지불",
+    "hotGames": "Hot Games",
+    "coldGames": "Cold Games",
+    "mostPlayed": "Most Played — {{period}}"
+  },
+  "bet": {
+    "legMulti": "{{count}} Leg Multi",
+    "winStreak": "{{count}} Win Streak",
+    "profit": "{{amount}} profit",
+    "seeAllLegs": "See all {{count}} legs",
+    "showAllWins": "Show all {{count}} wins",
+    "betsCount": "{{value}} bets",
+    "roundsCount": "{{value}} rounds",
+    "winRate": "% win",
+    "cashedOut": "Cashed Out",
+    "push": "푸시"
+  },
+  "avatar": {
+    "customizeAvatar": "Customize Your Avatar",
+    "livePreview": "Live Preview",
+    "topAccessories": "Top Accessories",
+    "sideAccessories": "Side Accessories",
+    "textures": "Textures",
+    "cloudbetPalettes": "Cloudbet Palettes",
+    "saveAvatar": "Save Avatar"
+  },
+  "meta": {
+    "feedTitle": "Pulse — Cloudbet",
+    "feedDescription": "Follow the action. See what the sharpest bettors are doing on Cloudbet.",
+    "feedOgDescription": "Follow the action. See what the sharpest bettors are doing.",
+    "exploreTitle": "Explore | Cloudbet Pulse",
+    "exploreDescription": "Discover the sharpest bettors on Cloudbet. Follow curated lists and top performers.",
+    "exploreOgDescription": "Discover the sharpest bettors on Cloudbet.",
+    "hashtagTitle": "#{{tag}} — Pulse",
+    "hashtagDescription": "Posts tagged #{{tag}} on Cloudbet Pulse",
+    "postNotFoundTitle": "Post Not Found — Pulse"
+  }
+}

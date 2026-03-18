@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "Asiatische Linien",
+      "cards": "Karten",
+      "corners": "Ecken",
+      "goals": "Tore",
+      "half": "Hälfte",
+      "main": "Haupt",
+      "more": "Mehr",
+      "specials": "Sonderwetten",
+      "popular": "Beliebt",
+      "firstHalf": "Erste Halbzeit",
+      "secondHalf": "Zweite Halbzeit",
+      "points": "Punkte",
+      "quarters": "Viertel",
+      "players": "Spieler",
+      "sets": "Sätze",
+      "games": "Spiele",
+      "hitsAndRuns": "Hits & Runs",
+      "playerProps": "Spieler-Propositionswetten",
+      "extraTime": "Extra Zeit",
+      "kills": "Kills",
+      "match": "Match",
+      "player": "Spieler",
+      "team": "Team",
+      "mainMarkets": "Hauptmärkte",
+      "matchMarkets": "Spiel-Märkte",
+      "mapN": "Karte {{mapNumber}}",
+      "firstInnings": "1. Inning",
+      "all": "Alle Märkte",
+      "betBuilder": "Wett-Builder"
+    },
+    "stats": {
+      "notAvailable": "Statistiken sind nicht verfügbar",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "Wett-Builder ist live",
+      "loginToBetDescription": "Erstelle benutzerdefinierte Wetten durch das Stapeln der Tipps aus einem einzelnen Match.\nMehr Kontrolle, mehr Vorteile — jetzt für ausgewählte Ligen.",
+      "loginToBetButton": "Anmelden und selbst bauen",
+      "genericError": {
+        "titleWithCode": "Es ist ein Fehler aufgetreten ({{code}})",
+        "title": "Es ist ein Fehler aufgetreten",
+        "description": "Bitte erneut versuchen. Wenn der Fehler weiterhin auftritt, wende dich an unseren Kundensupport."
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "Vorhandenen Wett-Builder ersetzen?",
+        "description": "Du kannst nur einen Wett-Builder in deinem Wettschein platzieren. Wenn du ihn hinzufügst, wird dein aktueller Wett-Builder ersetzt.",
+        "cancelCta": "Abbrechen",
+        "replaceCta": "Ersetzen"
+      },
+      "shortened": "BB",
+      "betBuilderPromo": "Wett-Builder ist da.\nSchnell und individuell.",
+      "betBuilderAlertBanner": {
+        "title2": "100x Wett-Builder Glücksverlosung",
+        "body2": "Erstelle an diesem Wochenende eine Kombiwette in Höhe von mindestenst 1 $ – 10 Gewinner erhalten das 100-Fache ihres Einsatzes (bis zu 100 $)."
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "Jederzeit",
+            "first": "Erster",
+            "last": "Letzter",
+            "teamFirst": "Team zuerst",
+            "teamLast": "Team zuletzt",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "Header",
+            "scoreOutsideOfTheBox": "Außerhalb des Feldes"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "Wann wird Spieler punkten?",
+            "when-will-player-score-team": "Wann wird Spieler (Team) punkten?",
+            "how-many-player-goals": "Wie viele Spielertore?",
+            "how-will-player-score": "Wie wird Spieler punkten?",
+            "player-assists": "Spieler-Assists",
+            "player-to-be-carded-team": "Spieler, der Karte erhält (Team)",
+            "player-to-be-shown-a-card": "Spieler, dem eine Karte angezeigt wird",
+            "total-cards-team": "Gesamtanzahl Karten (Team)",
+            "both-team-total-cards": "Gesamtanzahl Karten der beiden Teams",
+            "both-teams-total-goals": "Gesamtanzahl Tore der beiden Teams",
+            "total-goals-team": "Gesamtanzahl Tore (Team)",
+            "both-teams-total-corners": "Gesamtanzahl Ecken der beiden Teams",
+            "total-corners-team": "Gesamtanzahl Ecken (Team)",
+            "both-teams-score": "Beide Teams erzielen ein Tor",
+            "player-to-be-sent-off": "Spieler mit Platzverweis",
+            "player-total-fouls-committed": "Gesamtanzahl begangener Spieler-Fouls",
+            "player-total-saves": "Gesamtanzahl Spieler-Saves",
+            "player-total-shots": "Gesamtanzahl Spieler-Schüsse",
+            "player-total-shots-on-target": "Gesamtanzahl Spieler-Schüsse auf das Ziel",
+            "player-total-tackles": "Gesamtanzahl Spieler-Tackles",
+            "player-total-passes": "Gesamtanzahl Spieler-Pässe",
+            "to-happen-in-the-match-team": "Wird im Spiel geschehen (Team)",
+            "method-of-victory": "Siegesmethode",
+            "total-shots-team": "Gesamtanzahl Schüsse (Team)",
+            "team-with-most-bookings": "Team mit den meisten Verwarnungen",
+            "total-shots-on-target-team": "Gesamtanzahl Schüsse auf das Ziel (Team)",
+            "total-goals-over-slash-under-after-10-minutes": "Gesamtanzahl Ziele über/unter nach 10 Minuten",
+            "asian-handicap-after-10-minutes": "Asian Handicap nach 10 Minuten",
+            "correct-score": "Genaues Ergebnis",
+            "most-cards": "Meiste Karten",
+            "most-corners": "Meiste Ecken",
+            "double-chance": "Doppelte Chance",
+            "winning-margin": "Gewinnspanne",
+            "total-goals": "Gesamtzahl Tore",
+            "total-exact-goals": "Gesamtzahl genauer Tore",
+            "total-exact-goals-team": "Gesamtanzahl genauer Tore (Team)",
+            "total-bookings-points": "Gesamtanzahl Kartenpunkte",
+            "total-bookings-points-team": "Gesamtanzahl Kartenpunkte (Team)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "Spieler Gesamtanzahl Punkte und Rebounds",
+            "player-total-points": "Spieler Gesamtanzahl Punkte",
+            "player-total-3-point-field-goals": "Spieler Gesamtanzahl Treffer aus dem 3-Punkte-Feld",
+            "player-total-rebounds": "Spieler Gesamtanzahl Rebounds",
+            "player-total-assists-and-rebounds": "Spieler Gesamtanzahl Assists und Rebounds",
+            "player-total-assists": "Spieler Gesamtanzahl Assists",
+            "player-total-points-and-assists": "Spieler Gesamtanzahl Punkte und Assists",
+            "player-total-points-assists-and-rebounds": "Spieler Gesamtanzahl Punkte, Assists und Rebounds",
+            "player-to-achieve-a-double-double": "Spieler erreicht ein Double-Double",
+            "player-to-achieve-a-triple-double": "Spieler erreicht ein Triple-Double",
+            "player-total-3-pointers-over-under": "Spieler Gesamtanzahl 3-Punkte (Über/Unter)",
+            "player-total-assists-and-rebounds-over-under": "Spieler Gesamtanzahl Assists und Rebounds (Über/Unter)",
+            "player-total-assists-over-under": "Spieler Gesamtanzahl Assists (Über/Unter)",
+            "player-total-points-over-under": "Spieler Gesamtanzahl Punkte (Über/Unter)",
+            "player-total-rebounds-over-under": "Spieler Gesamtanzahl Rebounds (Über/Unter)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "Wette auf {{eventName}} mit Krypto",
+      "soccerDescription": "Fans können sich auf ein spannendes Duell freuen: {{home}} trifft am {{date}} um {{time}} Uhr in {{competition}} auf {{away}}. Bei Cloudbet kannst du eine Kombination aus Toren, Ecken und Karten für zusätzliche Spannung erstellen. Platziere deine Wetten vor dem Anpfiff oder verfolge das Geschehen live.",
+      "basketballDescription": "Dieses {{competition}}-Duell zwischen {{home}} und {{away}} beginnt am {{date}} um {{time}} Uhr. Dieses Spiel verspricht jede Menge Basketball-Action vom Anpfiff bis zur Schlusssirene. Mit Kombiwetten auf dasselbe Spiel kannst du Punkte, Rebounds und Assists von Spielern kombinieren und so für noch mehr Action sorgen. Wette vor dem Spiel oder steige mitten im Live-Spiel ein.",
+      "americanFootballDescription": "{{home}} gegen {{away}} in {{competition}}, Anstoß ist am {{date}} um {{time}} Uhr. Mit Cloudbet kannst du Wetten von Touchdowns bis hin zu Passing Yards in einer Same-Game-Kombiwette stapeln, um dir einen Vorteil zu verschaffen. Platziere deine Wetten vor dem Anpfiff oder nutze die Live-Quoten während des Spiels.",
+      "tennisDescription": "Dieses {{competition}}-Duell zwischen {{home}} und {{away}} findet am {{date}} um {{time}} Uhr statt. Beide Sportler sind für ihre Form und ihr Können auf {{surface}} bekannt. Mit Same-Game-Kombiwetten kannst du auf Set-Gewinner, Gesamtanzahl Spiele und Asse in einer einzigen Wette setzen. Sichere dir deine Auswahlen vor dem ersten Schlag oder wette live, während sich die Dynamik ändert.",
+      "baseballDescription": "{{home}} trifft in {{competition}} am {{date}} um {{time}} Uhr auf {{away}}. Mit Same-Game-Kombiwetten kannst du auf Hits, Strikeouts und erzielte Runs aus einem einzigen Spiel setzen. Steige frühzeitig ein oder platziere Live-Wetten Inning für Inning.",
+      "iceHockeyDescription": "Dieses {{competition}}-Duell zwischen {{home}} und {{away}} findet am {{date}} um {{time}} Uhr statt. Mit Same-Game-Kombiwetten kannst du Tore, Vorlagen und Elfmeter kombinieren und so für noch mehr Spannung sorgen. Wette, bevor der Puck fällt, oder erlebe die Action live.",
+      "rugbyDescription": "{{home}} trifft im {{competition}} am {{date}} um {{time}} Uhr auf {{away}}. Freu dich auf spektakuläre Tacklings und atemberaubende Versuche. Mit Cloudbet kannst du Same-Game-Kombiwetten auf Versuche, Conversions und Gesamtanzahl Punkte erstellen. Platziere deine Wetten vor dem Anpfiff oder spiele live.",
+      "cricketDescription": "{{home}} trifft im {{competition}} auf {{away}}. Die Begegnung ist am {{date}} um {{time}} Uhr angesetzt. Freu dich auf jede Menge Runs und Wickets. Mit den Same-Game-Kombiwetten von Cloudbet kannst du Runs, Wickets und Boundaries in einer Wette kombinieren. Platziere deine Auswahlen vor dem ersten Ball oder wette live Over für Over.",
+      "horseRacingDescription": "Das {{competition}} findet am {{date}} um {{time}} Uhr statt. Mit Elitepferden am Start erwartet die Fans ein spannendes Rennen bis zum Ziel. Bei Cloudbet kannst du deinen Favoriten direkt unterstützen oder individuelle Kombiwetten über mehrere Rennen hinweg für mehr Action erstellen. Wetten können vor dem Start oder live während des Rennens platziert werden.",
+      "mmaDescription": "{{home}} und {{away}} treffen am {{date}} um {{time}} Uhr live in {{competition}} aufeinander. Dieser Kampf verspricht jede Menge Feuerwerk im Käfig. Bei Cloudbet kannst du mit Same-Fight-Kombiwetten Einsätze auf Niederschläge, Rundenwetten und die Siegmethode kombinieren. Wetten können frühzeitig abgeschlossen oder live im Verlauf des Kampfes abgegeben werden.",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "eSport-Wetten",
+          "cs2": "CS2-eSport-Wetten",
+          "dota2": "Wetten",
+          "valorant": "Valorant-Wettquoten",
+          "fifa": "FIFA eSport-Wettquoten"
+        },
+        "titleV2": "Wette auf {{home}} gegen {{away}} – {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "Wette auf {{home}} gegen {{away}} an diesem {{date}} um {{time}}, während {{competition}} live geht, mit tollen eSport-Quoten auf Cloudbet. Dieses LoL-Matchup bietet umfassende Krypto-Märkte für eSport-Wetten, einschließlich {{markets}}.",
+        "cs2Description": "Wette auf {{home}} gegen {{away}} an diesem {{date}} um {{time}} bei {{competition}}. Wette mit Krypto auf CS2-Märkte, einschließlich {{markets}} — perfekt für eSport-Live-Wetten, nur auf Cloudbet.",
+        "dota2Description": "Wette auf {{home}} gegen {{away}} bei Dota 2 {{competition}} an diesem {{date}} um {{time}}. Krypto-Märkte für {{markets}} verfügbar. Wette auf Dota 2 mit Echtgeldprämien auf der besten eSport-Wettseite.",
+        "valorantDescription": "Wette auf {{home}} gegen {{away}} bei {{competition}} an diesem {{date}} um {{time}}. Verfolge die Aktion und platziere deine Valorant-Wette mit BTC, ETH oder USDT für {{markets}} in Valorant – nur bei Cloudbet.",
+        "fifaDescription": "Wette auf {{home}} gegen {{away}} bei {{competition}} an diesem {{date}} um {{time}}. Setze auf deinen Favoriten in FIFA eSport mit Märkten wie {{markets}} — eine einfache eSport-Wette online auf Cloudbet."
+      }
+    },
+    "nbaPromo": {
+      "title": "Neu für NBA: Wett-Builder und Spieler-Propositionswetten",
+      "body": "Platziere Same-Game-Kombiwetten mit dem Wett-Builder und schau dir die neue Registerkarte „Spieler-Propositionswetten“ an."
+    },
+    "playerProps": {
+      "avgPer5Game": "Durchschn. {{stats}} pro 5 Spiele",
+      "avgInRegSeason": "Durchschn. {{stats}} in der regulären Saison"
+    }
+  },
+  "common": {
+    "today": "Heute",
+    "partial": "Teilgewinn",
+    "instantGames": "Sofortspiele",
+    "inPlay": "Live",
+    "tomorrow": "Morgen",
+    "competitions": "Wettbewerbe",
+    "highlights": "Highlights",
+    "outrights": "Outrights",
+    "virtuals": "Virtuell",
+    "liveStream": "Live-Stream",
+    "events": "Ereignisse",
+    "games": "Spiele",
+    "nextToJump": "Nächster Sprung",
+    "noLimitBets": "Wetten ohne Limit",
+    "virtualSoccer": "Virtueller Fußball",
+    "virtualBasketball": "Virtueller Basketball",
+    "betsClosed": "Wetten geschlossen",
+    "virtualsUpNext": "Virtuals demnächst",
+    "simPlay": "Sim-Play",
+    "fullMatchup": "Alle Begegnungen",
+    "browseNow": "Jetzt durchsuchen",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "Du erhältst: {{amount}}",
+    "toReturnTitle": "Du erhältst",
+    "toReturnSubtitle": "{{stake}}, du erhältst: {{payout}}",
+    "summary": {
+      "reuseSelections": "Auswahlen wiederverwenden",
+      "acceptAndPlace": "Akzeptieren und {{value}} einsetzen",
+      "sameGameMultiPlaced": "Wett-Builder platziert"
+    },
+    "parlay": {
+      "legs": "{{count}} Abschnitte"
+    },
+    "maxBet": {
+      "noLimit": "Max. pro Wette: <0>{{stake}} {{currency}}</0>",
+      "nolimitTitle": "Max. pro Wette:",
+      "default": "Max. Einsatz: <0>{{stake}} {{currency}}</0>",
+      "defaultLocalized": "Max. Einsatz: <0>{{value}}</0>",
+      "defaultTitle": "Max. Einsatz:"
+    },
+    "errors": {
+      "maxBetIs": "Der max. Wetteinsatz beträgt <0>{{currency}} {{stake}}</0>",
+      "minBetIs": "Der min. Wetteinsatz beträgt <0>{{currency}} {{stake}}</0>",
+      "maxBet": "Max. Einsatz",
+      "minBet": "Min. Einsatz"
+    },
+    "summeryErrors": {
+      "marketClosed": "Markt geschlossen",
+      "limitExceeds": "Limit überschritten",
+      "maxStakeReached": "Max. Einsatz erreicht",
+      "restricted": "Eingeschränkt",
+      "restrictedGeoBlocked": "Deine Region ist nicht zulässig. Bitte schalte dein VPN aus und versuche es erneut.",
+      "restrictedGeoBlockedShorten": "Region nicht zulässig",
+      "minStakeChanged": "Min. Einsatz geändert",
+      "maxStakeChanged": "Max. Einsatz geändert",
+      "unknownError": "Unbekannter Fehler",
+      "suspended": "Ausgesetzt",
+      "unauthorized": "Nicht autorisiert",
+      "stakeAboveMax": "Bitte reduziere deinen Einsatz.",
+      "stakeBelowMin": "Bitte erhöhe deinen Einsatz.",
+      "priceAboveMarket": "Quoten haben sich geändert.",
+      "betPending": "Die Verbindung ist instabil. Überprüfe den Wettstatus unter „Meine Wetten“."
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "Bitte deine Wette neu bauen",
+        "timedOutTitle": "Wette nicht gefunden",
+        "timedOutDescription": "Wir konnten diese Wette nicht finden. Überprüfe „Meine Wetten“ oder kontaktiere den Support, bevor du sie erneut platzierst.",
+        "unknownError": "Es ist ein Fehler aufgetreten",
+        "unknownErrorDescription": "Überprüfe „Meine Wetten“ oder kontaktiere den Support, bevor du sie erneut platzierst.",
+        "limitsExceeded": "Limit wurde überschritten"
+      },
+      "actions": {
+        "clearSGP": "Wett-Builder leeren",
+        "reviewChangesInBetslip": "Änderungen im Wettschein überprüfen"
+      }
+    },
+    "placeBet": "Wette platzieren",
+    "placeParlay": "Kombiwette {{amount}} platzieren",
+    "betBuilder": {
+      "placeBetValid": "BB {{amount}} platzieren",
+      "placeBetSubmitting": "BB {{amount}} wird platziert",
+      "betBuilderItemMarketUnavailable": "Markt wurde vorübergehend ausgesetzt. <0>Erneut versuchen</0> oder <1>Entfernen</1>",
+      "error": {
+        "parlayRestricted": "Verwandte Auswahlen können nicht kombiniert werden",
+        "marketSuspended": "Der Markt ist vorübergehend ausgesetzt."
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "Quoten haben sich geändert.",
+      "oddsHaveChangedAccept": "Quoten haben sich geändert. <0>Akzeptieren</0>",
+      "oddsHaveChangedToReturn": "Quoten haben sich geändert. Du erhältst: {{payout}}",
+      "oddsHaveChangedToReturnTitle": "Quoten haben sich geändert. Du erhältst:",
+      "marketIsSuspendedWaitOrRemove": "Markt wurde vorübergehend ausgesetzt. Warten oder <0>Entfernen</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "Markt wurde vorübergehend ausgesetzt. Warten oder entfernen ...",
+      "marketIsClosedRemove": "Markt ist geschlossen. <0>Entfernen</0>",
+      "selectionCorrelated": "Diese Auswahl ist mit einer anderen verknüpft. <0>Entfernen</0>",
+      "parlayRestricted": "Diese Auswahl kann nicht zu einer Kombiwette kombiniert werden. <0>Entfernen</0>",
+      "dangerBall": "Möglicherweise fällt gleich ein Tor. Es kann bis zu 5 Minuten dauern, bis deine Wette angenommen wird."
+    },
+    "consent": {
+      "acceptAllChanges": "Alle Änderungen akzeptieren"
+    },
+    "insufficientBalanceAlert": {
+      "title": "Du hast nicht genügend Mittel",
+      "description": "<0>Jetzt einzahlen</0>, um weiter zu setzen."
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "Alle {{sport}} anzeigen"
+  },
+  "betBuilder": {
+    "reviewBet": "Wette überprüfen",
+    "title": "Wett-Builder"
+  },
+  "myBets": {
+    "noBets": "Keine Wetten verfügbar",
+    "checkOut": "Schau dir die heutigen Spiele oder kommende Ereignisse an, um deine nächste Wettmöglichkeit zu finden.",
+    "viewBetHistory": "Wettverlauf anzeigen",
+    "browseInplay": "In-Play-Events durchsuchen",
+    "loadError": "Diese Wette kann nicht geladen werden",
+    "id": "ID",
+    "viewAllSettledBetsInfo": "Schau dir alle abgerechneten Wetten im Wettverlauf an.",
+    "onlyLast72HoursBetsInfo": "Es werden nur die Wetten der letzten 72 Stunden angezeigt. Schau dir alle abgerechneten Wetten im Verlauf an."
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "Über {{over}}",
+      "gameOversAndDeliveries": "Über {{over}}.{{delivery}}",
+      "gameTargetRunsAndBalls": "{{teamName}} benötigt {{runs}} aus {{balls}}",
+      "gameTrailByRuns": "{{teamName}} in Rückstand mit {{runs}}",
+      "gameLeadByRuns": "{{teamName}} führt mit {{runs}}",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "Test",
+      "matchDay": "Spieltag {{matchDay}}.",
+      "endOfMatchDay": "Am Ende von Spieltag {{matchDay}}.",
+      "wonDefault": "{{winner}} gewonnen",
+      "matchDrawn": "Unentschieden",
+      "wonByRuns": "{{winner}} gewinnt mit einer Führung von {{wonBy}} Runs",
+      "wonByRunsAndInning": "{{winner}} gewinnt mit einer Führung von einem Inning und {{wonBy}} Runs",
+      "wonByWickets": "{{winner}} gewinnt mit einer Führung von {{wonBy}} Wickets"
+    },
+    "racing": {
+      "running": "Läuft",
+      "runners": "Läufer",
+      "scratched": "Gestrichen",
+      "horseRacingWithdrawnDescription": "Ein Pferd nimmt aufgrund einer Verletzung, Krankheit, der Streckenbedingungen oder der Entscheidung des Trainers nicht am Rennen teil. Die Quoten wurden angepasst. Wenn du eine Wette platziert hast, kann sich dein Gewinn leicht verringern. Wetten auf das gestrichene Pferd werden zurückerstattet.",
+      "greyhoundsWithdrawnDescription": "Ein Hund nimmt aufgrund einer Verletzung, Krankheit, der Streckenbedingungen oder der Entscheidung des Trainers nicht am Rennen teil. Die Quoten wurden angepasst. Wenn du eine Wette platziert hast, kann sich dein Gewinn leicht verringern. Wetten auf den gestrichenen Hund werden zurückerstattet.",
+      "age": "Alter:<0>{{age}}</0>",
+      "weightShorten": "W:<0>{{weight}}</0>lbs",
+      "formShorten": "F:<0>{{form}}</0>",
+      "horseJockeyShorten": "J:<0>{{jockey}}</0>",
+      "horseTrainerShorten": "T:<0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "Live-Ergebnisse nicht verfügbar"
+    }
+  },
+  "betHistory": {
+    "typeBet": "Wetten",
+    "typeCashout": "Auszahlung",
+    "typeSettlement": "Abrechnung",
+    "noBetHistory": "Kein Wettverlauf verfügbar",
+    "hintV2": "Unter „Wettverlauf“ werden die Details zu den abgeschlossenen Wetten, einschließlich der Spiel- und Wettergebnisse, angezeigt. Aktive oder ausstehende Wetten findest du im Abschnitt {{link}}.",
+    "allBets": "Alle Wetten",
+    "singles": "Einzelwetten",
+    "parlays": "Kombiwetten",
+    "betBuilders": "Wett-Builder",
+    "outrights": "Outrights"
+  },
+  "fightCenter": {
+    "rootTitle": "Kampfcenter",
+    "mainCard": "Hauptkarte",
+    "prelims": "Prelims",
+    "taleOfTheTape": "Tale of the Tape",
+    "fighterProfile": "Kämpferprofil",
+    "height": "Körpergröße",
+    "weight": "Gewicht",
+    "armReach": "Armreichweite",
+    "legReach": "Beinreichweite",
+    "winRate": "Gewinnrate",
+    "stats": "Statistik",
+    "age": "Alter",
+    "record": "Rekord",
+    "byKo": "Durch K.o.",
+    "bySubmission": "Durch Submission",
+    "byDecision": "Durch Entscheidung",
+    "koTko": "KO/TKO",
+    "submission": "SUB",
+    "decision": "DEC",
+    "next": "Weiter",
+    "draw": "Unentschieden",
+    "streamIn": "Stream in:",
+    "liveDefault": "Live",
+    "officialGlobalSportsbook": "Offizieller globaler Anbieter von Sportwetten von",
+    "official": "Offiziell",
+    "globalSportsbook": "Globale Sportwetten",
+    "expertPicks": {
+      "viewExpertPicks": "Expertenauswahl anzeigen",
+      "banner": {
+        "title": "Expertentipps",
+        "availableIn": "Verfügbar in"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} Runden",
+        "mma.winner": "{{outcome}} Siege",
+        "mma.winning_method": "{{outcome}} nach {{value}}"
+      },
+      "genericError": {
+        "title": "Es ist etwas schiefgelaufen",
+        "description": "Es scheint ein Problem aufgetreten zu sein. Wir arbeiten an seiner Lösung und sollten bald wieder da sein."
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "Auf Sieg",
+    "cricket_over_team_total": "Match über {{overNumber}} – Gesamtanzahl Runs – Teams",
+    "cricket_player_total": "Match-Runs des Schlagmanns",
+    "cricket_player_to_score_milestone": "Spieler erzielt {{milestone}}",
+    "cricket_player_total_fours": "Spieler Fours gesamt",
+    "cricket_player_total_player_performance": "Spielerleistung",
+    "cricket_team_total_fours": "Team Fours gesamt",
+    "cricket_team_total_sixes": "Team Sixes gesamt",
+    "cricket_innings_over_x_team_total": "Innings {{inningsNumber}} Über {{overNumber}} – Gesamtanzahl Runs – Teams",
+    "cricket_innings_overs_0_to_x_team_total": "Innings {{inningsNumber}} Über 0 bis {{overNumber}} Gesamtanzahl Runs – Teams",
+    "cricket_innings_player_total_deliveries_faced": "Innings {{inningsNumber}} Gesamtzahl Deliveries durch Spieler",
+    "cricket_team_total_from_0_over_to_x_over": "Über 0 bis {{overNumber}} – Gesamtanzahl Runs – Teams",
+    "cricket_team_total_in_highest_scoring_over": "Höchste Punktzahl des Teams über",
+    "cricket_team_total_at_dismissal": "Team gesamt bei Dismissal {{dismissalNumber}}",
+    "cricket_innings_player_to_score_milestone": "Innings {{inningsNumber}} Spieler erzielt {{milestone}}",
+    "cricket_test_match_player_total": "Innings {{inningsNumber}} Spieler gesamt",
+    "cricket_innings_player_total_fours": "Innings {{inningsNumber}} Spieler Fours gesamt "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "Tore aktuell: {{total}} <0>({{home}}-{{away}})</0>",
+    "soccer.team_total_goals_home": "Punkte aktuell: {{home}}-<0>{{away}}</0>",
+    "soccer.team_total_goals_away": "Punkte aktuell: <0>{{home}}</0>-{{away}}",
+    "soccer.total_corners": "Ecken aktuell: <0>{{total}}</0>",
+    "tennis.total_games": "Gesamtanzahl Spiele aktuell: {{total}}",
+    "tennis.total_games_in_set": "Gesamtanzahl Spiele im Set {{setCount}} aktuell: {{total}} <0>({{gamesHome}}-{{gamesAway}})</0>"
+  },
+  "outcome": {
+    "draw": "Unentschieden"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "hart",
+        "clay": "Ton",
+        "grass": "Gras",
+        "carpet": "Teppich"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "Walmodus starten",
+    "buildPosition": "Position erstellen",
+    "currentOdds": "Aktuelle Quote",
+    "decrementOdds": "Quote senken",
+    "incrementOdds": "Quote erhöhen",
+    "inProgress": {
+      "averageOdds": "Durchschnittliche Quote",
+      "filledAmount": "Aufgefüllter Betrag",
+      "minOdds": "Min. Quote",
+      "of": "von",
+      "remaining": "Verbleibend",
+      "sheetFooter": {
+        "completedTitle": "Abgeschlossen",
+        "executionStoppedTitle": "Ausführung beendet",
+        "marketClosedTitle": "Markt geschlossen",
+        "oddsBelowMinimumTitle": "Quote unter Mindestwert",
+        "failedTitle": "Wette konnte nicht platziert werden",
+        "trackPosition": "Position in <0>Meine Wetten</0> verfolgen"
+      },
+      "stopRemaining": "Verbleibende beenden",
+      "timeElapsed": "Verstrichene Zeit",
+      "toReturn": "Du erhältst"
+    },
+    "minOdds": "Min. Quote",
+    "needBiggerStake": "Brauchst du einen größeren Einsatz?",
+    "noLimitBetting": "Wetten ohne Limits",
+    "stakeExceededDescription": "Der Einsatz überschreitet den Höchstwert pro Wette für diesen Markt",
+    "status": {
+      "cancelled": "Beendet",
+      "completed": "Abgeschlossen",
+      "failed": "Fehlgeschlagen",
+      "failedMarketClosed": "Markt geschlossen",
+      "failedOddsUnderMin": "Quoten geändert",
+      "running": "In Bearbeitung"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "Spieler-Bestenlisten",
+      "trendsAndFavorites": "Trends & Fan-Favoriten"
+    },
+    "columns": {
+      "player": "Spieler",
+      "name": "Name"
+    },
+    "footer": "Die Daten spiegeln abgeschlossene Wetten auf {{sportName}} im Zeitraum {{dateRange}} wieder. Alle Zahlen sind in USD-Äquivalent. Es werden nur öffentliche Profile angezeigt.",
+    "leaderboards": {
+      "sharpest": {
+        "title": "Klugste Wettende",
+        "subtitle": "Bester ROI auf {{sportName}}-Wetten"
+      },
+      "earners": {
+        "title": "Top-Verdiener",
+        "subtitle": "Höchste {{sportName}}-Gewinne im Jahr {{year}}"
+      },
+      "parlayKings": {
+        "title": "Kombiwetten-Könige",
+        "subtitle": "Top-Profitführer bei Kombiwetten"
+      },
+      "livePros": {
+        "title": "Live-Wett-Legenden",
+        "subtitle": "In-Play-Profitführer"
+      },
+      "uclMasters": {
+        "title": "Meister der Champions League",
+        "subtitle": "UCL-Wettspezialisten"
+      },
+      "sgpWizards": {
+        "title": "SWP-Zauberer",
+        "subtitle": "Meister der Same-Game-Kombiwetten"
+      },
+      "crazyParlays": {
+        "title": "Verrückteste Kombiwetten-Gewinne",
+        "subtitle": "Wildeste erfolgreiche Wetten mit mehreren Abschnitten"
+      },
+      "hotMatches": {
+        "title": "Heißeste Spiele",
+        "subtitle": "{{sportName}}-Spiele mit den meisten Einsätzen"
+      },
+      "backedTeams": {
+        "title": "Teams mit der größten Unterstützung",
+        "subtitle": "Fan-Favoriten zum Wetten"
+      },
+      "goalscorers": {
+        "title": "Torschützen-Favoriten",
+        "subtitle": "{{sportName}}-Stars mit den meisten Wetten"
+      },
+      "trendingLeagues": {
+        "title": "Angesagte Ligen",
+        "subtitle": "Beliebteste Wettbewerbe"
+      },
+      "backedPlayers": {
+        "title": "Spieler mit der größten Unterstützung",
+        "subtitle": "Fan-Favoriten-Spieler zum Wetten"
+      },
+      "trendingTournaments": {
+        "title": "Angesagte Turniere",
+        "subtitle": "Beliebteste Turniere"
+      },
+      "backedFighters": {
+        "title": "Kämpfer mit der größten Unterstützung",
+        "subtitle": "Fan-Favoriten-Kämpfer zum Wetten"
+      },
+      "trendingPromotions": {
+        "title": "Angesagte Aktionen",
+        "subtitle": "Beliebteste MMA-Aktionen"
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "Gewinn",
+      "bets": "Wetten",
+      "liveProfit": "Live-Profit",
+      "uclProfit": "UCL-Profit",
+      "sgpProfit": "SGP-Profit",
+      "multiplier": "Multiplikator",
+      "payout": "Auszahlen",
+      "totalWagered": "Gesamteinsatz",
+      "betsPlaced": "Wetten platziert",
+      "turnover": "Umsatz",
+      "goalscorerBets": "Torschützen-Wetten",
+      "totalBets": "Wetten insgesamt",
+      "volume": "Volumen"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: Top-Verdiener",
+    "heroCta": "{{sportName}} — Schau, wer gewinnt",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI",
+    "bettingTrends": {
+      "title": "NBA-Wett-Trends",
+      "teamColumnLabel": "Team",
+      "tables": {
+        "winLoss": {
+          "title": "Teams mit Top-Gewinn/Verlust",
+          "subtitle": "Beste Ergebnisse in der NBA dieser Saison",
+          "recordLabel": "W-L",
+          "percentageLabel": "Gewinn %"
+        },
+        "ats": {
+          "title": "Top-ATS-Teams",
+          "subtitle": "Bester gegen den Spread in dieser Saison",
+          "recordLabel": "ATS-Ergebnis",
+          "percentageLabel": "Abdeckung %"
+        },
+        "over": {
+          "title": "Top-Über-Teams",
+          "subtitle": "Spiele enden mit diesen Teams am häufigsten mit Über",
+          "recordLabel": "Über-Ergebnis",
+          "percentageLabel": "Über %"
+        },
+        "under": {
+          "title": "Top-Unter-Teams",
+          "subtitle": "Spiele enden mit diesen Teams am häufigsten mit Unter",
+          "recordLabel": "Unter-Ergebnis",
+          "percentageLabel": "Unter %"
+        }
+      }
+    }
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "Alle"
+  }
+}

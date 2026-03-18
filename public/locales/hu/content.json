@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Szerezd meg a jutalmakat:",
+      "subtitle": "<0>Valódi készpénzes jutalom</0> már az első naptól kezdve",
+      "body": "Íme, így működik a Cloudbet 30 napos Üdvözlőcsomagja:",
+      "card1Title": "Befizetés",
+      "card1Body": "Az első befizetésed indítja be a folyamatot - és ezzel aktiválja a valódi jutalmakat az első naptól kezdve.",
+      "card2Title": "Fogadj és váltsd be",
+      "card2Body": "Visszatérítések és naponta újratöltődő bónuszok várnak rád a kaszinóban, plusz hetente újratöltődő bónuszok a sportfogadásoknál.",
+      "card3Title": "Nyisd ki a Pénzes trezort",
+      "card3Body": "A 30. napon vár rád a legnagyobb jutalom — majd azonnal irány a Cloudbet Jutalmak.",
+      "signUpButton": "Üdvözlőcsomagom indítása"
+    },
+    "perks": {
+      "title": "A legtöbb oldal felesleges akadályokat gördít eléd.<br/><0>Mi viszont nem.</0>",
+      "body": "Az első fogadásodtól kezdve pénzért játszhatsz. Nem kreditekért. Nem értéktelen fityingekért. Valódi készpénzért, amelyet azonnal kifizethetsz vagy tovább játszhatsz vele.",
+      "signUpButton": "Csatlakozz a Cloudbethez most",
+      "compare1": {
+        "title": "Egyéb oldalak",
+        "list1": "Zárolt bónuszok, kivehetetlen pénz",
+        "list2": "Kíméletlen fogadási követelmények",
+        "list3": "Egyszeri bónusz",
+        "list4": "A regisztráció után már nem érvényes promóciók"
+      },
+      "compare2": {
+        "list1": "Valódi készpénzes jutalmak — összesen akár 2500 $",
+        "list1b": "(körülbelül megfelel: {{amount}})",
+        "list2": "Nincsenek csapdák, nincs apró betűs rész",
+        "list3": "Az Üdvözlőcsomag után bekerülsz a <0>Cloudbet Jutalmak</0> programba, amely a valaha volt legbőkezűbb online hűségprogram.",
+        "list4": "Kizárólag készpénzes Trezor – azonnali kifizetés a 30. napon (vagy a maximum elérésekor)"
+      },
+      "first30Days": {
+        "title": "Az <0>első 30 napod</0> így fog kinézni:",
+        "list1": "<0>Napi kaszinós készpénzes jutalmak:</0> Fogadj ma, és váltsd be holnap a valódi készpénzes jutalmadat.",
+        "list2": "<0>Kaszinós visszatérítés:</0> 10% a házelőnyből minden fogadásnál — ennek egy része azonnal a tárcádba kerül, a maradék pedig naponta kerül feloldásra a Jutalom Naptáradból.",
+        "list3": "<0>Heti készpénzes jutalmak sportfogadásnál:</0> Minden pénteken azonnali készpénzes jutalmak várnak rád.",
+        "list4": "<0>Készpénzes Trezor:</0> A készpénzes jutalmad minden fogadásoddal egyre csak növekszik, és a 30. napon a tiéd lehet.",
+        "body": "A játékosok akár 2500 $ újratöltődő jutalmat és kaszinós visszatérítéseket oldhatnak fel — még mielőtt a Trezor kinyílna."
+      }
+    },
+    "rewards": {
+      "title": "A 31 nap, amikor a dolgok <0>igazán beindulnak</0>",
+      "body": "Az Üdvözlőcsomag után bekerülsz a <0>Cloudbet Jutalmak</0> programba, amely a valaha volt legbőkezűbb online hűségprogram.",
+      "card1Title": "Turbo Boosted Visszatérítés",
+      "card1Body": "Akár 25%-kal felturbózott visszatérítés vár rád minden kaszinós fogadásodnál a TURBO-val.",
+      "card2Title": "Szintlépési készpénzjutalmak",
+      "card2Body": "Szerezz minden szintlépésnél azonnali készpénzes jutalmakat, kezdve az Ezüst szinttől egészen a Gyémánt szintig és a köztük lévő szinteknél is.",
+      "card3Title": "Kék Gyémánt jutalmak",
+      "card3Body": "Juss el egészen a Kék Gyémánt szintig, és szerezd meg a szintek közötti jutalmakat akár 9.97 millió $ értékben.",
+      "morePerksTitle": "És még több előny",
+      "morePerksBody": "Élvezd ki a Cloudbet Üdvözlőcsomagból már jól ismert kaszinós és sportfogadásos készpénzes jutalmakat."
+    },
+    "faq": {
+      "title": "Üdvözlőcsomag GYIK",
+      "q1": "A 2500 $-ban a Trezor is benne van?",
+      "a1": "Nem. A Trezor a napi jutalmakon felül jár.",
+      "q2": "Van részemről bármi teendő az aktiváláshoz?",
+      "a2": "Nem. Az első befizetéseddel automatikusan aktiválódik a részvételed.",
+      "q3": "Mi történik, ha nem érem el a 2500 $-t 30 alatt?",
+      "a3": "Amit megszereztél, az már a tiéd is marad, és bekerülsz a Cloudbet Jutalmak programba.",
+      "q4": "Próbálkozhatok újra?",
+      "a4": "Nem, ez egy egyszeri ajánlat — de a Cloudbet Jutalmakban még bőven van esélyed.",
+      "q5": "Meddig tart az Üdvözlőcsomag?",
+      "a5": "Az Üdvözlőcsomag 30 napig érvényes az első befizetésedtől számítva, vagy amíg el nem éred a 2500 $ felső határt (attól függően, hogy melyik következik be előbb).",
+      "q6": "Mikor kapom meg a visszatérítésemet?",
+      "a6": "Egy része azonnal a tárcádban landol. A többi naponta aktiválódik a Jutalom Naptáradban, így mindig új jutalom vár rád."
+    },
+    "cta": {
+      "title": "Ne dőlj be a \"majd egyszer megkapod a jutalmat\" ígérgetésnek.",
+      "subtitle": "Nálunk <0>valódi készpénzes jutalmak</0> az első fogadásodtól kezdve."
+    }
+  }
+}

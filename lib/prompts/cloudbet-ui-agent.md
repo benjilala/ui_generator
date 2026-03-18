@@ -80,6 +80,60 @@ FeaturedGamesCarousel, GameGrid, JackpotSection, CasinoLobby
 ### Pattern components (components/patterns/)
 LabNav, SectionHeader
 
+## Sports layout system
+
+Sports competition cards follow a rigid grid derived from the Valhalla
+production codebase. Breaking this grid causes outcome labels and odds buttons
+to misalign.
+
+### Core rule: 2-column grid
+
+Both `MarketHeader` and `EventRow` share the same grid:
+
+```
+grid grid-cols-2 gap-x-3 pl-1.5
+```
+
+| Column | MarketHeader | EventRow |
+|--------|-------------|----------|
+| Col 1 | Market switcher CTA | Competitor names, icons, scores |
+| Col 2 | Outcome labels (`flex gap-x-1`) | Odds buttons (`flex-1 flex justify-center gap-x-1`) |
+
+### OddsButton (OddsButtonUI) sizing
+
+```
+Wrapper: w-full flex-1 flex justify-center
+Button:  w-full h-full min-h-11 rounded-xl border
+Inner:   mx-auto → flex flex-col items-center justify-center
+Value:   h-7 text-sm font-medium text-cb-accent
+```
+
+### Key values
+
+- Gap between grid columns: `gap-x-3` (12px)
+- Gap between odds buttons: `gap-x-1` (4px)
+- Button min-height: `min-h-11` (44px)
+- Button radius: `rounded-xl` (12px)
+- Competitor icon: `size-5` (20px)
+- Competitor name: `text-xs font-bold`
+- Divider: gradient `h-0.5` from transparent → cb-border → transparent
+
+### OddsButton label rule
+
+**Never repeat in the button what the market header already shows.** Omit `label` from `OddsButton` when the header outcome columns already identify the outcome (1/X/2, Over/Under, 1/2). The odds value alone is sufficient.
+
+Market header outcome labels for head-to-head markets (Moneyline, Match Winner, 1X2 home/away columns): always **"1" / "2"** — never "Home"/"Away", never team abbreviations.
+
+### Closed (post-match) odds state
+
+Render an empty `min-h-11` div — no slash icon, no text. The space stays blank.
+
+### MarketSwitcher button border
+
+Default: `border-transparent` (no visible border). Hover: `border-cb-border`. Open: `border-cb-primary/60 bg-cb-primary/[0.08]`.
+
+Full specification: `.cursor/rules/sports-layout.mdc`
+
 ## Critical rules
 
 1. **Never use raw hex values** — always use `--cb-*` tokens or Tailwind token classes

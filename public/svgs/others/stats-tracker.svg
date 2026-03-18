@@ -1,0 +1,41 @@
+<svg
+  viewBox='0 0 24 24'
+  fill='currentColor'
+  xmlns='http://www.w3.org/2000/svg'
+>
+  <g transform='translate(2, 2) scale(1.7)'>
+    <g clip-path='url(#clip0_12064_3937)'>
+      <g clip-path='url(#clip1_12064_3937)'>
+        <path
+          fill-rule='evenodd'
+          clip-rule='evenodd'
+          d='M1 2C1 1.44772 1.44772 1 2 1H3C3.55228 1 4 1.44772 4 2V10C4 10.5523 3.55228 11 3 11H2C1.44772 11 1 10.5523 1 10V2ZM3 2H2V10H3V2Z'
+          fill='#CCA6FF'
+        />
+        <path
+          d='M4.5 5.5C4.5 4.94772 4.94772 4.5 5.5 4.5H6.5C7.05228 4.5 7.5 4.94772 7.5 5.5V10C7.5 10.5523 7.05228 11 6.5 11H5.5C4.94772 11 4.5 10.5523 4.5 10V5.5ZM6.5 5.5H5.5V10H6.5V5.5Z'
+          fill='#CCA6FF'
+        />
+        <path
+          fill-rule='evenodd'
+          clip-rule='evenodd'
+          d='M8 4C8 3.44772 8.44772 3 9 3H10C10.5523 3 11 3.44772 11 4V10C11 10.5523 10.5523 11 10 11H9C8.44772 11 8 10.5523 8 10V4ZM10 4H9V10H10V4Z'
+          fill='#CCA6FF'
+        />
+      </g>
+    </g>
+  </g>
+  <defs>
+    <clipPath id='clip0_12064_3937'>
+      <rect width='12' height='12' fill='white' />
+    </clipPath>
+    <clipPath id='clip1_12064_3937'>
+      <rect
+        width='12'
+        height='12'
+        fill='white'
+        transform='translate(1 1)'
+      />
+    </clipPath>
+  </defs>
+</svg>

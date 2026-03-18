@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Gana recompensas:",
+      "subtitle": "<0>Cash real</0> desde el primer día",
+      "body": "Exactamente así funciona tu paquete de bienvenida de 30 días en Cloudbet:",
+      "card1Title": "Depósito ",
+      "card1Body": "Tu primer depósito da inicio a todo y activa recompensas reales desde el primer día.",
+      "card2Title": "Apuesta y solicita",
+      "card2Body": "Gana rakeback y recargas diarias en Casino, además de recargas semanales en Deportes.",
+      "card3Title": "Libera la Bóveda de dinero",
+      "card3Body": "El día 30 llega tu mayor recompensa y luego entras directamente al programa Recompensas Cloudbet.",
+      "signUpButton": "Iniciar mi paquete de bienvenida"
+    },
+    "perks": {
+      "title": "La mayoría de los sitios te complican mucho las cosas.<br/><0>Nosotros no.</0>",
+      "body": "Desde tu primera apuesta, lo que recibes por tu juego es cash. No créditos. No dinero de fantasía. Es dinero real que puedes retirar o usar para seguir apostando al instante.",
+      "signUpButton": "Regístrate en Cloudbet ahora",
+      "compare1": {
+        "title": "Otros sitios",
+        "list1": "Los bonos con candados son dinero que nunca verás",
+        "list2": "Molestos requisitos de apuesta",
+        "list3": "Bonos únicos",
+        "list4": "La promoción termina después del registro"
+      },
+      "compare2": {
+        "list1": "Recompensas de cash real, hasta $2 500 en total",
+        "list1b": "(equivalente a aprox. {{amount}})",
+        "list2": "Sin trampas ni letras pequeñas",
+        "list3": "10 % de rakeback + premios diarios de cash en Casino desde el primer día",
+        "list4": "Bóveda de dinero real que se paga al instante el día 30 (o cuando se alcance el límite de la oferta)"
+      },
+      "first30Days": {
+        "title": "Tus <0>primeros 30 días</0> serán así:",
+        "list1": "<0>Entregas de cash diarias en Casino </0> Apuesta hoy y solicita cash real mañana.",
+        "list2": "<0>Rakeback de Casino:</0> Un 10 % de la ventaja de la casa se te devuelve en cada apuesta: una parte llega instantáneamente a tu billetera y el resto se va liberando diariamente en tu Calendario de recompensas.",
+        "list3": "<0>Entregas de cash semanales en deportes:</0> El cash instantáneo se libera cada viernes.",
+        "list4": "<0>Bóveda de dinero:</0> Una recompensa en cash que crece a medida que juegas y se libera el día 30.",
+        "body": "Los jugadores pueden recibir hasta $2 500 en recargas y rakeback de Casino, incluso antes de liberar la Bóveda."
+      }
+    },
+    "rewards": {
+      "title": "El día 31 es cuando al asunto se pone <0>increíble</0>",
+      "body": "Luego de finalizar tu paquete de bienvenida, pasarás a formar parte de <0>Recompensas Cloudbet</0>, el programa de lealtad más generoso en línea.",
+      "card1Title": "Rakeback turbo aumentado",
+      "card1Body": "Gana hasta un 25 % de rakeback aumentado en cada apuesta de Casino cuando juegues con TURBO.",
+      "card2Title": "Recompensas en cash por subir de nivel",
+      "card2Body": "Recibe cash al instante cada vez que subas de nivel, de Plata a Diamante Azul y cualquier grado intermedio.",
+      "card3Title": "Fortuna que cae del cielo en el nivel Diamante Azul",
+      "card3Body": "Alcanza el nivel Diamante Azul y activa recompensas por subir de grados dentro del nivel por un valor de hasta $9,97 millones.",
+      "morePerksTitle": "Y muchos otros beneficios",
+      "morePerksBody": "Sigues disfrutando de todo el cash real que entregan Casino y Deportes, eso mismo que te encantó del paquete de bienvenida Cloudbet."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes del paquete de bienvenida",
+      "q1": "¿La Bóveda de dinero está incluida en los $2 500?",
+      "a1": "No. La Bóveda es aparte de tus recompensas diarias.",
+      "q2": "¿Necesito cumplir con algún procedimiento para activarlo?",
+      "a2": "No. Se activa automáticamente con tu primer depósito.",
+      "q3": "¿Qué pasa si no alcanzo los $2 500 en el período de 30 días?",
+      "a3": "Conservas todo lo que hayas solicitado (validado), y te graduarás en Recompensas Cloudbet.",
+      "q4": "¿Puedo repetir el paquete?",
+      "a4": "No, se trata de un paquete único, pero Recompensas Cloudbet te sigue premiando.",
+      "q5": "¿Durante cuánto tiempo está vigente el paquete de bienvenida?",
+      "a5": "El paquete de bienvenida tiene una vigencia de 30 días a partir de que se realiza el primer depósito, o hasta que se alcance el límite de $2 500, lo que ocurra primero.",
+      "q6": "¿Cuándo recibo mi rakeback?",
+      "a6": "Una parte llega al instante a tu billetera. El resto se libera diariamente en tu Calendario de recompensas, de modo que siempre tienes dinero nuevo esperándote."
+    },
+    "cta": {
+      "title": "Ya no esperes que tus recompensas se materialicen \"un lejano día\".",
+      "subtitle": "Recibe <0> cash real</0> desde tu primera apuesta."
+    }
+  }
+}

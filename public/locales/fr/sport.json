@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "Lignes asiatiques",
+      "cards": "Cartes",
+      "corners": "Corners",
+      "goals": "Buts",
+      "half": "Mi-temps",
+      "main": "Principal",
+      "more": "Plus",
+      "specials": "Spéciaux",
+      "popular": "Populaire",
+      "firstHalf": "1ʳᵉ mi-temps",
+      "secondHalf": "2ᵉ mi-temps",
+      "points": "Points",
+      "quarters": "Quarts de jeu",
+      "players": "Joueurs",
+      "sets": "Sets",
+      "games": "Jeux",
+      "hitsAndRuns": "Frapper & courir",
+      "playerProps": "Paris spéciaux de joueur",
+      "extraTime": "Temps additionnel",
+      "kills": "Éliminations",
+      "match": "Match",
+      "player": "Joueur",
+      "team": "Équipe",
+      "mainMarkets": "Marchés principaux",
+      "matchMarkets": "Marchés de match ",
+      "mapN": "Carte {{mapNumber}}",
+      "firstInnings": "Premières manches",
+      "all": "Tous les marchés",
+      "betBuilder": "Pari personnalisé"
+    },
+    "stats": {
+      "notAvailable": "Les statistiques ne sont pas disponibles",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "Le Pari personnalisé est arrivé",
+      "loginToBetDescription": "Créez des paris personnalisés en accumulant plusieurs choix sur un seul match.\nPlus de contrôle, plus de gains potentiels. Maintenant disponible sur certaines ligues.",
+      "loginToBetButton": "Connectez-vous pour créer les votres",
+      "genericError": {
+        "titleWithCode": "Une erreur s'est produite ({{code}})",
+        "title": "Une erreur s'est produite",
+        "description": "Réesayez. Si le problème persiste, veuillez contacter notre service client."
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "Remplacer le Pari personnalisé existant ?",
+        "description": "Un seul Pari personnalisé peut être placé dans votre portefeuille de paris. Ajouter celui-ci remplacera l'existant.",
+        "cancelCta": "Annuler",
+        "replaceCta": "Remplacer"
+      },
+      "shortened": "PP",
+      "betBuilderPromo": "Augmentez vos cotes avec un pari combiné sur un même événement.",
+      "betBuilderAlertBanner": {
+        "title2": "Tirage au sort Bet Builder x 100",
+        "body2": "Placez un pari combiné d'au moins 1 $ ce week-end. 10 gagnants remporteront 100 x leur mise (jusqu'à 100 $)."
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "N'importe quand",
+            "first": "Premiers",
+            "last": "Derniers",
+            "teamFirst": "Première équipe",
+            "teamLast": "Dernière équipe",
+            "oneOrMore": "1 ou plus",
+            "twoOrMore": "2 ou plus",
+            "threeOrMore": "3 ou plus"
+          },
+          "soccer": {
+            "scoreAHeader": "Tête",
+            "scoreOutsideOfTheBox": "Hors jeu"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "Quand un joueur marquera-t-il ?",
+            "when-will-player-score-team": "Quand un joueur marquera-t-il (équipe) ?",
+            "how-many-player-goals": "Combien de buts pour le joueur ?",
+            "how-will-player-score": "Comment un joueur marquera-t-il ?",
+            "player-assists": "Passes décisives",
+            "player-to-be-carded-team": "Joueur à recevoir un carton (équipe)",
+            "player-to-be-shown-a-card": "Joueur à recevoir un carton",
+            "total-cards-team": "Total des cartons (équipe)",
+            "both-team-total-cards": "Total des cartons des deux équipes",
+            "both-teams-total-goals": "Total des buts des deux équipes",
+            "total-goals-team": "Total des buts (équipe)",
+            "both-teams-total-corners": "Total des corners des deux équipes",
+            "total-corners-team": "Total des corners (équipe)",
+            "both-teams-score": "Les deux équipes marquent",
+            "player-to-be-sent-off": "Joueur à sortir",
+            "player-total-fouls-committed": "Total des fautes commises par un joueur",
+            "player-total-saves": "Total des arrêts",
+            "player-total-shots": "Total des tirs d’un joueur",
+            "player-total-shots-on-target": "Total des tirs centrés d’un joueur",
+            "player-total-tackles": "Totql des tacles d’un joueur",
+            "player-total-passes": "Total des passes d‘un joueur",
+            "to-happen-in-the-match-team": "Peut arriver lors du match (équipe)",
+            "method-of-victory": "Type de victoire",
+            "total-shots-team": "Total des tirs (équipe)",
+            "team-with-most-bookings": "Équipe avec le plus de cartons",
+            "total-shots-on-target-team": "Total des tirs centrés (équipe)",
+            "total-goals-over-slash-under-after-10-minutes": "Total des buts au-dessus/en dessous après 10 minutes",
+            "asian-handicap-after-10-minutes": "Handicap asiatique après 10 minutes",
+            "correct-score": "Score correct",
+            "most-cards": "Le plus de cartons",
+            "most-corners": "Le plus de corners",
+            "double-chance": "Double chance",
+            "winning-margin": "Marge de victoire",
+            "total-goals": "Total des buts",
+            "total-exact-goals": "Total des buts exacts",
+            "total-exact-goals-team": "Total des buts exacts (équipe)",
+            "total-bookings-points": "Total des points de cartons",
+            "total-bookings-points-team": "Total des points de cartons (équipe)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "Total des points & rebonds du joueur",
+            "player-total-points": "Total des points du joueur",
+            "player-total-3-point-field-goals": "Total des paniers à 3 points du joueur",
+            "player-total-rebounds": "Total des rebonds du joueur",
+            "player-total-assists-and-rebounds": "Total des passes décisives & rebonds du joueur",
+            "player-total-assists": "Total des passes décisives du joueur",
+            "player-total-points-and-assists": "Total des points & passes décisives du joueur",
+            "player-total-points-assists-and-rebounds": "Total des points, passes décisives et rebonds du joueur",
+            "player-to-achieve-a-double-double": "Joueur à réaliser un double-double",
+            "player-to-achieve-a-triple-double": "Joueur à réaliser un triple-double",
+            "player-total-3-pointers-over-under": "Total des 3 points du joueur (plus/moins)",
+            "player-total-assists-and-rebounds-over-under": "Total des passes décisives & rebonds du joueur (plus/moins)",
+            "player-total-assists-over-under": "Total des passes décisives du joueur (plus/moins)",
+            "player-total-points-over-under": "Total des points du joueur (plus/moins)",
+            "player-total-rebounds-over-under": "Total des rebonds du joueur (plus/moins)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "Pariez sur l'événement {{eventName}} en crypto",
+      "soccerDescription": "Les fans s'attendent à un affrontement d'exception entre {{home}} et {{away}} lors de l'événement {{competition}} le {{date}} à {{time}}. Sur Cloudbet, vous pouvez assembler des paris combinés sur un même événement sur les buts, les corners et les cartons pour plus de fun. Placez vos paris avant le coup d'envoi ou suivez l'action en direct.",
+      "basketballDescription": "Le match de l'événement {{competition}}, qui oppose {{home}} à {{away}}, a lieu le {{date}} à {{time}}. Ce match se promet plein de rebondissements du début à la fin. Les paris combinés sur un même événement vous permettent de lier les points des joueurs, les rebonds et les assistances pour plus d'action. Pariez avant le début du match ou en direct.",
+      "americanFootballDescription": "Lors de l'événement {{competition}}, {{home}} fait face à {{away}} le {{date}} à {{time}}. Cloudbet vous permet d'accumuler les paris sur un même événement. Des touchdowns aux yards de passe, vous vivez plus d'émotions fortes. Placez vos mises avant le début du match ou profitez des cotes en direct lors du match.",
+      "tennisDescription": "L'événement de {{home}} face à {{away}} lors de l'événement {{competition}} se déroule le {{date}} à {{time}}. Les deux joueurs sont réputés pour leur forme et leurs compétences sur {{surface}}. Les paris combinés sur un événement vous permettent de lier les gagnants de sets, les jeux totaux et les aces en un seul pari. Verrouillez vos choix avant le premier service ou pariez dans le feu de l'action.",
+      "baseballDescription": "{{home}} fait face à {{away}} lors de l'événement {{competition}} le {{date}} à {{time}}. Les paris combinés sur un même événement vous permettent de rassembler les coups sûrs, les strike outs et les points inscrits dans un seul pari.",
+      "iceHockeyDescription": "Le duel givré entre {{home}} et {{away}} lors de l'événement {{competition}} prendra place le {{date}} à {{time}}. Les paris combinés sur le même événement vous permettent de rassembler buts, assistances et penaltys pour plus de sensations fortes. Misez avant le début du match ou vivez l'action en direct.",
+      "rugbyDescription": "{{home}} fera face à {{away}} lors de l'événement {{competition}} le {{date}} à {{time}}. Attendez-vous à de gros plaquages et des essais à tomber. Sur Cloudbet, vous pouvez créer des paris combinés sur le même événement en misant sur les essaies, les transformations et le nombre total de points. Placez vos mises avant le coup d’envoi ou continuez à parier en direct à chaque mêlée.",
+      "cricketDescription": "{{home}} fera face à {{away}} lors de l'événement {{competition}} le {{date}} à {{time}}. Attendez-vous à des runs à gogo et de nombreux wickets. Les paris combinés sur un même événement de Cloudbet vous permettent de réunir runs, wickets et boundaries en un seul pari. Faites vos choix avant la première balle ou continuez à parier en direct, manche après manche.",
+      "horseRacingDescription": "L'événement {{competition}} se déroulera le {{date}} à {{time}}. Grâce aux chevaux de prestige au départ, les spectateurs peuvent s’attendre à une course intense du début à la fin. Sur Cloudbet, vous pouvez soutenir votre favori en pari simple ou créer des paris combinés personnalisés sur plusieurs courses pour plus d'émotions. Placez vos mises avant l’ouverture des stalles ou continuez à parier en direct au fur et à mesure de la course.",
+      "mmaDescription": "{{home}} et {{away}} se recontreront le {{date}} à {{time}}, en direct depuis l'événement {{competition}}. Il y aura du mouvement dans la cage. Sur Cloudbet, vous pouvez créer des paris combinés sur un même combat en mélangeant KOs, paris par round et type de victoire. Placez vos mises avant le premier coup ou pariez en direct.",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "cotes d'eSport",
+          "cs2": "Paris d'eSport sur CS2",
+          "dota2": "cotes",
+          "valorant": "Cotes de paris sur Valorant",
+          "fifa": "Cotes de paris d'eSport sur FIFA"
+        },
+        "titleV2": "Pariez sur {{home}} vs {{away}}. {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "Pariez sur {{home}} vs {{away}} le {{date}} à {{time}}. {{competition}} en direct. Cotes compétitives d'eSport sur Cloudbet. Cette game de LOL couvre plusieurs marchés de paris d'eSport en crypto, dont les marchés {{markets}}.",
+        "cs2Description": "Pariez sur {{home}} vs {{away}} le {{date}} à {{time}} lors de l'événement {{competition}}. Pariez en crypto sur les marchés de CS2 sur {{markets}}, parfaits pour les paris d'eSport en direct. C'est seulement sur Cloudbet.",
+        "dota2Description": "Pariez sur {{home}} vs {{away}} lors de l'événement Dota 2 {{competition}} le {{date}} à {{time}}. Marchés crypto disponibles sur {{markets}}. Pariez sur Dota 2 et remportez de vraies récompenses en argent sur le site de paris d'eSport.",
+        "valorantDescription": "Pariez sur {{home}} vs {{away}} lors de l'événement {{competition}} le {{date}} à {{time}}. Suivez l’action en direct et placez vos paris Valorant en BTC, ETH ou USDT sur {{markets}}. C'est exclusivement sur Cloudbet.",
+        "fifaDescription": "Pariez sur {{home}} vs {{away}} lors de l'événement {{competition}} le {{date}} à {{time}}. Soutenez votre favori sur l'eSport de FIFA avec des marchés comme {{markets}}. Paris d'eSport simples et rapides en ligne sur Cloudbet."
+      }
+    },
+    "nbaPromo": {
+      "title": "Nouveautés en NBA : Bet Builder et performances de joueurs",
+      "body": "Placez des paris sur le même événement avec Bet Builder et vérifiez la nouvelle section de performances des joueurs pour les paris spéciaux."
+    },
+    "playerProps": {
+      "avgPer5Game": "Moyenne de {{stats}} par 5 matchs",
+      "avgInRegSeason": "Moyenne {{stats}} en saison régulière"
+    }
+  },
+  "common": {
+    "today": "Aujourd'hui",
+    "partial": "Partiel",
+    "instantGames": "Jeux instantanés",
+    "inPlay": "En direct",
+    "tomorrow": "Demain",
+    "competitions": "Compétitions",
+    "highlights": "Moments forts",
+    "outrights": "Longs termes",
+    "virtuals": "Virtuels",
+    "liveStream": "Diffusion en direct",
+    "events": "Évènements",
+    "games": "Jeux",
+    "nextToJump": "Prochain à sauter",
+    "noLimitBets": "Paris sans limite",
+    "virtualSoccer": "Football virtuel",
+    "virtualBasketball": "Basketball virtuel",
+    "betsClosed": "Paris fermés",
+    "virtualsUpNext": "Virtuels à venir",
+    "simPlay": "Sim-Play",
+    "fullMatchup": "Match complet",
+    "browseNow": "Parcourir maintenant",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "À gagner : {{amount}}",
+    "toReturnTitle": "Pour un retour",
+    "toReturnSubtitle": "{{stake}} pour un gain de {{payout}}",
+    "summary": {
+      "reuseSelections": "Réutiliser les sélections",
+      "acceptAndPlace": "Accepter et placer {{value}}",
+      "sameGameMultiPlaced": "Pari personnalisé placé"
+    },
+    "parlay": {
+      "legs": "{{count}} paris"
+    },
+    "maxBet": {
+      "noLimit": "Maximum par pari : <0>{{stake}} {{currency}}</0>",
+      "nolimitTitle": "Max par mise :",
+      "default": "Pari maximum : <0>{{stake}} {{currency}}</0>",
+      "defaultLocalized": "Mise maximum : <0>{{value}}</0>",
+      "defaultTitle": "Mise max :"
+    },
+    "errors": {
+      "maxBetIs": "Le pari maximum est de <0>{{stake}} {{currency}}</0>",
+      "minBetIs": "Le pari minimum est de <0>{{stake}} {{currency}}</0>",
+      "maxBet": "Mise max.",
+      "minBet": "Mise min."
+    },
+    "summeryErrors": {
+      "marketClosed": "Marché fermé",
+      "limitExceeds": "La limite excède",
+      "maxStakeReached": "Pari maximum atteint",
+      "restricted": "Restraint",
+      "restrictedGeoBlocked": "Votre région n'est pas autorisée. Désactivez votre VPN et réessayez.",
+      "restrictedGeoBlockedShorten": "Région non-autorisée",
+      "minStakeChanged": "Pari minimum modifié",
+      "maxStakeChanged": "Pari maximum modifié",
+      "unknownError": "Erreur inconnue",
+      "suspended": "Suspendu",
+      "unauthorized": "Non-autorisé",
+      "stakeAboveMax": "Veuillez réduire votre mise.",
+      "stakeBelowMin": "Veuillez augmenter votre mise.",
+      "priceAboveMarket": "Les cotes ont changé.",
+      "betPending": "La connexion est instable. Vérifiez « mes paris » pour voir le statut de vos paris."
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "Veuillez recréer votre pari",
+        "timedOutTitle": "Pari introuvable",
+        "timedOutDescription": "Nous n'avons pas trouvé ce pari. Vérifiez la section « Mes paris » ou contactez l'assistance clientèle avant de placer de nouveaux paris.",
+        "unknownError": "Une erreur s'est produite",
+        "unknownErrorDescription": "Vérifiez la section « Mes paris » ou contactez l'assistance clientèle avant de placer de nouveaux paris.",
+        "limitsExceeded": "Limites dépassées"
+      },
+      "actions": {
+        "clearSGP": "Effacer le Pari personnalisé",
+        "reviewChangesInBetslip": "Vérifier les modifications du bordereau de paris"
+      }
+    },
+    "placeBet": "Parier",
+    "placeParlay": "Placer un pari combiné {{amount}}",
+    "betBuilder": {
+      "placeBetValid": "Placez PP {{amount}}",
+      "placeBetSubmitting": "Mise sur PP {{amount}}",
+      "betBuilderItemMarketUnavailable": "Le marché est suspendu temporairement. <0>Réessayer</0> ou <1>retirer</1>",
+      "error": {
+        "parlayRestricted": "Les sélections liées ne peuvent pas être combinées",
+        "marketSuspended": "Le marché est suspendu temporairement."
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "Les cotes ont changé.",
+      "oddsHaveChangedAccept": "Les cotes ont changé. <0>Accepter</0>",
+      "oddsHaveChangedToReturn": "Les cotes ont changé. À gagner : {{payout}}",
+      "oddsHaveChangedToReturnTitle": "Les cotes ont changé. À gagner :",
+      "marketIsSuspendedWaitOrRemove": "Le marché est suspendu temporairement. Attendre ou <0>retirer</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "Le marché est suspendu temporairement. Attendre ou Retirer...",
+      "marketIsClosedRemove": "Ce marché est fermé. <0>Retirer</0>",
+      "selectionCorrelated": "Cette sélection est associée à une autre. <0>Retirer</0>",
+      "parlayRestricted": "Cette sélection ne peut pas être un pari combiné. <0>Retirer</0>",
+      "dangerBall": "Un joueur pourrait marquer un but d'ici peu. Votre pari peut prendre jusqu'à 5 minutes pour être accepté."
+    },
+    "consent": {
+      "acceptAllChanges": "Accepter toutes les modifications"
+    },
+    "insufficientBalanceAlert": {
+      "title": "Vous n'avez pas suffisamment de fonds",
+      "description": "<0>Déposez maintenant</0> pour continuer à parier."
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "Voir tous les {{sport}}"
+  },
+  "betBuilder": {
+    "reviewBet": "Revoir le pari",
+    "title": "Pari personnalisé"
+  },
+  "myBets": {
+    "noBets": "Pas de marchés disponibles",
+    "checkOut": "Consultez les matchs du jour ou les événements à venir pour trouver votre prochaine opportunité de pari.",
+    "viewBetHistory": "Historique des paris",
+    "browseInplay": "Parcourir les événements en direct",
+    "loadError": "Impossible de charger ce pari",
+    "id": "ID",
+    "viewAllSettledBetsInfo": "Affiche tous les paris réglés dans l'historique de paris.",
+    "onlyLast72HoursBetsInfo": "Seules les 72 dernières heures de paris sont visibles. Voir tout l'historique de paris."
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "Plus de {{over}}",
+      "gameOversAndDeliveries": "Plus de {{over}}. {{delivery}}",
+      "gameTargetRunsAndBalls": "{{teamName}} a besoin de {{runs}} de {{balls}}",
+      "gameTrailByRuns": "{{teamName}} suit par {{runs}}",
+      "gameLeadByRuns": "{{teamName}} mène par {{runs}}",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "Test",
+      "matchDay": "Jour {{matchDay}}.",
+      "endOfMatchDay": "Fin du jour {{matchDay}}.",
+      "wonDefault": "{{winner}} a gagné",
+      "matchDrawn": "Match nul",
+      "wonByRuns": "{{winner}} a gagné par {{wonBy}} runs",
+      "wonByRunsAndInning": "{{winner}} a gagné par un tour de batte et {{wonBy}} runs",
+      "wonByWickets": "{{winner}} a gagné par {{wonBy}} arceaux"
+    },
+    "racing": {
+      "running": "Course",
+      "runners": "Coureurs",
+      "scratched": "Retiré",
+      "horseRacingWithdrawnDescription": "Un cheval a été retiré de la course dû à une blessure, son état de santé, la qualité du terrain de course, ou la décision de l'entraîneur. Les cotes ont été ajustées, et si vous avez placé un pari, vos gains pourraient être légèrement diminués. Les paris sur un cheval retiré de la course seront remboursés.",
+      "greyhoundsWithdrawnDescription": "Un chien a été retiré de la course dû à une blessure, son état de santé, la qualité du terrain de course, ou la décision de l'entraîneur. Les cotes ont été ajustées, et si vous avez placé un pari, vos gains pourraient être légèrement diminués. Les paris sur un chien retiré de la course seront remboursés.",
+      "age": "Âge : <0>{{age}}</0>",
+      "weightShorten": "P : <0>{{weight}}</0> livres",
+      "formShorten": "F : <0>{{form}}</0>",
+      "horseJockeyShorten": "J : <0>{{jockey}}</0>",
+      "horseTrainerShorten": "E : <0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "Score en direct indisponible"
+    }
+  },
+  "betHistory": {
+    "typeBet": "Pari",
+    "typeCashout": "Encaissement",
+    "typeSettlement": "Règlements",
+    "noBetHistory": "Pas d'historique de paris disponible",
+    "hintV2": "« L'historique des paris » affiche le détail des paris réglés, y compris les résultats des matchs et des paris. Pour voir vos paris actifs ou en attente, rendez-vous sur {{link}}.",
+    "allBets": "Tous les paris",
+    "singles": "Simples",
+    "parlays": "Paris combinés",
+    "betBuilders": "Bet Builder",
+    "outrights": "Longs termes"
+  },
+  "fightCenter": {
+    "rootTitle": "Centre de combat",
+    "mainCard": "Carte principale",
+    "prelims": "Préliminaires",
+    "taleOfTheTape": "Statistiques",
+    "fighterProfile": "Profile du combattant",
+    "height": "Taille",
+    "weight": "Poids",
+    "armReach": "Portée du bras",
+    "legReach": "Portée de la jambe",
+    "winRate": "Taux de réussite",
+    "stats": "Stats",
+    "age": "Âge",
+    "record": "Record",
+    "byKo": "Par KO",
+    "bySubmission": "Par submission",
+    "byDecision": "Par décision des juges",
+    "koTko": "KO/KOT",
+    "submission": "SUB",
+    "decision": "DÉCISION",
+    "next": "Suivant",
+    "draw": "Nul",
+    "streamIn": "Stream dans :",
+    "liveDefault": "Direct",
+    "officialGlobalSportsbook": "Site de paris sportifs officiel de",
+    "official": "Officiel",
+    "globalSportsbook": "Paris sportifs mondiaux",
+    "expertPicks": {
+      "viewExpertPicks": "Voir la sélection des experts",
+      "banner": {
+        "title": "Choix des pros",
+        "availableIn": "Disponible dans"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} rounds",
+        "mma.winner": "{{outcome}} victoires",
+        "mma.winning_method": "{{outcome}} par {{value}}"
+      },
+      "genericError": {
+        "title": "Nous avons rencontré un problème",
+        "description": "On dirait que quelque chose ne fonctionne pas ! Nous nous en occupons et nous revenons très vite."
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "Pour gagner le match",
+    "cricket_over_team_total": "Over {{overNumber}} - courses achevées - équipes",
+    "cricket_player_total": "Courses du batteur",
+    "cricket_player_to_score_milestone": "Un joueur va marquer {{milestone}}",
+    "cricket_player_total_fours": "Total des quatre points du joueur",
+    "cricket_player_total_player_performance": "Performance du joueur",
+    "cricket_team_total_fours": "Total des quatre points de l'équipe",
+    "cricket_team_total_sixes": "Total des six points de l'équipe",
+    "cricket_innings_over_x_team_total": "Manche {{inningsNumber}} over {{overNumber}} - courses achevées - équipes",
+    "cricket_innings_overs_0_to_x_team_total": "Courses totales de la manche {{inningsNumber}} over 0 à {{overNumber}} - équipes",
+    "cricket_innings_player_total_deliveries_faced": "Nombre total de balles affrontées par un joueur lors de la manche {{inningsNumber}}",
+    "cricket_team_total_from_0_over_to_x_over": "Over 0 à {{overNumber}} - courses totales - équipes",
+    "cricket_team_total_in_highest_scoring_over": "Meilleur over de l'équipe",
+    "cricket_team_total_at_dismissal": "Total de l'équipe lors du renvoi {{dismissalNumber}}",
+    "cricket_innings_player_to_score_milestone": "Manche {{inningsNumber}} joueur va marquer {{milestone}}",
+    "cricket_test_match_player_total": "Manche {{inningsNumber}} total du joueur",
+    "cricket_innings_player_total_fours": "Manche {{inningsNumber}} total de fours du joueur "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "Buts actuels : {{total}} <0>({{home}} - {{away}})</0>",
+    "soccer.team_total_goals_home": "Score actuel :  {{home}} - <0>{{away}}</0>",
+    "soccer.team_total_goals_away": "Score actuel : <0>{{home}}</0> - {{away}}",
+    "soccer.total_corners": "Corners actuels : <0>{{total}}</0>",
+    "tennis.total_games": "Total actuel des jeux : {{total}}",
+    "tennis.total_games_in_set": "Total actuel des jeux lors du set {{setCount}} : {{total}} <0>({{gamesHome}} - {{gamesAway}})</0>"
+  },
+  "outcome": {
+    "draw": "Égalité"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "dure",
+        "clay": "terre battue",
+        "grass": "gazon",
+        "carpet": "moquette"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "Parier gros",
+    "buildPosition": "Composer le pari",
+    "currentOdds": "Cotes actuelles",
+    "decrementOdds": "Réduire les cotes",
+    "incrementOdds": "Augmenter les cotes",
+    "inProgress": {
+      "averageOdds": "Cotes moyennes",
+      "filledAmount": "Montant rempli",
+      "minOdds": "Cotes minimales",
+      "of": "de",
+      "remaining": "Restant",
+      "sheetFooter": {
+        "completedTitle": "Terminée",
+        "executionStoppedTitle": "Exécution interrompue",
+        "marketClosedTitle": "Marché fermé",
+        "oddsBelowMinimumTitle": "Cotes inférieures au minimum",
+        "failedTitle": "Impossible de placer le pari",
+        "trackPosition": "Suivre le pari dans <0>Mes paris</0>"
+      },
+      "stopRemaining": "Arrêter le reste",
+      "timeElapsed": "Temps écoulé",
+      "toReturn": "Pour un retour"
+    },
+    "minOdds": "Cotes minimales",
+    "needBiggerStake": "Besoin d'une plus grosse mise ?",
+    "noLimitBetting": "Pari sans limite",
+    "stakeExceededDescription": "La mise dépasse le maximum par pari pour ce marché",
+    "status": {
+      "cancelled": "Arrêté",
+      "completed": "Terminée",
+      "failed": "Échec",
+      "failedMarketClosed": "Marché fermé",
+      "failedOddsUnderMin": "Cotes modifiées",
+      "running": "En cours"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "Classements des joueurs",
+      "trendsAndFavorites": "Tendances et favoris des fans"
+    },
+    "columns": {
+      "player": "Joueur",
+      "name": "Nom"
+    },
+    "footer": "Les données reflètent les paris {{sportName}} réglés pendant {{dateRange}}. Tous les chiffres sont exprimés en équivalent USD. Seuls les profils publics sont affichés.",
+    "leaderboards": {
+      "sharpest": {
+        "title": "Parieurs les plus chevronnés",
+        "subtitle": "Meilleur RSI pour les paris sur le {{sportName}}"
+      },
+      "earners": {
+        "title": "Plus grands gagnants",
+        "subtitle": "Meilleurs profits sur le {{sportName}} en {{year}}"
+      },
+      "parlayKings": {
+        "title": "Rois du pari combiné",
+        "subtitle": "Leaders des profits des paris combinés"
+      },
+      "livePros": {
+        "title": "Légendes des paris en direct",
+        "subtitle": "Leaders des profits des paris en jeu"
+      },
+      "uclMasters": {
+        "title": "Maîtres de la Ligue des champions",
+        "subtitle": "Spécialistes de la Ligue des champions"
+      },
+      "sgpWizards": {
+        "title": "Magiciens des paris combinés sur le même match",
+        "subtitle": "Maîtres des paris combinés sur le même match"
+      },
+      "crazyParlays": {
+        "title": "Gains les plus fous en combiné",
+        "subtitle": "Victoires les plus folles sur plusieurs sélections"
+      },
+      "hotMatches": {
+        "title": "Matchs les plus chauds",
+        "subtitle": "Rencontres de {{sportName}} les plus pariées"
+      },
+      "backedTeams": {
+        "title": "Équipes les plus soutenues",
+        "subtitle": "Favoris des fans sur lesquels parier"
+      },
+      "goalscorers": {
+        "title": "Buteurs favoris",
+        "subtitle": "Joueurs de {{sportName}} avec le plus de paris"
+      },
+      "trendingLeagues": {
+        "title": "Ligues populaires",
+        "subtitle": "Compétitions les plus populaires"
+      },
+      "backedPlayers": {
+        "title": "Joueurs les plus soutenus",
+        "subtitle": "Joueurs favoris des fans sur lesquels parier"
+      },
+      "trendingTournaments": {
+        "title": "Tournois populaires",
+        "subtitle": "Tournois les plus populaires"
+      },
+      "backedFighters": {
+        "title": "Combattants les plus soutenus",
+        "subtitle": "Combattants favoris des fans sur lesquels parier"
+      },
+      "trendingPromotions": {
+        "title": "Promotions populaires",
+        "subtitle": "Promotions de MMA les plus populaires"
+      }
+    },
+    "statLabels": {
+      "roi": "RSI",
+      "profit": "Profit",
+      "bets": "Mises",
+      "liveProfit": "Profit en direct",
+      "uclProfit": "Profit de Ligue des champions",
+      "sgpProfit": "Profit de paris combinés sur le même match",
+      "multiplier": "Multiplicateur",
+      "payout": "Paiement",
+      "totalWagered": "Total misé",
+      "betsPlaced": "Paris placés",
+      "turnover": "Revenu",
+      "goalscorerBets": "Paris de buteurs",
+      "totalBets": "Total des paris",
+      "volume": "Volume"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: Top Earners",
+    "heroCta": "{{sportName}} — Voir qui gagne",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "RSI",
+    "bettingTrends": {
+      "title": "Tendances des paris sur la NBA",
+      "teamColumnLabel": "Équipe",
+      "tables": {
+        "winLoss": {
+          "title": "Meilleures équipes (vict./défaites)",
+          "subtitle": "Meilleurs résultats en NBA cette saison",
+          "recordLabel": "V-D",
+          "percentageLabel": "% de victoires"
+        },
+        "ats": {
+          "title": "Meilleures équipes ATS",
+          "subtitle": "Meilleur par rapport à l'écart cette saison",
+          "recordLabel": "Record ATS",
+          "percentageLabel": "% de couverture"
+        },
+        "over": {
+          "title": "Meilleures équipes en « Plus »",
+          "subtitle": "Les matchs font souvent « Plus » en points avec ces équipes",
+          "recordLabel": "Record de « Plus »",
+          "percentageLabel": "% de « Plus »"
+        },
+        "under": {
+          "title": "Meilleures équipes en « Moins »",
+          "subtitle": "Les matchs font souvent « Moins » en points avec ces équipes",
+          "recordLabel": "Record de « Moins »",
+          "percentageLabel": "% de « Moins »"
+        }
+      }
+    }
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "Tous"
+  }
+}

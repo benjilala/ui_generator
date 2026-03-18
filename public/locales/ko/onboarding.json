@@ -1,0 +1,16 @@
+{
+  "title": "환영합니다!",
+  "onboarding": {
+    "tellUsMore": "귀하에 대해 조금 더 알려주세요",
+    "complete": {
+      "accept_major_cryptos": "대부분의 주요 결제 서비스 제공업체와 30가지 이상의 여러 암호화폐를 이용하실 수 있습니다.",
+      "deposit_to_unlock": "충전하고 혜택을 누리세요",
+      "add_funds_to_start": "플레이를 시작하려면 자금을 추가하세요",
+      "skip_for_now": "지금 건너뛰기"
+    },
+    "errors": {
+      "nickname_taken": "이 닉네임은 이미 사용 중입니다.",
+      "dob_invalid": "유효한 날짜를 입력해 주세요."
+    }
+  }
+}

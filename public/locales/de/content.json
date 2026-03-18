@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Erhalte Prämien:",
+      "subtitle": "<0>Echtgeld</0> von Tag 1 an",
+      "body": "So profitierst du von deinem 30-Tages-Willkommenspaket bei Cloudbet:",
+      "card1Title": "Einzahlen",
+      "card1Body": "Das Willkommenspaket startet mit deiner ersten Einzahlung und bietet dir echte Prämien von Tag 1 an.",
+      "card2Title": "Wetten und beanspruchen",
+      "card2Body": "Verdiene Rakeback und tägliche Reloads im Casino sowie wöchentliche Reloads bei Sportwetten.",
+      "card3Title": "Bargeldtresor freischalten",
+      "card3Body": "Am Tag 30 erhältst du deine größte Prämie und wechselst dann direkt zu Cloudbet-Prämien.",
+      "signUpButton": "Mein Willkommenspaket starten"
+    },
+    "perks": {
+      "title": "Bei den meisten Websites musst du auf versteckte Fallen aufpassen.<br/><0>Bei uns nicht.</0>",
+      "body": "Von deiner ersten Wette an spielst du um Bargeld. Keine Credits. Keine komischen Münzen. Nur Echtgeld, das du sofort auszahlen oder gleich weiter einsetzen kannst.",
+      "signUpButton": "Jetzt bei Cloudbet registrieren",
+      "compare1": {
+        "title": "Andere Websites",
+        "list1": "Gesperrte Boni, Bargeld, das du nie siehst",
+        "list2": "Horrende Umsatzanforderungen",
+        "list3": "Einmaliger Bonus",
+        "list4": "Aktion endet nach der Registrierung"
+      },
+      "compare2": {
+        "list1": "Echte Bargeldprämien — insgesamt bis zu 2.500 $",
+        "list1b": "(entspricht ca. {{amount}})",
+        "list2": "Keine versteckten Fallen, kein Kleingedrucktes",
+        "list3": "10% Rakeback + tägliche Casino-Bargeldprämien ab Tag 1",
+        "list4": "Reiner Bargeldtresor sofort am Tag 30 (oder wenn der Höchstbetrag erreicht wird)"
+      },
+      "first30Days": {
+        "title": "Deine <0>ersten 30 Tage</0> sehen so aus:",
+        "list1": "<0>Tägliche Casino-Bargeldprämien:</0> Wette heute und sichere dir morgen echtes Bargeld.",
+        "list2": "<0>Casino-Rakeback:</0> 10 % des Hausvorteils bei jeder Wette zurück — ein Teil davon wird deinem Wallet sofort gutgeschrieben, und der Rest wird täglich in deinem Prämienkalender freigeschaltet.",
+        "list3": "<0>Wöchentliche Bargeldprämien:</0> Jeden Freitag wird sofort Bargeld freigeschaltet.",
+        "list4": "<0>Bargeldtresor:</0> Eine Bargeldprämie, die mit deinem Spiel wächst und am 30. Tag freigeschaltet wird.",
+        "body": "Spieler können bis zu 2500 $ an Reloads und Casino-Rakeback freischalten — bevor der Tresor überhaupt geöffnet wird."
+      }
+    },
+    "rewards": {
+      "title": "Am Tag 31 geht es <0>erst richtig los</0>",
+      "body": "Nach deinem Willkommenspaket tritts du automatisch <0>Cloudbet-Prämien</0> – dem großzügigsten Treueprogramm online – bei.",
+      "card1Title": "Noch höheres Rakeback mit Turbo",
+      "card1Body": "Verdiene erhöhtes Rakeback von bis zu 25 % auf jede Casino-Wette, wenn du mit TURBO spielst.",
+      "card2Title": "Level-Up-Bargeldprämien",
+      "card2Body": "Erhalte Sofortgeld jedes Mal, wenn du aufsteigst, von Silver bis Blue Diamond und jeder Ebene dazwischen.",
+      "card3Title": "Blue Diamond-Windfall",
+      "card3Body": "Steige durch die Blue Diamond-Stufe auf und entsperre Level-Up-Prämien im Wert von bis zu 9,97 Mio. $.",
+      "morePerksTitle": "Und noch mehr Vorteile",
+      "morePerksBody": "Genieße weiterhin alle tollen Casino- und Sport-Bargeldprämien aus dem Cloudbet-Willkommenspaket."
+    },
+    "faq": {
+      "title": "FAQ zum Willkommenspaket",
+      "q1": "Ist der Tresor in den 2500 $ enthalten?",
+      "a1": "Nein. Den Tresor gibt es extra zu deinen täglichen Prämien dazu.",
+      "q2": "Muss ich einwilligen?",
+      "a2": "Nein, es wird mit deiner ersten Einzahlung automatisch aktiviert.",
+      "q3": "Was passiert, wenn ich nach 30 Tagen immer noch nicht auf 2500 $ komme?",
+      "a3": "Du behältst alles, was du beansprucht hast, und trittst automatisch den Cloudbet-Prämien bei.",
+      "q4": "Kann ich es noch einmal erhalten?",
+      "a4": "Nein, es ist ein einmaliges Paket, aber mit Cloudbet-Prämien gibt es ständig neue Auszahlungen.",
+      "q5": "Wie lange ist das Willkommenspaket gültig?",
+      "a5": "Das Willkommenspaket gilt für 30 Tage ab dem Zeitpunkt deiner ersten Einzahlung oder bis du den Höchstbetrag von 2.500 $ erreicht hast, je nachdem, was zuerst eintritt.",
+      "q6": "Wann bekomme ich mein Rakeback?",
+      "a6": "Ein Teil landet sofort in deinem Wallet. Der Rest wird täglich in deinem Prämienkalender freigeschaltet, so dass immer neues Bargeld auf dich wartet."
+    },
+    "cta": {
+      "title": "Warte nicht auf „Irgendwann“-Prämien.",
+      "subtitle": "Sichere dir <0>echtes Bargeld</0> von deiner ersten Wette an."
+    }
+  }
+}

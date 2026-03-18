@@ -1,0 +1,700 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": -1233,
+      "y": 144,
+      "name": "Frame",
+      "clip": true,
+      "width": 1200,
+      "height": 1700,
+      "fill": "#0b0a10",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "card",
+      "x": 1508,
+      "y": -233,
+      "name": "Card",
+      "clip": true,
+      "width": 1168,
+      "height": 1668,
+      "fill": "#13111d",
+      "cornerRadius": 20,
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "cardHeader",
+          "x": 0,
+          "y": 0,
+          "name": "CardHeader",
+          "width": 1168,
+          "height": 72,
+          "fill": "#1a1727",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "marketTitle",
+              "x": 24,
+              "y": 21,
+              "name": "Title",
+              "content": "⌄   Full Time Result   ↻",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "h1",
+              "x": 686,
+              "y": 21,
+              "name": "Column 1",
+              "content": "1",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "hx",
+              "x": 867,
+              "y": 21,
+              "name": "Column X",
+              "content": "X",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "h2",
+              "x": 1049,
+              "y": 21,
+              "name": "Column 2",
+              "content": "2",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "row1",
+          "x": 0,
+          "y": 72,
+          "name": "TableRow",
+          "width": 1168,
+          "height": 204,
+          "fill": "#252034",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "r1a",
+              "x": 24,
+              "y": 26,
+              "content": "⚪  AFC Bournemouth",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r1b",
+              "x": 24,
+              "y": 72,
+              "content": "🟠  Manchester United",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r1d",
+              "x": 24,
+              "y": 134,
+              "content": "Sat 21 Mar • 4:00 AM",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "r1o1",
+              "x": 670,
+              "y": 68,
+              "content": "3.14",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r1ox",
+              "x": 856,
+              "y": 68,
+              "content": "3.71",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r1o2",
+              "x": 1040,
+              "y": 68,
+              "content": "2.13",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "row2",
+          "x": 0,
+          "y": 276,
+          "name": "TableRow",
+          "width": 1168,
+          "height": 204,
+          "fill": "#141223",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "r2a",
+              "x": 24,
+              "y": 26,
+              "content": "⚪  Brighton & Hove Albion",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r2b",
+              "x": 24,
+              "y": 72,
+              "content": "◎  Liverpool",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r2d",
+              "x": 24,
+              "y": 134,
+              "content": "Sat 21 Mar • 8:30 PM",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "r2o1",
+              "x": 670,
+              "y": 68,
+              "content": "3.01",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r2ox",
+              "x": 856,
+              "y": 68,
+              "content": "3.57",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r2o2",
+              "x": 1040,
+              "y": 68,
+              "content": "2.25",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "row3",
+          "x": 0,
+          "y": 480,
+          "name": "TableRow",
+          "width": 1168,
+          "height": 204,
+          "fill": "#141223",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "r3a",
+              "x": 24,
+              "y": 26,
+              "content": "◎  Fulham",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r3b",
+              "x": 24,
+              "y": 72,
+              "content": "◎  Burnley",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r3d",
+              "x": 24,
+              "y": 134,
+              "content": "Sat 21 Mar • 11:00 PM",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "r3o1",
+              "x": 670,
+              "y": 68,
+              "content": "1.57",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r3ox",
+              "x": 856,
+              "y": 68,
+              "content": "3.89",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r3o2",
+              "x": 1040,
+              "y": 68,
+              "content": "5.87",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "row4",
+          "x": 0,
+          "y": 684,
+          "name": "TableRow",
+          "width": 1168,
+          "height": 204,
+          "fill": "#141223",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "r4a",
+              "x": 24,
+              "y": 26,
+              "content": "◎  Everton",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r4b",
+              "x": 24,
+              "y": 72,
+              "content": "◎  Chelsea",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r4d",
+              "x": 24,
+              "y": 134,
+              "content": "Sun 22 Mar • 1:30 AM",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "badge",
+              "x": 253,
+              "y": 129,
+              "name": "Badge",
+              "width": 120,
+              "height": 34,
+              "fill": "#3c2f56",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "badgeLabel",
+                  "x": 13,
+                  "y": 8,
+                  "content": "Bet Builder",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "r4o1",
+              "x": 670,
+              "y": 68,
+              "content": "3.55",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r4ox",
+              "x": 856,
+              "y": 68,
+              "content": "3.54",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r4o2",
+              "x": 1040,
+              "y": 68,
+              "content": "2.02",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "row5",
+          "x": 0,
+          "y": 888,
+          "name": "TableRow",
+          "width": 1168,
+          "height": 194,
+          "fill": "#141223",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "r5a",
+              "x": 24,
+              "y": 24,
+              "content": "⚪  Leeds United",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r5b",
+              "x": 24,
+              "y": 70,
+              "content": "◎  Brentford",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r5d",
+              "x": 24,
+              "y": 132,
+              "content": "Sun 22 Mar • 4:00 AM",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "r5o1",
+              "x": 670,
+              "y": 66,
+              "content": "2.45",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r5ox",
+              "x": 856,
+              "y": 66,
+              "content": "3.41",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r5o2",
+              "x": 1040,
+              "y": 66,
+              "content": "2.80",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "row6",
+          "x": 0,
+          "y": 1082,
+          "name": "TableRow",
+          "width": 1168,
+          "height": 194,
+          "fill": "#141223",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "r6a",
+              "x": 24,
+              "y": 24,
+              "content": "⚪  Newcastle United",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r6b",
+              "x": 24,
+              "y": 70,
+              "content": "⚪  Sunderland AFC",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r6d",
+              "x": 24,
+              "y": 132,
+              "content": "Sun 22 Mar • 8:00 PM",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "r6o1",
+              "x": 670,
+              "y": 66,
+              "content": "1.62",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r6ox",
+              "x": 856,
+              "y": 66,
+              "content": "3.93",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r6o2",
+              "x": 1040,
+              "y": 66,
+              "content": "5.22",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "row7",
+          "x": 0,
+          "y": 1276,
+          "name": "TableRow",
+          "width": 1168,
+          "height": 194,
+          "fill": "#141223",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "r7a",
+              "x": 24,
+              "y": 24,
+              "content": "⚪  Aston Villa",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r7b",
+              "x": 24,
+              "y": 70,
+              "content": "⚪  West Ham United FC",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r7d",
+              "x": 24,
+              "y": 132,
+              "content": "Sun 22 Mar • 10:15 PM",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "r7o1",
+              "x": 670,
+              "y": 66,
+              "content": "1.95",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r7ox",
+              "x": 856,
+              "y": 66,
+              "content": "3.38",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r7o2",
+              "x": 1040,
+              "y": 66,
+              "content": "3.98",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "row8",
+          "x": 0,
+          "y": 1470,
+          "name": "TableRow",
+          "width": 1168,
+          "height": 198,
+          "fill": "#141223",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "r8a",
+              "x": 24,
+              "y": 24,
+              "content": "⚪  Tottenham Hotspur FC",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r8b",
+              "x": 24,
+              "y": 70,
+              "content": "⚪  Nottingham Forest FC",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r8d",
+              "x": 24,
+              "y": 132,
+              "content": "Sun 22 Mar • 10:15 PM",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "r8o1",
+              "x": 670,
+              "y": 66,
+              "content": "2.47",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r8ox",
+              "x": 856,
+              "y": 66,
+              "content": "3.38",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "r8o2",
+              "x": 1040,
+              "y": 66,
+              "content": "2.80",
+              "fontFamily": "Inter",
+              "fontSize": 20,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "imports": {
+    "7": "pencil:shadcn.lib.pen"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "クラブへようこそ",
+  "onboarding": {
+    "tellUsMore": "いくつか、あなたについて教えてください。",
+    "complete": {
+      "accept_major_cryptos": "クラウドベットでは、ほとんどの主要な決済プロバイダーと30種類以上の仮想通貨に対応しています。",
+      "deposit_to_unlock": "ロック解除には入金が必要です",
+      "add_funds_to_start": "ようこそ、<0>Username</0>さん。まずは入金して、プレイしましょう！",
+      "skip_for_now": "あとで見る"
+    },
+    "errors": {
+      "nickname_taken": "このユーザー名は既に使用されています",
+      "dob_invalid": "正しい生年月日を入力してください"
+    }
+  }
+}

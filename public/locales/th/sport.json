@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "เอเชี่ยนไลน์",
+      "cards": "ใบเหลืองใบแดง",
+      "corners": "มุม",
+      "goals": "ประตู",
+      "half": "ครึ่ง",
+      "main": "หลัก",
+      "more": "เพิ่มเติม",
+      "specials": "พิเศษ",
+      "popular": "ยอดนิยม",
+      "firstHalf": "ครึ่งแรก",
+      "secondHalf": "ครึ่งหลัง",
+      "points": "คะแนน",
+      "quarters": "ควอร์เตอร์",
+      "players": "ผู้เล่น",
+      "sets": "เซ็ต",
+      "games": "เกม",
+      "hitsAndRuns": "Hits & Runs",
+      "playerProps": "เดิมพันผู้เล่น",
+      "extraTime": "ทดเวลา",
+      "kills": "กำจัด",
+      "match": "แมตช์",
+      "player": "ผู้เล่น",
+      "team": "ทีม",
+      "mainMarkets": "ตลาดหลัก",
+      "matchMarkets": "ตลาดการแข่งขัน",
+      "mapN": "แมป {{mapNumber}}",
+      "firstInnings": "อินนิ่งที่ 1",
+      "all": "ทุกตลาด",
+      "betBuilder": "ผู้สร้างเดิมพัน"
+    },
+    "stats": {
+      "notAvailable": "ข้อมูลสถิติไม่พร้อมใช้งาน",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "ผู้สร้างเดิมพันไลฟ์อยู่",
+      "loginToBetDescription": "สร้างการเดิมพันแบบกำหนดเองโดยการเลือกจากการแข่งขันครั้งเดียว\nควบคุมได้มากขึ้น มีโอกาสมากขึ้น พร้อมใช้งานแล้วในลีกที่เลือก",
+      "loginToBetButton": "ลงชื่อเข้าใช้เพื่อสร้างของคุณเอง",
+      "genericError": {
+        "titleWithCode": "มีข้อผิดพลาดเกิดขึ้น ({{code}})",
+        "title": "มีข้อผิดพลาดเกิดขึ้น",
+        "description": "โปรดลองอีกครั้ง หากยังคงประสบปัญหาอยู่ โปรดติดต่อฝ่ายสนับสนุนลูกค้าของเรา"
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "แทนที่ผู้สร้างเดิมพันที่มีอยู่",
+        "description": "สามารถใช้ผู้สร้างเดิมพันในสลิปเดิมพันได้เพียงรายการเดียวเท่านั้น การเพิ่ม\nผู้สร้างเดิมพันนี้จะแทนที่ผู้สร้างเดิมพันในปัจจุบัน",
+        "cancelCta": "ยกเลิก",
+        "replaceCta": "แทนที่"
+      },
+      "shortened": "BB",
+      "betBuilderPromo": "สร้างอัตราต่อรองที่ใหญ่กว่าด้วยการเดิมพันชุดในเกมเดียวกัน",
+      "betBuilderAlertBanner": {
+        "title2": "จับรางวัลนำโชคผู้สร้างเดิมพัน 100 เท่า",
+        "body2": "สร้างเดิมพันชุดมูลค่า $1 ขึ้นไปในช่วงสุดสัปดาห์นี้ ผู้ชนะ 10 คนจะได้รับเงินรางวัล 100 เท่าของยอดเดิมพัน (สูงสุด $100)"
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "เมื่อใดก็ได้",
+            "first": "แรก",
+            "last": "สุดท้าย",
+            "teamFirst": "ทีมแรก",
+            "teamLast": "ทีมสุดท้าย",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "หัวข้อ",
+            "scoreOutsideOfTheBox": "นอกกรอบ"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "ผู้เล่นจะทำคะแนนได้ตอนไหน",
+            "when-will-player-score-team": "ผู้เล่นจะทำคะแนนได้ตอนไหน (ทีม)",
+            "how-many-player-goals": "ผู้เล่นจะทำได้กี่ประตู",
+            "how-will-player-score": "ผู้เล่นจะทำคะแนนได้เท่าไร",
+            "player-assists": "แอสซิสต์ของผู้เล่น",
+            "player-to-be-carded-team": "ผู้เล่นที่จะได้รับใบเหลือง/แดง (ทีม)",
+            "player-to-be-shown-a-card": "ผู้เล่นจะได้รับใบเหลือง/ใบแดง",
+            "total-cards-team": "ใบเหลือง/ใบแดงทั้งหมด (ทีม)",
+            "both-team-total-cards": "ใบเหลือง/ใบแดงทั้งหมดของทั้งสองทีม",
+            "both-teams-total-goals": "จำนวนประตูทั้งหมดของทั้งสองทีม",
+            "total-goals-team": "จำนวนประตูทั้งหมด (ทีม)",
+            "both-teams-total-corners": "จำนวนลูกมุมทั้งหมดของทั้งสองทีม",
+            "total-corners-team": "ลูกมุมทั้งหมด (ทีม)",
+            "both-teams-score": "ทั้งสองทีมทำคะแนน",
+            "player-to-be-sent-off": "ผู้เล่นที่จะถูกไล่ออก",
+            "player-total-fouls-committed": "จำนวนฟาวล์รวมที่ผู้เล่นทำ",
+            "player-total-saves": "จำนวนการเซฟรวมของผู้เล่น",
+            "player-total-shots": "จำนวนการยิงรวมของผู้เล่น",
+            "player-total-shots-on-target": "จำนวนลูกยิงเข้าประตูทั้งหมดของผู้เล่น",
+            "player-total-tackles": "จำนวนเข้าสกัดรวมของผู้เล่น",
+            "player-total-passes": "จำนวนการส่งบอลรวมของผู้เล่น",
+            "to-happen-in-the-match-team": "ที่อาจเกิดในเกมการแข่งขัน (ทีม)",
+            "method-of-victory": "วิธีการชนะ",
+            "total-shots-team": "จำนวนลูกยิงทั้งหมด (ทีม)",
+            "team-with-most-bookings": "ทีมที่โดนแจกใบเหลืองใบแดงมากสุด",
+            "total-shots-on-target-team": "จำนวนลูกยิงเข้าประตูทั้งหมด (ทีม)",
+            "total-goals-over-slash-under-after-10-minutes": "จำนวนประตูรวมสูง/ต่ำหลังผ่านไป 10 นาที",
+            "asian-handicap-after-10-minutes": "แต้มต่อเอเชียหลังผ่านไป 10 นาที",
+            "correct-score": "คะแนนที่ถูกต้อง",
+            "most-cards": "ใบเหลือง/ใบแดงมากที่สุด",
+            "most-corners": "ลูกเตะมุมมากที่สุด",
+            "double-chance": "โอกาสสองเท่า",
+            "winning-margin": "อัตราชนะห่าง",
+            "total-goals": "ประตูรวม",
+            "total-exact-goals": "จำนวนประตูรวมที่แน่นอน",
+            "total-exact-goals-team": "จำนวนประตูรวมที่แน่นอน (ทีม)",
+            "total-bookings-points": "คะแนนใบเหลือง-ใบแดงรวม",
+            "total-bookings-points-team": "คะแนนใบเหลือง-ใบแดงรวม (ทีม)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "คะแนนและรีบาวด์รวมของผู้เล่น",
+            "player-total-points": "คะแนนรวมของผู้เล่น",
+            "player-total-3-point-field-goals": "จำนวนการทำ 3 แต้มรวมของผู้เล่น",
+            "player-total-rebounds": "จำนวนรีบาวด์รวมของผู้เล่น",
+            "player-total-assists-and-rebounds": "จำนวนแอสซิสต์และรีบาวด์รวมของผู้เล่น",
+            "player-total-assists": "จำนวนแอสซิสต์รวมของผู้เล่น",
+            "player-total-points-and-assists": "คะแนนและแอสซิสต์รวมของผู้เล่น",
+            "player-total-points-assists-and-rebounds": "คะแนน แอสซิสต์ และรีบาวด์รวมของผู้เล่น",
+            "player-to-achieve-a-double-double": "ผู้เล่นที่ทำดับเบิล-ดับเบิลได้สำเร็จ",
+            "player-to-achieve-a-triple-double": "ผู้เล่นที่ทำทริปเปิล-ดับเบิลได้สำเร็จ",
+            "player-total-3-pointers-over-under": "จำนวนการทำ 3 แต้มรวมของผู้เล่น (สูง/ต่ำ)",
+            "player-total-assists-and-rebounds-over-under": "จำนวนแอสซิสต์และรีบาวด์รวมของผู้เล่น (สูง/ต่ำ)",
+            "player-total-assists-over-under": "จำนวนแอสซิสต์รวมของผู้เล่น (สูง/ต่ำ)",
+            "player-total-points-over-under": "คะแนนรวมของผู้เล่น (สูง/ต่ำ)",
+            "player-total-rebounds-over-under": "จำนวนรีบาวด์รวมของผู้เล่น (สูง/ต่ำ)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "เดิมพันใน {{eventName}} ด้วยคริปโต",
+      "soccerDescription": "แฟนๆ สามารถพบกับการปะทะที่น่าตื่นเต้นในขณะที่ {{home}} เผชิญหน้ากับ {{away}} ในรายการ {{competition}} วันที่ {{date}} เวลา {{time}} ที่ Cloudbet คุณสามารถสร้างเดิมพันชุดในเกมเดียวกันโดยใส่ตัวเลือกประตู ลูกเตะมุม และใบเหลือง-แดงเข้าไว้ด้วยกันเพื่อความตื่นเต้นที่มากขึ้น วางเดิมพันก่อนเตะบอลเปิดสนามหรือติดตามการแข่งขันแบบสด",
+      "basketballDescription": "{{competition}} ระหว่าง {{home}} และ {{away}} จะเริ่มขึ้นในวันที่ {{date}} เวลา {{time}} เกมนี้รับรองว่าเต็มไปด้วยการเล่นที่น่าตื่นเต้นตั้งแต่เริ่มต้นไปจนถึงสิ้นสุดการแข่งขัน การวางเดิมพันชุดในเกมเดียวกันช่วยให้คุณเชื่อมโยงคะแนนของผู้เล่น การรีบาวด์ และการส่งลูกเอาไว้ด้วยกันเพื่อการเดิมพันที่ดุดันยิ่งขึ้นได้ เดิมพันก่อนการแข่งขันหรือเข้าร่วมการเล่นสดระหว่างการแข่งขัน",
+      "americanFootballDescription": "เป็นการดวลกันระหว่าง {{home}} เจอกับ {{away}} ในรายการ {{competition}} ซึ่งจะเริ่มในวันที่ {{date}} เวลา {{time}} Cloudbet ให้คุณวางเดิมพันชุดในเกมเดียวกันได้ ตั้งแต่ทัชดาวน์ไปจนถึงระยะที่ใช้ในการขว้างลูก เพื่อเพิ่มความได้เปรียบที่เฉียบคมยิ่งขึ้น วางเดิมพันก่อนเตะบอลเปิดสนาม หรือใช้ประโยชน์จากอัตราต่อรองสดขณะที่เกมกำลังดำเนินไป",
+      "tennisDescription": "{{competition}} ระหว่าง {{home}} และ {{away}} จะเกิดขึ้นในวันที่ {{date}} เวลา {{time}} ผู้เล่นทั้งสองคนเป็นที่รู้จักจากฟอร์มและทักษะของพวกเขาบน {{surface}} เดิมพันชุดในแมตช์เดียวกันช่วยให้คุณเดิมพันกับผู้ชนะเซต จำนวนเกมทั้งหมด และเอซทั้งหมดได้ในเดิมพันเดียว ล็อกการเดิมพันของคุณก่อนเสิร์ฟลูกแรก หรือเดิมพันสดต่อไปเมื่อโมเมนตัมเปลี่ยนไป",
+      "baseballDescription": "{{home}} จะพบกับ {{away}} ในรายการ {{competition}} วันที่ {{date}} เวลา {{time}} เดิมพันชุดในเกมเดียวกันให้คุณสามารถเชื่อมโยงการตี การตีลูกออก และการทำคะแนนเข้าไว้ด้วยกันได้ในการเดิมพันเดียว วางเดิมพันล่วงหน้าหรือวางเดิมพันแบบสดได้แบบอินนิ่งต่ออินนิ่ง",
+      "iceHockeyDescription": "การแข่งขัน {{competition}} ระหว่าง {{home}} และ {{away}} จะเริ่มขึ้นในวันที่ {{date}} เวลา {{time}} เดิมพันชุดในเกมเดียวกันช่วยให้คุณรวมประตู จำนวนแอสซิสต์ และลูกโทษเอาไว้ด้วยกันได้เพื่อเพิ่มความตื่นเต้น วางเดิมพันก่อนเริ่มการแข่งขันหรือเดิมพันสดตลอดการแข่งขัน",
+      "rugbyDescription": "{{home}} จะเจอกับ {{away}} ในรายการ {{competition}} วันที่ {{date}} เวลา {{time}} พบกับการแทคเกิลครั้งใหญ่และการทำทรัยสุดอัศจรรย์ ด้วย Cloudbet คุณสามารถสร้างเดิมพันชุดในเกมเดียวกันได้จากการทำทรัย การเปลี่ยนตัว และคะแนนรวม เดิมพันของคุณก่อนเตะบอลเปิดสนาม หรือเล่นสดต่อไปในทุกการทำสกรัม",
+      "cricketDescription": "{{home}} จะเจอกับ {{away}} ในการแข่งขัน {{competition}} ที่มีกำหนดในวันที่ {{date}} เวลา {{time}} พบกับการรันและวิกเก็ตมากมาย ด้วยการวางเดิมพันชุดในเกมเดียวกันของ Cloudbet คุณสามารถใส่การรัน วิกเก็ต และการตีข้ามแดนเข้าไว้ในการเดิมพันเดียวได้ วางเดิมพันของคุณก่อนการขว้างลูกครั้งแรกหรือเดิมพันแบบสดต่อไปในทุกโอเวอร์",
+      "horseRacingDescription": "{{competition}} จะจัดขึ้นในวันที่ {{date}} เวลา {{time}} ด้วยม้าชั้นนำที่พร้อมลงแข่งขัน เหล่าแฟนๆ จึงคาดหวังที่จะได้เห็นเดิมพันสูงเพื่อเข้าสู่เส้นชัย ที่ Cloudbet คุณจะสามารถสนับสนุนตัวเลือกที่คุณชื่นชอบได้ตามต้องการ หรือสร้างเดิมพันชุดแบบกำหนดเองจากการแข่งขันต่างๆ เพื่อความสนุกที่มากขึ้น วางเดิมพันได้ก่อนที่ประตูจะเปิดหรือเดิมพันได้แบบสดขณะที่การแข่งขันกำลังดำเนินไป",
+      "mmaDescription": "{{home}} และ {{away}} จะเจอกันในวันที่ {{date}} เวลา {{time}} ถ่ายทอดสดจาก {{competition}} การต่อสู้ครั้งนี้รับรองได้ว่าจะต้องดุเด็ดเผ็ดมันภายในเวที ที่ Cloudbet คุณจะสามารถสร้างเดิมพันชุดในการต่อสู้รอบเดียวกันได้ โดยการใส่การน็อกดาวน์ การเดิมพันในยก และวิธีการชนะเอาไว้ในตัวเลือก วางเงินเดิมพันล่วงหน้าหรือในการเล่นแบบสดเมื่อการต่อสู้ดำเนินไปก็ได้",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "อัตราต่อรองอีสปอร์ต",
+          "cs2": "เดิมพันอีสปอร์ต CS2",
+          "dota2": "อัตราต่อรอง",
+          "valorant": "อัตราต่อรองเดิมพัน Valorant",
+          "fifa": "อัตราต่อรองเดิมพันฟีฟ่าอีสปอร์ต"
+        },
+        "titleV2": "เดิมพันระหว่าง {{home}} กับ {{away}} – {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "เดิมพันระหว่าง {{home}} กับ {{away}} ในวันที่ {{date}} เวลา {{time}} เมื่อการแข่งขัน {{competition}} เริ่มถ่ายทอดสด พร้อมอัตราต่อรองอีสปอร์ตที่ดีที่สุดบน Cloudbet การดวลกันในเกม LoL ครั้งนี้มาพร้อมตลาดคริปโตแบบเต็มรูปแบบสำหรับการเดิมพันอีสปอร์ต — รวมถึง {{markets}}",
+        "cs2Description": "เดิมพันระหว่าง {{home}} กับ {{away}} วันที่ {{date}} เวลา {{time}} ในรายการ {{competition}} เดิมพันด้วยคริปโตในตลาด CS2 รวมถึง {{markets}} — เหมาะอย่างยิ่งสำหรับการเดิมพันอีสปอร์ตแบบสด ที่ Cloudbet เท่านั้น",
+        "dota2Description": "เดิมพันระหว่าง {{home}} กับ {{away}} ใน Dota 2 {{competition}} วันที่ {{date}} เวลา {{time}} นี้ ตลาดคริปโตเปิดให้เดิมพันในหมวด {{markets}} แล้ว เดิมพัน Dota 2 เพื่อลุ้นรับรางวัลเงินสดจริงบนเว็บไซต์เดิมพันอีสปอร์ตชั้นนำ",
+        "valorantDescription": "เดิมพันระหว่าง {{home}} และ {{away}} ใน {{competition}} วันที่ {{date}} เวลา {{time}} นี้ ร่วมลุ้นไปกับการแข่งขันและวางเดิมพัน Valorant ของคุณด้วย BTC, ETH หรือ USDT ในตลาด {{markets}} — ที่ Cloudbet เท่านั้น",
+        "fifaDescription": "เดิมพันระหว่าง {{home}} กับ {{away}} ใน {{competition}} วันที่ {{date}} เวลา {{time}} นี้ เลือกเชียร์ทีมโปรดของคุณในอีสปอร์ต FIFA กับตลาดเดิมพันอย่าง {{markets}} — เดิมพันอีสปอร์ตออนไลน์ได้ง่ายๆ ที่ Cloudbet"
+      }
+    },
+    "nbaPromo": {
+      "title": "ใหม่สำหรับ NBA: ผู้สร้างเดิมพันและข้อเสนอผู้เล่น",
+      "body": "วางเดิมพันชุดในเกมเดียวกันด้วยผู้สร้างเดิมพัน และตรวจสอบแท็บข้อเสนอผู้เล่นใหม่สำหรับการเดิมพันข้อเสนอ"
+    },
+    "playerProps": {
+      "avgPer5Game": "ค่าเฉลี่ย {{stats}} ต่อ 5 เกม",
+      "avgInRegSeason": "{{stats}} เฉลี่ยในฤดูกาลปกติ"
+    }
+  },
+  "common": {
+    "today": "วันนี้",
+    "partial": "บางส่วน",
+    "instantGames": "เกมด่วน",
+    "inPlay": "ระหว่างเกม",
+    "tomorrow": "วันพรุ่งนี้",
+    "competitions": "การแข่งขัน",
+    "highlights": "ไฮไลท์",
+    "outrights": "การทายผลชนะเลิศล่วงหน้า",
+    "virtuals": "เสมือนจริง",
+    "liveStream": "สตรีมสด",
+    "events": "กิจกรรม",
+    "games": "เกม",
+    "nextToJump": "ตัวต่อไปที่จะกระโดด",
+    "noLimitBets": "เดิมพันแบบไม่จำกัด",
+    "virtualSoccer": "ฟุตบอลเสมือนจริง",
+    "virtualBasketball": "บาสเก็ตบอลเสมือนจริง",
+    "betsClosed": "ปิดการเดิมพัน",
+    "virtualsUpNext": "ต่อไปคือรายการเสมือนจริง",
+    "simPlay": "จำลองการเล่นกีฬา",
+    "fullMatchup": "การแข่งขันเต็มรูปแบบ",
+    "browseNow": "เรียกดูตอนนี้",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "เพื่อรับคืน: {{amount}}",
+    "toReturnTitle": "เพื่อรับคืน",
+    "toReturnSubtitle": "{{stake}} รับผลตอบแทน {{payout}}",
+    "summary": {
+      "reuseSelections": "ใช้ตัวเลือกซ้ำ",
+      "acceptAndPlace": "ยอมรับและลงเดิมพัน  {{value}}",
+      "sameGameMultiPlaced": "ใช้ผู้สร้างเดิมพันแล้ว"
+    },
+    "parlay": {
+      "legs": "{{count}} นัด"
+    },
+    "maxBet": {
+      "noLimit": "สูงสุดต่อการเดิมพัน: <0>{{currency}}{{stake}}</0>",
+      "nolimitTitle": "สูงสุดต่อการเดิมพัน:",
+      "default": "เดิมพันสูงสุด: <0>{{currency}}{{stake}}</0>",
+      "defaultLocalized": "เดิมพันสูงสุด: <0>{{value}}</0>",
+      "defaultTitle": "เดิมพันสูงสุด:"
+    },
+    "errors": {
+      "maxBetIs": "เดิมพันสูงสุดคือ <0>{{currency}} {{stake}}</0>",
+      "minBetIs": "เดิมพันขั้นต่ำคือ <0>{{currency}} {{stake}}</0>",
+      "maxBet": "เดิมพันสูงสุด",
+      "minBet": "เดิมพันขั้นต่ำ"
+    },
+    "summeryErrors": {
+      "marketClosed": "ตลาดปิดแล้ว",
+      "limitExceeds": "เกิดขีดจำกัด",
+      "maxStakeReached": "มีเงินเดิมพันสูงสุดแล้ว",
+      "restricted": "ถูกจำกัด",
+      "restrictedGeoBlocked": "ภูมิภาคที่คุณใช้งานไม่ได้รับอนุญาต โปรดปิด VPN แล้วลองใหม่อีกครั้ง",
+      "restrictedGeoBlockedShorten": "ไม่อนุญาตให้เข้าถึงจากภูมิภาคนี้",
+      "minStakeChanged": "เปลี่ยนเงินเดิมพันขั้นต่ำแล้ว",
+      "maxStakeChanged": "เปลี่ยนเงินเดิมพันสูงสุดแล้ว",
+      "unknownError": "ข้อผิดพลาดที่ไม่รู้จัก",
+      "suspended": "ถูกระงับ",
+      "unauthorized": "ไม่ได้รับอนุญาต",
+      "stakeAboveMax": "โปรดลดเงินเดิมพันของคุณ",
+      "stakeBelowMin": "โปรดเพิ่มเงินเดิมพันของคุณ",
+      "priceAboveMarket": "อัตราต่อรองมีการเปลี่ยนแปลง",
+      "betPending": "การเชื่อมต่อไม่เสถียร ตรวจสอบ \"เดิมพันของฉัน\" เพื่อดูสถานะการเดิมพัน"
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "โปรดสร้างเดิมพันของคุณใหม่",
+        "timedOutTitle": "ไม่พบเดิมพัน",
+        "timedOutDescription": "ไม่พบการเดิมพันนี้ โปรดตรวจสอบที่ \"การเดิมพันของฉัน\" หรือติดต่อฝ่ายสนับสนุนก่อนวางเดิมพันอีกครั้ง",
+        "unknownError": "มีข้อผิดพลาดเกิดขึ้น",
+        "unknownErrorDescription": "ตรวจสอบ \"การเดิมพันของฉัน\" หรือติดต่อฝ่ายสนับสนุนก่อนที่จะวางเดิมพันอีกครั้ง",
+        "limitsExceeded": "เกิดขีดจำกัดแล้ว"
+      },
+      "actions": {
+        "clearSGP": "ล้างผู้สร้างเดิมพัน",
+        "reviewChangesInBetslip": "ตรวจสอบการเปลี่ยนแปลงในสลิปเดิมพัน"
+      }
+    },
+    "placeBet": "ลงเดิมพัน",
+    "placeParlay": "วางเดิมพัน {{amount}}",
+    "betBuilder": {
+      "placeBetValid": "วาง BB+ {{amount}}",
+      "placeBetSubmitting": "กำลังวาง BB+ {{amount}}",
+      "betBuilderItemMarketUnavailable": "ตลาดถูกระงับชั่วคราว <0>ลองใหม่</0> หรือ <1>ลบ</1>",
+      "error": {
+        "parlayRestricted": "ตัวเลือกที่เกี่ยวข้องกันไม่สามารถนำมารวมกันได้",
+        "marketSuspended": "ตลาดถูกระงับชั่วคราว"
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "อัตราต่อรองมีการเปลี่ยนแปลง",
+      "oddsHaveChangedAccept": "อัตราต่อรองมีการเปลี่ยนแปลง <0>ยอมรับ</0>",
+      "oddsHaveChangedToReturn": "อัตราต่อรองมีการเปลี่ยนแปลง เพื่อรับคืน: {{payout}}",
+      "oddsHaveChangedToReturnTitle": "อัตราต่อรองมีการเปลี่ยนแปลง เพื่อรับคืน:",
+      "marketIsSuspendedWaitOrRemove": "ตลาดถูกระงับชั่วคราว รอสักครู่ หรือ<0>ลบออก</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "ตลาดถูกระงับชั่วคราว รอสักครู่หรือลบออก...",
+      "marketIsClosedRemove": "ตลาดปิดแล้ว <0>ลบ</0>",
+      "selectionCorrelated": "ตัวเลือกนี้สัมพันธ์กับตัวเลือกอื่น <0>ลบ</0>",
+      "parlayRestricted": "ตัวเลือกนี้ไม่สามารถเดิมพันชุดได้<0>ลบ</0>",
+      "dangerBall": "อาจจะทำคะแนนได้ในไม่ช้า อาจใช้เวลาถึง 5 นาทีจึงจะสามารถรับการเดิมพันของคุณได้"
+    },
+    "consent": {
+      "acceptAllChanges": "ยอมรับการเปลี่ยนแปลงทั้งหมด"
+    },
+    "insufficientBalanceAlert": {
+      "title": "คุณมีเงินไม่เพียงพอ",
+      "description": "<0>ฝากเงินทันที</0>เพื่อดำเนินการเดิมพันต่อ"
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "ดู {{sport}} ทั้งหมด"
+  },
+  "betBuilder": {
+    "reviewBet": "ตรวจสอบเดิมพัน",
+    "title": "ผู้สร้างเดิมพัน"
+  },
+  "myBets": {
+    "noBets": "ไม่มีเดิมพัน",
+    "checkOut": "ลองดูเกมวันนี้หรือการแข่งขันที่จะเกิดขึ้นเร็วๆ นี้ เพื่อหาโอกาสเดิมพันครั้งต่อไปของคุณ",
+    "viewBetHistory": "ดูประวัติการเดิมพัน",
+    "browseInplay": "เรียกดูกิจกรรมระหว่างการเล่น",
+    "loadError": "ไม่สามารถโหลดเดิมพันนี้ได้",
+    "id": "ID",
+    "viewAllSettledBetsInfo": "ดูการเดิมพันที่สรุปผลทั้งหมดในประวัติการเดิมพัน",
+    "onlyLast72HoursBetsInfo": "แสดงเฉพาะการเดิมพัน 72 ชั่วโมงล่าสุดเท่านั้น ดูการเดิมพันทั้งหมดที่สรุปผลแล้วในประวัติ"
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "สูงกว่า {{over}}",
+      "gameOversAndDeliveries": "สูงกว่า {{over}}.{{delivery}}",
+      "gameTargetRunsAndBalls": "{{teamName}} ต้องการ {{runs}} จาก {{balls}}",
+      "gameTrailByRuns": "{{teamName}} ตามอยู่ {{runs}}",
+      "gameLeadByRuns": "{{teamName}} นำอยู่ {{runs}}",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "ทดสอบ",
+      "matchDay": "วันที่ {{matchDay}}.",
+      "endOfMatchDay": "สิ้นสุดวันที่ {{matchDay}}",
+      "wonDefault": "{{winner}} ชนะ",
+      "matchDrawn": "การแข่งขันเสมอ",
+      "wonByRuns": "{{winner}} ชนะไปด้วย {{wonBy}} รัน",
+      "wonByRunsAndInning": "{{winner}} ชนะไปด้วยหนึ่งอินนิ่งและ {{wonBy}} รัน",
+      "wonByWickets": "{{winner}} ชนะไปด้วย {{wonBy}} วิกเก็ต"
+    },
+    "racing": {
+      "running": "กำลังวิ่ง",
+      "runners": "นักวิ่ง",
+      "scratched": "ถอนตัว",
+      "horseRacingWithdrawnDescription": "ม้าถูกถอนตัวออกไปแล้วเนื่องจากมีอาการบาดเจ็บ ป่วย สภาพของลู่แข่ง หรือการตัดสินใจของผู้ฝึก อัตราต่อรองจึงเปลี่ยนแปลง และหากคุณวางเงินเดิมพัน เงินรางวัลของคุณอาจจะลดลงเล็กน้อย โดยคุณจะได้รับการคืนเงินสำหรับการเดิมพันกับม้าที่ถอนตัวไป",
+      "greyhoundsWithdrawnDescription": "สุนัขถูกถอนตัวออกไปแล้วเนื่องจากมีอาการบาดเจ็บ ป่วย สภาพของลู่แข่ง หรือการตัดสินใจของผู้ฝึก อัตราต่อรองจึงเปลี่ยนแปลง และหากคุณวางเงินเดิมพัน เงินรางวัลของคุณอาจจะลดลงเล็กน้อย โดยคุณจะได้รับการคืนเงินสำหรับการเดิมพันกับสุนัขที่ถอนตัวไป",
+      "age": "อายุ:<0>{{age}}</0>",
+      "weightShorten": "น้ำหนัก:<0>{{weight}}</0> ปอนด์",
+      "formShorten": "ฟอร์ม:<0>{{form}}</0>",
+      "horseJockeyShorten": "นักขี่:<0>{{jockey}}</0>",
+      "horseTrainerShorten": "ผู้ฝึก:<0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "คะแนนแบบสดไม่พร้อมใช้งาน"
+    }
+  },
+  "betHistory": {
+    "typeBet": "เดิมพัน",
+    "typeCashout": "ถอนเงินออก",
+    "typeSettlement": "การชำระเงิน",
+    "noBetHistory": "ไม่มีประวัติการเดิมพัน",
+    "hintV2": "'ประวัติเดิมพัน' แสดงรายละเอียดของการเดิมพันที่ตัดสินไปแล้ว รวมถึงผลการแข่งขันและผลการเดิมพันต่างๆ หากต้องการดูการเดิมพันที่กำลังดำเนินอยู่หรือรอดำเนินการ ให้ไปที่ส่วน {{link}}",
+    "allBets": "เดิมพันทั้งหมด",
+    "singles": "เดี่ยว",
+    "parlays": "เดิมพันชุด",
+    "betBuilders": "ผู้สร้างเดิมพัน",
+    "outrights": "การทายผลชนะเลิศล่วงหน้า"
+  },
+  "fightCenter": {
+    "rootTitle": "ศูนย์แข่ง",
+    "mainCard": "การ์ดหลัก",
+    "prelims": "รอบคัดเลือก",
+    "taleOfTheTape": "ศึกชกมวย",
+    "fighterProfile": "โปรไฟล์นักชก",
+    "height": "ความสูง",
+    "weight": "น้ำหนัก",
+    "armReach": "ระยะเอื้อมแขน",
+    "legReach": "ระยะเหยียดขา",
+    "winRate": "อัตราการชนะ",
+    "stats": "สถิติ",
+    "age": "อายุ",
+    "record": "สถิติ",
+    "byKo": "จากการน็อกเอ้าต์",
+    "bySubmission": "จากการยอมแพ้",
+    "byDecision": "จากการตัดสิน",
+    "koTko": "KO/TKO",
+    "submission": "SUB",
+    "decision": "DEC",
+    "next": "ถัดไป",
+    "draw": "เสมอ",
+    "streamIn": "เริ่มสตรีมใน:",
+    "liveDefault": "ถ่ายทอดสด",
+    "officialGlobalSportsbook": "สปอร์ตบุ๊คระดับโลกอย่างเป็นทางการของ",
+    "official": "อย่างเป็นทางการ",
+    "globalSportsbook": "สปอร์ตบุ๊คระดับโลก",
+    "expertPicks": {
+      "viewExpertPicks": "ดูตัวเลือกของผู้เชี่ยวชาญ",
+      "banner": {
+        "title": "รายการที่ผู้เชี่ยวชาญคัดสรร",
+        "availableIn": "ใช้งานได้ใน"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} รอบ",
+        "mma.winner": "ชนะ {{outcome}} ครั้ง",
+        "mma.winning_method": "{{outcome}} โดย {{value}}"
+      },
+      "genericError": {
+        "title": "เรากำลังประสบปัญหาที่ไม่คาดคิด",
+        "description": "ดูเหมือนว่าจะมีบางอย่างเสียหาย เรากำลังซ่อมแซมและน่าจะกลับมาใช้งานได้ในอีกไม่ช้า"
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "จะชนะการแข่งขัน",
+    "cricket_over_team_total": "แมตช์โอเวอร์ {{overNumber}} - รันทั้งหมด - ทีม",
+    "cricket_player_total": "การแข่งขันแบตเตอร์แมตช์",
+    "cricket_player_to_score_milestone": "ผู้เล่นจะทำคะแนน {{milestone}}",
+    "cricket_player_total_fours": "ผู้เล่นทำคะแนนรวมสี่",
+    "cricket_player_total_player_performance": "ฟอร์มผู้เล่น",
+    "cricket_team_total_fours": "ทีมทำคะแนนรวมสี่",
+    "cricket_team_total_sixes": "ทีมทำคะแนนรวมหก",
+    "cricket_innings_over_x_team_total": "อินนิ่งที่ {{inningsNumber}} โอเวอร์ {{overNumber}} - รันทั้งหมด - ทีม",
+    "cricket_innings_overs_0_to_x_team_total": "อินนิ่งที่ {{inningsNumber}} โอเวอร์ 0 ถึง {{overNumber}} รันทั้งหมด - ทีม",
+    "cricket_innings_player_total_deliveries_faced": "อินนิ่งที่ {{inningsNumber}} จำนวนเดลิเวอรี่ทั้งหมดที่ผู้เล่นเจอ",
+    "cricket_team_total_from_0_over_to_x_over": "โอเวอร์ 0 ถึง {{overNumber}} - รันทั้งหมด - ทีม",
+    "cricket_team_total_in_highest_scoring_over": "โอเวอร์ที่ทีมทำคะแนนสูงสุด",
+    "cricket_team_total_at_dismissal": "จำนวนรวมการออกจากสนามทั้งหมดของทีม {{dismissalNumber}} ครั้ง",
+    "cricket_innings_player_to_score_milestone": "อินนิ่ง {{inningsNumber}} ผู้เล่นจะทำคะแนน {{milestone}}",
+    "cricket_test_match_player_total": "อินนิ่ง {{inningsNumber}} จำนวนผลงานทั้งหมดของผู้เล่น",
+    "cricket_innings_player_total_fours": "อินนิ่ง {{inningsNumber}} ผู้เล่นทำคะแนนรวมสี่ "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "ประตูปัจจุบัน: {{total}} <0>({{home}}-{{away}})</0>",
+    "soccer.team_total_goals_home": "คะแนนปัจจุบัน: {{home}}-<0>{{away}}</0>",
+    "soccer.team_total_goals_away": "คะแนนปัจจุบัน: <0>{{home}}</0>-{{away}}",
+    "soccer.total_corners": "ลูกเตะมุมปัจจุบัน: <0>{{total}}</0>",
+    "tennis.total_games": "เกมรวมในปัจจุบัน: {{total}}",
+    "tennis.total_games_in_set": "จำนวนเกมรวมในปัจจุบันในเซต {{setCount}}: {{total}} <0>({{gamesHome}}-{{gamesAway}})</0>"
+  },
+  "outcome": {
+    "draw": "เสมอ"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "สนามแข็ง",
+        "clay": "สนามดิน",
+        "grass": "สนามหญ้า",
+        "carpet": "สนามพรม"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "เริ่มโหมดผู้เล่นระดับเซียน",
+    "buildPosition": "สร้างสถานะการเดิมพัน",
+    "currentOdds": "อัตราต่อรองในปัจจุบัน",
+    "decrementOdds": "ลดอัตราต่อรอง",
+    "incrementOdds": "เพิ่มอัตราต่อรอง",
+    "inProgress": {
+      "averageOdds": "อัตราต่อรองเฉลี่ย",
+      "filledAmount": "จำนวนที่กรอก",
+      "minOdds": "อัตราต่อรองขั้นต่ำ",
+      "of": "ของ",
+      "remaining": "ที่เหลืออยู่",
+      "sheetFooter": {
+        "completedTitle": "เสร็จสิ้นแล้ว",
+        "executionStoppedTitle": "การดำเนินการหยุดลง",
+        "marketClosedTitle": "ตลาดปิดแล้ว",
+        "oddsBelowMinimumTitle": "อัตราต่อรองต่ำกว่าขั้นต่ำ",
+        "failedTitle": "วางเดิมพันล้มเหลว",
+        "trackPosition": "ติดตามสถานะได้ใน<0>การเดิมพันของฉัน</0>"
+      },
+      "stopRemaining": "จำนวนการหยุดคงเหลือ",
+      "timeElapsed": "เวลาที่ผ่านไป",
+      "toReturn": "เพื่อรับคืน"
+    },
+    "minOdds": "อัตราต่อรองขั้นต่ำ",
+    "needBiggerStake": "อยากได้เดิมพันที่สูงขึ้นหรือไม่",
+    "noLimitBetting": "เดิมพันแบบไร้ขีดจำกัด",
+    "stakeExceededDescription": "จำนวนเงินเดิมพันเกินกว่าวงเงินสูงสุดต่อรายการสำหรับตลาดนี้",
+    "status": {
+      "cancelled": "หยุดแล้ว",
+      "completed": "เสร็จสิ้นแล้ว",
+      "failed": "ล้มเหลว",
+      "failedMarketClosed": "ตลาดปิดแล้ว",
+      "failedOddsUnderMin": "เปลี่ยนแปลงอัตราต่อรองแล้ว",
+      "running": "อยู่ระหว่างดำเนินการ"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "กระดานผู้นำของผู้เล่น",
+      "trendsAndFavorites": "เทรนด์และรายการโปรดของแฟนๆ"
+    },
+    "columns": {
+      "player": "ผู้เล่น",
+      "name": "ชื่อ"
+    },
+    "footer": "ข้อมูลนี้แสดงผลการเดิมพัน {{sportName}} ที่ตัดสินแล้วในช่วงวันที่ {{dateRange}} โดยตัวเลขทั้งหมดจะแสดงในรูปแบบสกุลเงิน USD และจะแสดงเฉพาะข้อมูลจากโปรไฟล์สาธารณะเท่านั้น",
+    "leaderboards": {
+      "sharpest": {
+        "title": "นักเดิมพันที่เก่งที่สุด",
+        "subtitle": "ROI สูงสุดสำหรับการเดิมพัน {{sportName}}"
+      },
+      "earners": {
+        "title": "ผู้ทำรายได้สูงสุด",
+        "subtitle": "ยอดกำไร {{sportName}} สูงสุดในปี {{year}}"
+      },
+      "parlayKings": {
+        "title": "ราชาแห่งเดิมพันชุด",
+        "subtitle": "ผู้นำที่ทำกำไรเดิมพันชุดสูงสุด"
+      },
+      "livePros": {
+        "title": "ตำนานนักเดิมพันสด",
+        "subtitle": "ผู้นำที่ทำกำไรเดิมพันสด"
+      },
+      "uclMasters": {
+        "title": "ทำเนียบแชมป์เปียนส์ลีกมาสเตอร์",
+        "subtitle": "ผู้เชี่ยวชาญด้านการเดิมพัน UCL"
+      },
+      "sgpWizards": {
+        "title": "พ่อมดแห่ง SGP",
+        "subtitle": "ผู้เชี่ยวชาญเดิมพันชุดในเกมเดียวกัน"
+      },
+      "crazyParlays": {
+        "title": "รายการชนะเดิมพันชุดสุดเหลือเชื่อ",
+        "subtitle": "การเดิมพันหลายเลกที่เข้าเป้าแบบสุดพีก"
+      },
+      "hotMatches": {
+        "title": "แมตช์เด่นยอดนิยม",
+        "subtitle": "รายการแข่ง {{sportName}} ที่มียอดวางเดิมพันสูงสุด"
+      },
+      "backedTeams": {
+        "title": "ทีมที่มีผู้สนับสนุนมากที่สุด",
+        "subtitle": "ทีมโปรดขวัญใจนักเดิมพัน"
+      },
+      "goalscorers": {
+        "title": "ตัวเต็งผู้ทำประตู",
+        "subtitle": "ดาวดัง {{sportName}} ที่มีผู้วางเดิมพันมากที่สุด"
+      },
+      "trendingLeagues": {
+        "title": "ลีกที่กำลังเป็นกระแส",
+        "subtitle": "รายการแข่งขันยอดนิยม"
+      },
+      "backedPlayers": {
+        "title": "ผู้เล่นที่มีผู้สนับสนุนมากที่สุด",
+        "subtitle": "ผู้เล่นขวัญใจนักเดิมพัน"
+      },
+      "trendingTournaments": {
+        "title": "ทัวร์นาเมนต์ที่กำลังเป็นกระแส",
+        "subtitle": "ทัวร์นาเมนต์ยอดนิยมที่สุด"
+      },
+      "backedFighters": {
+        "title": "นักสู้ที่มีผู้สนับสนุนมากที่สุด",
+        "subtitle": "นักสู้ยอดนิยมที่น่าเลือกเดิมพัน"
+      },
+      "trendingPromotions": {
+        "title": "โปรโมชันที่กำลังมาแรง",
+        "subtitle": "รายการ MMA ยอดนิยม"
+      }
+    },
+    "bettingTrends": {
+      "title": "NBA Betting Trends",
+      "teamColumnLabel": "ทีม",
+      "tables": {
+        "winLoss": {
+          "title": "Straight Up Leaders",
+          "subtitle": "The league's most dominant teams by pure winning percentage.",
+          "recordLabel": "W-L",
+          "percentageLabel": "ชนะ %"
+        },
+        "ats": {
+          "title": "Spread Kings",
+          "subtitle": "Teams currently outperforming their projected point spreads.",
+          "recordLabel": "ATS Record",
+          "percentageLabel": "Cover %"
+        },
+        "over": {
+          "title": "Pace Setters",
+          "subtitle": "High-octane offenses and loose defenses that consistently beat the total.",
+          "recordLabel": "Over Record",
+          "percentageLabel": "Over %"
+        },
+        "under": {
+          "title": "Lockdown Units",
+          "subtitle": "Defensive-minded teams that keep scoring low and stay under the line.",
+          "recordLabel": "Under Record",
+          "percentageLabel": "Under %"
+        }
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "กำไร",
+      "bets": "เดิมพัน",
+      "liveProfit": "กำไรจากการเดิมพันสด",
+      "uclProfit": "กำไรจากรายการ UCL",
+      "sgpProfit": "กำไรจาก SGP",
+      "multiplier": "ตัวคูณ",
+      "payout": "การจ่ายเงิน",
+      "totalWagered": "ยอดวางเดิมพันรวม",
+      "betsPlaced": "จำนวนรายการเดิมพัน",
+      "turnover": "ยอดเทิร์นโอเวอร์",
+      "goalscorerBets": "รายการเดิมพันผู้ทำประตู",
+      "totalBets": "เดิมพันทั้งหมด",
+      "volume": "ปริมาณ"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: ผู้ทำรายได้สูงสุด",
+    "heroCta": "{{sportName}} — ดูว่าใครกำลังเป็นฝ่ายชนะ",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI"
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "ทั้งหมด"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Get Rewarded:",
+      "subtitle": "<0>Real cash</0> from day 1",
+      "body": "Here's exactly how your 30-day Welcome Package plays out on Cloudbet:",
+      "card1Title": "Deposit",
+      "card1Body": "Your first deposit kicks it all off - and activates real rewards from Day 1.",
+      "card2Title": "Bet & Claim",
+      "card2Body": "Earn rakeback and daily reloads in casino, plus weekly reloads in sports.",
+      "card3Title": "Unlock the Cash Vault",
+      "card3Body": "Day 30 brings your biggest reward — then straight into Cloudbet Rewards.",
+      "signUpButton": "Start my Welcome Package"
+    },
+    "perks": {
+      "title": "Most sites make you jump through hoops.<br/><0>We don't.</0>",
+      "body": "From your first bet, you're playing for cash. Not credits. Not funny money. Real cash you can withdraw or keep betting with instantly.",
+      "signUpButton": "Join Cloudbet now",
+      "compare1": {
+        "title": "Other sites",
+        "list1": "Locked bonuses, cash you'll never see",
+        "list2": "Wagering requirements that sting",
+        "list3": "One-time bonus",
+        "list4": "Promo ends after sign-up"
+      },
+      "compare2": {
+        "list1": "Real cash rewards — up to $2,500 total",
+        "list1b": "(equivalent to est. {{amount}})",
+        "list2": "No traps, no fine print",
+        "list3": "10% rakeback + daily casino cash drops from Day 1",
+        "list4": "All-cash Vault paid instantly at Day 30 (or when maxed)"
+      },
+      "first30Days": {
+        "title": "Your <0>first 30 days</0> look like this:",
+        "list1": "<0>Daily casino cash drops:</0> Bet today, claim real cash tomorrow.",
+        "list2": "<0>Casino rakeback:</0> 10% of the house edge back on every bet — part hits your wallet instantly, and the rest unlocks daily on your Rewards Calendar.",
+        "list3": "<0>Weekly sports cash drops:</0> Instant cash unlocks each Friday.",
+        "list4": "<0>The Cash Vault:</0> A cash reward that grows with your play and unlocks on Day 30.",
+        "body": "Players can unlock up to $2,500 in reloads and casino rakeback — before the Vault even opens."
+      }
+    },
+    "rewards": {
+      "title": "Day 31 is when things get <0>really good</0>",
+      "body": "After your Welcome Package, you graduate into <0>Cloudbet Rewards</0> - the most generous loyalty program online.",
+      "card1Title": "Turbo Boosted Rakeback",
+      "card1Body": "Earn up to 25% boosted rakeback on every casino bet when you play with TURBO.",
+      "card2Title": "Level-up Cash rewards",
+      "card2Body": "Get instant cash every time you level up, from Silver to Blue Diamond and every tier between.",
+      "card3Title": "Blue diamond windfall",
+      "card3Body": "Climb through the Blue Diamond tier and unlock intra-tier level-up rewards worth up to $9.97M.",
+      "morePerksTitle": "Plus even more perks",
+      "morePerksBody": "Keep enjoying all the casino and sports cash drops you loved from the Cloudbet Welcome Package."
+    },
+    "faq": {
+      "title": "Welcome Package FAQ",
+      "q1": "Does $2,500 include the Vault?",
+      "a1": "No. The Vault is on top of your daily rewards.",
+      "q2": "Do I need to opt-in?",
+      "a2": "No. Your first deposit activates it automatically.",
+      "q3": "What happens if I don't hit $2,500 in 30 days?",
+      "a3": "You keep everything you've claimed, and graduate to Cloudbet Rewards.",
+      "q4": "Can I do it again?",
+      "a4": "No, it's a one-time package — but Cloudbet Rewards keeps paying out.",
+      "q5": "How long does the Welcome Package last?",
+      "a5": "The Welcome Package is valid for 30 days from the time of your first deposit, or until you reach the $2,500 cap – whichever comes first.",
+      "q6": "When do I get my rakeback?",
+      "a6": "A portion lands instantly in your wallet. The rest unlocks daily on your Rewards Calendar, so there's always new cash waiting."
+    },
+    "cta": {
+      "title": "Don't wait for \"someday\" rewards.",
+      "subtitle": "Get <0>real cash</0> from your first bet."
+    }
+  }
+}

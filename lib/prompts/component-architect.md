@@ -90,6 +90,50 @@ For each component, produce:
 3. Usage example (3–5 lines)
 4. Notes on what to preserve when migrating to production
 
+## Sports layout system
+
+Sports competition cards use a strict 2-column CSS grid shared between the
+market header and every event row. This keeps outcome labels perfectly aligned
+with the odds buttons below them.
+
+### Shared grid
+
+```
+grid grid-cols-2 gap-x-3 pl-1.5
+```
+
+- **Col 1** — Competitors (header: CTA/market switcher)
+- **Col 2** — Market data / outcome labels: `flex gap-x-1 text-center items-center`
+
+### Odds container hierarchy
+
+```
+Col 2 outer:    flex-1 flex justify-center gap-x-1
+Button wrapper: w-full flex-1 flex justify-center
+OddsButtonUI:   w-full h-full min-h-11 rounded-xl border
+```
+
+### OddsButton states
+
+| State | Classes |
+|-------|---------|
+| Default | `border-transparent` |
+| Selected | `border-cb-primary` |
+| Hover | `bg-cb-primary/[0.08]` |
+| Active | `bg-cb-primary/[0.16]` |
+| Suspended | Lock icon `size-[18px] text-cb-foreground-disabled` |
+| Closed (post-match) | Empty `min-h-11` div — no icon, no text |
+
+### OddsButton label rule
+
+Never repeat in the button what the market header already shows. Omit `label` when the header outcome columns already identify the outcome (1/X/2, Over/Under, 1/2). Market header outcome labels for head-to-head markets always use **"1" / "2"** — never "Home"/"Away" or team abbreviations.
+
+### MarketSwitcher button border
+
+Default: `border-transparent`. Hover: `border-cb-border`. Open: `border-cb-primary/60`.
+
+Full details: `.cursor/rules/sports-layout.mdc`
+
 ## Token reference for variants
 
 ```

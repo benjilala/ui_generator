@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { FlowList, type FlowCardStatus } from "@/components/patterns/FlowCard"
 import { ResourceGroup, type ResourceEntry } from "@/components/patterns/ResourceGroup"
-
+import { ThemeSwitcher } from "@/components/ui/theme-switcher"
 // ─── Lab screens ─────────────────────────────────────────────────────────────
 
 // Left column: in-progress items. Right column: placeholder items.
@@ -12,7 +12,7 @@ import { ResourceGroup, type ResourceEntry } from "@/components/patterns/Resourc
 const LEFT_AREAS = [
   {
     href: "/ui",
-    title: "UI Components",
+    title: "UI Components, Blocks, Themes",
     description:
       "Complete design system reference: surfaces, typography, shadcn primitives, and all Cloudbet shared components. The canonical source of truth for the component library.",
     status: "in-progress" as const,
@@ -397,6 +397,9 @@ export default function LabIndexPage() {
             <span className="text-[10px] text-cb-foreground-disabled uppercase tracking-wider">
               v0.1
             </span>
+            <div className="ml-auto">
+              <ThemeSwitcher />
+            </div>
           </div>
 
           {/* Intro paragraph */}
@@ -530,6 +533,8 @@ function SectionIntro({
     </div>
   )
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
 
 type AnyArea = (typeof LEFT_AREAS)[number] | (typeof RIGHT_AREAS)[number]
 

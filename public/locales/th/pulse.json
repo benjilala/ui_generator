@@ -1,0 +1,136 @@
+{
+  "brandName": "Pulse",
+  "brandNameFull": "Cloudbet Pulse",
+  "nav": {
+    "forYou": "สำหรับคุณ",
+    "explore": "สำรวจ"
+  },
+  "actions": {
+    "like": "ถูกใจ",
+    "comment": "ความคิดเห็น",
+    "writeReply": "ตอบกลับ...",
+    "follow": "ติดตาม",
+    "following": "ติดตามแล้ว",
+    "followBack": "ติดตามกลับ",
+    "unfollow": "เลิกติดตาม",
+    "followTarget": "ติดตาม {{name}}",
+    "unfollowTarget": "เลิกติดตาม {{name}}",
+    "followAll": "ติดตามทั้งหมด",
+    "subscribed": "สมัครสมาชิกแล้ว",
+    "refreshFeed": "รีเฟรชฟีด",
+    "viewEvent": "ดูกิจกรรม",
+    "viewAllReplies": "ดูการตอบกลับทั้ง {{count}} รายการ",
+    "backToExplore": "กลับไปที่สำรวจ",
+    "backToFeed": "กลับไปที่ฟีด",
+    "backToPulse": "กลับไปที่ Pulse",
+    "backToFeedLower": "กลับไปที่ฟีด",
+    "confirmRemove": "ยืนยันการลบ",
+    "moderationActions": "การดำเนินการโดยผู้ดูแล",
+    "replyPosted": "ตอบโพสต์",
+    "remove": "ลบ",
+    "showLess": "แสดงน้อยลง",
+    "sendReply": "ส่งคำตอบกลับ"
+  },
+  "profile": {
+    "myProfile": "โปรไฟล์ของฉัน",
+    "followers": "ผู้ติดตาม",
+    "following": "ติดตามแล้ว",
+    "thisMonth": "เดือนนี้",
+    "notFound": "ไม่พบผู้เล่น",
+    "notFoundDescription": "ไม่พบข้อมูลผู้เล่นรายนี้ หรือโปรไฟล์ของผู้เล่นอาจถูกตั้งค่าเป็นส่วนตัว",
+    "noActivity": "ยังไม่มีข้อมูลกิจกรรมสำหรับผู้เล่นรายนี้",
+    "loadMore": "โหลดเพิ่มเติม",
+    "statsNotAvailable": "ยังไม่มีข้อมูลสถิติสำหรับผู้เล่นรายนี้ในขณะนี้ กรุณาตรวจสอบใหม่ภายหลัง",
+    "statsLoading": "กำลังโหลดสถิติ...",
+    "noFollowersYet": "ยังไม่มีผู้ติดตาม",
+    "notFollowingYet": "คุณยังไม่ได้ติดตามใครในขณะนี้"
+  },
+  "feed": {
+    "empty": "ฟีดของคุณว่างเปล่า",
+    "emptyDescription": "กดติดตามนักเดิมพันเพื่อเกาะติดทุกความเคลื่อนไหวได้ที่นี่",
+    "allCaughtUp": "คุณตามทันหมดแล้ว",
+    "suggestedFollows": "แนะนำให้ติดตาม",
+    "signInToPersonalise": "เข้าสู่ระบบเพื่อปรับแต่งฟีดของคุณ",
+    "signInDescription": "ติดตามเหล่านักเดิมพันมือโปร พร้อมสร้างสรรค์ฟีดในแบบที่เป็นคุณ"
+  },
+  "explore": {
+    "suggestedFollows": "แนะนำให้ติดตาม",
+    "lists": "รายการ",
+    "topBettorsDescription": "สุดยอดนักเดิมพันที่ควรค่าแก่การเพิ่มไปยังฟีดของคุณ",
+    "stats30d": "สถิติ 30 วัน",
+    "noSuggestions": "ยังไม่มีรายการแนะนำในขณะนี้",
+    "followListDescription": "ติดตามรายการแนะนำเพื่อเพิ่มเหล่านักเดิมพันทั้งหมดลงในฟีดของคุณได้ทันที",
+    "noCuratedLists": "ยังไม่มีรายการที่คัดสรรมาในขณะนี้",
+    "listNotFound": "ไม่พบรายการ",
+    "members": "สมาชิก",
+    "bettorsCount": "{{count}} นักเดิมพัน"
+  },
+  "errors": {
+    "actionFailed": "การดำเนินการไม่สำเร็จ กรุณาลองใหม่อีกครั้ง",
+    "failedToRemovePost": "ไม่สามารถลบโพสต์ได้",
+    "failedToRemoveComment": "ไม่สามารถลบความคิดเห็นได้"
+  },
+  "messages": {
+    "postRemoved": "ลบโพสต์เรียบร้อยแล้ว",
+    "commentRemoved": "ลบความคิดเห็นเรียบร้อยแล้ว"
+  },
+  "post": {
+    "notFound": "ไม่พบโพสต์",
+    "notFoundDescription": "โพสต์นี้อาจถูกลบออกไปแล้ว หรือลิงก์ที่ใช้ไม่ถูกต้อง"
+  },
+  "hashtag": {
+    "noPostsYet": "ยังไม่มีการโพสต์",
+    "noPostsDescription": "โพสต์ที่ติดแท็ก #{{tag}} จะแสดงที่นี่"
+  },
+  "leaderboard": {
+    "topBettors": "นักเดิมพันยอดเยี่ยม",
+    "topWinners": "ผู้ชนะสูงสุด",
+    "wagered": "เดิมพันแล้ว",
+    "wins": "ชนะ",
+    "winPct": "ชนะ %",
+    "record": "สถิติ",
+    "communityWinRate": "อัตราการชนะของชุมชน:",
+    "mostBackedThisWeek": "รายการที่มีผู้สนับสนุนสูงสุดในสัปดาห์นี้",
+    "mostBackedInSport": "รายการที่มีผู้สนับสนุนสูงสุดใน {{sport}}",
+    "liveParlay": "อันดับการเดิมพันชุดแบบสด",
+    "biggestWins": "ชัยชนะครั้งใหญ่ที่สุด",
+    "winner": "ผู้ชนะ",
+    "multi": "หลากหลาย",
+    "payout": "การจ่ายเงิน",
+    "hotGames": "เกมยอดนิยม",
+    "coldGames": "เกมที่น่าจับตามอง",
+    "mostPlayed": "รายการที่มีผู้เล่นสูงสุด — {{period}}"
+  },
+  "bet": {
+    "legMulti": "เดิมพันหลากหลายเลก {{count}} รายการ",
+    "winStreak": "ชนะติดต่อกัน {{count}} ครั้ง",
+    "profit": "กำไร {{amount}}",
+    "seeAllLegs": "ดูรายละเอียดทั้ง {{count}} เลก",
+    "showAllWins": "แสดงรายการที่ชนะทั้ง {{count}} รายการ",
+    "betsCount": "เดิมพัน {{value}}",
+    "roundsCount": "{{value}} รอบ",
+    "winRate": "% ชนะ",
+    "cashedOut": "ถอนเงินออกแล้ว",
+    "push": "พุช"
+  },
+  "avatar": {
+    "customizeAvatar": "ปรับแต่งอวตารของคุณ",
+    "livePreview": "ดูตัวอย่าง",
+    "topAccessories": "เครื่องประดับยอดนิยม",
+    "sideAccessories": "เครื่องประดับเสริม",
+    "textures": "พื้นผิว",
+    "cloudbetPalettes": "พาเลทของ Cloudbet",
+    "saveAvatar": "บันทึกอวาตาร์"
+  },
+  "meta": {
+    "feedTitle": "Pulse — Cloudbet",
+    "feedDescription": "เกาะติดทุกความเคลื่อนไหว พร้อมดูกลยุทธ์จากเหล่านักเดิมพันมือโปรบน Cloudbet",
+    "feedOgDescription": "เกาะติดทุกความเคลื่อนไหว พร้อมดูกลยุทธ์จากเหล่านักเดิมพันมือโปร",
+    "exploreTitle": "สำรวจ| Cloudbet Pulse",
+    "exploreDescription": "ทำความรู้จักกับเหล่านักเดิมพันมือโปรที่ Cloudbet พร้อมติดตามรายการที่คัดสรรมาเพื่อคุณและเหล่าผู้เล่นที่ทำผลงานได้อย่างโดดเด่น",
+    "exploreOgDescription": "ทำความรู้จักนักเดิมพันมือโปรที่ Cloudbet",
+    "hashtagTitle": "#{{tag}} — Pulse",
+    "hashtagDescription": "โพสต์ที่ติดแท็ก #{{tag}} บน Cloudbet Pulse",
+    "postNotFoundTitle": "ไม่พบโพสต์ — Pulse"
+  }
+}

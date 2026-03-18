@@ -1,0 +1,16 @@
+{
+  "title": "Witaj w klubie",
+  "onboarding": {
+    "tellUsMore": "Powiedz nam jeszcze kilka rzeczy o sobie",
+    "complete": {
+      "accept_major_cryptos": "Akceptujemy większość operatorów płatnościowych i ponad 30 różnych kryptowalut.",
+      "deposit_to_unlock": "Zasil konto, by odblokować",
+      "add_funds_to_start": "Dodaj środki, aby rozpocząć grę",
+      "skip_for_now": "Pomiń"
+    },
+    "errors": {
+      "nickname_taken": "Ktoś już korzysta z takiego pseudonimu",
+      "dob_invalid": "Podaj poprawną datę urodzenia"
+    }
+  }
+}

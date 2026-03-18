@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { useTheme, THEMES, type ThemeId } from "@/components/providers/ThemeProvider"
 import {
   ArrowLeft,
   Check,
@@ -161,6 +160,15 @@ import { AnimatedGradientText } from "@/components/ui/animated-gradient-text"
 import { BorderBeam } from "@/components/ui/border-beam"
 import { SparklesText } from "@/components/ui/sparkles-text"
 
+// Blocks
+import { CasinoCategoryNav } from "@/components/blocks/casino-category-nav"
+import { CompetitionCard, CompetitionCardSkeleton } from "@/components/blocks/competition-card"
+import type { SportEvent as CompetitionEvent, MarketGroup as CompetitionMarketGroup } from "@/components/blocks/competition-card"
+
+// Casino icon library
+import { CasinoIcon } from "@/components/icons/casino"
+import { CASINO_ICON_NAMES, type CasinoIconName } from "@/components/icons/casino/names"
+
 // Cloudbet shared components
 import { GameTile } from "@/components/cloudbet/GameTile"
 import { JackpotCard } from "@/components/cloudbet/JackpotCard"
@@ -170,6 +178,7 @@ import { FeedSectionShell } from "@/components/cloudbet/FeedSectionShell"
 import { SectionHeader } from "@/components/patterns/SectionHeader"
 
 import { OddsButton, OddsButtonStyles } from "@/components/cloudbet/OddsButton"
+import { ThemeSwitcher } from "@/components/ui/theme-switcher"
 
 // Mock data
 import {
@@ -182,87 +191,38 @@ import {
 
 // ─── Section wrapper ──────────────────────────────────────────────────────────
 
-// ─── Themes section ───────────────────────────────────────────────────────────
-
-function ThemesSection() {
-  const { theme, setTheme } = useTheme()
-
-  return (
-    <Section
-      id="themes"
-      title="Themes"
-      subtitle="Switch the active token set — all components update instantly"
-    >
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {THEMES.map((t) => {
-          const isActive = theme === t.id
-          return (
-            <button
-              key={t.id}
-              onClick={() => setTheme(t.id as ThemeId)}
-              className={[
-                "group relative flex flex-col gap-4 rounded-[var(--cb-radius-lg)] border p-5 text-left transition-all duration-150",
-                isActive
-                  ? "border-cb-primary bg-cb-surface-3 shadow-[0_0_0_1px_var(--cb-primary)]"
-                  : "border-cb-border bg-cb-surface-2 hover:border-cb-border-visible hover:bg-cb-surface-3",
-              ].join(" ")}
-            >
-              {/* Swatches */}
-              <div className="flex gap-2">
-                {t.swatches.map((color, i) => (
-                  <div
-                    key={i}
-                    className="h-8 flex-1 rounded-[var(--cb-radius-md)]"
-                    style={{ background: color }}
-                  />
-                ))}
-              </div>
-
-              <div className="flex flex-col gap-1">
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-semibold text-cb-foreground">{t.label}</span>
-                  {isActive && (
-                    <span className="text-[9px] font-semibold uppercase tracking-widest text-cb-primary border border-cb-primary/30 bg-cb-primary/10 rounded-full px-1.5 py-px">
-                      Active
-                    </span>
-                  )}
-                  {t.id === "cloudbet" && !isActive && (
-                    <span className="text-[9px] font-semibold uppercase tracking-widest text-cb-foreground-disabled border border-cb-border rounded-full px-1.5 py-px">
-                      Default
-                    </span>
-                  )}
-                </div>
-                <p className="text-[10px] text-cb-foreground-disabled leading-relaxed">{t.description}</p>
-              </div>
-            </button>
-          )
-        })}
-      </div>
-
-      <p className="mt-4 text-[10px] text-cb-foreground-disabled">
-        Theme is persisted to <span className="font-mono">localStorage</span>. New themes can be added by appending a{" "}
-        <span className="font-mono">.dark[data-theme="name"]</span> block to{" "}
-        <span className="font-mono">styles/design-system.css</span> — or generated via the shadcn Studio IDE extension.
-      </p>
-    </Section>
-  )
-}
-
 function Section({
   id,
   title,
   subtitle,
+  usage,
   children,
 }: {
   id: string
   title: string
   subtitle?: string
+  usage?: React.ReactNode
   children: React.ReactNode
 }) {
   return (
     <section id={id} className="scroll-mt-20">
       <div className="mb-5 pb-3 border-b border-cb-border">
-        <h2 className="text-lg font-bold text-cb-foreground tracking-tight">{title}</h2>
+        <div className="flex items-center gap-2 mb-2">
+          <h2 className="text-xl font-bold text-cb-foreground tracking-tight">{title}</h2>
+          {usage && (
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button variant="outline" size="sm" className="h-7 gap-1.5 px-2.5 text-xs font-medium border-cb-border text-cb-foreground-muted hover:text-cb-foreground">
+                  <Info className="size-3.5" />
+                  Usage
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-96 text-xs text-cb-foreground-muted space-y-1.5" align="start">
+                {usage}
+              </PopoverContent>
+            </Popover>
+          )}
+        </div>
         {subtitle && <p className="text-xs text-cb-foreground-muted mt-0.5">{subtitle}</p>}
       </div>
       {children}
@@ -281,7 +241,7 @@ function SubSection({
 }) {
   return (
     <div className={className}>
-      <p className="text-[11px] font-semibold text-cb-foreground-muted uppercase tracking-widest mb-3">
+      <p className="text-[11px] font-normal text-cb-foreground-muted tracking-wide mb-3">
         {title}
       </p>
       {children}
@@ -415,7 +375,7 @@ export default function UICheatSheetPage() {
   const [searchValue, setSearchValue] = React.useState("")
   const [selectedProvider, setSelectedProvider] = React.useState("all")
   const [progress, setProgress] = React.useState(62)
-  const [activeSection, setActiveSection] = React.useState("themes")
+  const [activeSection, setActiveSection] = React.useState("foundations")
 
   // Synchronously reset scroll before first paint so the browser never
   // has a chance to restore a previous position.
@@ -425,7 +385,7 @@ export default function UICheatSheetPage() {
   }, [])
 
   React.useEffect(() => {
-    const sectionIds = ["themes", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations"]
+    const sectionIds = ["competition-card", "casino-category-slider", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations", "themes", "casino-icons"]
     let observers: IntersectionObserver[] = []
 
     // Two rAF frames: first lets Next.js finish any internal scroll work,
@@ -467,52 +427,468 @@ export default function UICheatSheetPage() {
               Lab
             </Link>
             <Separator orientation="vertical" className="h-4 bg-cb-border" />
-            <span className="text-sm font-semibold text-cb-foreground">UI Components</span>
-            <Badge
-              variant="outline"
-              className="ml-auto border-cb-border text-cb-foreground-disabled text-[9px] uppercase tracking-wider"
-            >
-              Design System
-            </Badge>
+            <span className="text-sm font-semibold text-cb-foreground">UI Components, Blocks, Themes</span>
+            <div className="ml-auto flex items-center gap-3">
+              <ThemeSwitcher />
+              <Badge
+                variant="outline"
+                className="border-cb-border text-cb-foreground-disabled text-[9px] uppercase tracking-wider"
+              >
+                Design System
+              </Badge>
+            </div>
           </div>
         </header>
 
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10 flex gap-8">
           {/* Sidebar nav */}
-          <aside className="hidden lg:flex flex-col gap-1 w-44 shrink-0 sticky top-20 self-start">
-            {[
-              { id: "themes", label: "Themes" },
-              { id: "foundations", label: "Foundations" },
-              { id: "primitives", label: "Primitives" },
-              { id: "cloudbet", label: "Cloudbet" },
-              { id: "states", label: "States" },
-              { id: "extended", label: "Extended" },
-              { id: "charts", label: "Charts" },
-              { id: "animations", label: "Animations ✦" },
-            ].map((item) => (
-              <button
-                key={item.id}
-                onClick={() => {
-                  document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth", block: "start" })
-                  setActiveSection(item.id)
-                }}
-                className={[
-                  "text-xs transition-colors py-1 px-2 rounded text-left",
-                  activeSection === item.id
-                    ? "text-cb-foreground bg-cb-surface-3 font-medium"
-                    : "text-cb-foreground-muted hover:text-cb-foreground hover:bg-cb-surface-3",
-                ].join(" ")}
-              >
-                {item.label}
-              </button>
+          <aside className="hidden lg:flex flex-col gap-0.5 w-44 shrink-0 sticky top-20 self-start max-h-[calc(100vh-5rem)] overflow-y-auto">
+            {([
+              {
+                group: "Blocks",
+                items: [
+                  { id: "competition-card", label: "Competition Card" },
+                  { id: "casino-category-slider", label: "Casino Category Slider" },
+                ],
+              },
+              {
+                group: "Components",
+                items: [
+                  { id: "foundations", label: "Foundations" },
+                  { id: "primitives", label: "Primitives" },
+                  { id: "cloudbet", label: "Cloudbet" },
+                  { id: "states", label: "States" },
+                  { id: "extended", label: "Extended" },
+                  { id: "charts", label: "Charts" },
+                  { id: "animations", label: "Animations ✦" },
+                ],
+              },
+              {
+                group: "Themes and Libraries",
+                items: [
+                  { id: "themes", label: "Themes" },
+                  { id: "casino-icons", label: "Casino Icons" },
+                ],
+              },
+            ] as const).map((group) => (
+              <div key={group.group} className="mb-3">
+                <p className="text-[9px] font-semibold uppercase tracking-widest text-white px-2 py-1.5">
+                  {group.group}
+                </p>
+                {group.items.map((item) => (
+                  <button
+                    key={item.id}
+                    onClick={() => {
+                      document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+                      setActiveSection(item.id)
+                    }}
+                    className={[
+                      "w-full text-xs transition-colors py-1 px-2 rounded text-left",
+                      activeSection === item.id
+                        ? "text-cb-foreground bg-cb-surface-3 font-medium"
+                        : "text-cb-foreground-muted hover:text-cb-foreground hover:bg-cb-surface-3",
+                    ].join(" ")}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
             ))}
           </aside>
 
           {/* Main content */}
           <main className="flex-1 min-w-0 flex flex-col gap-14">
 
-            {/* ── 0. THEMES ──────────────────────────────────────────── */}
-            <ThemesSection />
+            {/* ── BLOCKS: Competition Card ──────────────────────────── */}
+            <Section
+              id="competition-card"
+              title="Competition Card"
+              subtitle="Collapsible sports competition card — matches Valhalla CompetitionCardV2 with CollapsibleV3 header, MarketHeaderV2, MatchupWrapper event rows, OddsButtonV3, and EventStatusRow"
+              usage={<>
+                <p><span className="font-mono text-cb-foreground">CompetitionCard</span> — matches Valhalla <span className="font-mono text-cb-foreground">CollapsibleV3 + CardWithSwitcher</span>. Pass <span className="font-mono text-cb-foreground">marketGroups</span> to drive the <span className="font-mono text-cb-foreground">MarketHeaderV2</span>-style header with chevron dropdown switcher.</p>
+                <p>Each event&apos;s <span className="font-mono text-cb-foreground">markets[groupIndex]</span> array maps to the active market group. Odds buttons match <span className="font-mono text-cb-foreground">OddsButtonV3</span>: <span className="font-mono text-cb-foreground">isSelected</span> → primary border, <span className="font-mono text-cb-foreground">suspended</span> → lock icon, <span className="font-mono text-cb-foreground">closed</span> → slash icon, <span className="font-mono text-cb-foreground">trend</span> → flash animation.</p>
+                <p>Competitor rows show team icon, name, score, winner polygon, and loser <span className="font-mono text-cb-foreground">opacity-40</span> when <span className="font-mono text-cb-foreground">matchResult</span> is set. Event tags: <span className="font-mono text-cb-foreground">live-stream</span>, <span className="font-mono text-cb-foreground">bet-builder</span>, <span className="font-mono text-cb-foreground">virtual</span>, <span className="font-mono text-cb-foreground">simulated</span>.</p>
+                <p><span className="font-mono text-cb-foreground">CompetitionCardSkeleton</span> — pulse skeleton matching <span className="font-mono text-cb-foreground">CompetitionCardV2Skeleton</span>. Accepts <span className="font-mono text-cb-foreground">eventCount</span> and <span className="font-mono text-cb-foreground">marketCount</span>.</p>
+              </>}
+            >
+              <div className="flex flex-col gap-16">
+
+                {/* ── Football: live + market switcher dropdown ── */}
+                <SubSection title="Football — live, market switcher, selected odds">
+                  <div className="flex flex-col gap-3 max-w-2xl">
+                    <CompetitionCard
+                      competitionName="Premier League"
+                      competitionIcon={<span className="text-base leading-none">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>}
+                      marketGroups={[
+                        {
+                          key: "1x2",
+                          label: "Full Time Result",
+                          outcomes: [
+                            { key: "home", label: "1" },
+                            { key: "draw", label: "X" },
+                            { key: "away", label: "2" },
+                          ],
+                        },
+                        {
+                          key: "ah",
+                          label: "Asian Handicap",
+                          outcomes: [
+                            { key: "home", label: "Home" },
+                            { key: "away", label: "Away" },
+                          ],
+                        },
+                        {
+                          key: "tg",
+                          label: "Total Goals",
+                          outcomes: [
+                            { key: "over", label: "Over" },
+                            { key: "under", label: "Under" },
+                          ],
+                        },
+                      ] satisfies CompetitionMarketGroup[]}
+                      events={[
+                        {
+                          id: "evt-1",
+                          competitors: [
+                            { name: "Manchester City", score: "2" },
+                            { name: "Arsenal", score: "1" },
+                          ],
+                          status: "Live · 67'",
+                          isLive: true,
+                          tags: [],
+                          markets: [
+                            [
+                              { value: "1.85", isSelected: true },
+                              { value: "3.60" },
+                              { value: "4.20" },
+                            ],
+                            [
+                              { value: "1.72" },
+                              { value: "2.05" },
+                            ],
+                            [
+                              { value: "1.90", trend: "up" },
+                              { value: "1.90", trend: "down" },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                        {
+                          id: "evt-2",
+                          competitors: [
+                            { name: "Liverpool", score: "3" },
+                            { name: "Chelsea", score: "1" },
+                          ],
+                          status: "FT",
+                          matchResult: "home",
+                          markets: [
+                            [
+                              { value: "2.10", closed: true },
+                              { value: "3.40", closed: true },
+                              { value: "3.20", closed: true },
+                            ],
+                            [
+                              { value: "1.80", closed: true },
+                              { value: "1.95", closed: true },
+                            ],
+                            [
+                              { value: "1.85", closed: true },
+                              { value: "1.95", closed: true },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                        {
+                          id: "evt-3",
+                          competitors: [
+                            { name: "Aston Villa", score: "1" },
+                            { name: "Wolves", score: "1" },
+                          ],
+                          status: "Cancelled",
+                          matchResult: "draw",
+                          markets: [
+                            [
+                              { value: "2.10", closed: true },
+                              { value: "3.20", closed: true },
+                              { value: "3.50", closed: true },
+                            ],
+                            [
+                              { value: "1.75", closed: true },
+                              { value: "2.00", closed: true },
+                            ],
+                            [
+                              { value: "1.88", closed: true },
+                              { value: "1.92", closed: true },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                        {
+                          id: "evt-3b",
+                          competitors: [
+                            { name: "Tottenham" },
+                            { name: "Newcastle" },
+                          ],
+                          status: "Tomorrow · 15:00",
+                          markets: [
+                            [
+                              { value: "2.40" },
+                              { value: "3.30" },
+                              { value: "2.80" },
+                            ],
+                            [
+                              { value: "1.68" },
+                              { value: "2.10" },
+                            ],
+                            [
+                              { value: "1.95" },
+                              { value: "1.85" },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                      ]}
+                    />
+                  </div>
+                </SubSection>
+
+                {/* ── Basketball: odds trends + suspended ── */}
+                <SubSection title="Basketball — odds trends, suspended markets, collapsed">
+                  <div className="flex flex-col gap-3 max-w-2xl">
+                    <CompetitionCard
+                      competitionName="NBA"
+                      competitionIcon={<span className="text-base leading-none">🏀</span>}
+                      defaultOpen={false}
+                      marketGroups={[
+                        {
+                          key: "ml",
+                          label: "Moneyline",
+                          outcomes: [
+                            { key: "home", label: "1" },
+                            { key: "away", label: "2" },
+                          ],
+                        },
+                        {
+                          key: "spread",
+                          label: "Spread",
+                          outcomes: [
+                            { key: "home", label: "1" },
+                            { key: "away", label: "2" },
+                          ],
+                        },
+                        {
+                          key: "total",
+                          label: "Total",
+                          outcomes: [
+                            { key: "over", label: "Over" },
+                            { key: "under", label: "Under" },
+                          ],
+                        },
+                      ] satisfies CompetitionMarketGroup[]}
+                      events={[
+                        {
+                          id: "evt-4",
+                          competitors: [
+                            { name: "LA Lakers", score: "78" },
+                            { name: "Boston Celtics", score: "84" },
+                          ],
+                          status: "Live · Q3 8:42",
+                          isLive: true,
+                          markets: [
+                            [
+                              { value: "2.40", trend: "up" },
+                              { value: "1.58", trend: "down" },
+                            ],
+                            [
+                              { value: "1.90" },
+                              { value: "1.90" },
+                            ],
+                            [
+                              { value: "1.88" },
+                              { value: "1.92" },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                        {
+                          id: "evt-5",
+                          competitors: [
+                            { name: "Golden State Warriors" },
+                            { name: "Miami Heat" },
+                          ],
+                          status: "Tonight · 02:30",
+                          markets: [
+                            [
+                              { value: "1.95", suspended: true },
+                              { value: "1.85", suspended: true },
+                            ],
+                            [
+                              { value: "1.90", suspended: true },
+                              { value: "1.90", suspended: true },
+                            ],
+                            [
+                              { value: "1.90", suspended: true },
+                              { value: "1.90", suspended: true },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                        {
+                          id: "evt-6",
+                          competitors: [
+                            { name: "Denver Nuggets" },
+                            { name: "Phoenix Suns" },
+                          ],
+                          status: "Tomorrow · 01:00",
+                          markets: [
+                            [
+                              { value: "1.72" },
+                              { value: "2.05" },
+                            ],
+                            [
+                              { value: "1.90" },
+                              { value: "1.90" },
+                            ],
+                            [
+                              { value: "1.88" },
+                              { value: "1.92" },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                      ]}
+                    />
+                  </div>
+                </SubSection>
+
+                {/* ── Tennis: server dot, single market ── */}
+                <SubSection title="Tennis — server indicator, single market group">
+                  <div className="flex flex-col gap-3 max-w-2xl">
+                    <CompetitionCard
+                      competitionName="Wimbledon"
+                      competitionIcon={<span className="text-base leading-none">🎾</span>}
+                      marketGroups={[
+                        {
+                          key: "ml",
+                          label: "Match Winner",
+                          outcomes: [
+                            { key: "home", label: "1" },
+                            { key: "away", label: "2" },
+                          ],
+                        },
+                      ] satisfies CompetitionMarketGroup[]}
+                      events={[
+                        {
+                          id: "evt-7",
+                          competitors: [
+                            { name: "C. Alcaraz", score: "6 4 3" },
+                            { name: "N. Djokovic", score: "3 6 5" },
+                          ],
+                          status: "Live · Set 3",
+                          isLive: true,
+                          serverIndex: 0,
+                          tags: [{ type: "live-stream" }],
+                          markets: [
+                            [
+                              { value: "1.62" },
+                              { value: "2.20" },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                        {
+                          id: "evt-8",
+                          competitors: [
+                            { name: "I. Swiatek" },
+                            { name: "A. Sabalenka" },
+                          ],
+                          status: "Today · 14:00",
+                          markets: [
+                            [
+                              { value: "1.85" },
+                              { value: "1.95" },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                      ]}
+                    />
+                  </div>
+                </SubSection>
+
+                {/* ── Virtual: VIR/SIM tags ── */}
+                <SubSection title="Virtual — VIR & SIM tags">
+                  <div className="flex flex-col gap-3 max-w-2xl">
+                    <CompetitionCard
+                      competitionName="Virtual Premier League"
+                      competitionIcon={<span className="text-base leading-none">🎮</span>}
+                      marketGroups={[
+                        {
+                          key: "1x2",
+                          label: "Full Time Result",
+                          outcomes: [
+                            { key: "home", label: "1" },
+                            { key: "draw", label: "X" },
+                            { key: "away", label: "2" },
+                          ],
+                        },
+                      ] satisfies CompetitionMarketGroup[]}
+                      events={[
+                        {
+                          id: "evt-v1",
+                          competitors: [
+                            { name: "VIR Man Utd" },
+                            { name: "VIR Chelsea" },
+                          ],
+                          status: "Starting soon",
+                          tags: [{ type: "virtual" }],
+                          markets: [
+                            [
+                              { value: "2.50" },
+                              { value: "3.10" },
+                              { value: "2.80" },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                        {
+                          id: "evt-v2",
+                          competitors: [
+                            { name: "SIM Liverpool" },
+                            { name: "SIM Arsenal" },
+                          ],
+                          status: "In 5 min",
+                          tags: [{ type: "simulated" }],
+                          markets: [
+                            [
+                              { value: "1.95" },
+                              { value: "3.40" },
+                              { value: "3.60" },
+                            ],
+                          ],
+                        } satisfies CompetitionEvent,
+                      ]}
+                    />
+                  </div>
+                </SubSection>
+
+                {/* ── Skeleton ── */}
+                <SubSection title="Skeleton loading state">
+                  <div className="flex flex-col gap-3 max-w-2xl">
+                    <CompetitionCardSkeleton eventCount={3} marketCount={3} />
+                  </div>
+                </SubSection>
+
+              </div>
+            </Section>
+
+            {/* ── BLOCKS: Casino Category Slider ──────────────────── */}
+            <Section
+              id="casino-category-slider"
+              title="Casino Category Slider"
+              subtitle="Horizontally scrollable category chip bar — matches Valhalla LobbyGameCategoriesChipList"
+              usage={<>
+                <p><span className="font-mono text-cb-foreground">CasinoCategoryNav</span> — orchestrates state and renders the scrollable chip bar.</p>
+                <p><span className="font-mono text-cb-foreground">CasinoCategoryTab</span> — individual chip button with hover overlay, press scale, icon scale, and live badge pulse matching Valhalla interaction patterns.</p>
+                <p>Scroll horizontally to reveal all categories. Active tab shows a primary-tinted border and background overlay.</p>
+              </>}
+            >
+              <div className="flex flex-col gap-16">
+                <SubSection title="Default state">
+                  <CasinoCategoryNav />
+                </SubSection>
+              </div>
+            </Section>
 
             {/* ── 1. FOUNDATIONS ─────────────────────────────────────── */}
             <Section
@@ -1161,24 +1537,59 @@ export default function UICheatSheetPage() {
 
                 {/* OddsButton */}
                 <SubSection title="OddsButton">
-                  <OddsButtonStyles />
                   <div className="flex flex-col gap-4">
-                    <div className="flex flex-wrap gap-2 items-center">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">states</span>
-                      <OddsButton label="Home" odds="2.45" />
-                      <OddsButton label="Draw" odds="3.10" selected />
-                      <OddsButton label="Away" odds="2.90" suspended />
-                      <OddsButton label="Over 2.5" odds="1.85" disabled />
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">default</span>
+                      <div className="flex gap-1 w-48">
+                        <OddsButton odds="2.45" />
+                        <OddsButton odds="3.10" />
+                        <OddsButton odds="4.20" />
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-2 items-center">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">flash up</span>
-                      <OddsButton label="Home" odds="2.60" flashDirection="up" />
-                      <OddsButton label="Draw" odds="3.20" flashDirection="up" />
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">selected</span>
+                      <div className="flex gap-1 w-48">
+                        <OddsButton odds="2.45" selected />
+                        <OddsButton odds="3.10" />
+                        <OddsButton odds="4.20" />
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-2 items-center">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">flash down</span>
-                      <OddsButton label="Home" odds="2.30" flashDirection="down" />
-                      <OddsButton label="Draw" odds="2.95" flashDirection="down" />
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">suspended</span>
+                      <div className="flex gap-1 w-48">
+                        <OddsButton odds="2.45" suspended />
+                        <OddsButton odds="3.10" suspended />
+                        <OddsButton odds="4.20" suspended />
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">closed</span>
+                      <div className="flex gap-1 w-48">
+                        <OddsButton odds="2.45" closed />
+                        <OddsButton odds="3.10" closed />
+                        <OddsButton odds="4.20" closed />
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">trend up</span>
+                      <div className="flex gap-1 w-48">
+                        <OddsButton odds="2.60" trend="up" />
+                        <OddsButton odds="3.20" trend="up" />
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">trend down</span>
+                      <div className="flex gap-1 w-48">
+                        <OddsButton odds="2.30" trend="down" />
+                        <OddsButton odds="2.95" trend="down" />
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">with label</span>
+                      <div className="flex gap-1 w-64">
+                        <OddsButton odds="1.90" label="Over 2.5" />
+                        <OddsButton odds="1.90" label="Under 2.5" />
+                      </div>
                     </div>
                   </div>
                 </SubSection>
@@ -1826,6 +2237,172 @@ export default function UICheatSheetPage() {
                   </div>
                 </SubSection>
 
+              </div>
+            </Section>
+
+
+            {/* ── THEMES ─────────────────────────────────────────────── */}
+            <Section
+              id="themes"
+              title="Themes"
+              subtitle="Active themes — Cloudbet Dark and Clean Slate Light"
+            >
+              <div className="flex flex-col gap-8">
+                <div className="grid gap-6 sm:grid-cols-2">
+
+                  {/* Cloudbet Dark */}
+                  <div className="rounded-[var(--cb-radius-lg)] border border-cb-border overflow-hidden">
+                    <div className="px-4 py-3 border-b border-cb-border flex items-center justify-between" style={{ background: "oklch(0.236 0.018 310)" }}>
+                      <span className="text-sm font-semibold" style={{ color: "oklch(0.907 0 0)" }}>Cloudbet Dark</span>
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded" style={{ background: "oklch(0.542 0.207 299 / 20%)", color: "oklch(0.680 0.175 299)" }}>production</span>
+                    </div>
+                    <div className="p-4 flex flex-col gap-4" style={{ background: "oklch(0.255 0.022 309)" }}>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.521 0 0)" }}>Surfaces</p>
+                        <div className="flex gap-1.5">
+                          {[
+                            { bg: "oklch(0.208 0.015 310)", label: "0" },
+                            { bg: "oklch(0.236 0.018 310)", label: "1" },
+                            { bg: "oklch(0.255 0.022 309)", label: "2" },
+                            { bg: "oklch(0.278 0.025 309)", label: "3" },
+                            { bg: "oklch(0.298 0.033 309)", label: "4" },
+                            { bg: "oklch(0.320 0.034 310)", label: "5" },
+                            { bg: "oklch(0.349 0.023 254)", label: "6" },
+                          ].map(({ bg, label }) => (
+                            <div key={label} className="flex-1 flex flex-col gap-1 items-center">
+                              <div className="w-full h-8 rounded-md border" style={{ background: bg, borderColor: "oklch(0.907 0 0 / 8%)" }} />
+                              <span className="text-[9px] font-mono" style={{ color: "oklch(0.521 0 0)" }}>{label}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.521 0 0)" }}>Brand</p>
+                        <div className="flex gap-2">
+                          {[
+                            { bg: "oklch(0.542 0.207 299)", label: "Primary", text: "oklch(0.972 0.012 303)" },
+                            { bg: "oklch(0.942 0.192 119)", label: "Accent", text: "#000" },
+                            { bg: "oklch(0.788 0.155 70)", label: "Jackpot", text: "#000" },
+                          ].map(({ bg, label, text }) => (
+                            <div key={label} className="flex-1 h-10 rounded-md flex items-center justify-center text-[10px] font-medium" style={{ background: bg, color: text }}>
+                              {label}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.521 0 0)" }}>Foreground</p>
+                        <div className="flex gap-2 items-end">
+                          {[
+                            { color: "oklch(0.907 0 0)", label: "Primary" },
+                            { color: "oklch(0.780 0 0)", label: "2" },
+                            { color: "oklch(0.680 0 0)", label: "3" },
+                            { color: "oklch(0.650 0 0)", label: "Muted" },
+                            { color: "oklch(0.521 0 0)", label: "Disabled" },
+                          ].map(({ color, label }) => (
+                            <div key={label} className="flex flex-col items-center gap-1">
+                              <span className="text-sm font-bold" style={{ color }}>Aa</span>
+                              <span className="text-[9px] font-mono" style={{ color: "oklch(0.521 0 0)" }}>{label}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Clean Slate Light */}
+                  <div className="rounded-[var(--cb-radius-lg)] border overflow-hidden" style={{ borderColor: "oklch(0.90 0.02 273)" }}>
+                    <div className="px-4 py-3 border-b flex items-center justify-between" style={{ background: "oklch(0.95 0.01 273)", borderColor: "oklch(0.90 0.02 273)" }}>
+                      <span className="text-sm font-semibold" style={{ color: "oklch(0.15 0 0)" }}>Clean Slate Light</span>
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded" style={{ background: "oklch(0.59 0.20 277.06 / 12%)", color: "oklch(0.50 0.18 277)" }}>light</span>
+                    </div>
+                    <div className="p-4 flex flex-col gap-4" style={{ background: "oklch(0.97 0.01 273)" }}>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.65 0 0)" }}>Surfaces</p>
+                        <div className="flex gap-1.5">
+                          {[
+                            { bg: "oklch(0.92 0.02 273)", label: "0" },
+                            { bg: "oklch(0.95 0.01 273)", label: "1" },
+                            { bg: "oklch(0.97 0.01 273)", label: "2" },
+                            { bg: "oklch(1 0 0)", label: "3" },
+                            { bg: "oklch(0.97 0.01 273)", label: "4" },
+                            { bg: "oklch(0.95 0.01 273)", label: "5" },
+                            { bg: "oklch(0.93 0.02 273)", label: "6" },
+                          ].map(({ bg, label }) => (
+                            <div key={label} className="flex-1 flex flex-col gap-1 items-center">
+                              <div className="w-full h-8 rounded-md border" style={{ background: bg, borderColor: "oklch(0.15 0 0 / 8%)" }} />
+                              <span className="text-[9px] font-mono" style={{ color: "oklch(0.65 0 0)" }}>{label}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.65 0 0)" }}>Brand</p>
+                        <div className="flex gap-2">
+                          {[
+                            { bg: "oklch(0.59 0.20 277.06)", label: "Primary", text: "#fff" },
+                            { bg: "oklch(0.93 0.03 273.66)", label: "Accent", text: "oklch(0.25 0.05 277)" },
+                            { bg: "oklch(0.70 0.14 70)", label: "Jackpot", text: "#fff" },
+                          ].map(({ bg, label, text }) => (
+                            <div key={label} className="flex-1 h-10 rounded-md flex items-center justify-center text-[10px] font-medium" style={{ background: bg, color: text }}>
+                              {label}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.65 0 0)" }}>Foreground</p>
+                        <div className="flex gap-2 items-end">
+                          {[
+                            { color: "oklch(0.15 0 0)", label: "Primary" },
+                            { color: "oklch(0.30 0 0)", label: "2" },
+                            { color: "oklch(0.45 0 0)", label: "3" },
+                            { color: "oklch(0.50 0.02 277)", label: "Muted" },
+                            { color: "oklch(0.65 0 0)", label: "Disabled" },
+                          ].map(({ color, label }) => (
+                            <div key={label} className="flex flex-col items-center gap-1">
+                              <span className="text-sm font-bold" style={{ color }}>Aa</span>
+                              <span className="text-[9px] font-mono" style={{ color: "oklch(0.65 0 0)" }}>{label}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </Section>
+
+            {/* ── ICON LIBRARY: Casino Icons ───────────────────────── */}
+            <Section
+              id="casino-icons"
+              title="Casino Icons"
+              subtitle="Full casino icon set — use via CasinoIcon name prop or import individual SVG components"
+            >
+              <div className="flex flex-col gap-6">
+                <SubSection title="All icons">
+                  <div
+                    className="grid gap-4"
+                    style={{ gridTemplateColumns: "repeat(auto-fill, minmax(72px, 1fr))" }}
+                  >
+                    {CASINO_ICON_NAMES.map((name) => (
+                      <div key={name} className="flex flex-col items-center gap-2 p-3">
+                        <div className="size-6 [--icon-primary:var(--color-cb-icon-default)] [--icon-secondary:color-mix(in_oklch,var(--color-cb-icon-default)_55%,transparent)]">
+                          <CasinoIcon name={name} />
+                        </div>
+                        <span className="text-[9px] text-cb-foreground-disabled text-center leading-tight font-mono">{name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </SubSection>
+                <SubSection title="Usage">
+                  <div className="rounded-[var(--cb-radius-md)] bg-cb-surface-3 border border-cb-border p-4 text-xs text-cb-foreground-muted space-y-1.5">
+                    <p>Import by name: <span className="font-mono text-cb-foreground">{"<CasinoIcon name=\"slots\" />"}</span></p>
+                    <p>Or import the component directly: <span className="font-mono text-cb-foreground">{"import { SlotsIcon } from \"@/components/icons/casino\""}</span></p>
+                    <p>Colour is controlled via CSS custom properties <span className="font-mono text-cb-foreground">--icon-primary</span> and <span className="font-mono text-cb-foreground">--icon-secondary</span> on the parent element.</p>
+                  </div>
+                </SubSection>
               </div>
             </Section>
 

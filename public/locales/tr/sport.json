@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "Asya Hatları",
+      "cards": "Kartlar",
+      "corners": "Kornerler",
+      "goals": "Goller",
+      "half": "Devre Arası",
+      "main": "Ana",
+      "more": "Daha Fazla",
+      "specials": "Özel",
+      "popular": "Popüler",
+      "firstHalf": "İlk Yarı",
+      "secondHalf": "İkinci Yarı",
+      "points": "Sayı",
+      "quarters": "Çeyrek",
+      "players": "Oyuncular",
+      "sets": "Setler",
+      "games": "Oyunlar",
+      "hitsAndRuns": "Vur Koş",
+      "playerProps": "Oyuncu önerileri",
+      "extraTime": "Ekstra süre",
+      "kills": "Leş",
+      "match": "Maç",
+      "player": "Oyuncu",
+      "team": "Takım",
+      "mainMarkets": "Ana Pazarlar",
+      "matchMarkets": "Maç Pazarları",
+      "mapN": "{{mapNumber}}. Harita",
+      "firstInnings": "1. Devre",
+      "all": "Tüm Pazarlar",
+      "betBuilder": "SGP"
+    },
+    "stats": {
+      "notAvailable": "İstatistiklere erişilemiyor",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "Bahis Oluşturucu açıldı",
+      "loginToBetDescription": "Tek bir karşılaşmadan seçtiklerinizi bir araya getirerek özel bahisler oluşturun.\nArtan kontrolle gelen avantajlar şimdi seçili dillerde.",
+      "loginToBetButton": "Bahis yapmak için giriş yap",
+      "genericError": {
+        "titleWithCode": "Bir şey ters gitti ({{code}})",
+        "title": "Bir şey ters gitti",
+        "description": "Lütfen tekrar deneyin. Sorun devam ederse lütfen müşteri destek ekibimizle iletişime geçin."
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "Mevcut Same Game Multi değiştirilsin mi?",
+        "description": "Bahis kuponunuza yalnızca bir Same Game Multi yerleştirilebilir. Bunu eklediğinizde mevcut Same Game Multi değiştirilecektir.",
+        "cancelCta": "İptal et",
+        "replaceCta": "Değiştir"
+      },
+      "shortened": "BO",
+      "betBuilderPromo": "Aynı maç kuponlarıyla daha büyük oranlara ulaşın.",
+      "betBuilderAlertBanner": {
+        "title2": "100x Bahis Oluşturucu şanslı çekilişi",
+        "body2": "Bu hafta sonu $1+ kupon oluşturun—10 kazanan, bahsinin 100 katını alacak (100 $'a kadar)."
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "Herhangi Bir Zaman",
+            "first": "İlk",
+            "last": "Son",
+            "teamFirst": "Önce Takım",
+            "teamLast": "En Son Takım",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "Kafa vuruşu",
+            "scoreOutsideOfTheBox": "Penaltı sahasının dışında"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "Oyuncu ne zaman gol atar?",
+            "when-will-player-score-team": "Oyuncu ne zaman gol atar (takım)?",
+            "how-many-player-goals": "Oyuncu kaç gol atar?",
+            "how-will-player-score": "Oyuncu ne golü atacak?",
+            "player-assists": "Oyuncu asistleri",
+            "player-to-be-carded-team": "Kart verilecek oyuncu (takım)",
+            "player-to-be-shown-a-card": "Kart gösterilecek oyuncu",
+            "total-cards-team": "Toplam kart (takım)",
+            "both-team-total-cards": "Her iki takımın toplam kartı",
+            "both-teams-total-goals": "Her iki takımın toplam golü",
+            "total-goals-team": "Toplam gol (takım)",
+            "both-teams-total-corners": "Her iki takımın toplam korneri",
+            "total-corners-team": "Toplam korner (takım)",
+            "both-teams-score": "Karşılıklı gol",
+            "player-to-be-sent-off": "Gönderilecek oyuncu",
+            "player-total-fouls-committed": "Oyuncunun toplam faulü",
+            "player-total-saves": "Oyuncunun yaptığı toplam kurtarma",
+            "player-total-shots": "Oyuncunun toplam şutu",
+            "player-total-shots-on-target": "Oyuncunun hedefe attığı toplam şut",
+            "player-total-tackles": "Oyuncunun çaldığı toplam top sayısı",
+            "player-total-passes": "Oyuncunun verdiği toplam pas",
+            "to-happen-in-the-match-team": "Maçta gerçekleşecek (takım)",
+            "method-of-victory": "Galibiyet yöntemi",
+            "total-shots-team": "Toplam şut (takım)",
+            "team-with-most-bookings": "En çok kart yiyen takım",
+            "total-shots-on-target-team": "Hedefini bulan toplam şut (takım)",
+            "total-goals-over-slash-under-after-10-minutes": "10 dakikadan sonra toplam gol üstü/altı",
+            "asian-handicap-after-10-minutes": "10 dakikadan sonra Asya handikabı",
+            "correct-score": "Doğru sonuç",
+            "most-cards": "Çoğu kart",
+            "most-corners": "Çoğu korner",
+            "double-chance": "Çifte şans",
+            "winning-margin": "Kazanma marjı",
+            "total-goals": "Toplam gol sayısı",
+            "total-exact-goals": "Tahmini toplam gol sayısı",
+            "total-exact-goals-team": "Tahmini toplam gol sayısı (takım)",
+            "total-bookings-points": "Toplam kart puanı",
+            "total-bookings-points-team": "Toplam kart puanı (takım)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "Oyuncunun aldığı toplam sayı ve ribaunt",
+            "player-total-points": "Oyuncunun aldığı toplam sayı",
+            "player-total-3-point-field-goals": "Oyuncunun 3 puanlık atışları",
+            "player-total-rebounds": "Oyuncunun aldığı toplam ribaunt",
+            "player-total-assists-and-rebounds": "Oyuncunun yaptığı toplam asist ve ribaunt",
+            "player-total-assists": "Oyuncunun yaptığı toplam asist",
+            "player-total-points-and-assists": "Oyuncunun aldığı toplam sayı ve asist",
+            "player-total-points-assists-and-rebounds": "Oyuncunun aldığı toplam puan, asist ve ribaunt",
+            "player-to-achieve-a-double-double": "Oyuncu double-double yapar",
+            "player-to-achieve-a-triple-double": "Oyuncu triple-double yapar",
+            "player-total-3-pointers-over-under": "Oyuncunun 3 puanlık toplam atış sayısı (üst/alt)",
+            "player-total-assists-and-rebounds-over-under": "Oyuncunun yaptığı toplam asist ve ribaunt (üst/alt)",
+            "player-total-assists-over-under": "Oyuncunun yaptığı toplam asist (üst/alt)",
+            "player-total-points-over-under": "Oyuncunun aldığı toplam sayı (üst/alt)",
+            "player-total-rebounds-over-under": "Oyuncunun aldığı toplam ribaunt (üst/alt)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "Kripto ile {{eventName}} etkinliğine bahis yapın",
+      "soccerDescription": "{{date}} {{time}} tarihinde {{home}}, {{away}} ile {{competition}} yarışmasında karşılaşırken taraftarları heyecan verici bir çarpışma bekliyor. Cloudbet'te golleri, kornerleri ve kartları birleştirerek heyecanın dozunu artıran aynı maç kuponları oluşturabilirsiniz. Başlama vuruşundan önce bahislerinizi oynayın ya da aksiyonu canlı takip edin.",
+      "basketballDescription": "{{home}} ve {{away}} arasındaki bu {{competition}} karşılaşması, {{date}} {{time}} tarihinde başlıyor. Bu maçta başlangıç vuruşundan kapanış ziline kadar potada bolca hareket göreceğiz. Aksiyonu derinden hissetmek için aynı maç kuponlarıyla oyuncu puanlarını, ribauntları ve asistleri birleştirebilirsiniz. Maç öncesinde bahis yapın veya canlı olarak katılın.",
+      "americanFootballDescription": "{{date}} {{time}} tarihinde {{competition}} yarışmasında {{home}} ve {{away}} karşı karşıya. Cloudbet, üst düzey heyecan için aynı maç kuponunda touchdown'dan pas yardına kadar bahisleri aynı anda oynamanıza imkan tanır. Başlangıç vuruşundan önce bahislerinizi oynayın veya maç ilerlerken canlı oranlardan yararlanın.",
+      "tennisDescription": "{{home}} ve {{away}} arasındaki bu {{competition}} müsabakası {{date}} {{time}} tarihinde gerçekleşecek. Her iki oyuncu da {{surface}} korttaki formları ve yetenekleriyle biliniyor. Aynı maç kuponlarıyla kazananları, toplam maç sayısını ve ace'leri tahmin edebilirsiniz. İster ilk top atışından önce bahislerinizi oynayın ister gidişat değiştikçe canlı bahis yapmaya devam edin.",
+      "baseballDescription": "{{home}}, {{date}} {{time}} tarihinde {{competition}} için {{away}} ile karşılaşıyor. Aynı maç kuponlarıyla atışları, vuruşları ve tek bir oyunda yapılan koşuları birleştirmenize imkan tanır. Erkenden seçimlerinizi yapın veya devreler ilerlerken canlı bahis oynayın.",
+      "iceHockeyDescription": "{{home}} ve {{away}} arasındaki {{competition}} karşılaşması, {{date}} {{time}} tarihinde buz üstünde gerçekleşecek. Aynı maç kuponları skoru, asistleri ve penaltıları birleştirerek heyecanı iliklerinize kadar hissetmenize imkân tanır. Top düşmeden bahis yapın veya aksiyona canlı katılın.",
+      "rugbyDescription": "{{date}} {{time}} tarihinde gerçekleşen {{competition}} maçında {{home}}, {{away}} ile karşılaşıyor. Çarpıcı tackle'lar ve dudak uçuklatan try'lar göreceksiniz. Cloudbet'le try'lar, goller ve toplam sayılar için aynı maç kuponları oluşturabilirsiniz. Başlangıç vuruşundan önce bahislerinizi oynayın veya her scrum'da canlı oynamaya devam edin.",
+      "cricketDescription": "{{date}} {{time}} tarihinde gerçekleşen {{competition}} maçında {{home}}, {{away}} ile karşılaşıyor. Bir sürü koşu ve bolca wicket beklemek mümkün. Cloudbet'in aynı maç kuponları koşuları, wicket'ları ve sınır atışlarını tek bahiste toplamanıza imkân tanır. İlk top atışından önce seçimlerinizi yapın veya over over canlı bahis oynayın.",
+      "horseRacingDescription": "{{competition}}, {{date}} {{time}} tarihinde gerçekleşecek. Elit atların yarışacağı bu yarışta, hayranlar yüksek bahisli bir finiş bekleyebilirler. Cloudbet'te, favori seçiminizi doğrudan destekleyebilir veya üst düzey aksiyon için yarışlar arasında özel kombinasyonlar oluşturabilirsiniz. Bahisler, kapılar açılmadan önce veya yarış devam ederken canlı olarak yapılabilir.",
+      "mmaDescription": "{{home}} ve {{away}}, {{date}} {{time}} tarihinde {{competition}} canlı müsabakasında yumruklarını konuşturacak. Cloudbet'te nakavtlar, raunt bahsi ve galibiyet yöntemi gibi bahisleri aynı maç kuponlarında birleştirebilirsiniz. Bahisler erkenden yapılabilir veya dövüş ilerledikçe canlı oynanabilir.",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "e-Spor oranları",
+          "cs2": "CS2 e-Spor bahisleri",
+          "dota2": "oranlar",
+          "valorant": "Valorant bahis oranları",
+          "fifa": "FIFA e-Spor bahis oranları"
+        },
+        "titleV2": "{{home}} - {{away}} maçına bahis yapın – {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "Cloudbet'te rekabetçi e-Spor oranları ile {{date}} {{time}} tarihinde {{competition}} başladığında {{home}} - {{away}} maçına bahis yapın. Bu LoL maçı için {{markets}} pazarları dâhil olmak üzere tüm e-Spor kripto bahis pazarları mevcuttur.",
+        "cs2Description": "{{date}} {{time}} tarihinde {{competition}} turnuvasında {{home}} - {{away}} maçına bahis yapın. {{markets}} dâhil olmak üzere CS2 pazarlarına kripto ile bahis yapın. e-Spor canlı bahisleri için birebir. Sadece Cloudbet'te.",
+        "dota2Description": "Dota 2 {{competition}} turnuvasında {{date}} {{time}} tarihinde {{home}} - {{away}} maçına bahis yapın. {{markets}} kripto pazarları mevcuttur. En iyi spor bahisleri sitesinde Dota 2'ye gerçek nakit ödülleriyle bahis yapın.",
+        "valorantDescription": "{{competition}} turnuvasında {{date}} {{time}} tarihinde {{home}} - {{away}} maçına bahis yapın. BTC, ETH veya USDT ile {{markets}} pazarlarında Valorant'a bahis yapın. Sadece Cloudbet'te.",
+        "fifaDescription": "{{competition}} turnuvasında {{date}} {{time}} tarihinde {{home}} - {{away}} maçına bahis yapın. FIFA e-Spor takımlarınızı {{markets}} pazarlarında destekleyin. Cloudbet'te kolayca çevrimiçi e-Spor bahisleri yapın."
+      }
+    },
+    "nbaPromo": {
+      "title": "NBA'de yeni: Bahis Oluşturucu ve Oyuncu Önerileri",
+      "body": "Bahis Oluşturucu ile aynı maç kuponları oynayın ve öneri bahisleri için yeni oyuncu önerileri sekmesine göz atın."
+    },
+    "playerProps": {
+      "avgPer5Game": "5 oyun başına ort. {{stats}}",
+      "avgInRegSeason": "Normal sezonda ort. {{stats}}"
+    }
+  },
+  "common": {
+    "today": "Bugün",
+    "partial": "Kısmi",
+    "instantGames": "Anlık oyunlar",
+    "inPlay": "Canlı",
+    "tomorrow": "Yarın",
+    "competitions": "Yarışmalar",
+    "highlights": "En Sevi̇lenler",
+    "outrights": "Uzun Vadeli",
+    "virtuals": "Sanal",
+    "liveStream": "Canlı yayın",
+    "events": "Etkinlikler",
+    "games": "Oyunlar",
+    "nextToJump": "Sonraki atlayan",
+    "noLimitBets": "Limitsiz Bahisler",
+    "virtualSoccer": "Sanal Futbol",
+    "virtualBasketball": "Sanal Basketbol",
+    "betsClosed": "Bahisler Kapandı",
+    "virtualsUpNext": "Sonraki sanal etkinlik",
+    "simPlay": "Simülasyon",
+    "fullMatchup": "Tam karşılaşma",
+    "browseNow": "Hemen göz at",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "Getiri: {{amount}}",
+    "toReturnTitle": "Elde Edilecek Getiri",
+    "toReturnSubtitle": "{{stake}} üzerinden getiri: {{payout}}",
+    "summary": {
+      "reuseSelections": "Seçimleri tekrar kullan",
+      "acceptAndPlace": "Kabul et ve oyna {{value}}",
+      "sameGameMultiPlaced": "Bahis Oluşturucu yerleştirildi"
+    },
+    "parlay": {
+      "legs": "{{count}} Bahis"
+    },
+    "maxBet": {
+      "noLimit": "Bahis başına maks.: <0>{{currency}}{{stake}}</0>",
+      "nolimitTitle": "Bahis başına maks.:",
+      "default": "Maks. bahis: <0>{{currency}}{{stake}}</0>",
+      "defaultLocalized": "Maks. bahis: <0>{{value}}</0>",
+      "defaultTitle": "Maks. bahis:"
+    },
+    "errors": {
+      "maxBetIs": "Maks. bahis <0>{{currency}} {{stake}}</0>",
+      "minBetIs": "Min. bahis <0>{{currency}} {{stake}}</0>",
+      "maxBet": "Maks. bahis",
+      "minBet": "Min. bahis"
+    },
+    "summeryErrors": {
+      "marketClosed": "Pazar kapandı",
+      "limitExceeds": "Limit aşıldı",
+      "maxStakeReached": "Maks. bahis tutarına ulaşıldı",
+      "restricted": "Kısıtlandı",
+      "restrictedGeoBlocked": "Bölgeniz yasaklı. Lütfen VPN'inizi kapatın ve tekrar deneyin.",
+      "restrictedGeoBlockedShorten": "Bölgeye izin verilmiyor",
+      "minStakeChanged": "Min. bahis tutarı değişti",
+      "maxStakeChanged": "Maks. bahis tutarı değişti",
+      "unknownError": "Bilinmeyen hata",
+      "suspended": "Askıya Alındı",
+      "unauthorized": "Yetkiniz Yok",
+      "stakeAboveMax": "Lütfen bahis tutarınızı azaltın.",
+      "stakeBelowMin": "Lütfen bahis tutarınızı artırın.",
+      "priceAboveMarket": "Oranlar değişti.",
+      "betPending": "Bağlantı kararsız. Bahis durumu için \"Bahislerim\" bölümünü kontrol edin."
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "Lütfen bahsinizi yeniden oluşturun",
+        "timedOutTitle": "Bahis bulunamadı",
+        "timedOutDescription": "Bu bahsin yerini bulamadık. Aynı bahsi tekrar yapmadan önce \"Bahislerim\"i kontrol edin veya destekle iletişime geçin.",
+        "unknownError": "Bir şey ters gitti",
+        "unknownErrorDescription": "Aynı bahsi tekrar yapmadan önce \"Bahislerim\"i kontrol edin veya destekle iletişime geçin.",
+        "limitsExceeded": "Limitler aşıldı"
+      },
+      "actions": {
+        "clearSGP": "Bahis Oluşturucuyu temizle",
+        "reviewChangesInBetslip": "Bahis kuponundaki değişiklikleri görüntüle"
+      }
+    },
+    "placeBet": "Bahis koy",
+    "placeParlay": "{{amount}} kupon oynayın",
+    "betBuilder": {
+      "placeBetValid": "BO {{amount}} ile bahis yap",
+      "placeBetSubmitting": "BO {{amount}} ile bahis yapılıyor",
+      "betBuilderItemMarketUnavailable": "Pazar geçici olarak askıya alındı. <0>Yeniden dene</0> veya <0>Kaldır</0>",
+      "error": {
+        "parlayRestricted": "İlgili seçimler birleştirilemez",
+        "marketSuspended": "Pazar geçici olarak askıya alındı."
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "Oranlar değişti.",
+      "oddsHaveChangedAccept": "Oranlar değişti. <0>Kabul et</0>",
+      "oddsHaveChangedToReturn": "Oranlar değişti. Elde edilecek getiri: {{payout}}",
+      "oddsHaveChangedToReturnTitle": "Oranlar değişti. Elde edilecek getiri:",
+      "marketIsSuspendedWaitOrRemove": "Pazar geçici olarak askıya alındı. Bekle veya <0>Kaldır</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "Pazar geçici olarak askıya alındı. Bekleyin veya Kaldırın...",
+      "marketIsClosedRemove": "Pazar kapandı. <0>Kaldır</0>",
+      "selectionCorrelated": "Bu seçim, başka bir seçimle bağlantılıdır. <0>Kaldır</0>",
+      "parlayRestricted": "Bu seçimle kupon oluşturulamaz. <0>Kaldır</0>",
+      "dangerBall": "Yakında bir gol atılabilir. Bahsinizin kabul edilmesi 5 dakikayı bulabilir."
+    },
+    "consent": {
+      "acceptAllChanges": "Tüm değişiklikleri kabul et"
+    },
+    "insufficientBalanceAlert": {
+      "title": "Fonlarınız yetersiz",
+      "description": "Bahse devam etmek için <0>hemen fon yatırın</0>."
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "Tümünü gör {{sport}}"
+  },
+  "betBuilder": {
+    "reviewBet": "Bahsi incele",
+    "title": "SGP"
+  },
+  "myBets": {
+    "noBets": "Uygun bahis yok",
+    "checkOut": "Sonraki bahis fırsatını bulmak için bugünün maçlarına veya yaklaşan etkinliklere göz atın.",
+    "viewBetHistory": "Bahis geçmişini görüntüle",
+    "browseInplay": "Canlı etkinlikleri keşfet",
+    "loadError": "Bu bahis yüklenemiyor",
+    "id": "Kimlik",
+    "viewAllSettledBetsInfo": "Uzlaşılan tüm bahisleri bahis geçmişinde görüntüleyebilirsiniz.",
+    "onlyLast72HoursBetsInfo": "Yalnızca son 72 saatteki bahisler gösterilir. Uzlaşılan tüm bahisleri geçmişte görebilirsiniz."
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "{{over}} üstü",
+      "gameOversAndDeliveries": "Üstü - {{over}}.{{delivery}}",
+      "gameTargetRunsAndBalls": "{{teamName}} için şuradan {{runs}} lazım: {{balls}}",
+      "gameTrailByRuns": "{{teamName}}, {{runs}} geride",
+      "gameLeadByRuns": "{{teamName}}, {{runs}} önde",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "Test",
+      "matchDay": "{{matchDay}}. gün",
+      "endOfMatchDay": "{{matchDay}}. günün sonu",
+      "wonDefault": "{{winner}} kazandı",
+      "matchDrawn": "Maç Berabere",
+      "wonByRuns": "{{winner}}, {{wonBy}} koşuyla kazandı",
+      "wonByRunsAndInning": "{{winner}}, bir devre ve {{wonBy}} koşuyla kazandı",
+      "wonByWickets": "{{winner}}, {{wonBy}} kaleyle kazandı"
+    },
+    "racing": {
+      "running": "Koşu",
+      "runners": "Koşucular",
+      "scratched": "Çekilmiş",
+      "horseRacingWithdrawnDescription": "Bir at sakatlanma, hastalık, pist koşulları veya terbiyecisinin kararı nedeniyle geri çekildi. Oranlar düzenlendi ve bahis yaptıysanız kazançlarınız biraz azalmış olabilir. Yarıştan çekilmiş ata yapılan bahisler iade edilir.",
+      "greyhoundsWithdrawnDescription": "Bir köpek sakatlanma, hastalık, pist koşulları veya terbiyecisinin kararı nedeniyle geri çekildi. Oranlar düzenlendi ve bahis yaptıysanız kazançlarınız biraz azalmış olabilir. Yarıştan çekilmiş köpeğe yapılan bahisler iade edilir.",
+      "age": "Yaş:<0>{{age}}</0>",
+      "weightShorten": "A:<0>{{weight}}</0>lbs",
+      "formShorten": "F:<0>{{form}}</0>",
+      "horseJockeyShorten": "J:<0>{{jockey}}</0>",
+      "horseTrainerShorten": "T:<0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "Canlı skorlar kullanılamıyor"
+    }
+  },
+  "betHistory": {
+    "typeBet": "Bahis",
+    "typeCashout": "Bahis bozdur",
+    "typeSettlement": "Sonuçlandırma",
+    "noBetHistory": "Bahis geçmişi mevcut değil",
+    "hintV2": "\"Bahis Geçmişi\", sonuçlandırılmış bahislerin maç sonuçları ve bahis sonuçları dâhil detaylarını gösterir. Aktif veya bekleyen bahisleri görmek için {{link}} kısmına ilerleyin.",
+    "allBets": "Tüm bahisler",
+    "singles": "Tekliler",
+    "parlays": "Kuponlar",
+    "betBuilders": "Bahis Oluşturucular",
+    "outrights": "Uzun Vadeli"
+  },
+  "fightCenter": {
+    "rootTitle": "Dövüş Merkezi",
+    "mainCard": "Ana Kart",
+    "prelims": "Ön Eleme",
+    "taleOfTheTape": "İstatistikler",
+    "fighterProfile": "Dövüşçü Profili",
+    "height": "Boy",
+    "weight": "Kilo",
+    "armReach": "Kol Uzunluğu",
+    "legReach": "Bacak Uzunluğu",
+    "winRate": "Galibiyet Oranı",
+    "stats": "İstatistikler",
+    "age": "Yaş",
+    "record": "Rekor",
+    "byKo": "Nakavta göre",
+    "bySubmission": "Teslime göre",
+    "byDecision": "Karara göre",
+    "koTko": "KO/TKO",
+    "submission": "SUB",
+    "decision": "DEC",
+    "next": "Sonraki",
+    "draw": "Beraberlik",
+    "streamIn": "Yayının başlamasına:",
+    "liveDefault": "Canlı",
+    "officialGlobalSportsbook": "Resmî küresel spor bahisleri sitesi",
+    "official": "RESMÎ",
+    "globalSportsbook": "KÜRESEL SPOR BAHİSLERİ SİTESİ",
+    "expertPicks": {
+      "viewExpertPicks": "Uzman seçimlerini gör",
+      "banner": {
+        "title": "Uzman seçimleri",
+        "availableIn": "Erişilebilir olmasına:"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} tur",
+        "mma.winner": "{{outcome}} kazanç",
+        "mma.winning_method": "{{outcome}} ({{value}})"
+      },
+      "genericError": {
+        "title": "Bir engele takıldık",
+        "description": "Bir şey bozuldu. Şu anda düzeltiyoruz, yakında erişebileceksiniz."
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "Maçı kazanır",
+    "cricket_over_team_total": "Maçta {{overNumber}}. over - toplam koşu - takımlar",
+    "cricket_player_total": "Vurucu maç koşuları",
+    "cricket_player_to_score_milestone": "{{milestone}} sayı yapan oyuncu",
+    "cricket_player_total_fours": "Oyuncunun toplam dördü",
+    "cricket_player_total_player_performance": "Oyuncu performansı",
+    "cricket_team_total_fours": "Takımın toplam dördü",
+    "cricket_team_total_sixes": "Takımın toplam altısı",
+    "cricket_innings_over_x_team_total": "{{inningsNumber}}. devre {{overNumber}} over - toplam koşu - takımlar",
+    "cricket_innings_overs_0_to_x_team_total": "{{inningsNumber}}. devre 0 ila {{overNumber}} over - toplam koşu - takımlar",
+    "cricket_innings_player_total_deliveries_faced": "{{inningsNumber}}. devre - oyuncunun karşılaştığı toplam atış",
+    "cricket_team_total_from_0_over_to_x_over": "0 ila {{overNumber}}. over - toplam koşu - takımlar",
+    "cricket_team_total_in_highest_scoring_over": "Takımın en yüksek sayı yaptığı over",
+    "cricket_team_total_at_dismissal": "{{dismissalNumber}} sıra sonunda takım toplamı",
+    "cricket_innings_player_to_score_milestone": "{{inningsNumber}}. devre - oyuncu {{milestone}} sayı yapar",
+    "cricket_test_match_player_total": "{{inningsNumber}}. devre - oyuncu toplamı",
+    "cricket_innings_player_total_fours": "{{inningsNumber}}. devre - oyuncunun toplam dördü"
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "Güncel gol sayısı: {{total}} <0>({{home}}-{{away}})</0>",
+    "soccer.team_total_goals_home": "Güncel skor: {{home}}-<0>{{away}}</0>",
+    "soccer.team_total_goals_away": "Güncel skor: <0>{{home}}</0>-{{away}}",
+    "soccer.total_corners": "Güncel korner sayısı: <0>{{total}}</0>",
+    "tennis.total_games": "Güncel toplam maç sayısı: {{total}}",
+    "tennis.total_games_in_set": "{{setCount}}. setteki güncel toplam maç sayısı: {{total}} <0>({{gamesHome}}-{{gamesAway}})</0>"
+  },
+  "outcome": {
+    "draw": "Berabere"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "sert",
+        "clay": "toprak",
+        "grass": "çim",
+        "carpet": "halı"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "Balina Modunu Başlat",
+    "buildPosition": "Pozisyon oluştur",
+    "currentOdds": "Mevcut oranlar",
+    "decrementOdds": "Oranları azalt",
+    "incrementOdds": "Oranları artır",
+    "inProgress": {
+      "averageOdds": "Ortalama oranlar",
+      "filledAmount": "Gerçekleşen tutar",
+      "minOdds": "Min oranlar",
+      "of": "/",
+      "remaining": "Kalan",
+      "sheetFooter": {
+        "completedTitle": "Tamamlanan",
+        "executionStoppedTitle": "Gerçekleşme durdu",
+        "marketClosedTitle": "Pazar kapandı",
+        "oddsBelowMinimumTitle": "Oranlar minimumun altında",
+        "failedTitle": "Bahis oynanamadı",
+        "trackPosition": "<0>Bahislerim</0>'de pozisyonu takip edin"
+      },
+      "stopRemaining": "Kalanı durdur",
+      "timeElapsed": "Geçen süre",
+      "toReturn": "Elde Edilecek Getiri"
+    },
+    "minOdds": "Min oranlar",
+    "needBiggerStake": "Daha büyük bir bahse mi ihtiyacınız var?",
+    "noLimitBetting": "Limitsiz bahisler",
+    "stakeExceededDescription": "Bahis tutarı, bu pazarda izin verilen maks. tutarı aşıyor",
+    "status": {
+      "cancelled": "Durduruldu",
+      "completed": "Tamamlanan",
+      "failed": "Başarısız",
+      "failedMarketClosed": "Pazar kapandı",
+      "failedOddsUnderMin": "Oranlar değişti",
+      "running": "Devam ediyor"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "Oyuncu Liderlik Tabloları",
+      "trendsAndFavorites": "Trendler ve Hayranların Favorileri"
+    },
+    "columns": {
+      "player": "Oyuncu",
+      "name": "Ad"
+    },
+    "footer": "Veriler, {{dateRange}} arasında {{sportName}} sonuçlanmış bahis gösteriyor. Tüm rakamlar USD eş değeridir. Yalnızca herkese açık profiller gösterilir.",
+    "leaderboards": {
+      "sharpest": {
+        "title": "En Deneyimli Bahisçiler",
+        "subtitle": "{{sportName}} bahislerinde en iyi ROI"
+      },
+      "earners": {
+        "title": "En Çok Para Kazananlar",
+        "subtitle": "{{year}} yılındaki en yüksek {{sportName}} kârı"
+      },
+      "parlayKings": {
+        "title": "Kupon Kralları",
+        "subtitle": "Kupondan en çok kâr eden liderler"
+      },
+      "livePros": {
+        "title": "Canlı Bahis Efsaneleri",
+        "subtitle": "Canlı kâr liderleri"
+      },
+      "uclMasters": {
+        "title": "Şampiyonlar Ligi Ustaları",
+        "subtitle": "UCL bahis uzmanları"
+      },
+      "sgpWizards": {
+        "title": "SGP Büyücüleri",
+        "subtitle": "Aynı maç kuponu ustaları"
+      },
+      "crazyParlays": {
+        "title": "En Çılgın Kupon Kazançları",
+        "subtitle": "Tutan en çılgın çoklu bahisler"
+      },
+      "hotMatches": {
+        "title": "En Popüler Maçlar",
+        "subtitle": "Üzerine en çok bahis yapılan {{sportName}} fikstürleri"
+      },
+      "backedTeams": {
+        "title": "En Çok Desteklenen Takımlar",
+        "subtitle": "Hayranların bahis yapmayı en sevdiği takımlar"
+      },
+      "goalscorers": {
+        "title": "Gol Atan Favorileri",
+        "subtitle": "Üzerine en çok bahis yapılan {{sportName}} yıldızları"
+      },
+      "trendingLeagues": {
+        "title": "Trend Ligler",
+        "subtitle": "En popüler yarışmalar"
+      },
+      "backedPlayers": {
+        "title": "En Çok Desteklenen Oyuncular",
+        "subtitle": "Hayranların bahis yapmayı en sevdiği oyuncular"
+      },
+      "trendingTournaments": {
+        "title": "Trend Turnuvalar",
+        "subtitle": "En popüler turnuvalar"
+      },
+      "backedFighters": {
+        "title": "En Çok Desteklenen Dövüşçüler",
+        "subtitle": "Hayranların bahis yapmayı en sevdiği dövüşçüler"
+      },
+      "trendingPromotions": {
+        "title": "Trend Promosyonlar",
+        "subtitle": "En popüler MMA promosyonları"
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "Kâr",
+      "bets": "Bahisler",
+      "liveProfit": "Canlı Kâr",
+      "uclProfit": "UCL Kârı",
+      "sgpProfit": "SGP Kârı",
+      "multiplier": "Çarpan",
+      "payout": "Ödeme",
+      "totalWagered": "Yapılan Toplam Bahis",
+      "betsPlaced": "Oynanan Bahisler",
+      "turnover": "Top kaybı",
+      "goalscorerBets": "Gol Atan Bahisleri",
+      "totalBets": "Toplam Bahis",
+      "volume": "Hacim"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: En Çok Para Kazananlar",
+    "heroCta": "{{sportName}} — Kimin kazandığını görün",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI",
+    "bettingTrends": {
+      "title": "NBA Bahis Trendleri",
+      "teamColumnLabel": "Takım",
+      "tables": {
+        "winLoss": {
+          "title": "En Çok Kazanan/Kaybeden Takımlar",
+          "subtitle": "Bu sezon NBA'deki en iyi performanslar",
+          "recordLabel": "W-L",
+          "percentageLabel": "Galibiyet %"
+        },
+        "ats": {
+          "title": "En İyi ATS Takımları",
+          "subtitle": "Bu sezonda handikaplara karşı en iyisi",
+          "recordLabel": "ATS Rekoru",
+          "percentageLabel": "Handikap Başarısı %"
+        },
+        "over": {
+          "title": "En İyi Üst Takımları",
+          "subtitle": "Bu takımlarla maçlar en çok üst ile sonuçlanır",
+          "recordLabel": "Üst Rekoru",
+          "percentageLabel": "Üst %"
+        },
+        "under": {
+          "title": "En İyi Alt Takımları",
+          "subtitle": "Bu takımlarla maçlar en çok alt ile sonuçlanır",
+          "recordLabel": "Alt Rekoru",
+          "percentageLabel": "Alt %"
+        }
+      }
+    }
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "Tümü"
+  }
+}

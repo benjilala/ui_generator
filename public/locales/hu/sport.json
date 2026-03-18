@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "Ázsiai hendikep",
+      "cards": "Kártyák",
+      "corners": "Szögletek",
+      "goals": "Gólok",
+      "half": "Fél",
+      "main": "Fő",
+      "more": "Több",
+      "specials": "Kiemelt",
+      "popular": "Népszerű",
+      "firstHalf": "Első félidő",
+      "secondHalf": "Második félidő",
+      "points": "Pontok",
+      "quarters": "Negyedek",
+      "players": "Játékosok",
+      "sets": "Szettek",
+      "games": "Mérkőzések",
+      "hitsAndRuns": "Ütések és futások",
+      "playerProps": "Játékos prop",
+      "extraTime": "Hosszabbítás",
+      "kills": "Killek",
+      "match": "Mérkőzés",
+      "player": "Játékos",
+      "team": "Csapat",
+      "mainMarkets": "Főbb piacok",
+      "matchMarkets": "Mérkőzéspiacok",
+      "mapN": "Térkép {{mapNumber}}",
+      "firstInnings": "1. játékrész",
+      "all": "Minden piac",
+      "betBuilder": "SGP"
+    },
+    "stats": {
+      "notAvailable": "A statisztikák nem elérhetőek",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "Megérkezett az Egyedi Fogadás",
+      "loginToBetDescription": "Állíts össze egyedi fogadásokat több fogadási elem kombinálásával egyetlen adott meccsből. Több kontroll, nagyobb nyerési potenciál — elérhető most kiválasztott ligákra.",
+      "loginToBetButton": "Jelentkezz be, hogy létrehozhasd a sajátodat",
+      "genericError": {
+        "titleWithCode": "Valami hiba történt ({{code}})",
+        "title": "Valami hiba történt",
+        "description": "Kérjük, próbáld meg újra. Ha a probléma továbbra is fennáll, lép kapcsolatba ügyfélszolgálatunkkal."
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "Kicseréled a meglévő Same Game Multi fogadást?",
+        "description": "A fogadószelvényen csak egy Same Game Multi fogadható. Új hozzáadása felváltja a már meglévő fogadást.",
+        "cancelCta": "Mégse",
+        "replaceCta": "Csere"
+      },
+      "shortened": "SGP",
+      "betBuilderPromo": "Állíts össze még nagyobb szorzókat azonos játékos gyűjtőfogadásokkal.",
+      "betBuilderAlertBanner": {
+        "title2": "100x-os Bet Builder nyereménysorsolás",
+        "body2": "Állítsd össze ezen a hétvégén egy legalább 1 (vagy több) $-os gyűjtőfogadást — 10 nyertes megkapja a fogadása 100x-osát (akár 100 $-t)."
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "Bármikor",
+            "first": "Első",
+            "last": "Utolsó",
+            "teamFirst": "Első csapat",
+            "teamLast": "Utolsó csapat",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "Fejléc",
+            "scoreOutsideOfTheBox": "A büntetőterületen kívül"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "Mikor fog az adott játékos pontot szerezni?",
+            "when-will-player-score-team": "Mikor fog az adott játékos (csapat) pontot szerezni?",
+            "how-many-player-goals": "Hány gólt szerez az adott játékos?",
+            "how-will-player-score": "Hogy fog gólt szerezni az adott játékos?",
+            "player-assists": "A játékos gólpasszai",
+            "player-to-be-carded-team": "A játékos, aki lapot lapot (csapat)",
+            "player-to-be-shown-a-card": "A játékos, akinek egy lapot mutatnak fel",
+            "total-cards-team": "Lapok összesen (csapat)",
+            "both-team-total-cards": "A két csapat által szerzett lapok összesen",
+            "both-teams-total-goals": "A két csapat által szerzett gólok összesen",
+            "total-goals-team": "Gólok összesen (csapat)",
+            "both-teams-total-corners": "A két csapat által elvégzett szögletek összesen",
+            "total-corners-team": "Szögletek összesen (csapat)",
+            "both-teams-score": "Mindkét csapat szerez gólt",
+            "player-to-be-sent-off": "A játékos, akit kiállítanak",
+            "player-total-fouls-committed": "A játékos által elkövetett szabálytalanságok összesen",
+            "player-total-saves": "A játékos védései összesen",
+            "player-total-shots": "A játékos lövései összesen",
+            "player-total-shots-on-target": "A játékos kaput eltaláló lövései összesen",
+            "player-total-tackles": "A játékos szerelései összesen",
+            "player-total-passes": "A játékos által elvégzett passzok összesen",
+            "to-happen-in-the-match-team": "A mérkőzésen ez fog történni (csapat)",
+            "method-of-victory": "A győzelem módja",
+            "total-shots-team": "Lövések összesen (csapat)",
+            "team-with-most-bookings": "A legtöbb figyelmeztetést kapó csapat",
+            "total-shots-on-target-team": "A kaput eltaláló lövések összesen (csapat)",
+            "total-goals-over-slash-under-after-10-minutes": "A gólok száma összesen felett/alatt 10 perc után",
+            "asian-handicap-after-10-minutes": "Ázsiai hendikep 10 perc után",
+            "correct-score": "Pontos eredmény",
+            "most-cards": "Legtöbb lap",
+            "most-corners": "Legtöbb szöglet",
+            "double-chance": "Kétesélyes",
+            "winning-margin": "Győzelmi különbözet",
+            "total-goals": "Gólok száma összesen",
+            "total-exact-goals": "Pontos gólok száma összesen",
+            "total-exact-goals-team": "Pontos gólok száma összesen (csapat)",
+            "total-bookings-points": "Büntetőpontok összesen",
+            "total-bookings-points-team": "Büntetőpontok összesen (csapat)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "Játékos összes pontja és lepattanói",
+            "player-total-points": "Játékos összes pontja",
+            "player-total-3-point-field-goals": "Játékos összes hárompontos kosara",
+            "player-total-rebounds": "Játékos összes lepattanója",
+            "player-total-assists-and-rebounds": "Játékos összes assistja és lepattanója",
+            "player-total-assists": "Játékos összes assistja",
+            "player-total-points-and-assists": "Játékos összpontszáma és assistja",
+            "player-total-points-assists-and-rebounds": "Játékos összes pontja, assistja és lepattanója",
+            "player-to-achieve-a-double-double": "Játékos, aki eléri a double-double-t",
+            "player-to-achieve-a-triple-double": "Játékos, aki eléri a triple-double-t",
+            "player-total-3-pointers-over-under": "Játékos összes hárompontos dobása (felett/alatt)",
+            "player-total-assists-and-rebounds-over-under": "Játékos összes assistja és lepattanója (felett/alatt)",
+            "player-total-assists-over-under": "Játékos összes assistja (felett/alatt)",
+            "player-total-points-over-under": "Játékos összes pontja (felett/alatt)",
+            "player-total-rebounds-over-under": "Játékos összes lepattanója (felett/alatt)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "Fogadj erre az eseményre kriptoval: {{eventName}}",
+      "soccerDescription": "A szurkolók izgalmas összecsapásra számíthatnak, amikor a {{home}} a {{away}} ellen lép pályára az alábbi mérkőzésen és időben: {{competition}}, {{date}}, {{time}} óra. A még nagyobb izgalmak érdekében lehetőséged nyílik a Cloudbetnél az azonos játékos gyűjtőfogadással a tippjeidet egyénileg összeállítani – például gólokat, szögleteket és lapokat. Tedd meg a tétjeidet a kezdés előtt, vagy kövesd az eseményeket élőben.",
+      "basketballDescription": "A {{home}} és {{away}} közötti {{competition}} mérkőzés az alábbi időben kerül megrendezésre: {{date}}, {{time}} órakor. Ez a meccs garantálja az izgalmas akciókat a feldobástól egészen a záró dudaszóig. Az azonos játékos gyűjtőfogadással lehetőséged nyílik összekötni a játékosok pontjaira, lepattanókra és assistokra tett tippeket a még nagyobb nyeremény érdekében. Tedd meg tétjeidet még a kezdés előtt, vagy szállj be játék közben élő fogadásokkal.",
+      "americanFootballDescription": "A {{competition}} kereteiben a {{home}} és a {{away}} csap össze, mégpedig az alábbi időpontban: {{date}}, {{time}} órakor. A Cloudbet lehetővé teszi, hogy Same Game Parlay fogadás formájában kombináld a fogadásaidat — a touchdownoktól a passzolt yardokig — a még nagyobb előnyök érdekében. Tedd meg a fogadásaidat a kezdőrúgás előtt, vagy kövesd élőben az oddsokat a meccs alatt.",
+      "tennisDescription": "A {{competition}}-mérkőzés {{home}} és {{away}} között az alábbi időpontban kerül megrendezésre: {{date}}, {{time}} órakor. Mindkét játékos ismert a {{surface}} felületén nyújtott formájáról és technikai tudásáról. Az azonos játékos gyűjtőfogadás lehetővé teszi, hogy egyetlen fogadásban kombináld a szettgyőzteseket, a lejátszott game-ek számát és az ászokat. Tedd meg fogadásaidat még az első szerva előtt, vagy fogadj élőben, ahogy a játék lendülete változik.",
+      "baseballDescription": "A {{competition}}-kereteiben a {{home}} és a {{away}} csap össze az alábbi időpontban: {{date}}, {{time}} órakor. A Same Game Parlay fogadás segítségével egyetlen fogadásban összekötheted az ütéseket, strikeoutokat és az elért futások számát. Fogadj előre, vagy játssz élőben, inningről inningre.",
+      "iceHockeyDescription": "A {{competition}} során a {{home}} és {{away}} találkozója az alábbi időpontban kezdődik: {{date}}, {{time}} órakor. Az azonos játékos gyűjtőfogadás lehetővé teszi, hogy egyetlen fogadásban kombináld a gólokat, gólpasszokat és büntetéseket, így még izgalmasabbá téve a mérkőzést. Fogadj még a korong bedobása előtt, vagy fogadj élőben.",
+      "rugbyDescription": "A {{home}} és a {{away}} mérkőzik meg egymással a {{competition}} kereteiben az alábbi időpontban: {{date}}, {{time}} órakor. Az már biztos, hogy hatalmas szerelésekre és elképesztő kísérletekre számíthatsz. A Cloudbettel azonos játékos gyűjtőfogadásokban fogadhatsz kísérletekre, jutalomrúgásokra és az összpontszámra. Fogadj a kezdőrúgás előtt, vagy kövesd élőben a meccset minden egyes scrum-mal.",
+      "cricketDescription": "A {{{home}} és a {{away}} mérkőzik meg egymással a {{competition}} során az alábbi időpontban: {{date}}, {{time}} órakor. Az már biztos, hogy ezen a mérkőzésen rengeteg futásra és sok wicketre számíthatsz. A Cloudbet azonos játékos gyűjtőfogadása lehetőséget biztosít, hogy egyetlen fogadásban kombináld a futásokat, wicketeket és hatos/négyes ütéseket. Fogadj még az első labda előtt, vagy kövesd az élő játékot overről overre.",
+      "horseRacingDescription": "A {{competition}} az alábbi időpontban kerül megrendezésre: {{date}}, {{time}} órakor. A legjobb versenylovak állnak rajthoz, így garantált, hogy a rajongók izgalmas vágtára számíthatnak hatalmas tétekkel. A Cloudbeten fogadhatsz közvetlenül a kedvencedre, vagy akár több futamot kombinálva azonos játékos gyűjtőfogadásokat állíthatsz össze, hogy fokozd az izgalmakat. Tedd meg tétjeidet, még mielőtt a rajtkapuk kinyílnának.",
+      "mmaDescription": "{{home}} méri össze erejét {{away}} szemben az alábbi időpontban: {{date}}, {{time}} órakor, élőben a {{competition}} során. Ez az meccs kőkemény párharcot ígér a ketrecben. A Cloudbeten azonos játékos gyűjtőfogadásokat állíthatsz össze ugyanazon a meccsen belül – leütésekre, az egyes menetekre és a győzelem módjára. Tétjeidet megteheted előre, de akár beszállhatsz élőben is, ahogy egyre kibontakozik a küzdelem.",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "E-sport szorzók",
+          "cs2": "CS2 e-sport fogadás",
+          "dota2": "szorzók",
+          "valorant": "Valorant fogadási szorzók",
+          "fifa": "FIFA esports betting odds"
+        },
+        "titleV2": "Fogadj a {{home}} vs {{away}} mérkőzésre – {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "Fogadj a {{home}} vs {{away}} mérkőzésre, amelynek ideje: {{date}} {{time}} óra. {{competition}} élőben a Cloudbeten versenyképes e--sport szorzókkal. Ez a LoL összecsapás teljes kripto piacokat kínál az e-sport fogadáshoz — beleértve az alábbi piacot is: {{markets}}.",
+        "cs2Description": "Bet on {{home}} vs {{away}} this {{date}} at {{time}} in the {{competition}}. Bet with crypto on CS2 markets including {{markets}} — perfect for esports live betting, only on Cloudbet.",
+        "dota2Description": "Bet on {{home}} vs {{away}} in the Dota 2 {{competition}} this {{date}} at {{time}}. Crypto markets available on {{markets}}. Bet on Dota 2 with real cash rewards on a top esports betting website.",
+        "valorantDescription": "Bet on {{home}} vs {{away}} in {{competition}} this {{date}} at {{time}}. Watch the action unfold and place your Valorant bet with BTC, ETH, or USDT across {{markets}} in Valorant — only at Cloudbet.",
+        "fifaDescription": "Bet on {{home}} vs {{away}} in the {{competition}} this {{date}} at {{time}}. Back your favorite in FIFA esports with markets like {{markets}} — an easy esports bet online on Cloudbet."
+      }
+    },
+    "nbaPromo": {
+      "title": "Újdonság az NBA-nél: Bet Builder és játékos prop fogadások",
+      "body": "Tegyél azonos játékos gyűjtőfogadást a Bet Builderrel, és fedezd fel az új Játékosfogadások felületet proposition fogadásokért."
+    },
+    "playerProps": {
+      "avgPer5Game": "Átlag {{stats}} 5 meccsenként",
+      "avgInRegSeason": "Átlag {{stats}} alapszakaszban"
+    }
+  },
+  "common": {
+    "today": "Ma",
+    "partial": "Részleges",
+    "instantGames": "Azonnali játékok",
+    "inPlay": "Élőben",
+    "tomorrow": "Holnap",
+    "competitions": "Versenyek",
+    "highlights": "Kiemelt események",
+    "outrights": "Outrightok",
+    "virtuals": "Virtuális játékok",
+    "liveStream": "Élő stream",
+    "events": "Események",
+    "games": "Játékok",
+    "nextToJump": "Hamarosan",
+    "noLimitBets": "Limit nélküli fogadás",
+    "virtualSoccer": "Virtuális labdarúgás",
+    "virtualBasketball": "Virtuális kosárlabda",
+    "betsClosed": "Fogadás lezárva",
+    "virtualsUpNext": "Közelgő virtuális események",
+    "simPlay": "Szimuláció",
+    "fullMatchup": "Minden mérkőzés",
+    "browseNow": "Megtekintés most",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "Visszatérés: {{amount}}",
+    "toReturnTitle": "Ebből visszakaphatsz",
+    "toReturnSubtitle": "{{stake}}, nyereség: {{payout}}",
+    "summary": {
+      "reuseSelections": "Tippek felhasználása újra",
+      "acceptAndPlace": "Elfogadás és fogadás: {{value}}",
+      "sameGameMultiPlaced": "Azonos meccs gyűjtőfogadás"
+    },
+    "parlay": {
+      "legs": "{{count}} kötés"
+    },
+    "maxBet": {
+      "noLimit": "Tétenként max.: <0>{{stake}} {{currency}}</0>",
+      "nolimitTitle": "Maximális összeg egy tétre:",
+      "default": "A maximális tét: <0>{{stake}} {{currency}}</0>",
+      "defaultLocalized": "Maximum tét: <0>{{value}}</0>",
+      "defaultTitle": "Max. tét:"
+    },
+    "errors": {
+      "maxBetIs": "A maximális tét <0>{{stake}} {{currency}}></0>",
+      "minBetIs": "A minimális tét <0>{{stake}} {{currency}}></0>",
+      "maxBet": "Max. tét",
+      "minBet": "Min. tét"
+    },
+    "summeryErrors": {
+      "marketClosed": "Piac zárva",
+      "limitExceeds": "Limit túllépve",
+      "maxStakeReached": "Max. tét elérve",
+      "restricted": "Korlátozott",
+      "restrictedGeoBlocked": "A régiód nincs engedélyezve. Kérjük, kapcsold ki a VPN-t, és próbáld újra.",
+      "restrictedGeoBlockedShorten": "Nem engedélyezett régió",
+      "minStakeChanged": "Min. tét módosult",
+      "maxStakeChanged": "Max. tét módosult",
+      "unknownError": "Ismeretlen hiba",
+      "suspended": "Felfüggesztve",
+      "unauthorized": "Jogosulatlan",
+      "stakeAboveMax": "Csökkentsd a tétet.",
+      "stakeBelowMin": "Növeld a tétet.",
+      "priceAboveMarket": "A szorzó változott.",
+      "betPending": "Gyenge a kapcsolat. A fogadás állapotának ellenőrzéséhez menj a „Fogadásaim” részre."
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "Kérjük, állítsd össze újra a fogadásodat",
+        "timedOutTitle": "Fogadás nem található",
+        "timedOutDescription": "A fogadást nem találtuk. Kérjük, ellenőrizd a \"Fogadásaim\" fül alatt vagy vedd fel a kapcsolatot ügyfélszolgálatunkkal, mielőtt újra fogadnál.",
+        "unknownError": "Valami hiba történt",
+        "unknownErrorDescription": "Ellenőrizd a \"Fogadásaim\" fület vagy vedd fel a kapcsolatot ügyfélszolgálatunkkal, mielőtt újra fogadnál.",
+        "limitsExceeded": "Limit túllépve"
+      },
+      "actions": {
+        "clearSGP": "Egyedi Fogadás törlése",
+        "reviewChangesInBetslip": "A szelvény változásainak áttekintése"
+      }
+    },
+    "placeBet": "Fogadás",
+    "placeParlay": "Kombinált fogadás: {{amount}}",
+    "betBuilder": {
+      "placeBetValid": "SGP fogadás {{amount}}",
+      "placeBetSubmitting": "SGP fogadás {{amount}}",
+      "betBuilderItemMarketUnavailable": "A piacot átmenetileg felfüggesztették. <0>Várj egy kicsit</0>, vagy <1>távolítsd el</1>",
+      "error": {
+        "parlayRestricted": "Kapcsolódó tippek nem kombinálhatók",
+        "marketSuspended": "A piac átmenetileg felfüggesztésre került."
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "A szorzó változott.",
+      "oddsHaveChangedAccept": "A szorzó megváltozott. <0>Elfogad</0>",
+      "oddsHaveChangedToReturn": "A szorzó megváltozott. A visszatéréshez: {{payout}}",
+      "oddsHaveChangedToReturnTitle": "A szorzók változtak. A visszatérítéshez:",
+      "marketIsSuspendedWaitOrRemove": "A piac átmenetileg felfüggesztésre került. Várj egy kicsit, vagy <0>távolítsd el</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "A piacot átmenetileg felfüggesztették. Várj egy kicsit, vagy távolítsd el...",
+      "marketIsClosedRemove": "Piac zárva. <0>Eltávolít</0>",
+      "selectionCorrelated": "Ez a tipp üti egymást egy másikkal. <0>Eltávolít</0>",
+      "parlayRestricted": "Ezt a tippet nem lehet kombinált fogadásban megtenni. <0>Eltávolít</0>",
+      "dangerBall": "Lehet, hogy hamarosan gól születik. A fogadás elfogadása akár 5 percbe is beletelhet."
+    },
+    "consent": {
+      "acceptAllChanges": "Változások elfogadása"
+    },
+    "insufficientBalanceAlert": {
+      "title": "Nincs elegendő fedezeted",
+      "description": "<0>Fizess be most</0> a fogadás folytatásához."
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "{{sport}} – Összes megjelenítése"
+  },
+  "betBuilder": {
+    "reviewBet": "Fogadás áttekintése",
+    "title": "SGP"
+  },
+  "myBets": {
+    "noBets": "Nincsenek elérhető fogadások",
+    "checkOut": "Nézd meg a mai mérkőzéseket és a közelgő eseményeket, hogy megtaláld a következő fogadási lehetőséget.",
+    "viewBetHistory": "Fogadási előzmények megtekintése",
+    "browseInplay": "Játékon belüli események böngészése",
+    "loadError": "A fogadás betöltése nem lehetséges",
+    "id": "Azonosító",
+    "viewAllSettledBetsInfo": "Minden lezárt fogadást a fogadási előzményekben találsz.",
+    "onlyLast72HoursBetsInfo": "Csak az elmúlt 72 óra fogadásait látod itt. A többi fogadás megtekintéséhez menj a fogadási előzményekbe."
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "{{over}} felett",
+      "gameOversAndDeliveries": "{{over}}.{{delivery}} felett",
+      "gameTargetRunsAndBalls": "{{teamName}} – {{runs}} futás kell ennyiből labdából: {{balls}}",
+      "gameTrailByRuns": "{{teamName}} {{runs}} futás hátrányban",
+      "gameLeadByRuns": "{{teamName}} {{runs}} futás előnyben",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "Teszt",
+      "matchDay": "{{matchDay}}. nap",
+      "endOfMatchDay": "{{matchDay}}. nap vége",
+      "wonDefault": "{{winner}} nyert",
+      "matchDrawn": "Döntetlen mérkőzés",
+      "wonByRuns": "{{winner}} nyert {{wonBy}} futással",
+      "wonByRunsAndInning": "{{winner}} nyert egy játékrészzel és {{wonBy}} futással",
+      "wonByWickets": "{{winner}} nyert {{wonBy}} kapuval"
+    },
+    "racing": {
+      "running": "Versenyző",
+      "runners": "Versenyzők",
+      "scratched": "Törölve",
+      "horseRacingWithdrawnDescription": "Egy lovat visszaléptettek sérülés, betegség, a pálya állapota vagy a tréner döntése miatt. A szorzók módosításra kerültek, és ha már megtetted a tétedet, előfordulhat, hogy a nyereményed némileg csökken. A törölt lóra tett fogadások visszatérítésre kerülnek.",
+      "greyhoundsWithdrawnDescription": "Egy kutyát visszaléptettek sérülés, betegség, a pálya állapota vagy a tréner döntése miatt. A szorzók módosításra kerültek, és ha már megtetted a tétedet, előfordulhat, hogy a nyereményed némileg csökken. A törölt kutyára tett fogadások visszatérítésre kerülnek.",
+      "age": "Kor:<0>{{age}}</0>",
+      "weightShorten": "S:<0>{{weight}}</0>lbs",
+      "formShorten": "F:<0>{{form}}</0>",
+      "horseJockeyShorten": "Zs:<0>{{jockey}}</0>",
+      "horseTrainerShorten": "T:<0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "Az élő eredmények jelenleg nem elérhetők"
+    }
+  },
+  "betHistory": {
+    "typeBet": "Fogadás",
+    "typeCashout": "Korai kifizetés",
+    "typeSettlement": "Elszámolás",
+    "noBetHistory": "Nincsenek elérhető fogadási előzmények",
+    "hintV2": "A fogadási előzmények között áttekintheted az elszámolt fogadások részleteit, beleértve a mérkőzések eredményét és a fogadások kimenetelét is. Az aktív vagy függőben lévő fogadásokat itt tudod megnézni: {{link}}.",
+    "allBets": "Összes fogadás",
+    "singles": "Egyéni",
+    "parlays": "Kombinált fogadások",
+    "betBuilders": "Bet Builders",
+    "outrights": "Outrightok"
+  },
+  "fightCenter": {
+    "rootTitle": "Bunyóközpont",
+    "mainCard": "Főtábla",
+    "prelims": "Selejtezők",
+    "taleOfTheTape": "Adatlap",
+    "fighterProfile": "Sportolói profil",
+    "height": "Magasság",
+    "weight": "Súly",
+    "armReach": "Karhossz",
+    "legReach": "Lábhossz",
+    "winRate": "Nyerési arány",
+    "stats": "Statisztika",
+    "age": "Kor",
+    "record": "Eredmények",
+    "byKo": "KO-val",
+    "bySubmission": "Feladással",
+    "byDecision": "Döntéssel",
+    "koTko": "KO/TKO",
+    "submission": "FELAD",
+    "decision": "DÖN",
+    "next": "Következő",
+    "draw": "Döntetlen ",
+    "streamIn": "Streamelés:",
+    "liveDefault": "Élő",
+    "officialGlobalSportsbook": "Hivatalos globális sportfogadó",
+    "official": "Hivatalos",
+    "globalSportsbook": "Globális Sportfogadó",
+    "expertPicks": {
+      "viewExpertPicks": "Szakértői tippek megtekintése",
+      "banner": {
+        "title": "Profik választása",
+        "availableIn": "Elérhető"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} kör",
+        "mma.winner": "{{outcome}} győzelem",
+        "mma.winning_method": "{{outcome}} {{value}} különbséggel"
+      },
+      "genericError": {
+        "title": "Valami hiba történt",
+        "description": "Úgy tűnik, nem működik — már dolgozunk rajta és hamarosan ismét elérhető lesz."
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "A mérkőzés győztese",
+    "cricket_over_team_total": "Mérkőzés {{overNumber}} felett – összes futás – csapatok",
+    "cricket_player_total": "Ütőjátékos futásai a mérkőzésen",
+    "cricket_player_to_score_milestone": "{{milestone}} – a mérföldkövet elérő játékos",
+    "cricket_player_total_fours": "Játékos összes négyese",
+    "cricket_player_total_player_performance": "Játékos teljesítménye",
+    "cricket_team_total_fours": "A csapat összes négyese",
+    "cricket_team_total_sixes": "A csapat összes hatosa",
+    "cricket_innings_over_x_team_total": "{{inningsNumber}}. játékrész {{overNumber}} felett – összes futás – csapatok",
+    "cricket_innings_overs_0_to_x_team_total": "{{inningsNumber}}. játékrész 0–{{overNumber}} felett – összes futás – csapatok",
+    "cricket_innings_player_total_deliveries_faced": "{{inningsNumber}}. játékrész – játékos által fogadott összes dobás",
+    "cricket_team_total_from_0_over_to_x_over": "0–{{overNumber}} felett – összes futás – csapatok",
+    "cricket_team_total_in_highest_scoring_over": "A csapat legmagasabb pontszámú játszmája",
+    "cricket_team_total_at_dismissal": "Csapat összpontszáma ennél a kiejtésnél: {{dismissalNumber}}.",
+    "cricket_innings_player_to_score_milestone": "{{inningsNumber}} inningek, a játékos elért eredménye {{milestone}}",
+    "cricket_test_match_player_total": "{{inningsNumber}} inningek, a játékos összesen",
+    "cricket_innings_player_total_fours": "{{inningsNumber}} inningek, a játékos négyeseinek száma "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "Jelenlegi állás: {{total}} <0>({{home}}-{{away}})</0>",
+    "soccer.team_total_goals_home": "Jelenlegi állás: {{home}}-<0>{{away}}</0>",
+    "soccer.team_total_goals_away": "Jelenlegi állás: <0>{{home}}</0>-{{away}}",
+    "soccer.total_corners": "Jelenlegi szögletek: <0>{{total}}</0>",
+    "tennis.total_games": "Jelenlegi összes játék: {{total}}",
+    "tennis.total_games_in_set": "Jelenlegi összes játék {{setCount}} szettben: {{total}} <0>({{gamesHome}}-{{gamesAway}})</0>"
+  },
+  "outcome": {
+    "draw": "Döntetlen"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "kemény",
+        "clay": "agyag",
+        "grass": "fű",
+        "carpet": "szőnyeg"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "Whale-mód bekapcsolása",
+    "buildPosition": "Build position",
+    "currentOdds": "Aktuális oddsok",
+    "decrementOdds": "Oddsok csökkentése",
+    "incrementOdds": "Oddsok növelése",
+    "inProgress": {
+      "averageOdds": "Átlagos odds",
+      "filledAmount": "Teljesített összeg",
+      "minOdds": "Minimum odds",
+      "of": "/",
+      "remaining": "Fennmaradó",
+      "sheetFooter": {
+        "completedTitle": "Kész",
+        "executionStoppedTitle": "Végrehajtás leállítva",
+        "marketClosedTitle": "Piac zárva",
+        "oddsBelowMinimumTitle": "Odds a minimum alatt",
+        "failedTitle": "Fogadás megtétele sikertelen",
+        "trackPosition": "Ellenőrizd az állást a <0>Fogadásaim</0> fülben"
+      },
+      "stopRemaining": "Eddigiek leállítása",
+      "timeElapsed": "Lejárt idő",
+      "toReturn": "Ebből visszakaphatsz"
+    },
+    "minOdds": "Minimum odds",
+    "needBiggerStake": "Nagyobb tétekkel fogadnál?",
+    "noLimitBetting": "Korlátlan fogadás",
+    "stakeExceededDescription": "A tét meghaladja a piacra vonatkozó maximális tétet",
+    "status": {
+      "cancelled": "Leállítva",
+      "completed": "Kész",
+      "failed": "Sikertelen",
+      "failedMarketClosed": "Piac zárva",
+      "failedOddsUnderMin": "A szorzó megváltozott",
+      "running": "Folyamatban"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "Player Leaderboards",
+      "trendsAndFavorites": "Trends & Fan Favorites"
+    },
+    "columns": {
+      "player": "Játékos",
+      "name": "Név"
+    },
+    "footer": "Data reflects settled {{sportName}} bets during {{dateRange}}. All figures in USD equivalent. Only public profiles are displayed.",
+    "leaderboards": {
+      "sharpest": {
+        "title": "Sharpest Bettors",
+        "subtitle": "Best ROI on {{sportName}} bets"
+      },
+      "earners": {
+        "title": "Top Earners",
+        "subtitle": "Highest {{sportName}} profits in {{year}}"
+      },
+      "parlayKings": {
+        "title": "Parlay Kings",
+        "subtitle": "Top parlay profit leaders"
+      },
+      "livePros": {
+        "title": "Live Betting Legends",
+        "subtitle": "In-play profit leaders"
+      },
+      "uclMasters": {
+        "title": "Champions League Masters",
+        "subtitle": "UCL betting specialists"
+      },
+      "sgpWizards": {
+        "title": "SGP Wizards",
+        "subtitle": "Same Game Parlay masters"
+      },
+      "crazyParlays": {
+        "title": "Craziest Parlay Wins",
+        "subtitle": "Wildest multi-legs that hit"
+      },
+      "hotMatches": {
+        "title": "Hottest Matches",
+        "subtitle": "Most wagered {{sportName}} fixtures"
+      },
+      "backedTeams": {
+        "title": "Most Backed Teams",
+        "subtitle": "Fan favorites to bet on"
+      },
+      "goalscorers": {
+        "title": "Goalscorer Favorites",
+        "subtitle": "Most bet-on {{sportName}} stars"
+      },
+      "trendingLeagues": {
+        "title": "Trending Leagues",
+        "subtitle": "Most popular competitions"
+      },
+      "backedPlayers": {
+        "title": "Most Backed Players",
+        "subtitle": "Fan favorite players to bet on"
+      },
+      "trendingTournaments": {
+        "title": "Trending Tournaments",
+        "subtitle": "Most popular tournaments"
+      },
+      "backedFighters": {
+        "title": "Most Backed Fighters",
+        "subtitle": "Fan favorite fighters to bet on"
+      },
+      "trendingPromotions": {
+        "title": "Trending Promotions",
+        "subtitle": "Most popular MMA promotions"
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "Nyereség",
+      "bets": "Fogadások",
+      "liveProfit": "Live Profit",
+      "uclProfit": "UCL Profit",
+      "sgpProfit": "SGP Profit",
+      "multiplier": "Többszöröző",
+      "payout": "Kifizetés",
+      "totalWagered": "Total Wagered",
+      "betsPlaced": "Bets Placed",
+      "turnover": "Turnover",
+      "goalscorerBets": "Goalscorer Bets",
+      "totalBets": "Total Bets",
+      "volume": "Volume"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: Top Earners",
+    "heroCta": "{{sportName}} — See who's winning",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI",
+    "bettingTrends": {
+      "title": "NBA fogadási trendek",
+      "teamColumnLabel": "Csapat",
+      "tables": {
+        "winLoss": {
+          "title": "Csapatok a legtöbb győzelemmel/vereséggel",
+          "subtitle": "Az idei NBA-szezon legjobb eredményei",
+          "recordLabel": "GY-V",
+          "percentageLabel": "Nyertes %"
+        },
+        "ats": {
+          "title": "Legjobb ATS-csapatok",
+          "subtitle": "A szezon legjobb spread elleni teljesítmények",
+          "recordLabel": "ATS-eredmény",
+          "percentageLabel": "Lefed %-ot"
+        },
+        "over": {
+          "title": "Legjobb csapatok \"Felett\"eredményekkel",
+          "subtitle": "Legtöbb felett-meccset hozó csapatok",
+          "recordLabel": "Felett-eredmények",
+          "percentageLabel": "Felett %"
+        },
+        "under": {
+          "title": "Legjobb csapatok \"Alatt\" eredményekkel",
+          "subtitle": "Legtöbb alatt-meccset hozó csapatok",
+          "recordLabel": "Alatt-eredmények",
+          "percentageLabel": "Alatt %"
+        }
+      }
+    }
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "Összes"
+  }
+}

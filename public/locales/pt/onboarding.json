@@ -1,0 +1,16 @@
+{
+  "title": "Welcome to the club",
+  "onboarding": {
+    "tellUsMore": "Tell us a bit more about yourself.",
+    "complete": {
+      "accept_major_cryptos": "We accept 40+ cryptocurrencies and top payment providers.",
+      "deposit_to_unlock": "Deposit to unlock",
+      "add_funds_to_start": "Add funds to start playing",
+      "skip_for_now": "Skip for now"
+    },
+    "errors": {
+      "nickname_taken": "That nickname is already taken.",
+      "dob_invalid": "Please enter a valid date of birth"
+    }
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "아시아 라인",
+      "cards": "카드",
+      "corners": "코너수",
+      "goals": "골",
+      "half": "절반",
+      "main": "기본",
+      "more": "더 보기",
+      "specials": "스페셜",
+      "popular": "인기",
+      "firstHalf": "전반전",
+      "secondHalf": "후반전",
+      "points": "포인트",
+      "quarters": "쿼터",
+      "players": "플레이어",
+      "sets": "세트",
+      "games": "게임",
+      "hitsAndRuns": "히트 & 런",
+      "playerProps": "플레이어 프롭",
+      "extraTime": "연장 시간",
+      "kills": "킬",
+      "match": "시합",
+      "player": "플레이어",
+      "team": "팀",
+      "mainMarkets": "메인 마켓",
+      "matchMarkets": "경기 마켓",
+      "mapN": "지도 {{mapNumber}}",
+      "firstInnings": "제1회",
+      "all": "모든 시장",
+      "betBuilder": "베팅 빌더"
+    },
+    "stats": {
+      "notAvailable": "통계 자료를 이용할 수 없습니다",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "베팅 빌더 라이브 상태",
+      "loginToBetDescription": "하나의 경기에서 여러 선택을 조합하여 맞춤형 베팅을 구성하세요.\n더 많은 선택권과 장점을 엄선된 리그에서 누려보세요.",
+      "loginToBetButton": "로그인해서 나만의 구성 만들기",
+      "genericError": {
+        "titleWithCode": "문제가 생겼습니다 ({{code}})",
+        "title": "문제가 생겼습니다",
+        "description": "다시 시도해 주세요. 문제가 지속되면 고객 지원팀에 문의하세요."
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "기존의 베팅 빌더를 교체하시나요?",
+        "description": "베팅 슬립에는 오로지 하나의 베팅 빌더만 위치할 수 있습니다. 추가하면 기존의 것을 대체하게 됩니다.",
+        "cancelCta": "취소",
+        "replaceCta": "교체"
+      },
+      "shortened": "BB",
+      "betBuilderPromo": "베팅 빌더를 이용하세요.\n원하는 대로, 더 빠르게.",
+      "betBuilderAlertBanner": {
+        "title2": "베팅 빌더 100배 행운 이벤트",
+        "body2": "이번 주말 $1 이상 팔레이 베팅하고, 베팅액의 100배(최대 $100) 행운에 당첨되세요."
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "경기 중 언제든지",
+            "first": "처음",
+            "last": "마지막",
+            "teamFirst": "첫 팀",
+            "teamLast": "마지막 팀",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "머리글",
+            "scoreOutsideOfTheBox": "페널티 박스 밖"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "선수가 언제 득점할까요?",
+            "when-will-player-score-team": "선수가 언제 득점할까요 (팀)?",
+            "how-many-player-goals": "선수가 몇 골을 넣을까요?",
+            "how-will-player-score": "선수가 어떻게 골을 넣게 될까요?",
+            "player-assists": "선수 도움",
+            "player-to-be-carded-team": "카드를 받을 선수 (팀)",
+            "player-to-be-shown-a-card": "카드를 받을 선수",
+            "total-cards-team": "총 카드 수 (팀)",
+            "both-team-total-cards": "양 팀 총 카드 수",
+            "both-teams-total-goals": "양 팀 총 골 수",
+            "total-goals-team": "총 골 수 (팀)",
+            "both-teams-total-corners": "양 팀 총 코너킥 수",
+            "total-corners-team": "총 코너킥 수 (팀)",
+            "both-teams-score": "양 팀 모두 득점",
+            "player-to-be-sent-off": "퇴장당할 선수",
+            "player-total-fouls-committed": "선수 총 파울",
+            "player-total-saves": "선수 총 세이브",
+            "player-total-shots": "선수 총 슈팅",
+            "player-total-shots-on-target": "선수 총 유효 슈팅",
+            "player-total-tackles": "선수 총 태클",
+            "player-total-passes": "선수 총 패스",
+            "to-happen-in-the-match-team": "경기 중 생길 일 (팀)",
+            "method-of-victory": "승리 방법",
+            "total-shots-team": "총 슈팅 (팀)",
+            "team-with-most-bookings": "경고 최다 팀",
+            "total-shots-on-target-team": "총 유효 슈팅 (팀)",
+            "total-goals-over-slash-under-after-10-minutes": "10분 후 총 골 수 오버/언더",
+            "asian-handicap-after-10-minutes": "10분 후 아시안 핸디캡",
+            "correct-score": "정확한 스코어",
+            "most-cards": "최다 카드 획득",
+            "most-corners": "최다 코너킥",
+            "double-chance": "더블 찬스",
+            "winning-margin": "승리 점수 차이",
+            "total-goals": "총 득점",
+            "total-exact-goals": "정확한 총 득점",
+            "total-exact-goals-team": "정확한 총 득점 (팀)",
+            "total-bookings-points": "총 카드 합산 점수",
+            "total-bookings-points-team": "총 카드 합산 점수 (팀)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "선수 총 득점 & 리바운드",
+            "player-total-points": "선수 총 득점",
+            "player-total-3-point-field-goals": "선수 총 3점슛",
+            "player-total-rebounds": "선수 총 리바운드",
+            "player-total-assists-and-rebounds": "선수 총 어시스트 & 리바운드",
+            "player-total-assists": "선수 총 어시스트",
+            "player-total-points-and-assists": "선수 총 득점 & 어시스트",
+            "player-total-points-assists-and-rebounds": "선수 총 득점, 어시스트 & 리바운드",
+            "player-to-achieve-a-double-double": "더블 더블 달성 선수",
+            "player-to-achieve-a-triple-double": "트리플 더블 달성 선수",
+            "player-total-3-pointers-over-under": "선수 총 3점슛 개수(오버/언더)",
+            "player-total-assists-and-rebounds-over-under": "선수 총 어시스트 & 리바운드(오버/언더)",
+            "player-total-assists-over-under": "선수 총 어시스트(오버/언더)",
+            "player-total-points-over-under": "선수 총 득점(오버/언더)",
+            "player-total-rebounds-over-under": "선수 총 리바운드(오버/언더)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "{{eventName}}에 암호화폐로 베팅하기",
+      "soccerDescription": "{{date}} {{time}}에 {{competition}}에서 {{home}} 팀이 {{away}} 팀과 펼치는 스릴 넘치는 경기를 기대하세요. Cloudbet에서 골, 코너킥, 카드 수를 조합해 동일 게임 팔레이 베팅을 즐길 수 있습니다. 킥오프 전 베팅하거나 실시간으로 관전하며 참여하세요.",
+      "basketballDescription": "{{home}} 팀과 {{away}} 팀의 {{competition}} 경기는 {{date}} {{time}}에 시작합니다. 종료 버저가 울리기 전까지 풍성한 농구 액션을 만끽하세요. 동일 게임 팔레이로 선수 득점, 리바운드, 어시스트를 조합해 더 큰 즐거움을 누리세요. 경기 전 베팅하거나 실시간으로 참여하세요.",
+      "americanFootballDescription": "{{home}} 팀과 {{away}} 팀의 {{competition}} 경기가 {{date}} {{time}}에 시작합니다. Cloudbet에서 동일 게임 팔레이로 터치다운부터 패싱 야드까지, 베팅을 차곡차곡 쌓아 올려 우위를 점하세요. 게임이 시작하기 전 베팅하거나 시작 후 실시간 배당률의 이점을 누리세요.",
+      "tennisDescription": "{{home}} 선수와 {{away}} 선수의 {{competition}} 대결은 {{date}} {{time}}에 시작합니다. 선수 모두 {{surface}} 코트에서 좋은 기량과 스킬을 보여줍니다. 동일 경기 팔레이에서 세트 승자, 총 게임, 에이스를 조합해 하나의 베팅으로 만드세요. 첫 토스 이전에 선택을 확정하거나 경기 흐름을 살피며 실시간으로 베팅하세요.",
+      "baseballDescription": "{{home}} 팀과 {{away}} 팀의 {{competition}} 경기가 {{date}} {{time}}에 시작합니다. 동일 게임 팔레이로 안타, 삼진, 득점 등의 항목을 연결해 하나의 베팅으로 만들어보세요. 시작 전 베팅하거나 이닝을 살펴보다 라이브 베팅하세요.",
+      "iceHockeyDescription": "{{home}} 팀과 {{away}} 팀의 얼음 위 {{competition}} 대결이 {{date}} {{time}}에 펼쳐집니다. 동일 게임 팔레이로 골, 어시스트, 페널티 수를 조합해 스릴을 만끽하세요. 퍽이 드롭되기 전 베팅을 하거나 실시간으로 즐기세요.",
+      "rugbyDescription": "{{home}} 팀과 {{away}} 팀이 {{date}} {{time}}, {{competition}}에서 대결을 펼칩니다. 격렬한 태클과 입이 떡 벌어지게 놀라운 트라이를 관전하세요. Cloudbet에서 동일 게임 팔레이로 트라이, 컨버전, 총 점을 조합하세요. 킥오프 전 베팅하거나 실시간으로 즐기세요.",
+      "cricketDescription": "{{home}} 팀과 {{away}} 팀의 {{competition}} 경기가 {{date}} {{time}}에 시작합니다. 런과 위켓으로 가득한 경기를 기대하세요. Cloudbet의 동일 게임 팔레이에서 런, 위켓, 바운더리를 조합해 하나의 베팅으로 만드세요. 경기 전 조합을 골라 베팅하거나 경기를 보며 실시간으로 베팅하세요.",
+      "horseRacingDescription": "{{date}} {{time}}에 시작하는 {{competition}} 경기를 즐겨보세요. 최고의 말이 펼치는 결승선을 향한 긴장감 넘치는 승부를 관전하세요. Cloudbet에서 우승 후보에 아웃라이트 베팅하거나, 나만의 조합으로 동일 경기 팔레이 베팅을 할 수 있습니다. 출발 게이트가 열리기 전 베팅하거나, 경주 중 실시간으로 즐겨보세요.",
+      "mmaDescription": "{{home}} 선수와 {{away}} 선수가 {{date}} {{time}}, {{competition}}에서 승부를 가립니다. 케이지 안 불꽃 튀는 승부를 관전하세요. Cloudbet에서 녹다운, 라운드 베팅, 승리 방식 항목을 조합해 동일 게임 팔레이 베팅을 즐기세요. 경기 전 조합을 고정하거나 관전하며 실시간 베팅하세요.",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "e스포츠 배당률",
+          "cs2": "CS2 e스포츠 베팅",
+          "dota2": "배당률",
+          "valorant": "발로란트 베팅 배당률",
+          "fifa": "FIFA e스포츠 베팅 배당률"
+        },
+        "titleV2": "{{home}} vs {{away}} 베팅 –{{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "이번 {{date}} {{time}}에 {{competition}} 경기 {{home}} vs {{away}}에 Cloudbet의 경쟁력 있는 e스포츠 배당률로 베팅하세요. 이 LoL 경기는 {{markets}} 포함한 다양한 암호화폐 e스포츠 베팅 시장을 제공합니다.",
+        "cs2Description": "{{date}} {{time}}에 {{competition}}에서 열리는 {{home}} vs {{away}} 경기에 베팅하세요. {{markets}} 포함한 CS2 마켓에서 암호화폐로 베팅할 수 있습니다. e스포츠 라이브 베팅에 최적화된 Cloudbet을 만나보세요.",
+        "dota2Description": "{{date}} {{time}}에 열리는 도타 2 {{competition}} 경기에서 {{home}} vs {{away}}에 베팅하세요. {{markets}}에서 암호화폐 베팅도 가능합니다. 최고의 e스포츠 베팅 웹사이트에서 도타 2에 베팅하고 실제 캐시 리워드를 받으세요.",
+        "valorantDescription": "{{date}} {{time}}에 {{competition}}의 {{home}} vs {{away}} 경기에 베팅하세요. 경기를 관람하고 비트코인, 이더리움 또는 테더로 {{markets}}에서 발로란트에 베팅하세요. Cloudbet에서만 가능합니다.",
+        "fifaDescription": "{{date}} {{time}}에 열리는 {{competition}} 경기에서 {{home}} vs {{away}}에 베팅하세요. Cloudbet에서 간편하게 온라인으로 e스포츠에 베팅하고 {{markets}}와 같은 다양한 마켓에서 FIFA e스포츠의 최애 팀을 응원하세요."
+      }
+    },
+    "nbaPromo": {
+      "title": "NBA 새로운 기능: 베팅 빌더와 선수 프롭",
+      "body": "베팅 빌더로 동일 게임 팔레이 베팅을 하고, 프롭 베팅을 위한 새로운 선수 프롭 탭을 살펴보세요."
+    },
+    "playerProps": {
+      "avgPer5Game": "5 경기당 평균 {{stats}}",
+      "avgInRegSeason": "정기 시즌의 평균 {{stats}}"
+    }
+  },
+  "common": {
+    "today": "오늘",
+    "partial": "부분적",
+    "instantGames": "인스턴트 게임",
+    "inPlay": "인플레이",
+    "tomorrow": "내일",
+    "competitions": "대회",
+    "highlights": "하이라이트",
+    "outrights": "아웃라이트",
+    "virtuals": "가상 스포츠",
+    "liveStream": "라이브 스트림",
+    "events": "이벤트",
+    "games": "게임",
+    "nextToJump": "점프하려면 다음",
+    "noLimitBets": "무제한 베팅",
+    "virtualSoccer": "가상 축구",
+    "virtualBasketball": "가상 농구",
+    "betsClosed": "베팅 종료",
+    "virtualsUpNext": "예상 가상",
+    "simPlay": "다음 시뮬레이션",
+    "fullMatchup": "모든 경기",
+    "browseNow": "지금 찾아보기",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "반환: {{amount}}",
+    "toReturnTitle": "총 환급금",
+    "toReturnSubtitle": "{{stake}} 베팅해서 {{payout}} 수익",
+    "summary": {
+      "reuseSelections": "선택 항목 재사용",
+      "acceptAndPlace": "{{value}} 확인 및 베팅",
+      "sameGameMultiPlaced": "베팅 빌더 선정됨"
+    },
+    "parlay": {
+      "legs": "{{count}} 레그"
+    },
+    "maxBet": {
+      "noLimit": "베팅별 최대: <0>{{currency}}{{stake}}</0>",
+      "nolimitTitle": "베팅당 최대:",
+      "default": "최대 베팅: <0>{{currency}}{{stake}}</0>",
+      "defaultLocalized": "최대 베팅: <0>{{value}}</0>",
+      "defaultTitle": "최대 베팅:"
+    },
+    "errors": {
+      "maxBetIs": "최대 베팅 <0>{{currency}} {{stake}}</0>",
+      "minBetIs": "최소 베팅 <0>{{currency}} {{stake}}</0>",
+      "maxBet": "최대 베팅",
+      "minBet": "최소 베팅"
+    },
+    "summeryErrors": {
+      "marketClosed": "마켓 폐쇄됨",
+      "limitExceeds": "한도 초과",
+      "maxStakeReached": "최대 판돈 도달",
+      "restricted": "제한됨",
+      "restrictedGeoBlocked": "허용되지 않는 지역입니다. VPN을 끄고 다시 시도하세요.",
+      "restrictedGeoBlockedShorten": "허용 지역이 아닙니다",
+      "minStakeChanged": "최소 판돈 변경됨",
+      "maxStakeChanged": "최대 판돈 변경됨",
+      "unknownError": "알수없는 오류",
+      "suspended": "일시 정지",
+      "unauthorized": "권한 없음",
+      "stakeAboveMax": "판돈을 줄여주세요.",
+      "stakeBelowMin": "판돈을 늘려주세요.",
+      "priceAboveMarket": "배당률이 변경되었습니다.",
+      "betPending": "연결이 불안정합니다. 베팅 상태에서 \"내 베팅\"을 체크해 보세요."
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "베팅을 다시 구성해 주세요",
+        "timedOutTitle": "베팅을 찾을 수 없음",
+        "timedOutDescription": "이 베팅을 찾을 수 없었습니다. \"내 베팅\"을 확인하거나 다시 하기 전에 지원에 문의하세요.",
+        "unknownError": "문제가 생겼습니다",
+        "unknownErrorDescription": "다시 진행하기 전에 \"내 베팅\"을 확인하거나 지원팀에 문의하세요.",
+        "limitsExceeded": "한도 초과"
+      },
+      "actions": {
+        "clearSGP": "베팅 빌더 초기화",
+        "reviewChangesInBetslip": "베팅슬립 변경 사항 검토"
+      }
+    },
+    "placeBet": "베팅하기",
+    "placeParlay": "플레이스 팔레이 {{amount}}",
+    "betBuilder": {
+      "placeBetValid": "BB {{amount}} 진행",
+      "placeBetSubmitting": "BB {{amount}} 진행",
+      "betBuilderItemMarketUnavailable": "마켓이 일시적으로 중단되었습니다. <0>다시 시도</0>하거나 <1>제거</1>하십시오",
+      "error": {
+        "parlayRestricted": "관련되는 선택 항목은 결합할 수 없습니다",
+        "marketSuspended": "마켓이 일시적으로 중단되었습니다."
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "배당률이 변경되었습니다.",
+      "oddsHaveChangedAccept": "배당률이 변경되었습니다. <0>수락</0>",
+      "oddsHaveChangedToReturn": "배당률이 변경되었습니다. 반환: {{payout}}",
+      "oddsHaveChangedToReturnTitle": "배당률이 변경되었습니다. 수익:",
+      "marketIsSuspendedWaitOrRemove": "마켓이 일시적으로 중단되었습니다. 기다리거나 <0>제거</0>하십시오",
+      "marketIsSuspendedWaitOrRemoveTitle": "마켓이 일시적으로 중단되었습니다. 기다리거나 제거하십시오...",
+      "marketIsClosedRemove": "마켓이 닫혔습니다. <0>제거</0>",
+      "selectionCorrelated": "이 선택 항목은 다른 항목과 상호 연관되어 있습니다. <0>제거</0>",
+      "parlayRestricted": "이 선택 항목은 팔레이할 수 없습니다. <0>제거</0>",
+      "dangerBall": "곧 득점될 수 있습니다. 베팅이 수락되려면 최대 5분이 걸릴 수 있습니다."
+    },
+    "consent": {
+      "acceptAllChanges": "모든 변경 적용"
+    },
+    "insufficientBalanceAlert": {
+      "title": "자금이 부족합니다.",
+      "description": "베팅을 계속하시려면 <0>지금 입금</0>하세요."
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "{{sport}} 모두 보기"
+  },
+  "betBuilder": {
+    "reviewBet": "베팅 검토",
+    "title": "베팅 빌더"
+  },
+  "myBets": {
+    "noBets": "이용 가능한 베팅이 없습니다",
+    "checkOut": "오늘의 게임이나 다가오는 이벤트를 확인하여 다음 베팅 기회를 찾으세요.",
+    "viewBetHistory": "베팅 내역 확인",
+    "browseInplay": "인플레이 이벤트 찾기",
+    "loadError": "이 베팅을 불러올 수 없음",
+    "id": "아이디",
+    "viewAllSettledBetsInfo": "내역에서 정산된 모든 베팅을 볼 수 있습니다.",
+    "onlyLast72HoursBetsInfo": "이 곳에는 72시간 동안의 베팅만 보입니다. 내역에서 모든 베팅을 확인하세요."
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "오버 {{over}}",
+      "gameOversAndDeliveries": "오버 {{over}}.{{delivery}}",
+      "gameTargetRunsAndBalls": "{{teamName}}은 {{balls}}에서 {{runs}}이 필요합니다",
+      "gameTrailByRuns": "{{teamName}}은 {{runs}}로 뒤지고 있습니다",
+      "gameLeadByRuns": "{{teamName}}은 {{runs}}로 앞서고 있습니다",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "테스트",
+      "matchDay": "일 {{matchDay}}",
+      "endOfMatchDay": "경기 종료일 {{matchDay}}",
+      "wonDefault": "{{winner}} 승리",
+      "matchDrawn": "경기 무승부",
+      "wonByRuns": "{{winner}}가 {{wonBy}}점차로 승리",
+      "wonByRunsAndInning": "{{winner}}가 한 이닝 {{wonBy}}점차로 승리",
+      "wonByWickets": "{{winner}}가 {{wonBy}} 위켓으로 승리"
+    },
+    "racing": {
+      "running": "실행 중",
+      "runners": "러너",
+      "scratched": "출전 취소",
+      "horseRacingWithdrawnDescription": "말이 부상, 질병, 트랙 상태나 트레이너말이 부상, 질병, 트랙 상태나 트레이너의 결정으로 출전 취소되었습니다. 배당률이 조정되었으며, 베팅하셨다면 당첨금이 조금 줄어들게 됩니다. 출전 취소된 말에 대한 베팅은 환불됩니다.",
+      "greyhoundsWithdrawnDescription": "강아지가 부상, 질병, 트랙 상태나 트레이너말이 부상, 질병, 트랙 상태나 트레이너의 결정으로 출전 취소되었습니다. 배당률이 조정되었으며, 베팅하셨다면 당첨금이 조금 줄어들게 됩니다. 출전 취소된 강아지에 대한 베팅은 환불됩니다.",
+      "age": "연령:<0>{{age}}</0>",
+      "weightShorten": "무게:<0>{{weight}}</0>lbs",
+      "formShorten": "F:<0>{{form}}</0>",
+      "horseJockeyShorten": "J:<0>{{jockey}}</0>",
+      "horseTrainerShorten": "T:<0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "실시간 점수 이용 불가"
+    }
+  },
+  "betHistory": {
+    "typeBet": "배팅",
+    "typeCashout": "현금 인출",
+    "typeSettlement": "정산",
+    "noBetHistory": "베팅 내역 없음",
+    "hintV2": "'베팅 내역'은 경기 결과와 베팅 결과를 비롯한 정산된 베팅의 세부 내용을 표시합니다. 활성 베팅이나 대기 중인 베팅을 보려면 {{link}} 섹션으로 이동하세요.",
+    "allBets": "전체 배팅",
+    "singles": "단일",
+    "parlays": "팔레이",
+    "betBuilders": "베팅 빌더",
+    "outrights": "아웃라이트"
+  },
+  "fightCenter": {
+    "rootTitle": "격투 센터",
+    "mainCard": "메인 카드",
+    "prelims": "예선전",
+    "taleOfTheTape": "전적 비교",
+    "fighterProfile": "격투가 프로필",
+    "height": "높이",
+    "weight": "무게",
+    "armReach": "암 리치",
+    "legReach": "레그 리치",
+    "winRate": "승률",
+    "stats": "통계",
+    "age": "나이",
+    "record": "기록",
+    "byKo": "KO별",
+    "bySubmission": "항복별",
+    "byDecision": "판정승",
+    "koTko": "KO/TKO",
+    "submission": "SUB",
+    "decision": "DEC",
+    "next": "다음",
+    "draw": "무승부",
+    "streamIn": "스트리밍까지:",
+    "liveDefault": "라이브",
+    "officialGlobalSportsbook": "의 공식 글로벌 스포츠북",
+    "official": "공식",
+    "globalSportsbook": "글로벌 스포츠북",
+    "expertPicks": {
+      "viewExpertPicks": "전문가 선택 보기",
+      "banner": {
+        "title": "전문가 선택",
+        "availableIn": "가능:"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}}라운드",
+        "mma.winner": "{{outcome}} 당첨",
+        "mma.winning_method": "{{value}}에 의한 {{outcome}}"
+      },
+      "genericError": {
+        "title": "문제 발생",
+        "description": "문제가 생긴 것 같습니다. 고쳐지는 대로 돌아오겠습니다."
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "경기 승자",
+    "cricket_over_team_total": "{{overNumber}}번째 오버 - 총 런 - 팀",
+    "cricket_player_total": "타자 경기 점수",
+    "cricket_player_to_score_milestone": "플레이어 {{milestone}} 득점",
+    "cricket_player_total_fours": "플레이어 총 4",
+    "cricket_player_total_player_performance": "플레이어 퍼포먼스",
+    "cricket_team_total_fours": "팀 총 4",
+    "cricket_team_total_sixes": "팀 총 6",
+    "cricket_innings_over_x_team_total": "{{inningsNumber}} 이닝 {{overNumber}}오버 - 총 런 - 팀",
+    "cricket_innings_overs_0_to_x_team_total": "{{inningsNumber}} 이닝 0에서 {{overNumber}}오버 총 런 - 팀",
+    "cricket_innings_player_total_deliveries_faced": "{{inningsNumber}}이닝 플레이어 총 상대 투구 수",
+    "cricket_team_total_from_0_over_to_x_over": "0에서 {{overNumber}}오버 - 총 런 - 팀",
+    "cricket_team_total_in_highest_scoring_over": "팀의 다음 점수 이상 최고 득점",
+    "cricket_team_total_at_dismissal": "총 팀 퇴장 {{dismissalNumber}} 번",
+    "cricket_innings_player_to_score_milestone": "이닝 {{inningsNumber}}회 플레이어 {{milestone}} 득점",
+    "cricket_test_match_player_total": "이닝 {{inningsNumber}}회 플레이어 합계",
+    "cricket_innings_player_total_fours": "이닝 {{inningsNumber}}회 플레이어 총 4 "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "현재 골: {{total}}<0>{{home}}-{{away}}</0>",
+    "soccer.team_total_goals_home": "현재 스코어: {{home}}-<0>{{away}}</0>",
+    "soccer.team_total_goals_away": "현재 스코어: <0>{{home}}</0>-{{away}}",
+    "soccer.total_corners": "현재 코너킥: <0>{{total}}</0>",
+    "tennis.total_games": "현재 총 게임: {{total}}",
+    "tennis.total_games_in_set": "{{setCount}} 세트의 현재 총 게임: {{total}} <0>{{gamesHome}}-{{gamesAway}}</0>"
+  },
+  "outcome": {
+    "draw": "무승부"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "하드",
+        "clay": "클레이",
+        "grass": "잔디",
+        "carpet": "카펫"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "큰 손 모드 시작하기",
+    "buildPosition": "포지션 구축",
+    "currentOdds": "현재 배당률",
+    "decrementOdds": "배당률 감소",
+    "incrementOdds": "배당률 상승",
+    "inProgress": {
+      "averageOdds": "평균 배당률",
+      "filledAmount": "체결 금액",
+      "minOdds": "최소 배당률",
+      "of": "중",
+      "remaining": "잔여",
+      "sheetFooter": {
+        "completedTitle": "완료됨",
+        "executionStoppedTitle": "실행 중지",
+        "marketClosedTitle": "마켓 폐쇄됨",
+        "oddsBelowMinimumTitle": "최저 배당률 미만",
+        "failedTitle": "베팅 실패",
+        "trackPosition": "<0>내 베팅</0>에서 포지션 확인하기"
+      },
+      "stopRemaining": "잔여 중단",
+      "timeElapsed": "경과 시간",
+      "toReturn": "총 환급금"
+    },
+    "minOdds": "최소 배당률",
+    "needBiggerStake": "더 크게 베팅하고 싶으신가요?",
+    "noLimitBetting": "한도 없는 베팅",
+    "stakeExceededDescription": "판돈이 해당 시장의 최대 베팅 금액을 초과했습니다.",
+    "status": {
+      "cancelled": "중지됨",
+      "completed": "완료됨",
+      "failed": "실패함",
+      "failedMarketClosed": "마켓 폐쇄됨",
+      "failedOddsUnderMin": "배당률 변경됨",
+      "running": "진행 중"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "플레이어 순위표",
+      "trendsAndFavorites": "트렌드 & 팬 선호"
+    },
+    "columns": {
+      "player": "플레이어",
+      "name": "이름"
+    },
+    "footer": "데이터는 {{dateRange}} 동안 정산 완료된 {{sportName}} 베팅을 기준으로 합니다. 모든 금액은 USD 기준 환산 값으로 표시됩니다. 공개 프로필만 표시됩니다.",
+    "leaderboards": {
+      "sharpest": {
+        "title": "베팅 고수",
+        "subtitle": "{{sportName}} 베팅에서 최고 ROI"
+      },
+      "earners": {
+        "title": "최고 수익자",
+        "subtitle": "{{sportName}}의 {{year}}년 최고 수익"
+      },
+      "parlayKings": {
+        "title": "팔레이의 왕",
+        "subtitle": "최고 팔레이 수익 순위"
+      },
+      "livePros": {
+        "title": "라이브 베팅 레전드",
+        "subtitle": "인플레이 수익 순위"
+      },
+      "uclMasters": {
+        "title": "챔피언스 리그 마스터",
+        "subtitle": "UCL 최고 베터"
+      },
+      "sgpWizards": {
+        "title": "동일 경기 팔레이 마법사",
+        "subtitle": "동일 경기 팔레이 마스터"
+      },
+      "crazyParlays": {
+        "title": "팔레이 대박 승리",
+        "subtitle": "대박 적중한 멀티 레그 베팅"
+      },
+      "hotMatches": {
+        "title": "최고 인기 경기",
+        "subtitle": "가장 많은 베팅이 몰린 {{sportName}} 대진"
+      },
+      "backedTeams": {
+        "title": "인기 베팅 팀",
+        "subtitle": "팬들이 주목하는 인기 베팅"
+      },
+      "goalscorers": {
+        "title": "득점자 즐겨찾기",
+        "subtitle": "{{sportName}}에서 가장 많이 베팅된 스타"
+      },
+      "trendingLeagues": {
+        "title": "인기 리그",
+        "subtitle": "가장 인기 있는 대회"
+      },
+      "backedPlayers": {
+        "title": "인기 베팅 선수",
+        "subtitle": "팬들이 주목하는 베팅 인기 선수"
+      },
+      "trendingTournaments": {
+        "title": "인기 토너먼트",
+        "subtitle": "가장 인기 있는 토너먼트"
+      },
+      "backedFighters": {
+        "title": "인기 베팅 파이터",
+        "subtitle": "팬들이 주목하는 베팅 인기 파이터"
+      },
+      "trendingPromotions": {
+        "title": "인기 프로모션",
+        "subtitle": "가장 인기 있는 MMA 프로모션"
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "수익",
+      "bets": "베팅",
+      "liveProfit": "실시간 수익",
+      "uclProfit": "UCL 수익",
+      "sgpProfit": "동일 경기 팔레이 수익",
+      "multiplier": "배수",
+      "payout": "지불",
+      "totalWagered": "총 베팅",
+      "betsPlaced": "베팅 완료",
+      "turnover": "턴오버",
+      "goalscorerBets": "득점자 베팅",
+      "totalBets": "총베팅",
+      "volume": "거래량"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: 최고 수익자",
+    "heroCta": "{{sportName}} — 누가 이기고 있는지 살펴보세요",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI",
+    "bettingTrends": {
+      "title": "NBA 베팅 트렌드",
+      "teamColumnLabel": "팀",
+      "tables": {
+        "winLoss": {
+          "title": "최고 승/패 팀",
+          "subtitle": "이번 시즌 NBA 최고 기록",
+          "recordLabel": "승-패",
+          "percentageLabel": "승리 %"
+        },
+        "ats": {
+          "title": "최고 핸디캡 기준 성적 팀",
+          "subtitle": "이번 시즌 최고 핸디캡 기준 성적",
+          "recordLabel": "핸디캡 기준 성적 기록",
+          "percentageLabel": "핸디캡 적중 %"
+        },
+        "over": {
+          "title": "최고 오버 팀",
+          "subtitle": "오버 빈도가 가장 높은 팀",
+          "recordLabel": "오버 기록",
+          "percentageLabel": "오버 %"
+        },
+        "under": {
+          "title": "최고 언더 팀",
+          "subtitle": "언더 빈도가 가장 높은 팀",
+          "recordLabel": "언더 기록",
+          "percentageLabel": "언더 %"
+        }
+      }
+    }
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "전체"
+  }
+}

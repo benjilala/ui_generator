@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "Asian lines",
+      "cards": "Kort",
+      "corners": "Hörnor",
+      "goals": "Mål",
+      "half": "Halvlek",
+      "main": "Start",
+      "more": "Mer",
+      "specials": "Special",
+      "popular": "Populärt",
+      "firstHalf": "Första halvlek",
+      "secondHalf": "Andra halvlek",
+      "points": "Poäng",
+      "quarters": "Quarters",
+      "players": "Spelare",
+      "sets": "Sets",
+      "games": "Matcher",
+      "hitsAndRuns": "Hits & Runs",
+      "playerProps": "Player props",
+      "extraTime": "Extra tid",
+      "kills": "Kills",
+      "match": "Match",
+      "player": "Spelare",
+      "team": "Lag",
+      "mainMarkets": "Huvudmarknader",
+      "matchMarkets": "Matchmarknader",
+      "mapN": "Karta {{mapNumber}}",
+      "firstInnings": "1:a inningen",
+      "all": "Alla marknader",
+      "betBuilder": "SGP"
+    },
+    "stats": {
+      "notAvailable": "Statistik är inte tillgänglig",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "Spelbyggaren är live",
+      "loginToBetDescription": "Bygg egna spel genom att kombinera val från en enskild match.\nMer kontroll, större potential – nu tillgängligt på utvalda ligor.",
+      "loginToBetButton": "Logga in för att bygga ditt spel",
+      "genericError": {
+        "titleWithCode": "Något gick fel ({{code}})",
+        "title": "Något gick fel",
+        "description": "Försök igen. Kontakta kundsupport om problemet kvarstår."
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "Ersätt befintlig spelbyggare?",
+        "description": "Endast en spelbyggare kan läggas till i din spelkupong. Om du lägger till denna ersätter den den nuvarande.",
+        "cancelCta": "Avbryt",
+        "replaceCta": "Ersätt"
+      },
+      "shortened": "SB",
+      "betBuilderPromo": "Spelbyggaren är här.\nSnabb. Anpassad. För dig.",
+      "betBuilderAlertBanner": {
+        "title2": "100x spelbyggaren utlottning",
+        "body2": "Skapa ett kombinationsspel på minst 1 USD i helgen – 10 vinnare får 100x insatsen (upp till 100 USD)."
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "När som helst",
+            "first": "Första",
+            "last": "Sista",
+            "teamFirst": "Lag först",
+            "teamLast": "Lag sist",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "Header",
+            "scoreOutsideOfTheBox": "Utanför straffområdet"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "När gör spelaren mål?",
+            "when-will-player-score-team": "När gör spelaren mål (lag)?",
+            "how-many-player-goals": "Hur många spelarmål?",
+            "how-will-player-score": "Hur gör spelaren mål?",
+            "player-assists": "Spelar-assists",
+            "player-to-be-carded-team": "Spelare att varnas (lag)",
+            "player-to-be-shown-a-card": "Spelare som visas ett kort",
+            "total-cards-team": "Total antal kort (lag)",
+            "both-team-total-cards": "Bägge lagens kort totalt",
+            "both-teams-total-goals": "Bägge lagens mål totalt",
+            "total-goals-team": "Total antal mål (lag)",
+            "both-teams-total-corners": "Bägge lagen hörnor totalt",
+            "total-corners-team": "Totalt antal hörnor (lag)",
+            "both-teams-score": "Båda lagen gör mål",
+            "player-to-be-sent-off": "Spelare som utvisas",
+            "player-total-fouls-committed": "Totalt antal fouls av spelaren",
+            "player-total-saves": "Spelarens räddningar totalt",
+            "player-total-shots": "Spelarens skott totalt",
+            "player-total-shots-on-target": "Totalt antal spelarskott på mål",
+            "player-total-tackles": "Spelarens tacklingar totalt",
+            "player-total-passes": "Spelarens passningar totalt",
+            "to-happen-in-the-match-team": "Kommer hända i matchen (lag)",
+            "method-of-victory": "Vinstmetod",
+            "total-shots-team": "Total antal skott (lag)",
+            "team-with-most-bookings": "Lag med flest varningar",
+            "total-shots-on-target-team": "Totalt antal skott på mål (lag)",
+            "total-goals-over-slash-under-after-10-minutes": "Totalt antal mål över/under efter 10 minuter",
+            "asian-handicap-after-10-minutes": "Asiatiskt handikapp efter 10 minuter",
+            "correct-score": "Korrekt resultat",
+            "most-cards": "Flest kort",
+            "most-corners": "Flest hörnor",
+            "double-chance": "Dubbelchans",
+            "winning-margin": "Vinstmarginal",
+            "total-goals": "Mål totalt",
+            "total-exact-goals": "Mål totalt exakt",
+            "total-exact-goals-team": "Mål totalt exakt (lag)",
+            "total-bookings-points": "Kort-poäng totalt",
+            "total-bookings-points-team": "Kortpoäng totalt (lag)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "Spelarens totala poäng och returer",
+            "player-total-points": "Spelarens totala poäng",
+            "player-total-3-point-field-goals": "Spelarens totala antal trepoängare",
+            "player-total-rebounds": "Spelarens totala antal returer",
+            "player-total-assists-and-rebounds": "Spelarens totala antal assist och returer",
+            "player-total-assists": "Spelarens totala antal assists",
+            "player-total-points-and-assists": "Spelarens totala poäng och assists",
+            "player-total-points-assists-and-rebounds": "Spelarens totala antal poäng, assists och returer",
+            "player-to-achieve-a-double-double": "Spelare som uppnår en double-double",
+            "player-to-achieve-a-triple-double": "Spelare som uppnår en trippel-double",
+            "player-total-3-pointers-over-under": "Spelarens totala antal trepoängare (över/under)",
+            "player-total-assists-and-rebounds-over-under": "Spelarens totala antal assists och returer (över/under)",
+            "player-total-assists-over-under": "Spelarens totala antal assists (över/under)",
+            "player-total-points-over-under": "Spelarens totala antal poäng (över/under)",
+            "player-total-rebounds-over-under": "Spelarens totala antal returer (över/under)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "Spela på {{eventName}} med krypto",
+      "soccerDescription": "Fans kan se fram emot en spännande drabbning när {{home}} möter {{away}} i {{competition}} den {{date}} kl. {{time}}. Hos Cloudbet kan du skapa ett kombinationsspel på samma match och kombinera mål, hörnor och kort för extra spänning. Lägg dina spel före avspark eller följ matchen live.",
+      "basketballDescription": "{{competition}}-mötet mellan {{home}} och {{away}} har uppkast den {{date}} kl. {{time}}. Matchen lovar massor av basketaction från uppkast till slutsignal. Med ett kombinationsspel på samma match kan du kombinera spelarpoäng, returer och assists för ännu större action. Satsa före matchstart eller hoppa in under live­spel.",
+      "americanFootballDescription": "Det är {{home}} mot {{away}} i {{competition}}, med avspark den {{date}} kl. {{time}}. Hos Cloudbet kan du bygga kombinationsspel i samma match – från touchdowns till passningsyard – för ett skarpare övertag. Lägg dina spel före avspark eller dra nytta av liveodds medan matchen pågår.",
+      "tennisDescription": "Mötet i {{competition}} mellan {{home}} och {{away}} spelas den {{date}} kl. {{time}}. Båda spelarna är kända för sin form och skicklighet på {{surface}}. Med kombinationsspel i samma match kan du kombinera setvinnare, totalt antal games och ess i samma spel. Gör dina val före första serven eller fortsätt spela live när matchbilden svänger.",
+      "baseballDescription": "{{home}} möter {{away}} i {{competition}} den {{date}} kl. {{time}}. Med kombinationsspel i samma match kan du kombinera hits, strikeouts och runs i samma spel. Satsa tidigt eller livebetta inning för inning.",
+      "iceHockeyDescription": "{{competition}}-mötet mellan {{home}} och {{away}} går av stapeln den {{date}} kl. {{time}}. Med kombinationsspel i samma match kan du kombinera mål, assists och utvisningar för extra spänning. Lägg dina spel före nedsläpp eller följ dramat live.",
+      "rugbyDescription": "{{home}} möter {{away}} i {{competition}} den {{date}} kl. {{time}}. Räkna med hårda tacklingar och spektakulära försök. Hos Cloudbet kan du skapa kombinationsspel på samma match på försök, konverteringar och totalt antal poäng. Lägg dina spel före avspark eller fortsätt spela live genom varje scrum.",
+      "cricketDescription": "{{home}} ställs mot {{away}} i {{competition}}, med start den {{date}} kl. {{time}}. Vänta dig många runs och gott om wickets. Hos Cloudbet kan du skapa kombinationsspel i samma match och kombinera runs, wickets och boundaries i ett och samma spel. Lägg dina spel före första bollen eller fortsätt livebetta under matchen.",
+      "horseRacingDescription": "{{competition}} går av stapeln den {{date}} kl. {{time}}. Med elithästar på startlinjen väntar en rafflande kamp mot mållinjen. På Cloudbet kan du spela på din favorit direkt eller bygga egna kombinationsspel på flera lopp för extra spänning. Betta innan grindarna öppnas eller live under loppets gång.",
+      "mmaDescription": "{{home}} och {{away}} möts den {{date}} kl. {{time}}, live från {{competition}}. Denna fight utlovar ordentligt med fyrverkerier inne i buren. Hos Cloudbet kan du bygga kombinationsspel i samma fight där du kombinerar nedslag, rundspel och vinstmetod. Lägg dina spel i förväg eller live medan matchen utvecklas.",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "esports odds",
+          "cs2": "CS2 esports betting",
+          "dota2": "odds",
+          "valorant": "Valorant spelodds",
+          "fifa": "FIFA esports spelodds"
+        },
+        "titleV2": "Spela {{home}} vs {{away}} – {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "Spela på {{home}} mot {{away}} den {{date}} kl. {{time}} när {{competition}} drar i gång, med konkurrenskraftiga esportodds hos Cloudbet. Denna LoL-match erbjuder fullständiga kryptomarknader för esportbetting – inklusive {{markets}}.",
+        "cs2Description": "Spela på {{home}} mot {{away}} den {{date}} kl. {{time}} i {{competition}}. Spela med krypto på CS2-marknader inklusive {{markets}} – perfekt för livebetting inom esport, endast hos Cloudbet.",
+        "dota2Description": "Spela på {{home}} mot {{away}} i Dota 2 {{competition}} den {{date}} kl. {{time}}. Kryptomarknader finns tillgängliga på {{markets}}. Spela på Dota 2 med riktiga kontantbelöningar på en ledande esportbettingsajt.",
+        "valorantDescription": "Spela på {{home}} mot {{away}} i {{competition}} den {{date}} kl. {{time}}. Följ matchen live och lägg ditt Valorant-spel med BTC, ETH eller USDT på {{markets}} inom Valorant – endast hos Cloudbet.",
+        "fifaDescription": "Spela på {{home}} mot {{away}} i {{competition}} den {{date}} kl. {{time}}. Stötta din favorit i FIFA-esport med marknader som {{markets}} – enkel esportbetting online hos Cloudbet."
+      }
+    },
+    "nbaPromo": {
+      "title": "Nytt för NBA: Spelbyggare och spelar-props",
+      "body": "Lägg kombispel i samma match med spelbyggaren och kolla in den nya fliken för spelarprops för prop-satsningar."
+    },
+    "playerProps": {
+      "avgPer5Game": "Genomsnittlig. {{stats}} per 5 matcher",
+      "avgInRegSeason": "Genomsnittl. {{stats}} under ordinarie säsong"
+    }
+  },
+  "common": {
+    "today": "Idag",
+    "partial": "Delvis",
+    "instantGames": "Omedelbara spel",
+    "inPlay": "In-play",
+    "tomorrow": "Imorgon",
+    "competitions": "Tävlingar",
+    "highlights": "Höjdpunkter",
+    "outrights": "Outrightspel",
+    "virtuals": "Virtuellt",
+    "liveStream": "Livestream",
+    "events": "Evenemang",
+    "games": "Spel",
+    "nextToJump": "Nästa att hoppa",
+    "noLimitBets": "Gränsfria spel",
+    "virtualSoccer": "Virtuell fotboll",
+    "virtualBasketball": "Virtuell basket",
+    "betsClosed": "Spel stängda",
+    "virtualsUpNext": "Kommande virtuella",
+    "simPlay": "Sim-Play",
+    "fullMatchup": "Fullständig matchning",
+    "browseNow": "Bläddra nu",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "Att vinna: {{amount}}",
+    "toReturnTitle": "Utbetalar",
+    "toReturnSubtitle": "{{stake}} för att vinna {{payout}}",
+    "summary": {
+      "reuseSelections": "Använd val igen",
+      "acceptAndPlace": "Acceptera och placera {{value}}",
+      "sameGameMultiPlaced": "Spelbyggare placerad"
+    },
+    "parlay": {
+      "legs": "{{count}} spel"
+    },
+    "maxBet": {
+      "noLimit": "Max per spel: <0>{{currency}}{{stake}}</0>",
+      "nolimitTitle": "Max per spel:",
+      "default": "Maxspel: <0>{{currency}}{{stake}}</0>",
+      "defaultLocalized": "Max insats: <0>{{value}}</0>",
+      "defaultTitle": "Maxspel:"
+    },
+    "errors": {
+      "maxBetIs": "Max insats är <0>{{currency}} {{stake}}</0>",
+      "minBetIs": "Minsta insats är <0>{{currency}} {{stake}}</0>",
+      "maxBet": "Max insats",
+      "minBet": "Min insats"
+    },
+    "summeryErrors": {
+      "marketClosed": "Marknaden stängd",
+      "limitExceeds": "Gränsen överskrids",
+      "maxStakeReached": "Maxinsats uppnådd",
+      "restricted": "Begränsad",
+      "restrictedGeoBlocked": "Din region är inte tillåten. Stäng av ditt VPN och försök igen.",
+      "restrictedGeoBlockedShorten": "Regionen är inte tillåten",
+      "minStakeChanged": "Min insats ändrad",
+      "maxStakeChanged": "Max insats ändrad",
+      "unknownError": "Okänt fel",
+      "suspended": "Suspenderad",
+      "unauthorized": "Ej behörig",
+      "stakeAboveMax": "Minska din insats.",
+      "stakeBelowMin": "Öka din insats.",
+      "priceAboveMarket": "Oddsen har ändrats.",
+      "betPending": "Anslutningen är instabil. Kontrollera ”Mina spel” för spelets status."
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "Bygg om ditt spel",
+        "timedOutTitle": "Spelet hittades inte",
+        "timedOutDescription": "Vi kunde inte hitta detta spel. Kontrollera ”Mina spel” eller kontakta supporten innan du lägger det igen.",
+        "unknownError": "Något gick fel",
+        "unknownErrorDescription": "Kontrollera ”Mina spel” eller kontakta supporten innan du lägger det igen.",
+        "limitsExceeded": "Gränser överskridna"
+      },
+      "actions": {
+        "clearSGP": "Rensa spelbyggaren",
+        "reviewChangesInBetslip": "Granska ändringar i spelkupongen"
+      }
+    },
+    "placeBet": "Placera spel",
+    "placeParlay": "Placera kombinationsspel {{amount}}",
+    "betBuilder": {
+      "placeBetValid": "Placera SB {{amount}}",
+      "placeBetSubmitting": "Placerar SB {{amount}}",
+      "betBuilderItemMarketUnavailable": "Marknaden är tillfälligt avstängd. <0>Försök igen</0> eller <1>Ta bort</1>",
+      "error": {
+        "parlayRestricted": "Relaterade val kan inte kombineras",
+        "marketSuspended": "Marknaden är tillfälligt avstängd."
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "Oddsen har ändrats.",
+      "oddsHaveChangedAccept": "Oddsen har ändrats. <0>Acceptera</0>",
+      "oddsHaveChangedToReturn": "Oddsen har ändrats. Att vinna: {{payout}}",
+      "oddsHaveChangedToReturnTitle": "Oddsen har ändrats. Att vinna:",
+      "marketIsSuspendedWaitOrRemove": "Marknaden är tillfälligt stängd. Vänta eller <0>Ta bort</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "Marknaden är tillfälligt stängd. Vänta eller ta bort...",
+      "marketIsClosedRemove": "Marknaden är stängd. <0>Ta bort</0>",
+      "selectionCorrelated": "Detta val är kopplat till ett annat. <0>Ta bort</0>",
+      "parlayRestricted": "Detta urval kan inte användas för kombinationsspel. <0>Remove</0>",
+      "dangerBall": "Ett mål kan göras snart. Ditt spel kan ta upp till 5 minuter att accepteras."
+    },
+    "consent": {
+      "acceptAllChanges": "Acceptera alla ändringar"
+    },
+    "insufficientBalanceAlert": {
+      "title": "Du har otillräckliga medel",
+      "description": "<0>Sätt in nu</0> för att fortsätta spela."
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "Visa alla {{sport}}"
+  },
+  "betBuilder": {
+    "reviewBet": "Granska spelet",
+    "title": "SGP"
+  },
+  "myBets": {
+    "noBets": "Inga spel tillgängliga",
+    "checkOut": "Kolla in dagens matcher eller kommande evenemang för att hitta din nästa spelmöjlighet.",
+    "viewBetHistory": "Visa spelhistorik",
+    "browseInplay": "Bläddra bland in-play-evenemang",
+    "loadError": "Kunde inte ladda detta spel",
+    "id": "ID",
+    "viewAllSettledBetsInfo": "Visa alla rättade spel i spelhistoriken.",
+    "onlyLast72HoursBetsInfo": "Endast de senaste 72 timmarnas spel visas. Se alla rättade spel i historiken."
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "Över {{over}}",
+      "gameOversAndDeliveries": "Över {{over}}.{{delivery}}",
+      "gameTargetRunsAndBalls": "{{teamName}} behöver {{runs}} från {{balls}}",
+      "gameTrailByRuns": "{{teamName}} ligger efter med {{runs}}",
+      "gameLeadByRuns": "{{teamName}} ligger före med {{runs}}",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "Test",
+      "matchDay": "Dag {{matchDay}}.",
+      "endOfMatchDay": "Slutet av dagen {{matchDay}}.",
+      "wonDefault": "{{winner}} vann",
+      "matchDrawn": "Oavgjord match",
+      "wonByRuns": "{{winner}} vann med {{wonBy}} runs",
+      "wonByRunsAndInning": "{{winner}} vann med en innings och {{wonBy}} runs",
+      "wonByWickets": "{{winner}} vann med {{wonBy}} wickets"
+    },
+    "racing": {
+      "running": "Pågår",
+      "runners": "Löpare",
+      "scratched": "Struken",
+      "horseRacingWithdrawnDescription": "En häst har strukits på grund av skada, sjukdom, banförhållanden eller tränarens beslut. Oddsen har justerats och om du har placerat ett spel kan din vinst komma att reduceras något. Spel på den strukna hästen kommer att återbetalas.",
+      "greyhoundsWithdrawnDescription": "En hund har strukits på grund av skada, sjukdom, banförhållanden eller tränarens beslut. Oddsen har justerats och om du har placerat ett spel kan din vinst komma att reduceras något. Spel på den strukna hunden kommer att återbetalas.",
+      "age": "Ålder:<0>{{age}}</0>",
+      "weightShorten": "V:<0>{{weight}}</0>lbs",
+      "formShorten": "F:<0>{{form}}</0>",
+      "horseJockeyShorten": "J:<0>{{jockey}}</0>",
+      "horseTrainerShorten": "T:<0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "Live-resultat ej tillgängligt"
+    }
+  },
+  "betHistory": {
+    "typeBet": "Spel",
+    "typeCashout": "Cashout",
+    "typeSettlement": "Avräkning",
+    "noBetHistory": "Ingen spelhistorik tillgänglig",
+    "hintV2": "”Spelhistorik” visar information om fastställda spel, inklusive matchresultat och spelutfall. Besök avsnittet {{link}} för att se aktiva eller väntande spel.",
+    "allBets": "Alla spel",
+    "singles": "Singlar",
+    "parlays": "Kombinationsspel",
+    "betBuilders": "Spelbyggare",
+    "outrights": "Outrightspel"
+  },
+  "fightCenter": {
+    "rootTitle": "Matchcenter",
+    "mainCard": "Huvudkort",
+    "prelims": "Förmatcher",
+    "taleOfTheTape": "Statistisk",
+    "fighterProfile": "Fighterprofil",
+    "height": "Längd",
+    "weight": "Vikt",
+    "armReach": "Armräckvidd",
+    "legReach": "Benräckvidd",
+    "winRate": "Vinstprocent",
+    "stats": "Statistik",
+    "age": "Ålder",
+    "record": "Statistik",
+    "byKo": "Efter KO",
+    "bySubmission": "Efter submission",
+    "byDecision": "Efter beslut",
+    "koTko": "KO/TKO",
+    "submission": "SUB",
+    "decision": "DEC",
+    "next": "Nästa",
+    "draw": "Oavgjort",
+    "streamIn": "Stream om:",
+    "liveDefault": "Live",
+    "officialGlobalSportsbook": "Officiell global oddsplattform för",
+    "official": "Officiell",
+    "globalSportsbook": "Global oddsplattform",
+    "expertPicks": {
+      "viewExpertPicks": "Visa expertval",
+      "banner": {
+        "title": "Expertval",
+        "availableIn": "Tillgänglig om"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} rundor",
+        "mma.winner": "{{outcome}} vinster",
+        "mma.winning_method": "{{outcome}} efter {{value}}"
+      },
+      "genericError": {
+        "title": "Något gick fel",
+        "description": "Det verkar som att något gick fel — vi jobbar på att åtgärda det och är snart tillbaka."
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "Vinner matchen",
+    "cricket_over_team_total": "Match over {{overNumber}} – runs totalt – lag",
+    "cricket_player_total": "Slagman match runs",
+    "cricket_player_to_score_milestone": "Spelaren gör {{milestone}}",
+    "cricket_player_total_fours": "Spelares fyror totalt",
+    "cricket_player_total_player_performance": "Spelarens prestation",
+    "cricket_team_total_fours": "Lagets fyror totalt",
+    "cricket_team_total_sixes": "Lagets sexor totalt",
+    "cricket_innings_over_x_team_total": "Innings {{inningsNumber}} over {{overNumber}} – runs totalt – lag",
+    "cricket_innings_overs_0_to_x_team_total": "Innings {{inningsNumber}} over 0 till {{overNumber}} runs totalt — lag",
+    "cricket_innings_player_total_deliveries_faced": "Innings {{inningsNumber}} antal bollar spelaren har mött",
+    "cricket_team_total_from_0_over_to_x_over": "Over 0 till {{overNumber}} – runs totalt – lag",
+    "cricket_team_total_in_highest_scoring_over": "Lagets mest poänggivande over",
+    "cricket_team_total_at_dismissal": "Lagets total vid utslagning {{dismissalNumber}}",
+    "cricket_innings_player_to_score_milestone": "Innings {{inningsNumber}} spelare gör {{milestone}}",
+    "cricket_test_match_player_total": "Innings {{inningsNumber}} spelare totalt",
+    "cricket_innings_player_total_fours": "Innings {{inningsNumber}} spelares totala fours "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "Aktuella mål {{total}} <0>({{home}}-{{away}})</0>",
+    "soccer.team_total_goals_home": "Aktuell ställning: {{home}}-<0>{{away}}</0>",
+    "soccer.team_total_goals_away": "Aktuell ställning: <0>{{home}}</0>-{{away}}",
+    "soccer.total_corners": "Aktuella hörnor: <0>{{total}}</0>",
+    "tennis.total_games": "Aktuella totala games: {{total}}",
+    "tennis.total_games_in_set": "Aktuella totala games i set {{setCount}}: {{total}} <0>({{gamesHome}}-{{gamesAway}})</0>"
+  },
+  "outcome": {
+    "draw": "Oavgjort"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "hård",
+        "clay": "lera",
+        "grass": "gräs",
+        "carpet": "matta"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "Starta Position builder",
+    "buildPosition": "Bygg position",
+    "currentOdds": "Aktuella odds",
+    "decrementOdds": "Minskade odds",
+    "incrementOdds": "Ökade odds",
+    "inProgress": {
+      "averageOdds": "Genomsnittliga odds",
+      "filledAmount": "Uppfyllt belopp",
+      "minOdds": "Minimum-odds",
+      "of": "av",
+      "remaining": "Återstående",
+      "sheetFooter": {
+        "completedTitle": "Slutförd",
+        "executionStoppedTitle": "Utförandet stoppades",
+        "marketClosedTitle": "Marknaden stängd",
+        "oddsBelowMinimumTitle": "Odds under minimum",
+        "failedTitle": "Kunde inte lägga spel",
+        "trackPosition": "Spåra positionen i <0>Mina spel</0>"
+      },
+      "stopRemaining": "Stoppa återstående",
+      "timeElapsed": "Förfluten tid",
+      "toReturn": "Utbetalar"
+    },
+    "minOdds": "Minimum-odds",
+    "needBiggerStake": "Behöver du en större insats?",
+    "noLimitBetting": "No-limit betting",
+    "stakeExceededDescription": "Insatsen överskrider maxbeloppet per spel för denna marknad",
+    "status": {
+      "cancelled": "Stoppad",
+      "completed": "Slutförd",
+      "failed": "Misslyckades",
+      "failedMarketClosed": "Marknaden stängd",
+      "failedOddsUnderMin": "Oddsen förändrades",
+      "running": "Pågår"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "Player Leaderboards",
+      "trendsAndFavorites": "Trends & Fan Favorites"
+    },
+    "columns": {
+      "player": "Spelare",
+      "name": "Namn"
+    },
+    "footer": "Data reflects settled {{sportName}} bets during {{dateRange}}. All figures in USD equivalent. Only public profiles are displayed.",
+    "leaderboards": {
+      "sharpest": {
+        "title": "Sharpest Bettors",
+        "subtitle": "Best ROI on {{sportName}} bets"
+      },
+      "earners": {
+        "title": "Top Earners",
+        "subtitle": "Highest {{sportName}} profits in {{year}}"
+      },
+      "parlayKings": {
+        "title": "Parlay Kings",
+        "subtitle": "Top parlay profit leaders"
+      },
+      "livePros": {
+        "title": "Live Betting Legends",
+        "subtitle": "In-play profit leaders"
+      },
+      "uclMasters": {
+        "title": "Champions League Masters",
+        "subtitle": "UCL betting specialists"
+      },
+      "sgpWizards": {
+        "title": "SGP Wizards",
+        "subtitle": "Same Game Parlay masters"
+      },
+      "crazyParlays": {
+        "title": "Craziest Parlay Wins",
+        "subtitle": "Wildest multi-legs that hit"
+      },
+      "hotMatches": {
+        "title": "Hottest Matches",
+        "subtitle": "Most wagered {{sportName}} fixtures"
+      },
+      "backedTeams": {
+        "title": "Most Backed Teams",
+        "subtitle": "Fan favorites to bet on"
+      },
+      "goalscorers": {
+        "title": "Goalscorer Favorites",
+        "subtitle": "Most bet-on {{sportName}} stars"
+      },
+      "trendingLeagues": {
+        "title": "Trending Leagues",
+        "subtitle": "Most popular competitions"
+      },
+      "backedPlayers": {
+        "title": "Most Backed Players",
+        "subtitle": "Fan favorite players to bet on"
+      },
+      "trendingTournaments": {
+        "title": "Trending Tournaments",
+        "subtitle": "Most popular tournaments"
+      },
+      "backedFighters": {
+        "title": "Most Backed Fighters",
+        "subtitle": "Fan favorite fighters to bet on"
+      },
+      "trendingPromotions": {
+        "title": "Trending Promotions",
+        "subtitle": "Most popular MMA promotions"
+      }
+    },
+    "bettingTrends": {
+      "title": "NBA Betting Trends",
+      "teamColumnLabel": "Lag",
+      "tables": {
+        "winLoss": {
+          "title": "Straight Up Leaders",
+          "subtitle": "The league's most dominant teams by pure winning percentage.",
+          "recordLabel": "W-L",
+          "percentageLabel": "Win %"
+        },
+        "ats": {
+          "title": "Spread Kings",
+          "subtitle": "Teams currently outperforming their projected point spreads.",
+          "recordLabel": "ATS Record",
+          "percentageLabel": "Cover %"
+        },
+        "over": {
+          "title": "Pace Setters",
+          "subtitle": "High-octane offenses and loose defenses that consistently beat the total.",
+          "recordLabel": "Over Record",
+          "percentageLabel": "Over %"
+        },
+        "under": {
+          "title": "Lockdown Units",
+          "subtitle": "Defensive-minded teams that keep scoring low and stay under the line.",
+          "recordLabel": "Under Record",
+          "percentageLabel": "Under %"
+        }
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "Vinst",
+      "bets": "Spel",
+      "liveProfit": "Live Profit",
+      "uclProfit": "UCL Profit",
+      "sgpProfit": "SGP Profit",
+      "multiplier": "Multiplikator",
+      "payout": "Utbetalning",
+      "totalWagered": "Total Wagered",
+      "betsPlaced": "Bets Placed",
+      "turnover": "Turnover",
+      "goalscorerBets": "Goalscorer Bets",
+      "totalBets": "Total Bets",
+      "volume": "Volume"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: Top Earners",
+    "heroCta": "{{sportName}} — See who's winning",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI"
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "Alla"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Bienvenidos al Club",
+  "onboarding": {
+    "tellUsMore": "Cuéntanos un poco más de ti.",
+    "complete": {
+      "accept_major_cryptos": "Aceptamos la mayoría de los principales proveedores de pagos y más de 30 criptomonedas diferentes.",
+      "deposit_to_unlock": "Deposita para activar",
+      "add_funds_to_start": "Deposita fondos para empezar a jugar",
+      "skip_for_now": "Omitir por ahora"
+    },
+    "errors": {
+      "nickname_taken": "El sobrenombre pertenece a otro usuario",
+      "dob_invalid": "Inserta una fecha de nacimiento válida"
+    }
+  }
+}

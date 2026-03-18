@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Seja recompensado:",
+      "subtitle": "<0>Dinheiro real</0> desde o primeiro dia",
+      "body": "Veja exatamente como funciona o seu Pacote de Boas-Vindas de 30 dias na Cloudbet:",
+      "card1Title": "Depositar",
+      "card1Body": "Seu primeiro depósito dá início a tudo isso e ativa recompensas reais desde o primeiro dia.",
+      "card2Title": "Aposte e reivindique",
+      "card2Body": "Ganhe rakeback e recargas diárias no cassino, além de recargas semanais nas apostas esportivas.",
+      "card3Title": "Desbloqueie o Caixa-Forte",
+      "card3Body": "O dia 30 traz sua maior recompensa, e depois você vai direto para as Recompensas da Cloudbet.",
+      "signUpButton": "Comece meu Pacote de Boas-Vindas"
+    },
+    "perks": {
+      "title": "A maioria dos sites exige muito de você. <br/><0>Nós não.</0>",
+      "body": "Desde a sua primeira aposta, você está jogando por dinheiro. Não por créditos. Não por dinheiro fictício. Dinheiro real que você pode sacar ou continuar apostando instantaneamente.",
+      "signUpButton": "Cadastre-se na Cloudbet agora",
+      "compare1": {
+        "title": "Outros sites",
+        "list1": "Bônus bloqueados, dinheiro que você nunca verá",
+        "list2": "Requisitos de apostas que doem",
+        "list3": "Bônus único",
+        "list4": "A promoção termina após a inscrição"
+      },
+      "compare2": {
+        "list1": "Recompensas em dinheiro real, até um total de $ 2.500",
+        "list1b": "(equivalente a apr. {{amount}})",
+        "list2": "Sem armadilhas, sem letras miúdas",
+        "list3": "10% de rakeback + prêmios diários em dinheiro do cassino a partir do primeiro dia",
+        "list4": "Cofre totalmente em dinheiro pago instantaneamente no dia 30 (ou quando atingir o limite máximo)"
+      },
+      "first30Days": {
+        "title": "Seus <0>primeiros 30 dias</0> serão assim:",
+        "list1": "<0>Prêmios diários em dinheiro no cassino:</0> Aposte hoje, receba dinheiro real amanhã.",
+        "list2": "<0>Rakeback de cassino:</0> 10% da vantagem da casa de volta em cada aposta, parte vai direto para sua carteira e o restante é liberado diariamente no seu Calendário de Recompensas.",
+        "list3": "<0>Prêmios semanais em dinheiro para esportes:</0> Dinheiro instantâneo desbloqueado todas as sextas-feiras.",
+        "list4": "<0>O Caixa-Forte:</0> Uma recompensa em dinheiro que cresce com o seu jogo e é desbloqueada no dia 30.",
+        "body": "Os jogadores podem desbloquear até $ 2.500 em recargas e rakeback de cassino, antes mesmo da abertura do Caixa-Forte."
+      }
+    },
+    "rewards": {
+      "title": "No dia 31 é quando as coisas ficam <0>realmente boas</0>",
+      "body": "Após o seu Pacote de Boas-Vindas, você passa a fazer parte das <0>Recompensas da Cloudbet</0>, o programa de fidelidade mais generoso da internet.",
+      "card1Title": "Rakeback com Turbo Boost",
+      "card1Body": "Ganhe até 25% de rakeback reforçado em cada aposta no cassino ao jogar com o TURBO.",
+      "card2Title": "Recompensas em dinheiro por subir de nível",
+      "card2Body": "Receba dinheiro instantâneo sempre que subir de nível, de Prata a Diamante Azul e todos os níveis intermediários.",
+      "card3Title": "Ganho inesperado com diamantes azuis",
+      "card3Body": "Suba na categoria Diamante Azul e desbloqueie recompensas de subida de nível dentro da categoria no valor de até $ 9,97 milhões.",
+      "morePerksTitle": "Mais vantagens ainda",
+      "morePerksBody": "Continue aproveitando todos os bônus em dinheiro para cassino e esportes que você adorou no Pacote de Boas-Vindas da Cloudbet."
+    },
+    "faq": {
+      "title": "Perguntas frequentes (FAQ) do Pacote de Boas-Vindas",
+      "q1": "Os $ 2.500 incluem o Caixa-Forte?",
+      "a1": "Não. O Caixa-Forte é um complemento às suas recompensas diárias.",
+      "q2": "Preciso optar por participar?",
+      "a2": "Não. Seu primeiro depósito o ativa automaticamente.",
+      "q3": "O que acontece se eu não atingir $ 2.500 em 30 dias?",
+      "a3": "Você mantém tudo o que resgatou e passa para as Recompensas da Cloudbet.",
+      "q4": "Posso fazer isso de novo?",
+      "a4": "Não, é um pacote único, mas as Recompensas da Cloudbet continuam sendo pagas.",
+      "q5": "Qual é a duração do Pacote de Boas-Vindas?",
+      "a5": "O Pacote de Boas-Vindas é válido por 30 dias a partir do momento do seu primeiro depósito ou até que você atinja o limite de $ 2.500, o que ocorrer primeiro.",
+      "q6": "Quando recebo meu rakeback?",
+      "a6": "Uma parte vai diretamente para sua carteira. O restante é desbloqueado diariamente no seu Calendário de Recompensas, para que você sempre tenha dinheiro fresquinho à disposição."
+    },
+    "cta": {
+      "title": "Não espere pelas recompensas de “algum dia”.",
+      "subtitle": "Ganhe <0>dinheiro real</0> desde a sua primeira aposta."
+    }
+  }
+}

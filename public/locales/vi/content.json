@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Nhận thưởng:",
+      "subtitle": "<0>Tiền thật</0> từ ngày 1",
+      "body": "Đây chính là cách Gói quà Chào mừng 30 ngày của bạn hoạt động trên Cloudbet:",
+      "card1Title": "Nạp tiền",
+      "card1Body": "Khoản nạp đầu tiên của bạn sẽ khởi động tất cả - và kích hoạt phần thưởng thực từ Ngày 1.",
+      "card2Title": "Đặt cược & Nhận thưởng",
+      "card2Body": "Nhận hoàn tiền và tiền thưởng casino mỗi ngày, và tiền thưởng thể thao mỗi tuần.",
+      "card3Title": "Mở khóa Cash Vault",
+      "card3Body": "Ngày 30 mang đến phần thưởng lớn nhất — ngay sau đó là Phần thưởng Cloudbet.",
+      "signUpButton": "Bắt đầu Gói quà Chào mừng"
+    },
+    "perks": {
+      "title": "Hầu hết các trang đều yêu cầu nhiều thủ tục phức tạp.<br/><0>Chúng tôi thì không.</0>",
+      "body": "Từ lần cược đầu tiên, bạn đã chơi để nhận tiền thật. Không phải credit. Không phải tiền ảo. Là tiền thật, bạn có thể rút hoặc tiếp tục đặt cược tức thì.",
+      "signUpButton": "Tham gia Cloudbet ngay",
+      "compare1": {
+        "title": "Các trang khác",
+        "list1": "Thưởng bị khóa, bạn không nhận được tiền",
+        "list2": "Yêu cầu đặt cược gây khó chịu",
+        "list3": "Tiền thưởng một lần",
+        "list4": "Ưu đãi kết thúc sau khi đăng ký"
+      },
+      "compare2": {
+        "list1": "Tiền thưởng thật — tổng cộng đến $2.500",
+        "list1b": "(tương đương khoảng {{amount}})",
+        "list2": "Không bẫy, không điều khoản ẩn",
+        "list3": "Hoàn tiền 10% + tiền thưởng casino hàng ngày từ Ngày 1",
+        "list4": "Vault tiền được thanh toán tức thì vào Ngày 30 (hoặc khi đạt mức tối đa)"
+      },
+      "first30Days": {
+        "title": "<0>30 ngày đầu tiên</0> của bạn như sau:",
+        "list1": "<0>Tiền thưởng casino hàng ngày:</0> Đặt cược hôm nay, nhận tiền thật vào ngày mai.",
+        "list2": "<0>Hoàn tiền casino:</0> Hoàn tiền 10% lợi thế nhà cái cho mỗi lần cược — một phần vào ví của bạn tức thì, và phần còn lại được mở khóa hàng ngày theo Lịch Thưởng.",
+        "list3": "<0>Tiền thưởng thể thao hàng tuần:</0> Nhận tiền ngay lập tức mỗi thứ Sáu.",
+        "list4": "<0>Cash Vault:</0> Phần thưởng tiền mặt tăng dần theo tiến trình chơi và được mở khóa vào Ngày 30.",
+        "body": "Người chơi có thể mở khóa đến $2.500 và hoàn phí casino — ngay cả trước khi Vault mở."
+      }
+    },
+    "rewards": {
+      "title": "Vào Ngày 31, mọi thứ <0>thực sự tuyệt vời</0>",
+      "body": "Sau khi nhận Gói quà Chào mừng, bạn sẽ được tham gia <0>Phần thưởng Cloudbet</0> - chương trình khách hàng thân thiết trực tuyến hào phóng nhất.",
+      "card1Title": "Hoàn tiền Gia tăng Turbo",
+      "card1Body": "Nhận hoàn tiền gia tăng lên đến 25% cho mỗi lần cược casino khi chơi với TURBO.",
+      "card2Title": "Tiền thưởng Thăng cấp",
+      "card2Body": "Nhận tiền tức thì mỗi khi bạn thăng cấp, từ Bạc đến Kim cương Xanh và các cấp khác.",
+      "card3Title": "Thưởng lớn Kim cương xanh",
+      "card3Body": "Chinh phục cấp Kim cương Xanh và mở khóa các phần thưởng thăng cấp trong từng cấp, trị giá đến 9,97 triệu USD.",
+      "morePerksTitle": "Và nhiều đặc quyền khác",
+      "morePerksBody": "Tiếp tục tận hưởng tất cả tiền thưởng từ casino và thể thao mà bạn yêu thích với Gói quà Chào mừng của Cloudbet."
+    },
+    "faq": {
+      "title": "FAQ về Gói quà Chào mừng",
+      "q1": "$2.500 có bao gồm Vault không?",
+      "a1": "Không. Vault nằm ngoài phần thưởng hàng ngày của bạn.",
+      "q2": "Tôi có cần đăng ký?",
+      "a2": "Không. Khoản nạp đầu tiên của bạn sẽ tự động kích hoạt.",
+      "q3": "Điều gì sẽ xảy ra nếu tôi không đạt $2.500 trong 30 ngày?",
+      "a3": "Bạn giữ lại những gì đã nhận và được tham gia Phần thưởng Cloudbet.",
+      "q4": "Tôi có thể thử lại không?",
+      "a4": "Không, đây là gói ưu đãi một lần — nhưng Phần thưởng Cloudbet vẫn trả thưởng.",
+      "q5": "Gói quà Chào mừng có hiệu lực trong bao lâu?",
+      "a5": "Gói quà Chào mừng có hiệu lực trong 30 ngày kể từ thời điểm bạn nạp tiền lần đầu hoặc cho đến khi bạn đạt hạn mức $2.500, tùy theo điều kiện nào được đáp ứng trước.",
+      "q6": "Tôi sẽ nhận được hoàn tiền khi nào?",
+      "a6": "Một phần sẽ được chuyển ngay vào ví của bạn. Phần còn lại sẽ được mở khóa hàng ngày theo Lịch Thưởng, vì vậy luôn có tiền thưởng mới chờ bạn."
+    },
+    "cta": {
+      "title": "Đừng đợi phần thưởng \"một ngày nào đó\".",
+      "subtitle": "Nhận <0>tiền thật</0> từ lần cược đầu tiên."
+    }
+  }
+}

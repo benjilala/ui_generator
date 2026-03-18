@@ -1,0 +1,16 @@
+{
+  "title": "Boas-vindas ao clube",
+  "onboarding": {
+    "tellUsMore": "Compartilhe mais algumas informações sobre você.",
+    "complete": {
+      "accept_major_cryptos": "Aceitamos a maioria dos principais provedores de pagamento e mais de 30 criptomoedas diferentes.",
+      "deposit_to_unlock": "Deposite para desbloquear",
+      "add_funds_to_start": "Adicionar fundos para começar a jogar",
+      "skip_for_now": "Ignorar por enquanto"
+    },
+    "errors": {
+      "nickname_taken": "Esse nome de usuário já está sendo utilizado",
+      "dob_invalid": "Insira uma data de nascimento válida"
+    }
+  }
+}

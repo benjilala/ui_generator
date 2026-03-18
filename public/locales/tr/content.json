@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Ödüller Kazanın:",
+      "subtitle": "İlk günden itibaren <0>gerçek nakit</0> ödülleri",
+      "body": "Cloudbet'te 30 günlük Hoş Geldin Paketiniz hakkında tüm bilmeniz gerekenler:",
+      "card1Title": "Yatırın",
+      "card1Body": "Her şey ilk para yatırma işleminizle başlar ve ilk günden itibaren gerçek ödüller kazanırsınız.",
+      "card2Title": "Bahis yapın ve Ödül alın",
+      "card2Body": "Casino bahislerinde komisyon iadesi ve günlük nakit ödülleri, spor bahislerinde ise haftalık nakit ödülleri kazanın.",
+      "card3Title": "Nakit Kasası'nı açın",
+      "card3Body": "30. günde şu ana kadarki en büyük ödülün tadını çıkarın ve hiç vakit kayetmeden Cloudbet Ödülleri'ne geçiş yapın.",
+      "signUpButton": "Hoş Geldin Paketimi başlat"
+    },
+    "perks": {
+      "title": "Çoğu sitede kompleks süreçlerden geçmeniz gerekir.<br/><0>Burada işler farklı.</0>",
+      "body": "Burada ilk bahsinizden itibaren kazanmaya başlarsınız. Bonus bakiye değil. Eğlence bakiyesi hiç değil. Çekebileceğiniz veya bahis yapabileceğiniz gerçek nakit ödülleri.",
+      "signUpButton": "Şimdi Cloudbet'e katıl",
+      "compare1": {
+        "title": "Diğer siteler",
+        "list1": "Kilitli bonuslar, asla alamayacağınız nakit ödülleri",
+        "list2": "Uğraştırıcı çevrim şartları",
+        "list3": "Tek seferlik bonus",
+        "list4": "Kaydolduktan sonra biten promosyon"
+      },
+      "compare2": {
+        "list1": "$2.500'a varan gerçek nakit ödülleri",
+        "list1b": "(yaklaşık {{amount}})",
+        "list2": "Tuzak yok, gizli şartlar yok",
+        "list3": "%10 komisyon iadesi + ilk günden itibaren casinoda günlük nakit ödülleri",
+        "list4": "30. günde (veya paket bittiğinde) anında ödenen ve tamamı nakit olan bir Kasa"
+      },
+      "first30Days": {
+        "title": "<0>İlk 30 gününüze</0> ön bakış:",
+        "list1": "<0>Casinoda günlük nakit ödülleri:</0> Bugün bahis yapın, yarın gerçek nakit ödülleri alın.",
+        "list2": "<0>Casino oyunlarında komisyon iadesi:</0> her bahiste kasa avantajının %10'u iade — Bir kısmı anında cüzdanınıza aktarılır, kalanı ise günlük ödüller olarak Ödül Takviminize eklenir.",
+        "list3": "<0>Spor bahislerinde haftalık nakit ödülleri:</0> Her cuma anında nakit ödülleri.",
+        "list4": "<0>Nakit Kasası:</0> Bahis yaptıkça büyüyen ve 30. günde kilidi açılan bir nakit ödülüdür.",
+        "body": "Oyuncular, Nakit Kasası'nı açmadan önce değeri toplam $2.500'a varan ödülleri ve casino komisyon iadeleri kazanabilir."
+      }
+    },
+    "rewards": {
+      "title": "<0>Asıl eğlence</0> 31. günde başlıyor",
+      "body": "Hoş Geldin Paketinizi tamamladığınızda internetteki en kazançlı sadakat programı <0>Cloudbet Ödülleri</0>'ne geçersiniz.",
+      "card1Title": "Turbo ile Artırılmış Komisyon İadesi",
+      "card1Body": "TURBO ile oynayın ve her casino bahsinizde %25'e varan artırılmış komisyon iadesi kazanın.",
+      "card2Title": "Seviye Atlama Nakit ödülleri",
+      "card2Body": "Gümüşten Mavi Elmasa, her seviye atladığınızda anında nakit ödülleri kazanın.",
+      "card3Title": "Mavi elmas avantajı",
+      "card3Body": "Mavi Elmas kademesine yükselin ve kademeler arasında toplam değeri $9.970.000'a varan seviye atlama ödülleri kazanın.",
+      "morePerksTitle": "Ayrıca daha fazla avantaj sizi bekliyor",
+      "morePerksBody": "Cloudbet Hoş Geldin Paketi'nin sunduğu tüm casino ve spor bahislerindeki nakit ödüllerinin keyfini çıkarmaya devam edin."
+    },
+    "faq": {
+      "title": "Hoş Geldin Paketi SSS",
+      "q1": "$2.500'a Nakit Kasası da dâhil mi?",
+      "a1": "Hayır. Nakit Kasası günlük ödüllerinize ek olarak verilir.",
+      "q2": "Katılım gerekli mi?",
+      "a2": "Hayır. Hoş Geldin Paketi ilk para yatırma işleminizle birlikte otomatik olarak başlar.",
+      "q3": "30 gün içinde $2.500'ın tamamını alamazsam ne olur?",
+      "a3": "O zamana kadar aldığınız tüm ödüller sizde kalır ve Cloudbet Ödülleri başlar.",
+      "q4": "Hoş Geldin Paketi'nden bir daha yararlanabilir miyim?",
+      "a4": "Hayır, tek seferlik bir pakettir. Ancak Cloudbet Ödülleri ile kazanmaya devam edebilirsiniz.",
+      "q5": "Hoş Geldin Paketi kaç gün sürer?",
+      "a5": "Hoş Geldin Paketi, ilk yatırma işleminizden itibaren 30 gün boyunca veya $2.500 sınırına ulaşana kadar (hangisi önce gerçekleşirse) geçerlidir.",
+      "q6": "Komisyon iademi ne zaman alırım?",
+      "a6": "İadelerinizin bir kısmı anında cüzdanınıza aktarılır. Kalanı ise Ödül Takviminize eklenir ve her gün kilidi açılır. Yani sizi bekleyen daha çok ödülünüz var."
+    },
+    "cta": {
+      "title": "Belli belirsiz ödüllerin peşinden koşmayın.",
+      "subtitle": "İlk bahsinizden itibaren <0>gerçek nakit</0> ödülleri kazanın."
+    }
+  }
+}

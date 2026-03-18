@@ -533,6 +533,128 @@
   --cb-error:               #fba7a7;
 }
 
+/* ═══════════════════════════════════════════════════════════════════
+   THEME: Clean Slate Light — white surfaces, indigo primary
+   Apply by adding data-theme="clean-slate-light" to <html>
+   NOTE: also removes the .dark class via ThemeProvider
+   ═══════════════════════════════════════════════════════════════════ */
+
+[data-theme="clean-slate-light"] {
+  color-scheme: light;
+
+  --background:            oklch(0.98 0 0);
+  --foreground:            oklch(0.15 0 0);
+  --card:                  oklch(1 0 0);
+  --card-foreground:       oklch(0.15 0 0);
+  --popover:               oklch(1 0 0);
+  --popover-foreground:    oklch(0.15 0 0);
+  --primary:               oklch(0.59 0.20 277.06);
+  --primary-foreground:    oklch(1 0 0);
+  --secondary:             oklch(0.93 0.03 273.66);
+  --secondary-foreground:  oklch(0.25 0.05 277);
+  --muted:                 oklch(0.96 0.01 273);
+  --muted-foreground:      oklch(0.50 0.02 277);
+  --accent:                oklch(0.93 0.03 273.66);
+  --accent-foreground:     oklch(0.25 0.05 277);
+  --destructive:           oklch(0.60 0.22 25);
+  --destructive-foreground: oklch(1 0 0);
+  --border:                oklch(0.90 0.02 273);
+  --input:                 oklch(0.90 0.02 273);
+  --ring:                  oklch(0.59 0.20 277.06);
+  --chart-1:               oklch(0.59 0.20 277.06);
+  --chart-2:               oklch(0.50 0.18 277);
+  --chart-3:               oklch(0.42 0.16 277);
+  --chart-4:               oklch(0.35 0.14 277);
+  --chart-5:               oklch(0.28 0.12 277);
+  --sidebar:               oklch(0.95 0.02 273);
+  --sidebar-foreground:    oklch(0.15 0 0);
+  --sidebar-primary:       oklch(0.59 0.20 277.06);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent:        oklch(0.93 0.03 273.66);
+  --sidebar-accent-foreground: oklch(0.25 0.05 277);
+  --sidebar-border:        oklch(0.90 0.02 273);
+  --sidebar-ring:          oklch(0.59 0.20 277.06);
+
+  /* ── cb-surface scale — light ── */
+  --cb-surface-0:  oklch(0.92 0.02 273);
+  --cb-surface-1:  oklch(0.95 0.01 273);
+  --cb-surface-2:  oklch(0.97 0.01 273);
+  --cb-surface-3:  oklch(1 0 0);
+  --cb-surface-4:  oklch(0.97 0.01 273);
+  --cb-surface-5:  oklch(0.95 0.01 273);
+  --cb-surface-6:  oklch(0.93 0.02 273);
+
+  /* ── Brand ── */
+  --cb-primary:             oklch(0.59 0.20 277.06);
+  --cb-primary-fg:          oklch(1 0 0);
+  --cb-purple-50:           oklch(0.50 0.18 277);
+  --cb-on-primary-inverse:  oklch(0.70 0 0);
+  --cb-accent:              oklch(0.59 0.20 277.06);
+  --cb-accent-fg:           oklch(1 0 0);
+  --cb-muted:               oklch(0.96 0.01 273);
+  --cb-muted-fg:            oklch(0.50 0.02 277);
+
+  /* ── Foreground scale ── */
+  --cb-foreground:          oklch(0.15 0 0);
+  --cb-foreground-2:        oklch(0.30 0 0);
+  --cb-foreground-3:        oklch(0.45 0 0);
+  --cb-foreground-muted:    oklch(0.50 0.02 277);
+  --cb-foreground-disabled: oklch(0.65 0 0);
+
+  /* ── Border scale ── */
+  --cb-border-subtle:   oklch(0.15 0 0 / 8%);
+  --cb-border:          oklch(0.90 0.02 273);
+  --cb-border-visible:  oklch(0.80 0.03 277);
+  --cb-border-strong:   oklch(0.60 0.05 277);
+
+  /* ── Icon system ── */
+  --cb-icon-default:  oklch(0.59 0.20 277.06);
+  --cb-icon-primary:  oklch(0.59 0.20 277.06);
+  --cb-icon-muted:    oklch(0.50 0.02 277);
+  --cb-icon-success:  oklch(0.55 0.15 154);
+
+  /* ── Feedback / semantic status ── */
+  --cb-info:        oklch(0.55 0.18 255);
+  --cb-info-fg:     oklch(1 0 0);
+  --cb-success:     oklch(0.55 0.15 154);
+  --cb-success-fg:  oklch(1 0 0);
+  --cb-error:       oklch(0.60 0.22 25);
+  --cb-error-fg:    oklch(1 0 0);
+  --cb-warning:     oklch(0.60 0.14 75);
+  --cb-warning-fg:  oklch(1 0 0);
+  --cb-warning-bg:  oklch(0.60 0.14 75 / 10%);
+  --cb-warning-border: oklch(0.60 0.14 75 / 30%);
+
+  /* ── Betting states ── */
+  --cb-odds-up:             oklch(0.55 0.15 154);
+  --cb-odds-up-bg:          oklch(0.55 0.15 154 / 12%);
+  --cb-odds-down:           oklch(0.60 0.22 25);
+  --cb-odds-down-bg:        oklch(0.60 0.22 25 / 12%);
+  --cb-market-live:         oklch(0.59 0.20 277.06);
+  --cb-market-live-bg:      oklch(0.59 0.20 277.06 / 12%);
+  --cb-market-suspended:    oklch(0.60 0.14 75);
+  --cb-market-suspended-bg: oklch(0.60 0.14 75 / 12%);
+  --cb-live:                oklch(0.59 0.20 277.06);
+  --cb-live-bg:             oklch(0.59 0.20 277.06 / 12%);
+
+  /* ── Casino ── */
+  --cb-jackpot:           oklch(0.70 0.14 70);
+  --cb-jackpot-fg:        oklch(1 0 0);
+  --cb-jackpot-from:      oklch(0.65 0.13 70);
+  --cb-jackpot-to:        oklch(0.75 0.15 72);
+  --cb-jackpot-glow:      oklch(0.70 0.14 70 / 30%);
+  --cb-featured:          oklch(0.55 0.25 0);
+  --cb-featured-bg:       oklch(0.55 0.25 0 / 10%);
+  --cb-featured-border:   oklch(0.55 0.25 0 / 25%);
+  --cb-featured-game:     oklch(0.55 0.25 0);
+  --cb-featured-game-fg:  oklch(1 0 0);
+
+  /* ── Surface overlays ── */
+  --cb-overlay-subtle: oklch(0.15 0 0 / 3%);
+  --cb-overlay-hover:  oklch(0.15 0 0 / 6%);
+  --cb-overlay-active: oklch(0.15 0 0 / 9%);
+}
+
 /* ─────────────────────────────────────────────
    @theme inline — expose tokens as Tailwind utilities
    ───────────────────────────────────────────── */

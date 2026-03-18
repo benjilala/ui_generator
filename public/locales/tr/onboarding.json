@@ -1,0 +1,16 @@
+{
+  "title": "Programa Hoş Geldiniz",
+  "onboarding": {
+    "tellUsMore": "Kendiniz hakkında bir şeyler daha paylaşın.",
+    "complete": {
+      "accept_major_cryptos": "Çoğu büyük ödeme sağlayıcısını ve 30'dan fazla kripto para birimini kabul ediyoruz.",
+      "deposit_to_unlock": "Açmak için para yatırın",
+      "add_funds_to_start": "Oynamaya başlamak için para yükleyin",
+      "skip_for_now": "Şimdilik atla"
+    },
+    "errors": {
+      "nickname_taken": "Bu rumuz zaten alınmış",
+      "dob_invalid": "Lütfen geçerli bir doğum tarihi girin"
+    }
+  }
+}

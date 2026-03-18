@@ -1,0 +1,53 @@
+{
+  "title": "Welcome to the club",
+  "onboarding": {
+    "tellUsMore": "Tell us a bit more about yourself.",
+    "complete": {
+      "accept_major_cryptos": "We accept 40+ cryptocurrencies and top payment providers.",
+      "deposit_to_unlock": "Deposit to unlock",
+      "add_funds_to_start": "Add funds to start playing",
+      "letsPlay": "Let's play",
+      "welcomePackage": "Welcome Package",
+      "depositAmountUnlock": "Deposit any amount to unlock",
+      "skip_for_now": "Skip for now",
+      "skip_for_now_loss_aversion": "I'll claim my bonus later",
+      "advance_security": "Advanced card-to-card security protocols",
+      "blockchain_deposits": "Blockchain encrypted crypto deposits",
+      "get_matched": "Get",
+      "first_time_deposit": "deposit match on your first deposit"
+    },
+    "dob": {
+      "title": "Enter your birth date",
+      "subtitle": "You must be 18+ to use Cloudbet."
+    },
+    "sports": {
+      "title": "Select your favorite sports"
+    },
+    "esports": {
+      "title": "Select your favorite esports"
+    },
+    "casino": {
+      "title": "What casino games do you enjoy?"
+    },
+    "interests": {
+      "sports": "Sports",
+      "esports": "Esports",
+      "casino": "Casino",
+      "title": "What are you into?",
+      "subtitle": "Choose one or more to personalise your experience."
+    },
+    "nickname": {
+      "title": "Pick your nickname",
+      "placeholder": "Enter nickname",
+      "subtitle": "Visible to others and can’t be changed later"
+    },
+    "personalizing": {
+      "title": "Awesome! These have been added to your profile.",
+      "skip_for_now": "Skip for now"
+    },
+    "errors": {
+      "nickname_taken": "That nickname is already taken.",
+      "dob_invalid": "Please enter a valid date of birth"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Chào mừng đến Câu lạc bộ",
+  "onboarding": {
+    "tellUsMore": "Hãy cho chúng tôi biết thêm một vài điều về bạn.",
+    "complete": {
+      "accept_major_cryptos": "Chúng tôi chấp nhận hầu hết các nhà cung cấp dịch vụ thanh toán lớn và hơn 30 loại tiền điện tử khác nhau.",
+      "deposit_to_unlock": "Nạp tiền để mở khóa",
+      "add_funds_to_start": "Thêm tiền để bắt đầu chơi",
+      "skip_for_now": "Bỏ qua"
+    },
+    "errors": {
+      "nickname_taken": "Biệt danh này đã được sử dụng",
+      "dob_invalid": "Vui lòng nhập ngày sinh hợp lệ"
+    }
+  }
+}

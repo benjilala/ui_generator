@@ -1,0 +1,600 @@
+{
+  "eventPage": {
+    "filters": {
+      "asianLines": "Kiểu châu Á",
+      "cards": "Thẻ",
+      "corners": "Phạt góc",
+      "goals": "Bàn thắng",
+      "half": "Hiệp",
+      "main": "Chính",
+      "more": "Thêm",
+      "specials": "Đặc biệt",
+      "popular": "Phổ biến",
+      "firstHalf": "Hiệp 1",
+      "secondHalf": "Hiệp 2",
+      "points": "Điểm",
+      "quarters": "Phần tư",
+      "players": "Người chơi",
+      "sets": "Bộ",
+      "games": "Trò chơi",
+      "hitsAndRuns": "Hit & Run",
+      "playerProps": "Cược trên cầu thủ",
+      "extraTime": "Hiệp phụ",
+      "kills": "Kill",
+      "match": "Trận đấu",
+      "player": "Cầu thủ",
+      "team": "Đội",
+      "mainMarkets": "Thị trường chính",
+      "matchMarkets": "Thị trường trận đấu",
+      "mapN": "Khớp {{mapNumber}}",
+      "firstInnings": "Lượt đấu 1",
+      "all": "Toàn bộ thị trường",
+      "betBuilder": "Trình tạo cược"
+    },
+    "stats": {
+      "notAvailable": "Số liệu thống kê không khả dụng",
+      "noDataAvailable": "No Data Available",
+      "noHeadToHeadMatchups": "No recent head-to-head matchups"
+    },
+    "betBuilder": {
+      "loginToBet": "Truy cập Trình tạo cược",
+      "loginToBetDescription": "Bạn cần phải đăng nhập để tạo và đặt cược tùy chỉnh.",
+      "loginToBetButton": "Đăng nhập để tạo",
+      "genericError": {
+        "titleWithCode": "Có gì đó không ổn ({{code}})",
+        "title": "Có gì đó không ổn",
+        "description": "Vui lòng thử lại. Nếu vấn đề này vẫn tiếp diễn, vui lòng liên hệ hỗ trợ khách hàng của chúng tôi."
+      },
+      "existingBetBuilderBetslipModal": {
+        "title": "Thay thế Same Game Multi hiện tại?",
+        "description": "Chỉ có thể đặt một cược Same Game Multi trong phiếu cược của bạn. Việc thêm cược này sẽ thay thế cược hiện tại.",
+        "cancelCta": "Hủy",
+        "replaceCta": "Thay thế"
+      },
+      "shortened": "SGP",
+      "betBuilderPromo": "Tạo tỷ lệ cược lớn hơn với cược xiên trong cùng một trận đấu.",
+      "betBuilderAlertBanner": {
+        "title2": "Rút thăm may mắn 100x Bet Builder",
+        "body2": "Tạo cược xiên $1+ vào cuối tuần này—10 người chiến thắng sẽ nhận được gấp 100 lần tiền cược (tối đa $100)."
+      },
+      "customUI": {
+        "marketDisplaySelection": {
+          "generate": {
+            "anytime": "Bất kỳ lúc nào",
+            "first": "Đầu tiên",
+            "last": "Cuối cùng",
+            "teamFirst": "Đội đầu tiên",
+            "teamLast": "Đội cuối cùng",
+            "oneOrMore": "1+",
+            "twoOrMore": "2+",
+            "threeOrMore": "3+"
+          },
+          "soccer": {
+            "scoreAHeader": "Đầu trang",
+            "scoreOutsideOfTheBox": "Vượt qua giới hạn"
+          }
+        },
+        "marketTitle": {
+          "soccer": {
+            "when-will-player-score": "Khi nào cầu thủ sẽ ghi bàn?",
+            "when-will-player-score-team": "Khi nào cầu thủ (đội) sẽ ghi bàn?",
+            "how-many-player-goals": "Bao nhiêu ghi bàn của cầu thủ?",
+            "how-will-player-score": "Cầu thủ sẽ ghi bàn bằng cách nào?",
+            "player-assists": "Cầu thủ kiến ​​tạo",
+            "player-to-be-carded-team": "Cầu thủ bị phạt thẻ (đội)",
+            "player-to-be-shown-a-card": "Cầu thủ sẽ bị thẻ phạt",
+            "total-cards-team": "Tổng số thẻ (đội)",
+            "both-team-total-cards": "Tổng số thẻ của cả hai đội",
+            "both-teams-total-goals": "Tổng số bàn thắng của cả hai đội",
+            "total-goals-team": "Tổng số bàn thắng (đội)",
+            "both-teams-total-corners": "Tổng phạt góc của hai đội",
+            "total-corners-team": "Tổng phạt góc (đội)",
+            "both-teams-score": "Cả hai đội sẽ ghi bàn",
+            "player-to-be-sent-off": "Cầu thủ bị đuổi khỏi sân",
+            "player-total-fouls-committed": "Tổng số lỗi mà cầu thủ phạm phải",
+            "player-total-saves": "Tổng số lần cứu thua của cầu thủ",
+            "player-total-shots": "Tổng số cú sút của cầu thủ",
+            "player-total-shots-on-target": "Tổng số cú sút trúng đích của cầu thủ",
+            "player-total-tackles": "Phần thưởng được phân phối",
+            "player-total-passes": "Tổng số đường chuyền của cầu thủ",
+            "to-happen-in-the-match-team": "Sẽ xảy ra trong trận đấu (của đội)",
+            "method-of-victory": "Phương thức chiến thắng",
+            "total-shots-team": "Tổng số cú sút (toàn đội)",
+            "team-with-most-bookings": "Đội có số lượt đặt chỗ nhiều nhất",
+            "total-shots-on-target-team": "Tổng số cú sút trúng đích (toàn đội)",
+            "total-goals-over-slash-under-after-10-minutes": "Tổng số bàn thắng trên/dưới sau 10 phút",
+            "asian-handicap-after-10-minutes": "Kèo châu Á sau 10 phút",
+            "correct-score": "Điểm số chính xác",
+            "most-cards": "Nhiều thẻ nhất",
+            "most-corners": "Nhiều phạt góc nhất",
+            "double-chance": "Cơ hội kép",
+            "winning-margin": "Chênh lệch thắng",
+            "total-goals": "Tổng bàn thắng",
+            "total-exact-goals": "Tổng bàn thắng chính xác",
+            "total-exact-goals-team": "Tổng số bàn thắng chính xác (đội)",
+            "total-bookings-points": "Tổng số điểm thẻ phạt",
+            "total-bookings-points-team": "Tổng số điểm thẻ phạt (đội)"
+          },
+          "basketball": {
+            "player-total-points-and-rebounds": "Tổng điểm và rebound của cầu thủ",
+            "player-total-points": "Tổng điểm của cầu thủ",
+            "player-total-3-point-field-goals": "Tổng số cú ném 3 điểm của cầu thủ",
+            "player-total-rebounds": "Tổng rebound của cầu thủ",
+            "player-total-assists-and-rebounds": "Tổng kiến ​​tạo & rebound của cầu thủ",
+            "player-total-assists": "Tổng kiến tạo của cầu thủ",
+            "player-total-points-and-assists": "Tổng điểm & kiến ​​tạo của cầu thủ",
+            "player-total-points-assists-and-rebounds": "Tổng điểm, kiến ​​tạo & rebound của cầu thủ",
+            "player-to-achieve-a-double-double": "Cầu thủ đạt cú đúp kép",
+            "player-to-achieve-a-triple-double": "Cầu thủ đạt được cú đúp ba",
+            "player-total-3-pointers-over-under": "Tổng số cú ném 3 điểm của cầu thủ (over/under)",
+            "player-total-assists-and-rebounds-over-under": "Tổng kiến ​​tạo & rebound của cầu thủ (over/under)",
+            "player-total-assists-over-under": "Tổng kiến tạo của cầu thủ (over/under)",
+            "player-total-points-over-under": "Tổng điểm của cầu thủ (over/under)",
+            "player-total-rebounds-over-under": "Tổng rebound của cầu thủ (over/under)"
+          }
+        }
+      }
+    },
+    "seo": {
+      "titleV2": "Cược {{eventName}} bằng tiền điện tử",
+      "soccerDescription": "Người hâm mộ có thể chờ đợi một trận đấu kịch tính khi {{home}} đối đầu với {{away}} trong khuôn khổ {{competition}} vào {{time}} ngày {{date}}. Tại Cloudbet, bạn có thể tạo kèo kết hợp trong cùng một trận bóng đá, kết hợp các lựa chọn như bàn thắng, phạt góc và thẻ phạt để tăng thêm phần hấp dẫn. Đặt cược trước giờ bóng lăn hoặc theo dõi và cược trực tiếp trong trận.",
+      "basketballDescription": "Trận đấu {{competition}} giữa {{home}} và {{away}} sẽ bắt đầu vào {{date}} lúc {{time}}. Trận này hứa hẹn đầy kịch tính từ lúc bắt đầu đến tiếng còi kết thúc. Các cược kết hợp trong cùng một trận cho phép bạn liên kết điểm số, rebound và kiến tạo của cầu thủ để tăng cơ hội thắng lớn. Cược trước trận hoặc tham gia cược trực tiếp khi trận đấu đang diễn ra.",
+      "americanFootballDescription": "Trận {{home}} vs {{away}} thuộc {{competition}} sẽ bắt đầu vào {{date}} lúc {{time}}. Cloudbet cho phép bạn xếp cược trong cùng một trận — từ touchdown đến số yard chuyền — để tăng lợi thế. Đặt cược trước trận hoặc tận dụng tỷ lệ cược trực tiếp khi trận đấu bóng bầu dục Mỹ diễn ra.",
+      "tennisDescription": "Trận đối đầu {{competition}} giữa {{home}} và {{away}} sẽ diễn ra vào {{date}} lúc {{time}}. Cược kết hợp cùng trận cho phép bạn liên kết người thắng set, tổng số game và ace trong cùng một cược. Đặt cược trước khi trận đấu bắt đầu hoặc cược trực tiếp trong suốt trận tennis này.",
+      "baseballDescription": "{{home}} gặp {{away}} trong {{competition}} vào {{date}} lúc {{time}}. Cược kết hợp cùng trận trong trận bóng chày này cho phép bạn liên kết số hit, strikeout và số điểm ghi được trong cùng một cược. Tham gia sớm hoặc đặt cược trực tiếp từng hiệp.",
+      "iceHockeyDescription": "Trận đối đầu {{competition}} giữa {{home}} và {{away}} sẽ diễn ra trên sân băng vào {{date}} lúc {{time}}. Cược kết hợp cùng trận cho phép bạn kết hợp số bàn thắng, kiến tạo và thẻ phạt để tăng phần kịch tính trong trận khúc côn cầu này. Đặt cược trước khi puck rơi hoặc cược trực tiếp khi trận đấu diễn ra.",
+      "rugbyDescription": "{{home}} gặp {{away}} trong {{competition}} vào {{date}} lúc {{time}}. Hãy chuẩn bị cho những pha tắc bóng mạnh mẽ và những try ngoạn mục trong trận rugby này. Với Cloudbet, bạn có thể tạo cược kết hợp cùng trận trên số try, conversion và tổng điểm. Đặt cược trước giờ bóng lăn hoặc tiếp tục cược trực tiếp qua từng pha scrum.",
+      "cricketDescription": "{{home}} đối đầu {{away}} trong {{competition}} vào {{date}} lúc {{time}}. Hãy sẵn sàng cho nhiều điểm chạy và hàng loạt wickets trong trận cricket này. Cược kết hợp cùng trận của Cloudbet cho phép bạn liên kết số run, wickets và boundaries trong cùng một cược. Đặt cược trước quả bóng đầu tiên hoặc tiếp tục cược trực tiếp từng over.",
+      "horseRacingDescription": "{{competition}} sẽ diễn ra vào {{date}} lúc {{time}}. Với những con ngựa hàng đầu tham gia, người hâm mộ có thể chờ đợi một cuộc đua căng thẳng tới vạch đích. Tại Cloudbet, bạn có thể đặt cược trực tiếp cho ngựa yêu thích hoặc tạo cược kết hợp tùy chỉnh qua nhiều cuộc đua để tăng phần hấp dẫn. Đặt cược trước khi cổng mở.",
+      "mmaDescription": "{{home}} và {{away}} đối đầu vào {{date}} lúc {{time}}, trực tiếp từ {{competition}}. Trận MMA này hứa hẹn nhiều pha kịch tính trong lồng thi đấu. Tại Cloudbet, bạn có thể tạo cược kết hợp cùng trận, liên kết số lần knockdown, cược hiệp và phương thức chiến thắng. Cược có thể đặt sớm hoặc theo dõi trực tiếp khi trận đấu diễn ra.",
+      "esports": {
+        "gameDescriptionTags": {
+          "lol": "tỷ lệ cược esport",
+          "cs2": "Cá cược esport CS2",
+          "dota2": "tỷ lệ cược",
+          "valorant": "Tỷ lệ cược Valorant",
+          "fifa": "Tỷ lệ cược esport FIFA"
+        },
+        "titleV2": "Cược {{home}} vs {{away}} – {{competition}} {{gameName}} {{gameDescriptionTag}}",
+        "lolDescription": "Cược vào trận giữa {{home}} vs {{away}} vào lúc {{time}} ngày {{date}} khi giải đấu {{competition}} bắt đầu, với tỷ lệ cược esport cạnh tranh trên Cloudbet. Trận đấu LoL này có đầy đủ các kèo tiền điện tử dành cho cá cược esport — bao gồm {{markets}}.",
+        "cs2Description": "Cược vào trận giữa {{home}} và {{away}} vào lúc {{time}} ngày {{date}} trong giải đấu {{competition}}. Đặt cược bằng tiền điện tử trên các thị trường CS2 bao gồm {{markets}} — hoàn hảo cho cá cược esport trực tiếp, chỉ có trên Cloudbet.",
+        "dota2Description": "Cược vào trận giữa {{home}} và {{away}} vào lúc {{time}} ngày {{date}} trong giải đấu Dota 2 {{competition}}. Thị trường tiền điện tử khả dụng trên {{markets}}. Đặt cược vào Dota 2 với phần thưởng tiền thực trên trang cá cược esport hàng đầu.",
+        "valorantDescription": "Cược vào trận giữa {{home}} và {{away}} vào lúc {{time}} ngày {{date}} trong giải đấu {{competition}}. Theo dõi diễn biến trận đấu và đặt cược Valorant của bạn bằng BTC, ETH hoặc USDT trên {{markets}} trong Valorant — chỉ có tại Cloudbet.",
+        "fifaDescription": "Cược vào trận giữa {{home}} và {{away}} vào lúc {{time}} ngày {{date}} trong giải đấu {{competition}}. Ủng hộ đội esport FIFA yêu thích của bạn với các kèo như {{markets}} — cá cược esport trực tuyến dễ dàng trên Cloudbet."
+      }
+    },
+    "nbaPromo": {
+      "title": "Mới cho NBA: Bet Builder và Hiệu suất Cầu thủ",
+      "body": "Đặt cùng cược xiên trò chơi với Bet Builder và kiểm tra hiệu suất cầu thủ mới để biết các cược hiệu suất."
+    },
+    "playerProps": {
+      "avgPer5Game": "Trung bình {{stats}} cho 5 trò chơi",
+      "avgInRegSeason": "{{stats}} trung bình trong mùa giải chính"
+    }
+  },
+  "common": {
+    "today": "Hôm nay",
+    "partial": "Bán phần",
+    "instantGames": "Trò chơi tức thì",
+    "inPlay": "Đang chơi",
+    "tomorrow": "Ngày mai",
+    "competitions": "Cuộc thi",
+    "highlights": "Điểm nổi bật",
+    "outrights": "Quyền chọn hoàn toàn",
+    "virtuals": "Virtual",
+    "liveStream": "Phát trực tiếp",
+    "events": "Sự kiện",
+    "games": "Trò chơi",
+    "nextToJump": "Lượt nhảy tiếp theo",
+    "noLimitBets": "Cược không giới hạn",
+    "virtualSoccer": "Bóng đá trực tuyến",
+    "virtualBasketball": "Bóng rổ trực tuyến",
+    "betsClosed": "Cược đã đóng",
+    "virtualsUpNext": "Virtual tiếp theo",
+    "simPlay": "Sim-Play",
+    "fullMatchup": "Toàn bộ trận đấu",
+    "browseNow": "Duyệt ngay",
+    "exploreSameGameParlays": "Explore same game parlays"
+  },
+  "betslip": {
+    "toReturn": "Hoàn trả: {{amount}}",
+    "toReturnTitle": "Hoàn trả",
+    "toReturnSubtitle": "{{stake}} để nhận {{payout}}",
+    "summary": {
+      "reuseSelections": "Tái sử dụng lựa chọn",
+      "acceptAndPlace": "Chấp nhận và đặt {{value}}",
+      "sameGameMultiPlaced": "Đã đặt Same Game Multi"
+    },
+    "parlay": {
+      "legs": "{{count}} leg"
+    },
+    "maxBet": {
+      "noLimit": "Tối đa mỗi lần cược: <0>{{currency}}{{stake}}</0>",
+      "nolimitTitle": "Tối đa cho mỗi lần cược:",
+      "default": "Cược tối đa: <0>{{currency}}{{stake}}</0>",
+      "defaultLocalized": "Cược tối đa: <0>{{value}}</0>",
+      "defaultTitle": "Cược tối đa:"
+    },
+    "errors": {
+      "maxBetIs": "Đặt cược tối đa là <0>{{currency}} {{stake}}</0>",
+      "minBetIs": "Đặt cược tối thiểu là <0>{{currency}} {{stake}}</0>",
+      "maxBet": "Cược tối đa",
+      "minBet": "Đặt cược tối thiểu"
+    },
+    "summeryErrors": {
+      "marketClosed": "Thị trường đã đóng",
+      "limitExceeds": "Vượt giới hạn",
+      "maxStakeReached": "Đã đạt số tiền cược tối đa",
+      "restricted": "Bị hạn chế",
+      "restrictedGeoBlocked": "Khu vực của bạn không được phép. Vui lòng tắt VPN và thử lại.",
+      "restrictedGeoBlockedShorten": "Khu vực không được phép",
+      "minStakeChanged": "Số tiền cược tối thiểu đã thay đổi",
+      "maxStakeChanged": "Số tiền cược tối đa đã thay đổi",
+      "unknownError": "Lỗi không xác định",
+      "suspended": "Tạm ngừng",
+      "unauthorized": "Không được cấp phép",
+      "stakeAboveMax": "Vui lòng giảm số tiền đặt cược của bạn.",
+      "stakeBelowMin": "Vui lòng tăng số tiền đặt cược của bạn.",
+      "priceAboveMarket": "Tỷ lệ cược đã thay đổi.",
+      "betPending": "Kết nối không ổn định. Kiểm tra \"Cược của tôi\" để biết trạng thái cược."
+    },
+    "betBuilderSummary": {
+      "errors": {
+        "priceAboveMarketDescription": "Hãy tạo lại cược của bạn",
+        "timedOutTitle": "Không tìm thấy cược",
+        "timedOutDescription": "Chúng tôi không thể tìm thấy cược này. Hãy kiểm tra \"Cược của tôi\" hoặc liên hệ với bộ phận hỗ trợ trước khi đặt cược lại.",
+        "unknownError": "Có gì đó không ổn",
+        "unknownErrorDescription": "Kiểm tra \"Cược của tôi\" hoặc liên hệ với bộ phận hỗ trợ trước khi đặt cược lại.",
+        "limitsExceeded": "Vượt giới hạn"
+      },
+      "actions": {
+        "clearSGP": "Xóa SGP",
+        "reviewChangesInBetslip": "Xem lại thay đổi trong phiếu cược"
+      }
+    },
+    "placeBet": "Đặt cược",
+    "placeParlay": "Đặt cược parlay {{amount}}",
+    "betBuilder": {
+      "placeBetValid": "Đặt SGP {{amount}}",
+      "placeBetSubmitting": "Đặt SGP {{amount}}",
+      "betBuilderItemMarketUnavailable": "Thị trường tạm thời bị đình chỉ. <0>Thử lại</0> hoặc <1>Xóa</1>",
+      "error": {
+        "parlayRestricted": "Các lựa chọn liên quan không thể kết hợp",
+        "marketSuspended": "Thị trường tạm thời ngừng hoạt động."
+      }
+    },
+    "warnings": {
+      "oddsHaveChanged": "Tỷ lệ cược đã thay đổi.",
+      "oddsHaveChangedAccept": "Tỷ lệ cược đã thay đổi. <0>Chấp nhận</0>",
+      "oddsHaveChangedToReturn": "Tỷ lệ cược đã thay đổi. Hoàn trả: {{payout}}",
+      "oddsHaveChangedToReturnTitle": "Tỷ lệ cược đã thay đổi. Hoàn trả:",
+      "marketIsSuspendedWaitOrRemove": "Thị trường tạm thời bị đình chỉ. Đợi hoặc <0>Xóa</0>",
+      "marketIsSuspendedWaitOrRemoveTitle": "Kèo tạm thời bị đình chỉ. Đợi hoặc Xóa...",
+      "marketIsClosedRemove": "Thị trường đã đóng. <0>Xóa</0>",
+      "selectionCorrelated": "Lựa chọn này có tương quan với lựa chọn khác. <0>Xóa</0>",
+      "parlayRestricted": "Lựa chọn này không thể được thực hiện. <0>Xóa</0>",
+      "dangerBall": "Một bàn thắng có thể sẽ được ghi. Cược của bạn có thể mất đến 5 phút để được chấp nhận."
+    },
+    "consent": {
+      "acceptAllChanges": "Chấp nhận mọi thay đổi"
+    },
+    "insufficientBalanceAlert": {
+      "title": "Bạn không có đủ tiền",
+      "description": "<0>Nạp tiền ngay</0> để tiếp tục đặt cược."
+    }
+  },
+  "inPlay": {
+    "seeAllSport": "Xem tất cả {{sport}}"
+  },
+  "betBuilder": {
+    "reviewBet": "Xem lại cược",
+    "title": "SGP"
+  },
+  "myBets": {
+    "noBets": "Không có cược khả dụng",
+    "checkOut": "Kiểm tra các trận đấu hôm nay hoặc các sự kiện sắp tới để tìm cơ hội cá cược tiếp theo của bạn.",
+    "viewBetHistory": "Xem lịch sử đặt cược",
+    "browseInplay": "Duyệt các sự kiện đang diễn ra",
+    "loadError": "Không thể tải cược này",
+    "id": "ID",
+    "viewAllSettledBetsInfo": "Xem tất cả các cược đã thanh toán trong lịch sử cược.",
+    "onlyLast72HoursBetsInfo": "Chỉ hiển thị 72 giờ cược gần nhất. Xem tất cả cược đã thanh toán trong lịch sử."
+  },
+  "scoreboard": {
+    "cricket": {
+      "gameOvers": "Over {{over}}",
+      "gameOversAndDeliveries": "Over {{over}}.{{delivery}}",
+      "gameTargetRunsAndBalls": "{{teamName}} cần {{runs}} từ {{balls}}",
+      "gameTrailByRuns": "{{teamName}} đang kém {{runs}}",
+      "gameLeadByRuns": "{{teamName}} đang hơn {{runs}}",
+      "gameTypeOneDay": "ODI",
+      "gameTypeT10": "T10",
+      "gameTypeT20": "T20",
+      "gameTypeTest": "Đối kháng",
+      "matchDay": "Ngày {{matchDay}}.",
+      "endOfMatchDay": "Kết thúc ngày {{matchDay}}.",
+      "wonDefault": "{{winner}} đã thắng",
+      "matchDrawn": "Trận hòa",
+      "wonByRuns": "{{winner}} thắng {{wonBy}} run",
+      "wonByRunsAndInning": "{{winner}} thắng một lượt chơi và {{wonBy}} run",
+      "wonByWickets": "{{winner}} thắng nhờ {{wonBy}} wicket"
+    },
+    "racing": {
+      "running": "Đang đua",
+      "runners": "Người đua",
+      "scratched": "Xuất phát",
+      "horseRacingWithdrawnDescription": "Một con ngựa đã bị rút khỏi cuộc đua do chấn thương, bệnh tật, điều kiện đường đua hoặc quyết định của huấn luyện viên. Tỷ lệ cược đã được điều chỉnh, và nếu bạn đã đặt cược, tiền thắng của bạn có thể bị giảm nhẹ. Cược vào con ngựa bị rút sẽ được hoàn lại.",
+      "greyhoundsWithdrawnDescription": "Một con chó đã bị rút khỏi cuộc đua do chấn thương, bệnh tật, điều kiện đường đua hoặc quyết định của huấn luyện viên. Tỷ lệ cược đã được điều chỉnh, và nếu bạn đã đặt cược, tiền thắng của bạn có thể bị giảm nhẹ. Cược vào con chó bị rút sẽ được hoàn lại.",
+      "age": "Tuổi:<0>{{age}}</0>",
+      "weightShorten": "Trọng lượng:<0>{{weight}}</0>lbs",
+      "formShorten": "Dáng:<0>{{form}}</0>",
+      "horseJockeyShorten": "Nài ngựa:<0>{{jockey}}</0>",
+      "horseTrainerShorten": "Huấn luyện viên:<0>{{trainer}}</0>"
+    },
+    "common": {
+      "liveScoresUnavailable": "Tỷ số trực tiếp không khả dụng"
+    }
+  },
+  "betHistory": {
+    "typeBet": "Cược",
+    "typeCashout": "Khoản tiền rút",
+    "typeSettlement": "Thanh toán",
+    "noBetHistory": "Lịch sử cược không khả dụng",
+    "hintV2": "'Lịch sử Cược' hiển thị chi tiết các cược đã được thanh toán, bao gồm kết quả trận đấu và kết quả cược. Để xem các cược đang hoạt động hoặc chờ xử lý, hãy vào phần {{link}}.",
+    "allBets": "Tất cả cược",
+    "singles": "Cược đơn",
+    "parlays": "Cược xiên",
+    "betBuilders": "Trình tạo cược",
+    "outrights": "Quyền chọn hoàn toàn"
+  },
+  "fightCenter": {
+    "rootTitle": "Trung tâm thi đấu",
+    "mainCard": "Thẻ chính",
+    "prelims": "Sơ khảo",
+    "taleOfTheTape": "Thông số của võ sĩ",
+    "fighterProfile": "Hồ sơ võ sĩ",
+    "height": "Chiều cao",
+    "weight": "Trọng lượng",
+    "armReach": "Tầm với tay",
+    "legReach": "Tầm với chân",
+    "winRate": "Tỷ lệ thắng",
+    "stats": "Thống kê",
+    "age": "Tuổi",
+    "record": "Lịch sử",
+    "byKo": "Theo KO",
+    "bySubmission": "Theo lượt thua",
+    "byDecision": "Theo điểm",
+    "koTko": "KO/TKO",
+    "submission": "SUB",
+    "decision": "DEC",
+    "next": "Sau",
+    "draw": "Hòa",
+    "streamIn": "Phát vào:",
+    "liveDefault": "Trực tiếp",
+    "officialGlobalSportsbook": "Sportsbook toàn cầu chính thức của",
+    "official": "Chính thức",
+    "globalSportsbook": "Sportsbook Toàn cầu",
+    "expertPicks": {
+      "viewExpertPicks": "Xem lựa chọn của chuyên gia",
+      "banner": {
+        "title": "Lựa chọn của chuyên gia",
+        "availableIn": "Khả dụng trong"
+      },
+      "picks": {
+        "mma.totals": "{{outcome}} {{value}} đợt",
+        "mma.winner": "{{outcome}} thắng",
+        "mma.winning_method": "{{outcome}} với {{value}}"
+      },
+      "genericError": {
+        "title": "Chúng tôi gặp phải vấn đề",
+        "description": "Có vẻ như có vấn đề xảy ra — chúng tôi đang sửa chữa và sẽ trở lại sớm."
+      }
+    }
+  },
+  "marketTitle": {
+    "cricket_winner": "Thắng trận đấu",
+    "cricket_over_team_total": "Trận đấu trên {{overNumber}} - tổng số lượt chạy - đội",
+    "cricket_player_total": "Số lần chạy của cầu thủ đánh bóng",
+    "cricket_player_to_score_milestone": "Cầu thủ đạt {{milestone}}",
+    "cricket_player_total_fours": "Tổng cú đánh 4 của cầu thủ",
+    "cricket_player_total_player_performance": "Hiệu suất của cầu thủ",
+    "cricket_team_total_fours": "Tổng cú đánh 4 của đội",
+    "cricket_team_total_sixes": "Tổng cú đánh 6 của đội",
+    "cricket_innings_over_x_team_total": "Lượt đấu {{inningsNumber}} trên {{overNumber}} - tổng số lượt chạy - đội",
+    "cricket_innings_overs_0_to_x_team_total": "Lượt đấu {{inningsNumber}} hơn 0 tới tổng số lượt chạy {{overNumber}} - đội",
+    "cricket_innings_player_total_deliveries_faced": "Tổng số bóng đối mặt của cầu thủ trong lượt đấu {{inningsNumber}}",
+    "cricket_team_total_from_0_over_to_x_over": "Trên 0 đến {{overNumber}} - tổng số lượt chạy - đội",
+    "cricket_team_total_in_highest_scoring_over": "Đội có số điểm cao nhất hơn",
+    "cricket_team_total_at_dismissal": "Tổng điểm đội khi bị loại lần {{dismissalNumber}}",
+    "cricket_innings_player_to_score_milestone": "Lượt đấu {{inningsNumber}} cầu thủ bất kỳ ghi {{milestone}} bàn thắng",
+    "cricket_test_match_player_total": "Tổng lượt đấu {{inningsNumber}} cầu thủ",
+    "cricket_innings_player_total_fours": "Tổng lượt đấu bốn của {{inningsNumber}} cầu thủ "
+  },
+  "metadataTitle": {
+    "soccer.total_goals": "Mục tiêu hiện tại: {{total}} <0>({{home}}-{{away}})</0>",
+    "soccer.team_total_goals_home": "Điểm hiện tại: {{home}}-<0>{{away}}</0>",
+    "soccer.team_total_goals_away": "Điểm hiện tại: <0>{{home}}</0>-{{away}}",
+    "soccer.total_corners": "Phạt góc hiện tại: <0>{{total}}</0>",
+    "tennis.total_games": "Tổng số trận hiện tại: {{total}}",
+    "tennis.total_games_in_set": "Tổng số trận hiện tại trong set {{setCount}}: {{total}} <0>({{gamesHome}}-{{gamesAway}})</0>"
+  },
+  "outcome": {
+    "draw": "Hòa"
+  },
+  "misc": {
+    "tennis": {
+      "surface": {
+        "hard": "cứng",
+        "clay": "đất sét ",
+        "grass": "cỏ",
+        "carpet": "thảm"
+      }
+    }
+  },
+  "positionBuilder": {
+    "cta": "Bắt đầu Position Builder",
+    "buildPosition": "Tạo vị thế",
+    "currentOdds": "Tỷ lệ cược hiện tại",
+    "decrementOdds": "Tỷ lệ cược giảm dần",
+    "incrementOdds": "Tỷ lệ cược tăng dần",
+    "inProgress": {
+      "averageOdds": "Tỷ lệ cược trung bình",
+      "filledAmount": "Số lượng đã khớp",
+      "minOdds": "Tỷ lệ cược tối thiểu",
+      "of": "của",
+      "remaining": "Còn lại",
+      "sheetFooter": {
+        "completedTitle": "Đã hoàn tất",
+        "executionStoppedTitle": "Thực thi đã dừng",
+        "marketClosedTitle": "Thị trường đã đóng",
+        "oddsBelowMinimumTitle": "Tỷ lệ cược dưới mức tối thiểu",
+        "failedTitle": "Không thể đặt cược",
+        "trackPosition": "Theo dõi vị thế trong <0>Cược của tôi</0>"
+      },
+      "stopRemaining": "Dừng lại",
+      "timeElapsed": "Thời gian đã qua",
+      "toReturn": "Hoàn trả"
+    },
+    "minOdds": "Tỷ lệ cược tối thiểu",
+    "needBiggerStake": "Bạn muốn cược nhiều hơn?",
+    "noLimitBetting": "Cá cược không giới hạn",
+    "stakeExceededDescription": "Mức cược vượt quá mức tối đa cho mỗi lần đặt cược trên thị trường này",
+    "status": {
+      "cancelled": "Đã dừng",
+      "completed": "Đã hoàn tất",
+      "failed": "Thất bại",
+      "failedMarketClosed": "Thị trường đã đóng",
+      "failedOddsUnderMin": "Tỷ lệ cược đã thay đổi",
+      "running": "Đang diễn ra"
+    }
+  },
+  "pulse": {
+    "sections": {
+      "playerLeaderboards": "Bảng xếp hạng người chơi",
+      "trendsAndFavorites": "Xu hướng & Yêu thích"
+    },
+    "columns": {
+      "player": "Cầu thủ",
+      "name": "Tên"
+    },
+    "footer": "Dữ liệu phản ánh các khoản đặt cược {{sportName}} đã được thanh toán trong khoảng thời gian {{dateRange}}. Tất cả đều tính theo USD tương đương. Chỉ hiển thị các hồ sơ công khai.",
+    "leaderboards": {
+      "sharpest": {
+        "title": "Người đặt cược giỏi nhất",
+        "subtitle": "ROI tốt nhất cho cược {{sportName}}"
+      },
+      "earners": {
+        "title": "Thu nhập cao nhất",
+        "subtitle": "Lợi nhuận {{sportName}} cao nhất trong {{year}}"
+      },
+      "parlayKings": {
+        "title": "Vua cược xiên",
+        "subtitle": "Dẫn đầu lợi nhuận cược xiên"
+      },
+      "livePros": {
+        "title": "Huyền thoại cá cược trực tiếp",
+        "subtitle": "Dẫn đầu lợi nhuận cược trong trận"
+      },
+      "uclMasters": {
+        "title": "Bậc thầy Champions League",
+        "subtitle": "Chuyên gia cá cược UCL"
+      },
+      "sgpWizards": {
+        "title": "Phù thủy SGP",
+        "subtitle": "Bậc thầy cược xiên cùng trận"
+      },
+      "crazyParlays": {
+        "title": "Thắng cược xiên đỉnh nhất",
+        "subtitle": "Đa chân ngoạn mục nhất"
+      },
+      "hotMatches": {
+        "title": "Trận đấu hấp dẫn nhất",
+        "subtitle": "Trận đấu {{sportName}} đặt cược nhiều nhất"
+      },
+      "backedTeams": {
+        "title": "Đội được ủng hộ nhiều nhất",
+        "subtitle": "Đội yêu thích nhất để cược"
+      },
+      "goalscorers": {
+        "title": "Cầu thủ ghi bàn được yêu thích nhất",
+        "subtitle": "Ngôi sao {{sportName}} được cược nhiều nhất"
+      },
+      "trendingLeagues": {
+        "title": "Giải đấu đang thịnh hành",
+        "subtitle": "Cuộc thi phổ biến nhất"
+      },
+      "backedPlayers": {
+        "title": "Cầu thủ được ủng hộ nhiều nhất",
+        "subtitle": "Cầu thủ được yêu thích nhất để cược"
+      },
+      "trendingTournaments": {
+        "title": "Giải đấu đang thịnh hành",
+        "subtitle": "Giải đấu phổ biến nhất"
+      },
+      "backedFighters": {
+        "title": "Võ sĩ được ủng hộ nhiều nhất",
+        "subtitle": "Võ sĩ được yêu thích nhất để cược"
+      },
+      "trendingPromotions": {
+        "title": "Khuyến mãi đang thịnh hành",
+        "subtitle": "Khuyến mãi MMA phổ biến nhất"
+      }
+    },
+    "bettingTrends": {
+      "title": "NBA Betting Trends",
+      "teamColumnLabel": "Đội",
+      "tables": {
+        "winLoss": {
+          "title": "Straight Up Leaders",
+          "subtitle": "The league's most dominant teams by pure winning percentage.",
+          "recordLabel": "W-L",
+          "percentageLabel": "Win %"
+        },
+        "ats": {
+          "title": "Spread Kings",
+          "subtitle": "Teams currently outperforming their projected point spreads.",
+          "recordLabel": "ATS Record",
+          "percentageLabel": "Cover %"
+        },
+        "over": {
+          "title": "Pace Setters",
+          "subtitle": "High-octane offenses and loose defenses that consistently beat the total.",
+          "recordLabel": "Over Record",
+          "percentageLabel": "Over %"
+        },
+        "under": {
+          "title": "Lockdown Units",
+          "subtitle": "Defensive-minded teams that keep scoring low and stay under the line.",
+          "recordLabel": "Under Record",
+          "percentageLabel": "Under %"
+        }
+      }
+    },
+    "statLabels": {
+      "roi": "ROI",
+      "profit": "Lợi nhuận",
+      "bets": "Đặt cược",
+      "liveProfit": "Lợi nhuận trực tiếp",
+      "uclProfit": "Lợi nhuận UCL",
+      "sgpProfit": "Lợi nhuận SGP",
+      "multiplier": "Hệ số nhân",
+      "payout": "Thanh toán",
+      "totalWagered": "Tổng cược",
+      "betsPlaced": "Cược đã đặt",
+      "turnover": "Doanh thu",
+      "goalscorerBets": "Cược người ghi bàn",
+      "totalBets": "Tổng cược",
+      "volume": "Khối lượng"
+    },
+    "brandTitle": "Cloudbet Pulse",
+    "inlineCardTitle": "Pulse: Thu nhập cao nhất",
+    "heroCta": "{{sportName}} — Xem người chiến thắng",
+    "ctaSidebar": "Cloudbet Pulse →",
+    "ctaSport": "{{sportName}} Pulse →",
+    "navBadgeRoi": "ROI"
+  },
+  "featuredPlayers": {
+    "title": "Featured Players",
+    "all": "Tất cả"
+  }
+}

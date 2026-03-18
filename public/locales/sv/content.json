@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Få belöningar:",
+      "subtitle": "<0>Äkta kontanter</0> från dag 1",
+      "body": "Så här fungerar ditt välkomstpaket på 30 dagar från Cloudbet:",
+      "card1Title": "Sätt in",
+      "card1Body": "Allt börjar med din första insättning – den aktiverar äkta belöningar från dag 1.",
+      "card2Title": "Spela & hämta",
+      "card2Body": "Tjäna rakeback och dagliga reloads i casinot, plus reloads varje vecka i sport.",
+      "card3Title": "Lås upp kontantvalvet",
+      "card3Body": "Dag 30 kommer din största belöning – och sedan väntar Cloudbet Rewards.",
+      "signUpButton": "Starta mitt välkomstpaket"
+    },
+    "perks": {
+      "title": "De flesta sajterna gör det krångligt för dig.<br/><0>Vi gör det enkelt.</0>",
+      "body": "Du spelar för kontanter från första insatsen. Inga krediter. Inga fejkpengar. Äkta kontanter som du kan ta ut eller spela med direkt.",
+      "signUpButton": "Gå med i Cloudbet nu",
+      "compare1": {
+        "title": "Andra sajter",
+        "list1": "Låsta bonusar, kontanter du aldrig kommer se",
+        "list2": "Absurda omsättningskrav",
+        "list3": "Engångsbonus",
+        "list4": "Kampanjen slutar efter registreringen"
+      },
+      "compare2": {
+        "list1": "Äkta kontantbelöningar – upp till 2 500 USD totalt",
+        "list1b": "(motsvarar ca {{amount}})",
+        "list2": "Inga fällor, inga villkor",
+        "list3": "10% rakeback + dagliga casino cash drops från dag 1",
+        "list4": "Kontantvalv med omedelbar utbetalning dag 30 (eller när det maximeras)"
+      },
+      "first30Days": {
+        "title": "<0>Dina första 30 dagar</0> ser ut så här:",
+        "list1": "<0>Dagliga casino-cash drops:</0> Spela idag, få äkta kontanter i morgon.",
+        "list2": "<0>Casino rakeback:</0> 10 % av husets fördel tillbaka på varje spel – en del betalas ut direkt till din plånbok, resten låses upp dagligen i din belöningskalender.",
+        "list3": "<0>Veckovisa sports-cash drops:</0> Kontanter låses upp direkt varje fredag.",
+        "list4": "<0>Kontantvalvet:</0> En kontantbelöning som växer när du spelar och låses upp dag 30.",
+        "body": "Spelare kan låsa upp upp till 2 500 USD i reloads och casino rakeback – innan valvet ens öppnas."
+      }
+    },
+    "rewards": {
+      "title": "Dag 31 är då det blir <0>riktigt bra</0>",
+      "body": "Efter ditt välkomstpaket går du vidare till <0>Cloudbet Rewards</0> – ett av nätets mest generösa lojalitetsprogram.",
+      "card1Title": "Turbo-boostad rakeback",
+      "card1Body": "Få upp till 25 % boostad rakeback på varje casinospel när du spelar med TURBO.",
+      "card2Title": "Cashbelöningar när du levlar upp",
+      "card2Body": "Få kontanter direkt varje gång du levlar upp – från Silver till Blue Diamond och alla nivåer däremellan.",
+      "card3Title": "Blue Diamond-utdelning",
+      "card3Body": "Ta dig igenom Blue Diamond-nivån och lås upp belöningar vid varje delnivå värda upp till 9,97 miljoner USD.",
+      "morePerksTitle": "Plus ännu fler förmåner",
+      "morePerksBody": "Fortsätt njuta av alla casino- och sport-cash drops från Cloudbets välkomstpaket."
+    },
+    "faq": {
+      "title": "Vanliga frågor om välkomstpaketet",
+      "q1": "Ingår valvet i de 2 500 USD?",
+      "a1": "Nej. Valvet ligger ovanpå dina dagliga belöningar.",
+      "q2": "Måste jag anmäla mig?",
+      "a2": "Nej. Det aktiveras automatiskt vid din första insättning.",
+      "q3": "Vad händer om jag inte uppnår 2 500 USD inom 30 dagar?",
+      "a3": "Du behåller allt du hämtat och fortsätter till Cloudbet Rewards.",
+      "q4": "Kan jag göra om det?",
+      "a4": "Nej, det är ett engångspaket – men Cloudbet Rewards fortsätter betala ut.",
+      "q5": "Hur länge varar välkomstpaketet?",
+      "a5": "Välkomstpaketet gäller i 30 dagar från tidpunkten för din första insättning, eller tills du når taket på 2 500 USD – beroende på vilket som inträffar först.",
+      "q6": "När får jag min rakeback?",
+      "a6": "En del hamnar direkt i din plånbok. Resten låses upp dagligen i din belöningskalender, så det finns alltid nya pengar som väntar."
+    },
+    "cta": {
+      "title": "Vänta inte på belöningar som aldrig kommer.",
+      "subtitle": "Få <0>äkta kontanter</0> från din första insats."
+    }
+  }
+}

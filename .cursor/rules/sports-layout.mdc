@@ -1,0 +1,126 @@
+---
+description: Grid and layout rules for sports competition cards, market headers, odds buttons, and matchup wrappers. Source of truth derived from Valhalla.
+globs:
+  - "components/blocks/competition-card.tsx"
+  - "components/blocks/competition-*.tsx"
+  - "components/blocks/matchup-*.tsx"
+  - "components/blocks/odds-*.tsx"
+  - "components/blocks/market-*.tsx"
+---
+
+# Sports Layout System
+
+All sports card layouts use a **2-column CSS grid** that keeps competitors
+and market data aligned across the market header and every event row.
+
+## Shared grid (MarketHeader + EventRow)
+
+```
+grid grid-cols-2 gap-x-3 pl-1.5
+```
+
+| Column | Content | Key classes |
+|--------|---------|-------------|
+| Col 1 | Competitors / CTA | `col-span-1`, competitors wrap in `max-w-xs w-full flex flex-col gap-y-1` |
+| Col 2 | Market data / Outcome headers | `col-span-1 flex gap-x-1 text-center items-center` |
+
+## MarketHeader (MarketHeaderV2)
+
+- Background: gradient using `color-mix(in oklch, var(--color-cb-surface-3) …)`
+- Borders: `0.5px solid color-mix(in oklch, var(--color-cb-surface-3) 50%, transparent)` top and bottom
+- Height: `min-h-8`
+- Col 2 outcome labels: `flex-1 flex w-full items-center justify-center truncate`, text `text-[11px] font-medium`
+- Market switcher (when >1 group): pill button with `border-2 border-cb-border rounded-full text-xs font-medium`
+
+## EventRow (MatchupWrapper)
+
+Structure inside the grid:
+
+```
+<div class="relative cursor-pointer group">
+  <!-- absolute hover state layer -->
+  <div class="flex flex-col p-2 gap-y-2 relative">
+    <div class="grid grid-cols-2 gap-x-3 pl-1.5">
+      <!-- col-1: competitors -->
+      <!-- col-2: odds -->
+    </div>
+    <!-- status row below the grid -->
+  </div>
+</div>
+```
+
+- Hover: absolute gradient layer `linear-gradient(to right, surface-4, surface-3, surface-2)`
+- Divider between events: `GradientDivider` — `h-0.5` gradient from transparent → cb-border → transparent
+
+## Market data column (OddsListContainer)
+
+The outer container for odds inside col-2:
+
+```
+flex-1 flex justify-center gap-x-1
+```
+
+Each individual button wrapper:
+
+```
+w-full flex-1 flex justify-center
+```
+
+## OddsButton (OddsButtonV3 / OddsButtonUI)
+
+Sizing and shape:
+
+```
+w-full h-full min-h-11 rounded-xl border
+py-1 px-0.5
+```
+
+States:
+- Default: `border-transparent`
+- Selected: `border-cb-primary`
+- Hover: `bg-cb-primary/[0.08]`
+- Active: `bg-cb-primary/[0.16]`
+- Suspended: Lock icon `size-[18px] text-cb-foreground-disabled`
+- Closed (post-match): empty `min-h-11` div — **no icon, no text**
+
+Inner layout:
+
+```
+mx-auto → flex flex-col items-center justify-center font-medium gap-x-1
+```
+
+Odds value: `h-7 p-0.5 relative flex items-center justify-center` with text `text-sm font-medium text-cb-accent`
+
+### OddsButton label rule
+
+**Never repeat in the button what the market header already shows.**
+
+- The `label` prop on `OddsButton` is for line text that is *not* shown in the header (e.g. handicap lines like "-4.5", totals like "O/U 221.5").
+- When the market header already shows outcome labels (1 / X / 2, Over / Under, 1 / 2), omit `label` from the button entirely — the odds value alone is sufficient.
+- Market header outcome labels for head-to-head markets: always use **"1" / "2"** (not "Home" / "Away", not team abbreviations).
+
+## MarketSwitcher button
+
+Default state: `border-transparent` (no visible border). Hover: `border-cb-border`. Open: `border-cb-primary/60 bg-cb-primary/[0.08]`.
+
+## CompetitorRow
+
+```
+flex items-center gap-x-3
+```
+
+- Icon: `size-5 rounded-full bg-cb-surface-4`
+- Name: `text-xs font-bold truncate text-cb-foreground`
+- Score: `text-xs font-bold text-cb-foreground tabular-nums`
+- Winner indicator: SVG polygon `w-1.5 h-2`
+- Loser dim: `opacity-40`
+
+## Card container
+
+```
+rounded-[var(--cb-radius-lg)] bg-cb-surface-2 overflow-hidden
+```
+
+Header: `flex items-center gap-x-3 p-2.5`
+Collapse toggle: `size-8 rounded-xl` with `bg-cb-surface-1` (open) / `bg-cb-surface-3` (closed)
+Hover/active: `hover:bg-cb-foreground-muted/[0.08] active:bg-cb-foreground-muted/[0.16]`

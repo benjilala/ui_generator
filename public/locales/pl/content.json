@@ -1,0 +1,74 @@
+{
+  "welcome_package": {
+    "intro": {
+      "title": "Zdobywaj nagrody:",
+      "subtitle": "<0>Prawdziwa gotówka</0> od pierwszego dnia",
+      "body": "Oto jak dokładnie działa Twój 30-dniowy Pakiet powitalny w Cloudbet:",
+      "card1Title": "Wpłać",
+      "card1Body": "Wszystko zaczyna się od Twojej pierwszej wpłaty, która aktywuje prawdziwe nagrody od pierwszego dnia.",
+      "card2Title": "Postaw i odbierz",
+      "card2Body": "Zdobywaj zwrot prowizji i codzienne doładowania w kasynie, a także cotygodniowe doładowania w grach sportowych.",
+      "card3Title": "Odblokuj Skarbiec z gotówką",
+      "card3Body": "W dniu 30 otrzymasz największą nagrodę — a potem od razu przechodzisz do Nagród Cloudbet.",
+      "signUpButton": "Rozpocznij mój Pakiet powitalny"
+    },
+    "perks": {
+      "title": "Wiele stron internetowych utrudnia Ci życie.<br/><0>My je ułatwiamy.</0>",
+      "body": "Od pierwszego zakładu grasz o gotówkę. Nie o kredyty. Nie o żadne waluty. O prawdziwe pieniądze, które natychmiast możesz wypłacić lub nadal obstawiać.",
+      "signUpButton": "Dołącz do Cloudbet teraz",
+      "compare1": {
+        "title": "Inne witryny",
+        "list1": "Zablokowane bonusy lub gotówka, których nigdy nie zobaczysz",
+        "list2": "Surowe wymagania stawki",
+        "list3": "Jednorazowy bonus",
+        "list4": "Promocja kończy się po rejestracji"
+      },
+      "compare2": {
+        "list1": "Prawdziwe nagrody pieniężne — aż do 2500 $",
+        "list1b": "(równowartość ok. {{amount}})",
+        "list2": "Bez żadnych pułapek czy drobnego druku",
+        "list3": "10% zwrotu prowizji + codzienne nagrody pieniężne w kasynie od pierwszego dnia",
+        "list4": "Natychmiastowa wypłata całej gotówki ze Skarbca w 30. dniu (lub po osiągnięciu maksymalnego poziomu)"
+      },
+      "first30Days": {
+        "title": "Twoje <0>pierwsze 30 dni</0> wyglądają tak:",
+        "list1": "<0>Codzienne nagrody pieniężne w kasynie:</0> obstaw dzisiaj, odbierz prawdziwą gotówkę jutro.",
+        "list2": "<0>Zwrot prowizji w kasynie:</0> 10% przewagi kasyna z każdego zakładu — część trafia do Twojego portfela natychmiast, a reszta jest odblokowywana codziennie w Kalendarzu nagród.",
+        "list3": "<0>Cotygodniowe nagrody pieniężne w sporcie:</0> natychmiastowe odblokowywanie gotówki w każdy piątek.",
+        "list4": "<0>Skarbiec gotówki:</0> nagroda pieniężna, która rośnie wraz z Twoją grą i odblokowuje się 30. dnia.",
+        "body": "Gracze mogą odblokować do 2500 $ w postaci doładowań i zwrotu prowizji kasyna — jeszcze przed otwarciem Skarbca."
+      }
+    },
+    "rewards": {
+      "title": "31. dnia robi się <0>naprawdę ciekawie</0>",
+      "body": "Po otrzymaniu Pakietu powitalnego przejdziesz do <0>Nagród Cloudbet</0> – najhojniejszego programu lojalnościowego online.",
+      "card1Title": "Zwrot prowizji z turbowzmocnieniem",
+      "card1Body": "Zdobądź nawet o 25% większy zwrot prowizji za każdy zakład w kasynie, grając w trybie TURBO.",
+      "card2Title": "Nagrody gotówkowe za awans",
+      "card2Body": "Otrzymuj natychmiastową gotówkę za każdym razem, gdy osiągniesz poziom od Srebrnego do Niebieskiego diamentu i każdego pomiędzy.",
+      "card3Title": "Niebieski diament przynosi szczęście",
+      "card3Body": "Zdobywaj kolejne stopnie Niebieskiego diamentu i zdobywaj nagrody warte nawet 9,97 miliona dolarów.",
+      "morePerksTitle": "Plus jeszcze więcej korzyści",
+      "morePerksBody": "Korzystaj ze wszystkich nagród pieniężnych w kasynie i sporcie, które tak Ci się spodobały w Pakiecie powitalnym Cloudbet."
+    },
+    "faq": {
+      "title": "Często zadawane pytania o Pakiet powitalny",
+      "q1": "Czy kwota 2500 $ obejmuje też Skarbiec?",
+      "a1": "Nie, Skarbiec jest dodatkiem do codziennych nagród.",
+      "q2": "Czy muszę się gdzieś zarejestrować?",
+      "a2": "Nie, pierwsza wpłata aktywuje go automatycznie.",
+      "q3": "Co się stanie, jeśli nie zdobędę 2500 $ w ciągu 30 dni?",
+      "a3": "Zachowujesz wszystkie odebrane nagrody i przechodzisz do programu Nagrody Cloudbet.",
+      "q4": "Czy mogę to zrobić ponownie?",
+      "a4": "Nie, to jednorazowy pakiet, ale Nagrody Cloudbet są wypłacane regularnie.",
+      "q5": "Jak długo trwa Pakiet powitalny?",
+      "a5": "Pakiet powitalny jest ważny przez 30 dni od momentu dokonania pierwszej wpłaty lub do momentu osiągnięcia limitu 2500 $ – w zależności od tego, co nastąpi wcześniej.",
+      "q6": "Kiedy mogę otrzymać swój zwrot prowizji?",
+      "a6": "Część od razu trafia do Twojego portfela. Reszta odblokowuje się codziennie w Kalendarzu nagród, więc zawsze czeka na Ciebie nowa gotówka."
+    },
+    "cta": {
+      "title": "Nie odkładaj nagród na później.",
+      "subtitle": "Zdobądź <0>prawdziwą gotówkę</0> już od pierwszego zakładu."
+    }
+  }
+}
