@@ -162,6 +162,7 @@ import { SparklesText } from "@/components/ui/sparkles-text"
 
 // Blocks
 import { CasinoCategoryNav } from "@/components/blocks/casino-category-nav"
+import { SidebarNav } from "@/components/blocks/sidebar-nav"
 import { CompetitionCard, CompetitionCardSkeleton } from "@/components/blocks/competition-card"
 import type { SportEvent as CompetitionEvent, MarketGroup as CompetitionMarketGroup } from "@/components/blocks/competition-card"
 
@@ -385,7 +386,7 @@ export default function UICheatSheetPage() {
   }, [])
 
   React.useEffect(() => {
-    const sectionIds = ["competition-card", "casino-category-slider", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations", "themes", "casino-icons"]
+    const sectionIds = ["competition-card", "casino-category-slider", "sidebar-nav", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations", "themes", "casino-icons"]
     let observers: IntersectionObserver[] = []
 
     // Two rAF frames: first lets Next.js finish any internal scroll work,
@@ -449,6 +450,7 @@ export default function UICheatSheetPage() {
                 items: [
                   { id: "competition-card", label: "Competition Card" },
                   { id: "casino-category-slider", label: "Casino Category Slider" },
+                  { id: "sidebar-nav", label: "Sidebar Nav" },
                 ],
               },
               {
@@ -886,6 +888,27 @@ export default function UICheatSheetPage() {
               <div className="flex flex-col gap-16">
                 <SubSection title="Default state">
                   <CasinoCategoryNav />
+                </SubSection>
+              </div>
+            </Section>
+
+            {/* ── BLOCKS: Sidebar Nav ───────────────────────────────── */}
+            <Section
+              id="sidebar-nav"
+              title="Sidebar Nav"
+              subtitle="Valhalla-aligned sector sidebar — full-height column, fixed header + single overflow scroll (subtle scrollbar on hover); tabbing swaps body content; tokens per design.md"
+              usage={<>
+                <p><span className="font-mono text-cb-foreground">SidebarNav</span> mirrors production <span className="font-mono text-cb-foreground">useRootNavbarItems</span>: each sector has its own nav body (here: sports list vs esports titles vs casino categories). Active quick link resets to the first item when you change sector.</p>
+                <p>Quick links use primary tint + Purple 50 when active; scroll rows use chrome dots. Tokens: <span className="font-mono text-cb-foreground">lib/tokens/cloudbet.ts</span>, <span className="font-mono text-cb-foreground">styles/design-system.css</span>; see <span className="font-mono text-cb-foreground">design.md</span>.</p>
+              </>}
+            >
+              <div className="flex flex-col gap-8">
+                <SubSection title="Default (viewport-height shell, Valhalla-style scroll)">
+                  <div
+                    className="rounded-tl-none rounded-bl-none rounded-tr-[var(--cb-radius-md)] rounded-br-[var(--cb-radius-md)] overflow-hidden shadow-sm w-[280px] max-w-full h-[1080px]"
+                  >
+                    <SidebarNav className="max-w-none h-full border-0 border-r-0" />
+                  </div>
                 </SubSection>
               </div>
             </Section>

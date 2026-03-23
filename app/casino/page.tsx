@@ -1,5 +1,6 @@
 import { LabNav } from "@/components/patterns/LabNav"
 import { CasinoLobby } from "@/components/casino/CasinoLobby"
+import { CasinoAppShell } from "@/components/casino/CasinoAppShell"
 
 export const metadata = {
   title: "Casino Lobby — Cloudbet UI Lab",
@@ -8,11 +9,11 @@ export const metadata = {
 
 export default function CasinoPage() {
   return (
-    <div className="min-h-screen bg-cb-surface-1">
-      <LabNav />
-      <main className="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
+    <div className="flex min-h-screen flex-col bg-cb-surface-1">
+      <LabNav className="sticky top-0 z-40 shrink-0" />
+      <CasinoAppShell>
         <CasinoLobby />
-      </main>
+      </CasinoAppShell>
     </div>
   )
 }

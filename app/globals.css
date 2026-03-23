@@ -79,6 +79,42 @@ textarea, input, select, div, span, button, a {
       display: none;
     }
   }
+
+  /* Valhalla-style sidebar: thumb hidden until hover (DesktopNavigationBarV2) */
+  .scrollbar-subtle-hover {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  .scrollbar-subtle-hover::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .scrollbar-subtle-hover::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-subtle-hover::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+  }
+  .scrollbar-subtle-hover:hover {
+    scrollbar-color: oklch(0.88 0 0 / 20%) transparent;
+  }
+  .scrollbar-subtle-hover:hover::-webkit-scrollbar-thumb {
+    background: oklch(0.88 0 0 / 20%);
+  }
+  .scrollbar-subtle-hover:hover::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.88 0 0 / 35%);
+  }
+
+  @media (pointer: coarse) and (-webkit-min-device-pixel-ratio: 0) {
+    .scrollbar-subtle-hover::-webkit-scrollbar {
+      -webkit-appearance: none;
+      display: none;
+    }
+    .scrollbar-subtle-hover {
+      scrollbar-width: none;
+    }
+  }
 }
 
 /* ─────────────────────────────────────────────
