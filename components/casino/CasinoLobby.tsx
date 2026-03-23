@@ -4,7 +4,10 @@ import * as React from "react"
 import { useState, useMemo } from "react"
 import { cn } from "@/lib/utils"
 import { HeroCarousel } from "./HeroCarousel"
-import { CategoryChipBar } from "./CategoryChipBar"
+import {
+  CasinoCategoryNav,
+  type CategoryId,
+} from "@/components/blocks/casino-category-nav"
 import { HotColdSection } from "./HotColdSection"
 import { WinFeedRow } from "./WinFeedRow"
 import { FeaturedGamesCarousel } from "./FeaturedGamesCarousel"
@@ -13,6 +16,7 @@ import { ProviderFilterBar } from "@/components/cloudbet/ProviderFilterBar"
 import { StudioRail } from "@/components/cloudbet/StudioRail"
 import { FeedSectionShell } from "@/components/cloudbet/FeedSectionShell"
 import { SectionHeader } from "@/components/patterns/SectionHeader"
+import type { Game } from "@/lib/mocks"
 import {
   MOCK_GAMES,
   MOCK_FEATURED_GAMES,
@@ -21,6 +25,41 @@ import {
   MOCK_BET_FEED,
   MOCK_WIN_FEED,
 } from "@/lib/mocks"
+
+const JACKPOT_GAME_IDS = new Set(["g8", "g22", "g23"])
+
+function filterGamesByNavCategory(games: Game[], id: CategoryId): Game[] {
+  switch (id) {
+    case "for-you":
+      return games
+    case "live-dealer":
+      return games.filter((g) => g.isLive)
+    case "slots":
+      return games.filter((g) => !g.isLive)
+    case "table-games":
+      return games.filter((g) => g.provider === "Evolution" && !g.isLive)
+    case "jackpot-slots":
+      return games.filter((g) => JACKPOT_GAME_IDS.has(g.id))
+    case "blackjack":
+      return games.filter((g) => /blackjack/i.test(g.title))
+    case "roulette":
+      return games.filter((g) => /roulette/i.test(g.title))
+    case "baccarat":
+      return games.filter((g) => /baccarat/i.test(g.title))
+    case "game-shows":
+      return games.filter((g) =>
+        /crazy time|monopoly live|dream catcher/i.test(g.title)
+      )
+    case "crash":
+      return games.filter((g) => /crash/i.test(g.title))
+    case "aviator":
+      return games.filter((g) => /aviator/i.test(g.title))
+    case "video-poker":
+      return games.filter((g) => /video\s*poker/i.test(g.title))
+    default:
+      return games
+  }
+}
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -38,23 +77,12 @@ function SeeAllLink({ href = "#" }: { href?: string }) {
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export function CasinoLobby() {
-  const [activeCategory, setActiveCategory] = useState("all")
+  const [categoryNavId, setCategoryNavId] = useState<CategoryId>("for-you")
   const [searchValue, setSearchValue] = useState("")
   const [selectedProvider, setSelectedProvider] = useState("all")
 
   const filteredGames = useMemo(() => {
-    let games = MOCK_GAMES
-
-    if (activeCategory !== "all") {
-      games = games.filter((g) => {
-        if (activeCategory === "live")     return g.isLive
-        if (activeCategory === "new")      return g.isNew
-        if (activeCategory === "jackpots") return ["g8", "g22", "g23"].includes(g.id)
-        if (activeCategory === "table")    return g.provider === "Evolution" && !g.isLive
-        if (activeCategory === "slots")    return !g.isLive
-        return true
-      })
-    }
+    let games = filterGamesByNavCategory(MOCK_GAMES, categoryNavId)
 
     if (searchValue) {
       const q = searchValue.toLowerCase()
@@ -71,11 +99,11 @@ export function CasinoLobby() {
     }
 
     return games
-  }, [activeCategory, searchValue, selectedProvider])
+  }, [categoryNavId, searchValue, selectedProvider])
 
   const popularGames = useMemo(
-    () => MOCK_GAMES.filter((g) => (g.playerCount ?? 0) > 400).slice(0, 10),
-    []
+    () => filteredGames.filter((g) => (g.playerCount ?? 0) > 400).slice(0, 10),
+    [filteredGames]
   )
 
   return (
@@ -84,8 +112,11 @@ export function CasinoLobby() {
       {/* 1. HeroCarousel */}
       <HeroCarousel />
 
-      {/* 2. CategoryChipBar */}
-      <CategoryChipBar value={activeCategory} onValueChange={setActiveCategory} />
+      <CasinoCategoryNav
+        variant="lobby"
+        value={categoryNavId}
+        onCategoryChange={setCategoryNavId}
+      />
 
       {/* 3. SearchFilterBar */}
       <ProviderFilterBar

@@ -84,34 +84,46 @@ const CATEGORIES = [
   },
 ] as const
 
-type CategoryId = (typeof CATEGORIES)[number]["id"]
+export type CategoryId = (typeof CATEGORIES)[number]["id"]
 
 // ─── Block ────────────────────────────────────────────────────────────────────
 
 interface CasinoCategoryNavProps {
   defaultActive?: CategoryId
+  /** Controlled active category (when set, overrides internal state). */
+  value?: CategoryId
   onCategoryChange?: (id: CategoryId) => void
+  /** `lobby` drops the large bottom margin used on the /ui gallery demo. */
+  variant?: "gallery" | "lobby"
   className?: string
 }
 
 export function CasinoCategoryNav({
   defaultActive = "for-you",
+  value,
   onCategoryChange,
+  variant = "gallery",
   className,
 }: CasinoCategoryNavProps) {
-  const [active, setActive] = React.useState<CategoryId>(defaultActive)
+  const [internal, setInternal] = React.useState<CategoryId>(defaultActive)
+  const active = value ?? internal
 
   function handleSelect(id: CategoryId) {
-    setActive(id)
+    if (value === undefined) setInternal(id)
     onCategoryChange?.(id)
   }
+
+  const listClassName =
+    variant === "lobby"
+      ? "flex gap-[9px] pb-2 px-0.5"
+      : "flex gap-[9px] pb-2 px-0.5 mb-[84px]"
 
   return (
     <ScrollArea className={className}>
       <div
         role="tablist"
         aria-label="Casino categories"
-        className="flex gap-[9px] pb-2 px-0.5 mb-[84px]"
+        className={listClassName}
       >
         {CATEGORIES.map((cat) => (
           <CasinoCategoryTab
