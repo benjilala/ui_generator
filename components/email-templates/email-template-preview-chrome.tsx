@@ -16,7 +16,7 @@ export function EmailTemplatePreviewFrame({
   return (
     <div className="flex justify-center overflow-x-auto px-2 pb-10 pt-4">
       <motion.div
-        className="@container shrink-0 overflow-hidden rounded-lg border border-cb-border bg-transparent"
+        className="@container shrink-0 overflow-hidden rounded-lg border border-cb-border bg-cb-surface-2/30 shadow-inner"
         initial={false}
         animate={{
           width: frameWidth,

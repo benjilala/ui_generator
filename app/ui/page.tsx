@@ -351,107 +351,6 @@ function Swatch({
   )
 }
 
-/** Reference hex from `styles/design-system.css` (.dark / CDS) comments; swatches use live CSS variables. */
-function PaletteSwatch({
-  token,
-  hex,
-  className,
-  style,
-}: {
-  token: string
-  hex: string
-  className?: string
-  style?: React.CSSProperties
-}) {
-  return (
-    <div className="flex flex-col items-center gap-1 text-center">
-      <div
-        className={cn(
-          "size-9 shrink-0 rounded-[var(--cb-radius-sm)] border border-cb-border shadow-sm",
-          className,
-        )}
-        style={style}
-      />
-      <span className="font-mono text-[9px] leading-none tracking-tight text-cb-foreground">
-        {hex}
-      </span>
-      <span className="max-w-[4.5rem] truncate font-mono text-[8px] leading-tight text-cb-foreground-muted">
-        {token}
-      </span>
-    </div>
-  )
-}
-
-const COLOUR_PALETTE_GROUPS: {
-  title: string
-  note?: string
-  swatches: { token: string; hex: string; className?: string; style?: React.CSSProperties }[]
-}[] = [
-  {
-    title: "Surfaces",
-    note: "Elevation scale (dark CDS)",
-    swatches: [
-      { token: "background-base", hex: "#141114", style: { backgroundColor: "var(--cb-background-base)" } },
-      { token: "surface-0", hex: "#1A161D", className: "bg-cb-surface-0" },
-      { token: "surface-1", hex: "#211C25", className: "bg-cb-surface-1" },
-      { token: "surface-2", hex: "#26202B", className: "bg-cb-surface-2" },
-      { token: "surface-3", hex: "#2C2532", className: "bg-cb-surface-3" },
-      { token: "surface-4", hex: "#32293A", className: "bg-cb-surface-4" },
-      { token: "surface-5", hex: "#382E40", className: "bg-cb-surface-5" },
-      { token: "surface-6", hex: "#323B46", className: "bg-cb-surface-6" },
-    ],
-  },
-  {
-    title: "Brand",
-    swatches: [
-      { token: "primary", hex: "#8346D4", className: "bg-cb-primary" },
-      { token: "primary-fg", hex: "#F8F2FF", className: "bg-cb-primary-fg" },
-      { token: "purple-50", hex: "#A067EB", className: "bg-cb-purple-50" },
-      { token: "accent", hex: "#DFFD51", className: "bg-cb-accent" },
-      { token: "accent-fg", hex: "#000000", className: "bg-cb-accent-fg" },
-    ],
-  },
-  {
-    title: "Text",
-    swatches: [
-      { token: "foreground", hex: "#E0E0E0", className: "bg-cb-foreground" },
-      { token: "foreground-2", hex: "#C4C4C4", className: "bg-cb-foreground-2" },
-      { token: "foreground-3", hex: "#A6A6A6", className: "bg-cb-foreground-3" },
-      { token: "foreground-muted", hex: "#8F8F8F", className: "bg-cb-foreground-muted" },
-      { token: "foreground-disabled", hex: "#696969", className: "bg-cb-foreground-disabled" },
-    ],
-  },
-  {
-    title: "Semantic",
-    swatches: [
-      { token: "info", hex: "#6981FA", className: "bg-cb-info" },
-      { token: "info-fg", hex: "#1B2036", className: "bg-cb-info-fg" },
-      { token: "success", hex: "#55A370", className: "bg-cb-success" },
-      { token: "success-fg", hex: "#1E2420", className: "bg-cb-success-fg" },
-      { token: "error", hex: "#E35F5D", className: "bg-cb-error" },
-      { token: "error-fg", hex: "#381A19", className: "bg-cb-error-fg" },
-      { token: "warning", hex: "#B28809", className: "bg-cb-warning" },
-      { token: "warning-fg", hex: "#292210", className: "bg-cb-warning-fg" },
-    ],
-  },
-  {
-    title: "Betting & market",
-    swatches: [
-      { token: "odds-up", hex: "#55A370", className: "bg-cb-odds-up" },
-      { token: "odds-down", hex: "#E35F5D", className: "bg-cb-odds-down" },
-      { token: "live", hex: "#DFFD51", className: "bg-cb-live" },
-      { token: "market-suspended", hex: "#C9A038", className: "bg-cb-market-suspended" },
-    ],
-  },
-  {
-    title: "Casino",
-    swatches: [
-      { token: "jackpot", hex: "#F8A631", className: "bg-cb-jackpot" },
-      { token: "featured", hex: "#FD2A7F", className: "bg-cb-featured" },
-    ],
-  },
-]
-
 // ─── Chart mock data ──────────────────────────────────────────────────────────
 
 const BET_VOLUME_DATA = [
@@ -568,7 +467,7 @@ export default function UICheatSheetPage() {
   }, [])
 
   React.useEffect(() => {
-    const sectionIds = ["competition-card", "casino-category-slider", "sidebar-nav", "app-bar-header", "foundations", "colour-palette", "primitives", "cloudbet", "states", "extended", "charts", "animations", "themes", "casino-icons"]
+    const sectionIds = ["competition-card", "casino-category-slider", "sidebar-nav", "app-bar-header", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations", "themes", "casino-icons"]
     let observers: IntersectionObserver[] = []
 
     // Two rAF frames: first lets Next.js finish any internal scroll work,
@@ -640,7 +539,6 @@ export default function UICheatSheetPage() {
                 group: "Components",
                 items: [
                   { id: "foundations", label: "Foundations" },
-                  { id: "colour-palette", label: "Colour palette" },
                   { id: "primitives", label: "Primitives" },
                   { id: "cloudbet", label: "Cloudbet" },
                   { id: "states", label: "States" },
@@ -1267,34 +1165,6 @@ export default function UICheatSheetPage() {
                   </div>
                 </SubSection>
 
-              </div>
-            </Section>
-
-            {/* ── Colour palette (after foundations) ─────────────────── */}
-            <Section
-              id="colour-palette"
-              title="Colour palette"
-              subtitle="Production dark (CDS) reference hex from design-system.css; tiles use live theme tokens"
-            >
-              <div className="flex flex-col gap-8">
-                {COLOUR_PALETTE_GROUPS.map((group) => (
-                  <SubSection key={group.title} title={group.title}>
-                    {group.note ? (
-                      <p className="mb-3 text-[10px] text-cb-foreground-muted">{group.note}</p>
-                    ) : null}
-                    <div className="flex flex-wrap gap-x-4 gap-y-5">
-                      {group.swatches.map((s) => (
-                        <PaletteSwatch
-                          key={s.token}
-                          token={s.token}
-                          hex={s.hex}
-                          className={s.className}
-                          style={s.style}
-                        />
-                      ))}
-                    </div>
-                  </SubSection>
-                ))}
               </div>
             </Section>
 
