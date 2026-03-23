@@ -217,15 +217,15 @@ export function SidebarNav({
           <Image
             src="/cloudbet-sidebar-mark.png"
             alt=""
-            width={40}
-            height={24}
-            className="shrink-0 h-6 w-10 object-contain"
+            width={55}
+            height={33}
+            className="h-[33px] w-[55px] shrink-0 object-contain"
             aria-hidden
           />
         </div>
 
         <div
-          className="flex flex-wrap items-center gap-[var(--cb-space-4)]"
+          className="flex w-full flex-wrap items-center justify-between gap-[var(--cb-space-4)]"
           role="tablist"
           aria-label="Product area"
         >
@@ -243,8 +243,8 @@ export function SidebarNav({
                 onClick={() => handleTab(tab)}
                 className={cn(
                   rowTransition,
-                  "rounded-full",
-                  "px-[var(--cb-space-12)] py-[var(--cb-space-8)] text-sm font-medium capitalize",
+                  "inline-flex items-center justify-center rounded-full",
+                  "px-4 py-1 text-sm font-medium capitalize leading-[18px]",
                   focusRing,
                   "active:scale-[0.98]",
                   activeTab === tab

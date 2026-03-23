@@ -38,6 +38,14 @@ const LEFT_AREAS = [
 
 const RIGHT_AREAS = [
   {
+    href: "/email-templates",
+    title: "Email templates",
+    description:
+      "Casino game-recommendation email layout (Customer.io–style): tier badge, AI rec cards, stats bar, loyalty nudge, and CTA — with lab light/dark theming.",
+    status: "in-progress" as const,
+    tags: ["Email", "Casino", "GameRecs"],
+  },
+  {
     href: "/sportsbook",
     title: "Sportsbook",
     description:
@@ -52,14 +60,6 @@ const RIGHT_AREAS = [
       "Tier progression, exclusive offer surfaces, personal account management, and cashback dashboard. Validates the loyalty and retention pattern system.",
     status: "placeholder" as const,
     tags: ["TierCard", "ProgressMeter", "CashbackWidget"],
-  },
-  {
-    href: "/experiments",
-    title: "Experiments",
-    description:
-      "Sandbox for emerging patterns — Magic Markets concepts, prediction market UI, and novel interaction models not yet in production.",
-    status: "placeholder" as const,
-    tags: ["MagicMarkets", "PredictionCard", "OddsBoard"],
   },
 ]
 
@@ -383,37 +383,26 @@ export const metadata = {
 export default function LabIndexPage() {
   return (
     <div className="min-h-screen bg-cb-surface-1 flex flex-col">
-      {/* ── Header ── */}
-      <header className="border-b border-cb-border bg-cb-surface-1">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10">
-          {/* Logo row */}
-          <div className="flex items-center gap-4 mb-4">
-            {/* Cloudbet logo */}
-            <ThemeLogo className="h-5 w-auto" />
-            <div className="h-5 w-px bg-cb-border" aria-hidden />
-            <span className="text-base font-bold text-cb-foreground tracking-wide uppercase">
-              UI Lab
-            </span>
-            <span className="text-[10px] text-cb-foreground-disabled uppercase tracking-wider">
-              v0.1
-            </span>
-            <div className="ml-auto">
-              <ThemeSwitcher />
-            </div>
+      <header className="sticky top-0 z-40 border-b border-cb-border bg-cb-surface-0/90 backdrop-blur-sm">
+        <div className="flex h-12 w-full items-center gap-4 px-4 sm:px-6 lg:px-8">
+          <ThemeLogo className="h-5 w-auto" />
+          <div className="h-5 w-px bg-cb-border" aria-hidden />
+          <span className="text-sm font-semibold text-cb-foreground">UI Lab</span>
+          <span className="text-[10px] text-cb-foreground-disabled uppercase tracking-wider">
+            v0.1
+          </span>
+          <div className="ml-auto flex items-center gap-3">
+            <ThemeSwitcher />
           </div>
-
-          {/* Intro paragraph */}
-          <p className="text-base text-cb-foreground-muted w-full leading-relaxed py-9 box-content">
-            A machine-readable UI system for Cloudbet. Use it today to prototype and validate product
-            UI. This evolves into agent-driven screen generation — and extends further into a system
-            where AI generates entire product feature flows with less human bottleneck over time.
-          </p>
-
         </div>
       </header>
 
-      {/* ── Main ── */}
       <main className="flex-1 mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10 flex flex-col gap-12">
+        <p className="text-base text-cb-foreground-muted w-full leading-relaxed -mt-2 pt-2">
+          A machine-readable UI system for Cloudbet. Use it today to prototype and validate product
+          UI. This evolves into agent-driven screen generation — and extends further into a system
+          where AI generates entire product feature flows with less human bottleneck over time.
+        </p>
 
         {/* ── Section 1 — Product UI Prototypes ── */}
         <section>

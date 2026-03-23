@@ -56,7 +56,7 @@ export default function GeneratedPage() {
     <div className="min-h-screen bg-cb-surface-1 flex flex-col">
       {/* Sticky header */}
       <header className="sticky top-0 z-40 border-b border-cb-border bg-cb-surface-0/90 backdrop-blur-sm">
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-12 flex items-center gap-4">
+        <div className="flex h-12 w-full items-center gap-4 px-4 sm:px-6 lg:px-8">
           <Link
             href="/"
             className="flex items-center gap-1.5 text-xs text-cb-foreground-muted hover:text-cb-foreground transition-colors"

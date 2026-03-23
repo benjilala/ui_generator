@@ -2,11 +2,13 @@
 
 import * as React from "react"
 import Link from "next/link"
+import { cn } from "@/lib/utils"
 import {
   ArrowLeft,
   Check,
   ChevronDown,
   ChevronRight,
+  Copy,
   Info,
   Loader2,
   Star,
@@ -14,6 +16,7 @@ import {
   TrendingUp,
   Zap,
 } from "lucide-react"
+import { toast } from "sonner"
 import {
   Area,
   AreaChart,
@@ -161,6 +164,7 @@ import { BorderBeam } from "@/components/ui/border-beam"
 import { SparklesText } from "@/components/ui/sparkles-text"
 
 // Blocks
+import { AppBarHeader } from "@/components/blocks/app-bar-header"
 import { CasinoCategoryNav } from "@/components/blocks/casino-category-nav"
 import { SidebarNav } from "@/components/blocks/sidebar-nav"
 import { CompetitionCard, CompetitionCardSkeleton } from "@/components/blocks/competition-card"
@@ -190,6 +194,41 @@ import {
   MOCK_WIN_FEED,
 } from "@/lib/mocks"
 
+const UI_LAB_DESIGN_CONTEXT = `## Design system (required)
+
+Apply Cloudbet UI tokens and patterns from:
+
+- \`design.md\` — product and component conventions
+- \`styles/design-system.css\` — CSS variables (surfaces, borders, typography, motion, themes)
+- \`lib/tokens/cloudbet.ts\` — token helpers mapped to Tailwind-style classes
+
+Reuse shadcn/ui primitives under \`components/ui/\` where they already exist in this repo.`
+
+function buildUiBlockCopyPayload(p: {
+  id: string
+  title: string
+  subtitle?: string
+  usageMarkdown: string
+  sourcePaths?: string[]
+}): string {
+  const files =
+    p.sourcePaths?.map((path) => `- \`${path}\``).join("\n") ?? ""
+  return `# UI lab block: ${p.title}
+
+**Anchor id:** \`${p.id}\`
+${p.subtitle ? `**Summary:** ${p.subtitle}\n` : ""}
+## Usage / implementation notes
+
+${p.usageMarkdown.trim()}
+
+${files ? `## Primary source files\n\n${files}\n` : ""}
+${UI_LAB_DESIGN_CONTEXT}
+
+---
+_Paste this whole message as a prompt to implement or restyle this block consistently with the lab, \`design.md\`, and design tokens._
+`
+}
+
 // ─── Section wrapper ──────────────────────────────────────────────────────────
 
 function Section({
@@ -197,19 +236,61 @@ function Section({
   title,
   subtitle,
   usage,
+  usageMarkdown,
+  sourcePaths,
+  sectionClassName,
+  headingBarClassName,
   children,
 }: {
   id: string
   title: string
   subtitle?: string
   usage?: React.ReactNode
+  /** Markdown mirror of usage; drives the Copy prompt (clipboard). */
+  usageMarkdown?: string
+  /** Repo paths to the main component file(s) for this block. */
+  sourcePaths?: string[]
+  sectionClassName?: string
+  headingBarClassName?: string
   children: React.ReactNode
 }) {
+  async function handleCopyPrompt() {
+    if (!usageMarkdown) return
+    const text = buildUiBlockCopyPayload({
+      id,
+      title,
+      subtitle,
+      usageMarkdown,
+      sourcePaths,
+    })
+    try {
+      await navigator.clipboard.writeText(text)
+      toast.success("Copied block prompt")
+    } catch {
+      toast.error("Could not copy to clipboard")
+    }
+  }
+
   return (
-    <section id={id} className="scroll-mt-20">
-      <div className="mb-5 pb-3 border-b border-cb-border">
+    <section id={id} className={cn("scroll-mt-20", sectionClassName)}>
+      <div
+        className={cn("mb-5 pb-3 border-b border-cb-border", headingBarClassName)}
+      >
         <div className="flex items-center gap-2 mb-2">
           <h2 className="text-xl font-bold text-cb-foreground tracking-tight">{title}</h2>
+          {usage && usageMarkdown && (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              className="h-7 gap-1.5 px-2.5 text-xs font-medium border-cb-border text-cb-foreground-muted hover:text-cb-foreground"
+              onClick={() => void handleCopyPrompt()}
+              aria-label={`Copy AI prompt for ${title}`}
+            >
+              <Copy className="size-3.5" />
+              Copy
+            </Button>
+          )}
           {usage && (
             <Popover>
               <PopoverTrigger asChild>
@@ -386,7 +467,7 @@ export default function UICheatSheetPage() {
   }, [])
 
   React.useEffect(() => {
-    const sectionIds = ["competition-card", "casino-category-slider", "sidebar-nav", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations", "themes", "casino-icons"]
+    const sectionIds = ["competition-card", "casino-category-slider", "sidebar-nav", "app-bar-header", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations", "themes", "casino-icons"]
     let observers: IntersectionObserver[] = []
 
     // Two rAF frames: first lets Next.js finish any internal scroll work,
@@ -419,7 +500,7 @@ export default function UICheatSheetPage() {
       <div className="min-h-screen bg-cb-surface-1">
         {/* Sticky header */}
         <header className="sticky top-0 z-40 border-b border-cb-border bg-cb-surface-0/90 backdrop-blur-sm">
-          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-12 flex items-center gap-4">
+          <div className="flex h-12 w-full items-center gap-4 px-4 sm:px-6 lg:px-8">
             <Link
               href="/"
               className="flex items-center gap-1.5 text-xs text-cb-foreground-muted hover:text-cb-foreground transition-colors"
@@ -451,6 +532,7 @@ export default function UICheatSheetPage() {
                   { id: "competition-card", label: "Competition Card" },
                   { id: "casino-category-slider", label: "Casino Category Slider" },
                   { id: "sidebar-nav", label: "Sidebar Nav" },
+                  { id: "app-bar-header", label: "App Bar Header" },
                 ],
               },
               {
@@ -506,6 +588,11 @@ export default function UICheatSheetPage() {
               id="competition-card"
               title="Competition Card"
               subtitle="Collapsible sports competition card — matches Valhalla CompetitionCardV2 with CollapsibleV3 header, MarketHeaderV2, MatchupWrapper event rows, OddsButtonV3, and EventStatusRow"
+              sourcePaths={["components/blocks/competition-card.tsx"]}
+              usageMarkdown={`- \`CompetitionCard\` — matches Valhalla \`CollapsibleV3\` + \`CardWithSwitcher\`. Pass \`marketGroups\` to drive the \`MarketHeaderV2\`-style header with chevron dropdown switcher.
+- Each event's \`markets[groupIndex]\` maps to the active market group. Odds buttons match \`OddsButtonV3\`: \`isSelected\` → primary border; \`suspended\` → lock icon; \`closed\` → slash icon; \`trend\` → flash animation.
+- Competitor rows: team icon, name, score, winner polygon; loser \`opacity-40\` when \`matchResult\` is set. Event tags: \`live-stream\`, \`bet-builder\`, \`virtual\`, \`simulated\`.
+- \`CompetitionCardSkeleton\` — pulse skeleton matching \`CompetitionCardV2Skeleton\`; props \`eventCount\`, \`marketCount\`.`}
               usage={<>
                 <p><span className="font-mono text-cb-foreground">CompetitionCard</span> — matches Valhalla <span className="font-mono text-cb-foreground">CollapsibleV3 + CardWithSwitcher</span>. Pass <span className="font-mono text-cb-foreground">marketGroups</span> to drive the <span className="font-mono text-cb-foreground">MarketHeaderV2</span>-style header with chevron dropdown switcher.</p>
                 <p>Each event&apos;s <span className="font-mono text-cb-foreground">markets[groupIndex]</span> array maps to the active market group. Odds buttons match <span className="font-mono text-cb-foreground">OddsButtonV3</span>: <span className="font-mono text-cb-foreground">isSelected</span> → primary border, <span className="font-mono text-cb-foreground">suspended</span> → lock icon, <span className="font-mono text-cb-foreground">closed</span> → slash icon, <span className="font-mono text-cb-foreground">trend</span> → flash animation.</p>
@@ -879,6 +966,10 @@ export default function UICheatSheetPage() {
               id="casino-category-slider"
               title="Casino Category Slider"
               subtitle="Horizontally scrollable category chip bar — matches Valhalla LobbyGameCategoriesChipList"
+              sourcePaths={["components/blocks/casino-category-nav.tsx"]}
+              usageMarkdown={`- \`CasinoCategoryNav\` — orchestrates state and renders the horizontally scrollable chip bar.
+- \`CasinoCategoryTab\` — chip with hover overlay, press scale, icon scale, and live badge pulse (Valhalla-style).
+- Active tab: primary-tinted border and background overlay; scroll to reveal all categories.`}
               usage={<>
                 <p><span className="font-mono text-cb-foreground">CasinoCategoryNav</span> — orchestrates state and renders the scrollable chip bar.</p>
                 <p><span className="font-mono text-cb-foreground">CasinoCategoryTab</span> — individual chip button with hover overlay, press scale, icon scale, and live badge pulse matching Valhalla interaction patterns.</p>
@@ -897,6 +988,10 @@ export default function UICheatSheetPage() {
               id="sidebar-nav"
               title="Sidebar Nav"
               subtitle="Valhalla-aligned sector sidebar — full-height column, fixed header + single overflow scroll (subtle scrollbar on hover); tabbing swaps body content; tokens per design.md"
+              sourcePaths={["components/blocks/sidebar-nav.tsx", "lib/tokens/cloudbet.ts"]}
+              usageMarkdown={`- \`SidebarNav\` mirrors production \`useRootNavbarItems\`: each sector (sports / casino / esports) has its own nav body. Changing sector resets the active quick link to the first item.
+- Quick links: primary tint + Purple 50 when active; category list rows use colored chrome dots per item.
+- Layout: fixed header (logo + sector tabs) + one scrollable panel; subtle scrollbar on hover.`}
               usage={<>
                 <p><span className="font-mono text-cb-foreground">SidebarNav</span> mirrors production <span className="font-mono text-cb-foreground">useRootNavbarItems</span>: each sector has its own nav body (here: sports list vs esports titles vs casino categories). Active quick link resets to the first item when you change sector.</p>
                 <p>Quick links use primary tint + Purple 50 when active; scroll rows use chrome dots. Tokens: <span className="font-mono text-cb-foreground">lib/tokens/cloudbet.ts</span>, <span className="font-mono text-cb-foreground">styles/design-system.css</span>; see <span className="font-mono text-cb-foreground">design.md</span>.</p>
@@ -913,11 +1008,42 @@ export default function UICheatSheetPage() {
               </div>
             </Section>
 
+            {/* ── BLOCKS: App Bar Header ─────────────────────────────── */}
+            <Section
+              id="app-bar-header"
+              title="App Bar Header"
+              subtitle="Top app bar — logo, search, wallet / auth; Valhalla-style signed-out vs signed-in"
+              sourcePaths={["components/blocks/app-bar-header.tsx"]}
+              usageMarkdown={`- \`AppBarHeader\` — prop \`variant="signed-out" | "signed-in"\`; optional \`matchContentBackground\` to align bar surface with scrolling main column (\`bg-cb-surface-1\`).
+- Signed-in: balance pill (\`DropdownMenu\`), **Add funds** (primary), chat with orange notification dot, Rewards row, profile \`Avatar\` + menu.
+- Signed-out: **Sign in** (secondary) + **Join** (primary).
+- Built with shadcn \`Button\`, \`DropdownMenu\`, \`Avatar\`, \`Tooltip\`, Lucide icons.`}
+              usage={<>
+                <p><span className="font-mono text-cb-foreground">AppBarHeader</span> — <span className="font-mono">variant=&quot;signed-out&quot; | &quot;signed-in&quot;</span>.</p>
+                <p>Built with <span className="font-mono text-cb-foreground">Button</span> (CDS lime primary for Join / Add funds), <span className="font-mono text-cb-foreground">DropdownMenu</span> (balance + profile), <span className="font-mono text-cb-foreground">Avatar</span>, <span className="font-mono text-cb-foreground">Tooltip</span>, Lucide icons. Chat uses a notification dot on the trigger.</p>
+              </>}
+            >
+              <div className="flex flex-col gap-10">
+                <SubSection title="Signed out">
+                  <div className="overflow-hidden rounded-[var(--cb-radius-md)] border border-cb-border bg-cb-surface-1 shadow-sm">
+                    <AppBarHeader variant="signed-out" />
+                  </div>
+                </SubSection>
+                <SubSection title="Signed in">
+                  <div className="overflow-hidden rounded-[var(--cb-radius-md)] border border-cb-border bg-cb-surface-1 shadow-sm">
+                    <AppBarHeader variant="signed-in" />
+                  </div>
+                </SubSection>
+              </div>
+            </Section>
+
             {/* ── 1. FOUNDATIONS ─────────────────────────────────────── */}
             <Section
               id="foundations"
               title="1. Foundations"
               subtitle="Core tokens: surfaces, color, type, spacing, radius, motion"
+              sectionClassName="border-0 border-none border-transparent pt-6"
+              headingBarClassName="border-0 border-b border-b-[rgb(44,37,50)]"
             >
               <div className="flex flex-col gap-8">
 
