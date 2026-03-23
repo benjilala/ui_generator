@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Image from "next/image"
 import type { LucideIcon } from "lucide-react"
 import {
   Activity,
@@ -212,46 +213,15 @@ export function SidebarNav({
           bg
         )}
       >
-        <div className={cn("flex items-center gap-[var(--cb-space-4)]", iconColor.default)}>
-          <svg
-            width="40"
-            height="24"
-            viewBox="0 0 40 24"
-            fill="none"
+        <div className="flex items-center gap-[var(--cb-space-4)]">
+          <Image
+            src="/cloudbet-sidebar-mark.png"
+            alt=""
+            width={40}
+            height={24}
+            className="shrink-0 h-6 w-10 object-contain"
             aria-hidden
-            className="shrink-0"
-          >
-            <path
-              d="M2 4c2 8 4 12 6 16"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <path
-              d="M7 4c2 8 4 12 6 16"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <path
-              d="M12 4c2 8 4 12 6 16"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <path
-              d="M22 4c-2 8-4 12-6 16"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-            <path
-              d="M27 4c-2 8-4 12-6 16"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-            />
-          </svg>
+          />
         </div>
 
         <div
