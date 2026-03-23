@@ -126,9 +126,9 @@ export function EmailTemplatesShell() {
         <div className="flex shrink-0 items-center gap-2 pr-2 sm:pr-3">
           <Button
             type="button"
-            variant="outline"
+            variant="default"
             size="sm"
-            className="whitespace-nowrap"
+            className="whitespace-nowrap bg-primary text-primary-foreground hover:bg-primary/90"
             onClick={handleExportHtml}
           >
             Export HTML
