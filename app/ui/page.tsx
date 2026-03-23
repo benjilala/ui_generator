@@ -183,6 +183,7 @@ import { FeedSectionShell } from "@/components/cloudbet/FeedSectionShell"
 import { SectionHeader } from "@/components/patterns/SectionHeader"
 
 import { OddsButton, OddsButtonStyles } from "@/components/cloudbet/OddsButton"
+import { useTheme } from "@/components/providers/ThemeProvider"
 import { ThemeSwitcher } from "@/components/ui/theme-switcher"
 
 // Mock data
@@ -454,6 +455,7 @@ function SliderDemo() {
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function UICheatSheetPage() {
+  const { resetToProductionTheme } = useTheme()
   const [searchValue, setSearchValue] = React.useState("")
   const [selectedProvider, setSelectedProvider] = React.useState("all")
   const [progress, setProgress] = React.useState(62)
@@ -2397,6 +2399,25 @@ export default function UICheatSheetPage() {
               subtitle="Active themes — Cloudbet Dark and Clean Slate Light"
             >
               <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-3 max-w-xl">
+                  <p className="text-xs text-cb-foreground-muted">
+                    If localhost looks different from production (e.g. gold instead of purple on active chips or tabs), the browser may have{" "}
+                    <span className="font-mono text-cb-foreground">cb-ui-theme</span> or{" "}
+                    <span className="font-mono text-cb-foreground">cb-ui-theme-overrides</span> in local storage from the Theme Editor. Reset clears those and applies Cloudbet dark tokens like a first visit on Vercel.
+                  </p>
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    className="w-fit"
+                    onClick={() => {
+                      resetToProductionTheme()
+                      toast.success("Reset to production theme")
+                    }}
+                  >
+                    Reset to production theme
+                  </Button>
+                </div>
                 <div className="grid gap-6 sm:grid-cols-2">
 
                   {/* Cloudbet Dark */}

@@ -55,6 +55,8 @@ interface ThemeContextValue {
   overrides: ThemeOverrides
   setOverrides: (overrides: ThemeOverrides) => void
   resetOverrides: () => void
+  /** Clears saved theme + overrides and applies Cloudbet (matches Vercel first visit). */
+  resetToProductionTheme: () => void
 }
 
 const ThemeContext = React.createContext<ThemeContextValue>({
@@ -63,6 +65,7 @@ const ThemeContext = React.createContext<ThemeContextValue>({
   overrides: {},
   setOverrides: () => {},
   resetOverrides: () => {},
+  resetToProductionTheme: () => {},
 })
 
 export function useTheme() {
@@ -73,12 +76,17 @@ const STORAGE_KEY = "cb-ui-theme"
 const OVERRIDES_KEY = "cb-ui-theme-overrides"
 
 const OVERRIDE_VAR_MAP: Record<keyof ThemeOverrides, string[]> = {
-  primary: ["--primary", "--ring", "--cb-primary", "--cb-icon-primary"],
+  primary: ["--primary", "--ring", "--cb-primary"],
   accent: ["--accent", "--cb-accent"],
   fontSans: ["--font-sans"],
   fontMono: ["--font-mono"],
   radius: ["--radius"],
 }
+
+const OVERRIDE_VARS_ALL: string[] = [
+  ...new Set(Object.values(OVERRIDE_VAR_MAP).flat()),
+  "--cb-icon-primary",
+]
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = React.useState<ThemeId>("cloudbet")
@@ -120,8 +128,26 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     clearOverrides()
   }
 
+  function resetToProductionTheme() {
+    localStorage.removeItem(STORAGE_KEY)
+    localStorage.removeItem(OVERRIDES_KEY)
+    clearOverrides()
+    applyTheme("cloudbet")
+    setThemeState("cloudbet")
+    setOverridesState({})
+  }
+
   return (
-    <ThemeContext.Provider value={{ theme, setTheme, overrides, setOverrides, resetOverrides }}>
+    <ThemeContext.Provider
+      value={{
+        theme,
+        setTheme,
+        overrides,
+        setOverrides,
+        resetOverrides,
+        resetToProductionTheme,
+      }}
+    >
       {children}
     </ThemeContext.Provider>
   )
@@ -176,9 +202,7 @@ function ensureGoogleFont(familyCss: string) {
 
 function clearOverrides() {
   const html = document.documentElement
-  for (const vars of Object.values(OVERRIDE_VAR_MAP)) {
-    for (const v of vars) {
-      html.style.removeProperty(v)
-    }
+  for (const v of OVERRIDE_VARS_ALL) {
+    html.style.removeProperty(v)
   }
 }
