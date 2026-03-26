@@ -153,7 +153,7 @@ function PromoSlideCard({ slide }: { slide: PromoSlide }) {
 
         <Button
           size="sm"
-          className="w-fit mt-1 bg-cb-primary hover:bg-cb-primary/90 text-white font-medium"
+          className="w-fit mt-1 bg-cb-brand-purple hover:bg-cb-brand-purple/90 text-cb-brand-purple-fg font-medium"
           onClick={slide.onCta}
           asChild={!!slide.ctaHref}
         >

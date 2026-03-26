@@ -39,7 +39,7 @@ export function RadiusSlider({ value, onChange }: RadiusSliderProps) {
               <div
                 className={cn(
                   "size-8 border-2 transition-all",
-                  isActive ? "border-cb-primary bg-cb-primary/20" : "border-cb-border bg-cb-surface-3",
+                  isActive ? "border-cb-brand-purple bg-cb-brand-purple/20" : "border-cb-border bg-cb-surface-3",
                 )}
                 style={{ borderRadius: preset.value === "9999px" ? "9999px" : preset.value }}
               />

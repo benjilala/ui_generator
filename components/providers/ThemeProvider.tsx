@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-export type ThemeId = "cloudbet" | "lilac-dark" | "lilac-light" | "clean-slate-light"
+export type ThemeId = "cloudbet" | "clean-slate-light"
 
 export interface Theme {
   id: ThemeId
@@ -20,23 +20,10 @@ export const THEMES: Theme[] = [
     swatches: ["oklch(0.236 0.018 310)", "oklch(0.542 0.207 299)", "oklch(0.942 0.192 119)"],
   },
   {
-    id: "lilac-dark",
-    label: "Lilac Dark",
-    description: "Warm plum surfaces, soft violet primary",
-    swatches: ["#1e1916", "#c1aaff", "#4b3e5b"],
-  },
-  {
-    id: "lilac-light",
-    label: "Lilac Light",
-    description: "Lavender surfaces, soft violet primary",
-    swatches: ["#f8f3fa", "#a78bfb", "#f5e5f7"],
-    isLight: true,
-  },
-  {
     id: "clean-slate-light",
     label: "Clean Slate Light",
-    description: "White surfaces, indigo primary",
-    swatches: ["oklch(0.98 0 0)", "oklch(0.59 0.20 277.06)", "oklch(0.93 0.03 273.66)"],
+    description: "White surfaces — primary #E1E7FD, accent / buttons #8346D4",
+    swatches: ["oklch(0.98 0 0)", "#E1E7FD", "#8346D4"],
     isLight: true,
   },
 ]
@@ -94,9 +81,16 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   React.useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as ThemeId | null
-    if (stored && THEMES.find((t) => t.id === stored)) {
-      applyTheme(stored)
-      setThemeState(stored)
+    if (stored) {
+      const valid = THEMES.some((t) => t.id === stored)
+      if (valid) {
+        applyTheme(stored)
+        setThemeState(stored)
+      } else {
+        localStorage.removeItem(STORAGE_KEY)
+        applyTheme("cloudbet")
+        setThemeState("cloudbet")
+      }
     }
 
     const storedOverrides = localStorage.getItem(OVERRIDES_KEY)
@@ -155,17 +149,12 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
 function applyTheme(id: ThemeId) {
   const html = document.documentElement
-  const themeConfig = THEMES.find((t) => t.id === id)
-
   if (id === "cloudbet") {
     html.removeAttribute("data-theme")
     html.classList.add("dark")
-  } else if (themeConfig?.isLight) {
-    html.setAttribute("data-theme", id)
-    html.classList.remove("dark")
   } else {
     html.setAttribute("data-theme", id)
-    html.classList.add("dark")
+    html.classList.remove("dark")
   }
 }
 

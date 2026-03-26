@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils"
  *
  * States:
  *   default   — border-transparent
- *   selected  — border-cb-primary
+ *   selected  — border-cb-brand-purple
  *   suspended — lock icon, no button interaction
  *   closed    — blank space (no icon)
  *   trend up  — value text-cb-success
@@ -84,9 +84,9 @@ export function OddsButton({
           "w-full h-full min-h-11 rounded-xl border",
           "py-1 px-0.5",
           "transition-colors duration-300 ease-in-out select-none cursor-pointer",
-          "hover:bg-cb-primary/[0.08] active:bg-cb-primary/[0.16]",
-          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-primary focus-visible:ring-offset-1 focus-visible:ring-offset-cb-surface-2",
-          selected ? "border-cb-primary" : "border-transparent",
+          "hover:bg-cb-brand-purple/[0.08] active:bg-cb-brand-purple/[0.16]",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-brand-purple focus-visible:ring-offset-1 focus-visible:ring-offset-cb-surface-2",
+          selected ? "border-cb-brand-purple" : "border-transparent",
           disabled && "pointer-events-none opacity-40",
         )}
         {...props}

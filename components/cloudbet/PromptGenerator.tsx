@@ -62,7 +62,7 @@ export function PromptGenerator({ onGenerate, className }: PromptGeneratorProps)
       {/* Heading */}
       <div className="flex items-center gap-2 mb-4">
         <div className="flex size-7 items-center justify-center rounded-[var(--cb-radius-md)] bg-cb-primary/15 border border-cb-primary/20">
-          <Sparkles className="size-3.5 text-cb-primary" aria-hidden />
+          <Sparkles className="size-3.5 text-cb-purple-50" aria-hidden />
         </div>
         <div>
           <h2 className="text-sm font-bold text-cb-foreground leading-tight">Generate UI from Prompt</h2>

@@ -1,7 +1,8 @@
 'use client'
 
 import * as React from 'react'
-import { LabNav } from '@/components/patterns/LabNav'
+import { Monitor, SlidersHorizontal, Smartphone } from 'lucide-react'
+import { LabPageHeader } from '@/components/patterns/lab-page-header'
 import { ThemeSwitcher } from '@/components/ui/theme-switcher'
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group'
 import { Button } from '@/components/ui/button'
@@ -61,81 +62,85 @@ export function EmailTemplatesShell() {
 
   return (
     <div className="flex min-h-screen flex-col bg-cb-surface-1">
-      <header className="sticky top-0 z-40 flex h-12 min-h-12 shrink-0 items-stretch gap-1 border-b border-cb-border bg-cb-surface-0 sm:gap-2">
-        <LabNav className="h-auto min-h-12 shrink-0 border-0 px-2 sm:px-3" />
-        <div className="flex min-h-12 min-w-0 flex-1 items-center gap-2 overflow-x-auto px-1 py-1 sm:gap-3 sm:px-2">
-          <ToggleGroup
-            type="single"
-            variant="outline"
-            size="sm"
-            spacing={0}
-            value={mode}
-            onValueChange={(v) => v && handleMode(v)}
-            aria-label="Email preview size"
-            className="w-fit shrink-0"
-          >
-            <ToggleGroupItem
-              value="desktop"
-              aria-label={`Desktop preview, ${WIDTH_DESKTOP} pixels wide`}
+      <LabPageHeader
+        title="Email templates"
+        toolbar={
+          <>
+            <ToggleGroup
+              type="single"
+              variant="outline"
+              size="sm"
+              spacing={0}
+              value={mode}
+              onValueChange={(v) => v && handleMode(v)}
+              aria-label="Email preview size"
+              className="w-fit shrink-0"
             >
-              Desktop
-            </ToggleGroupItem>
-            <ToggleGroupItem
-              value="mobile"
-              aria-label={`Mobile preview, ${WIDTH_MOBILE} pixels wide`}
-            >
-              Mobile
-            </ToggleGroupItem>
-            <ToggleGroupItem
-              value="custom"
-              aria-label="Custom width, adjust with slider"
-            >
-              Custom
-            </ToggleGroupItem>
-          </ToggleGroup>
-          {mode === 'custom' && (
-            <div className="flex min-w-0 max-w-[min(220px,40vw)] shrink-0 items-center gap-2 sm:max-w-[260px]">
-              <label
-                htmlFor="email-preview-width"
-                className="sr-only"
+              <ToggleGroupItem
+                value="desktop"
+                aria-label={`Desktop preview, ${WIDTH_DESKTOP} pixels wide`}
+                className="min-w-8 px-0"
               >
-                Frame width ({frameWidth} pixels)
-              </label>
-              <span
-                className="hidden tabular-nums text-xs text-cb-foreground-muted sm:inline"
-                aria-hidden
+                <Monitor className="size-4" aria-hidden />
+              </ToggleGroupItem>
+              <ToggleGroupItem
+                value="mobile"
+                aria-label={`Mobile preview, ${WIDTH_MOBILE} pixels wide`}
+                className="min-w-8 px-0"
               >
-                {frameWidth}px
-              </span>
-              <input
-                id="email-preview-width"
-                type="range"
-                min={WIDTH_MIN}
-                max={WIDTH_MAX}
-                value={customWidth}
-                onChange={(e) => setCustomWidth(Number(e.target.value))}
-                className="h-2 min-w-[72px] flex-1 cursor-pointer appearance-none rounded-full bg-cb-surface-3 accent-[var(--cb-primary)]"
-                aria-valuemin={WIDTH_MIN}
-                aria-valuemax={WIDTH_MAX}
-                aria-valuenow={customWidth}
-                aria-valuetext={`${frameWidth} pixels wide`}
-              />
-            </div>
-          )}
-        </div>
-        <div className="flex shrink-0 items-center gap-2 pr-2 sm:pr-3">
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            className="whitespace-nowrap"
-            onClick={handleExportHtml}
-          >
-            Export HTML
-          </Button>
-          <ThemeSwitcher />
-        </div>
-      </header>
+                <Smartphone className="size-4" aria-hidden />
+              </ToggleGroupItem>
+              <ToggleGroupItem
+                value="custom"
+                aria-label="Custom width, adjust with slider"
+                className="min-w-8 px-0"
+              >
+                <SlidersHorizontal className="size-4" aria-hidden />
+              </ToggleGroupItem>
+            </ToggleGroup>
+            {mode === 'custom' && (
+              <div className="flex min-w-0 max-w-[min(220px,40vw)] shrink-0 items-center gap-2 sm:max-w-[260px]">
+                <label htmlFor="email-preview-width" className="sr-only">
+                  Frame width ({frameWidth} pixels)
+                </label>
+                <span
+                  className="hidden tabular-nums text-xs text-cb-foreground-muted sm:inline"
+                  aria-hidden
+                >
+                  {frameWidth}px
+                </span>
+                <input
+                  id="email-preview-width"
+                  type="range"
+                  min={WIDTH_MIN}
+                  max={WIDTH_MAX}
+                  value={customWidth}
+                  onChange={(e) => setCustomWidth(Number(e.target.value))}
+                  className="h-2 min-w-[72px] flex-1 cursor-pointer appearance-none rounded-full bg-cb-surface-3 accent-[var(--cb-brand-purple)]"
+                  aria-valuemin={WIDTH_MIN}
+                  aria-valuemax={WIDTH_MAX}
+                  aria-valuenow={customWidth}
+                  aria-valuetext={`${frameWidth} pixels wide`}
+                />
+              </div>
+            )}
+          </>
+        }
+        trailing={
+          <>
+            <Button
+              type="button"
+              variant="secondary"
+              size="sm"
+              className="whitespace-nowrap"
+              onClick={handleExportHtml}
+            >
+              Export HTML
+            </Button>
+            <ThemeSwitcher />
+          </>
+        }
+      />
       <main className="flex-1">
         <EmailTemplatePreviewFrame frameWidth={frameWidth} />
       </main>

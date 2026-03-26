@@ -44,7 +44,7 @@ export function CategoryChipGroup({
               "h-[var(--cb-chip-h)] shrink-0 rounded-full border border-cb-border px-4 text-sm font-medium whitespace-nowrap",
               "text-cb-foreground-muted bg-cb-surface-3",
               "hover:bg-cb-surface-4 hover:text-cb-foreground hover:border-cb-border-visible",
-              "data-[state=on]:bg-cb-primary data-[state=on]:text-white data-[state=on]:border-cb-primary",
+              "data-[state=on]:bg-cb-brand-purple data-[state=on]:text-cb-brand-purple-fg data-[state=on]:border-cb-brand-purple",
               "transition-all duration-150",
             )}
           >

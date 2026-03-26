@@ -78,7 +78,7 @@ StudioRail, RecentPlayStrip, FeedSectionShell
 FeaturedGamesCarousel, GameGrid, JackpotSection, CasinoLobby
 
 ### Pattern components (components/patterns/)
-LabNav, SectionHeader
+LabPageHeader, SectionHeader
 
 ## Sports layout system
 

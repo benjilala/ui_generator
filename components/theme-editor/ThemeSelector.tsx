@@ -20,7 +20,7 @@ export function ThemeSelector() {
               className={cn(
                 "group flex items-center gap-3 rounded-[var(--cb-radius-md)] border p-3 text-left transition-all",
                 isActive
-                  ? "border-cb-primary bg-cb-surface-3 shadow-[0_0_0_1px_var(--cb-primary)]"
+                  ? "border-cb-brand-purple bg-cb-surface-3 shadow-[0_0_0_1px_var(--cb-brand-purple)]"
                   : "border-cb-border bg-cb-surface-2 hover:border-cb-border-visible hover:bg-cb-surface-3",
               )}
             >

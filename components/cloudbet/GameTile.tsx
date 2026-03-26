@@ -17,7 +17,7 @@ const gameTileVariants = cva(
     "bg-cb-surface-4 border border-cb-border",
     motion.base,
     "hover:border-cb-border-visible hover:shadow-[0_12px_40px_oklch(0_0_0_/_50%)] hover:-translate-y-0.5",
-    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-primary focus-visible:ring-offset-1 focus-visible:ring-offset-background",
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-brand-purple focus-visible:ring-offset-1 focus-visible:ring-offset-background",
   ],
   {
     variants: {
@@ -125,7 +125,7 @@ export function GameTile({
         )}>
           <button
             onClick={(e) => { e.stopPropagation(); onPlay?.(game.id) }}
-            className="flex items-center gap-1.5 rounded-[var(--cb-radius-md)] bg-cb-primary px-4 py-2 text-sm font-medium text-white hover:bg-cb-primary/90 transition-colors"
+            className="flex items-center gap-1.5 rounded-[var(--cb-radius-md)] bg-cb-brand-purple px-4 py-2 text-sm font-medium text-cb-brand-purple-fg hover:bg-cb-brand-purple/90 transition-colors"
           >
             <Play className="size-3.5 fill-current" aria-hidden />
             Play

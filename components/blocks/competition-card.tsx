@@ -99,9 +99,9 @@ function OddsBtn({ label, value, trend, suspended, closed, isSelected }: OddsBut
           "w-full h-full min-h-11 rounded-xl border",
           "py-1 px-0.5",
           "transition-colors duration-300 ease-in-out select-none cursor-pointer",
-          "hover:bg-cb-primary/[0.08] active:bg-cb-primary/[0.16]",
-          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-primary focus-visible:ring-offset-1 focus-visible:ring-offset-cb-surface-2",
-          isSelected ? "border-cb-primary/30" : "border-transparent",
+          "hover:bg-cb-brand-purple/[0.08] active:bg-cb-brand-purple/[0.16]",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-brand-purple focus-visible:ring-offset-1 focus-visible:ring-offset-cb-surface-2",
+          isSelected ? "border-cb-brand-purple/30" : "border-transparent",
         )}
       >
         <div className="mx-auto">
@@ -299,8 +299,8 @@ function EventRow({
             <div className="flex items-center gap-1.5">
               {event.isLive && (
                 <span className="relative flex size-[7px] shrink-0">
-                  <span className="absolute inline-flex h-full w-full rounded-full bg-cb-primary opacity-75 animate-ping" />
-                  <span className="relative inline-flex size-[7px] rounded-full bg-cb-primary" />
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-cb-brand-purple opacity-75 animate-ping" />
+                  <span className="relative inline-flex size-[7px] rounded-full bg-cb-brand-purple" />
                 </span>
               )}
               <span className={cn(
@@ -375,9 +375,9 @@ function MarketHeader({
                 "flex items-center gap-2 py-1 px-2 rounded-full",
                 "text-xs font-medium",
                 "border-2 transition-colors duration-150",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-primary",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-brand-purple",
                 dropdownOpen
-                  ? "border-cb-primary/60 bg-cb-primary/[0.08] text-cb-foreground"
+                  ? "border-cb-brand-purple/60 bg-cb-brand-purple/[0.08] text-cb-foreground"
                   : "border-transparent text-cb-foreground-muted hover:text-cb-foreground hover:border-cb-border",
               )}
             >
@@ -490,7 +490,7 @@ export function CompetitionCard({
             className={cn(
               "group/accord size-8 rounded-xl flex items-center justify-center shrink-0",
               "transition-colors duration-300 ease-out",
-              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-primary",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-brand-purple",
               "hover:bg-cb-foreground-muted/[0.08] active:bg-cb-foreground-muted/[0.16]",
               open ? "bg-cb-surface-1" : "bg-cb-surface-3",
             )}

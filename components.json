@@ -20,6 +20,8 @@
     "hooks": "@/hooks"
   },
   "registries": {
-    "@magicui": "https://magicui.design/r/{name}"
+    "@magicui": "https://magicui.design/r/{name}",
+    "@shadcn-studio": "https://shadcnstudio.com/r/{name}.json",
+    "@ss-blocks": "https://shadcnstudio.com/r/{name}.json"
   }
 }

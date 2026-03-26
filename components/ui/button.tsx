@@ -122,7 +122,9 @@ function Button({
         <Spinner className="size-5" />
       ) : supportingText ? (
         <span className="flex flex-col items-center gap-0.5 leading-none">
-          <span>{children}</span>
+          <span className={cn(variant === "outline" && "font-medium")}>
+            {children}
+          </span>
           <span className="text-[11px] font-normal opacity-70 leading-none">{supportingText}</span>
         </span>
       ) : (

@@ -38,7 +38,7 @@ export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
     heading: "Title goes here",
     subheading: "Supporting body copy goes here. Describe the offer, game, or promotion in one or two short lines.",
     cta: "Call to action",
-    accentVar: "var(--cb-primary)",
+    accentVar: "var(--cb-brand-purple)",
   },
   {
     id: "h2",
@@ -46,7 +46,7 @@ export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
     heading: "Title goes here",
     subheading: "Supporting body copy goes here. Describe the offer, game, or promotion in one or two short lines.",
     cta: "Call to action",
-    accentVar: "var(--cb-primary)",
+    accentVar: "var(--cb-brand-purple)",
   },
   {
     id: "h3",
@@ -54,7 +54,7 @@ export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
     heading: "Title goes here",
     subheading: "Supporting body copy goes here. Describe the offer, game, or promotion in one or two short lines.",
     cta: "Call to action",
-    accentVar: "var(--cb-primary)",
+    accentVar: "var(--cb-brand-purple)",
   },
   {
     id: "h4",
@@ -62,7 +62,7 @@ export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
     heading: "Title goes here",
     subheading: "Supporting body copy goes here. Describe the offer, game, or promotion in one or two short lines.",
     cta: "Call to action",
-    accentVar: "var(--cb-primary)",
+    accentVar: "var(--cb-brand-purple)",
   },
   {
     id: "h5",
@@ -70,7 +70,7 @@ export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
     heading: "Title goes here",
     subheading: "Supporting body copy goes here. Describe the offer, game, or promotion in one or two short lines.",
     cta: "Call to action",
-    accentVar: "var(--cb-primary)",
+    accentVar: "var(--cb-brand-purple)",
   },
 ]
 

@@ -15,12 +15,12 @@ const casinoCategoryTabVariants = cva(
     // Motion — card scale on press (Valhalla: group-active:scale-95)
     "group transition-all duration-200 ease-out active:scale-95",
     // Focus ring
-    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-primary focus-visible:ring-offset-2 focus-visible:ring-offset-cb-surface-1",
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-brand-purple focus-visible:ring-offset-2 focus-visible:ring-offset-cb-surface-1",
   ].join(" "),
   {
     variants: {
       active: {
-        true:  "bg-cb-surface-2 border-cb-primary",
+        true:  "bg-cb-surface-2 border-cb-brand-purple",
         false: "bg-cb-surface-2 border-cb-border-subtle",
       },
     },
@@ -87,7 +87,7 @@ export function CasinoCategoryTab({
         className={cn(
           "relative z-10 size-6 transition-transform duration-200 ease-out group-hover:scale-110",
           active
-            ? "[--icon-primary:var(--color-cb-icon-default)] [--icon-secondary:color-mix(in_oklch,var(--color-cb-icon-default)_55%,transparent)]"
+            ? "[--icon-primary:var(--color-cb-brand-purple)] [--icon-secondary:color-mix(in_oklch,var(--color-cb-brand-purple)_55%,transparent)]"
             : "[--icon-primary:var(--color-cb-foreground-3)] [--icon-secondary:color-mix(in_oklch,var(--color-cb-foreground-3)_55%,transparent)]"
         )}
       >
@@ -98,7 +98,7 @@ export function CasinoCategoryTab({
       <span
         className={cn(
           "relative z-10 mt-[5.75px] text-[14px] font-medium leading-[19.6px] whitespace-nowrap",
-          active ? "text-cb-icon-default" : "text-cb-foreground-3"
+          active ? "text-cb-brand-purple" : "text-cb-foreground-3"
         )}
       >
         {label}
@@ -113,9 +113,9 @@ export function CasinoLiveBadge() {
   return (
     <div className="relative flex items-center gap-1 bg-cb-border-subtle rounded-br-[10.5px] rounded-tl-[14px] px-2 h-[18px]">
       {/* Pulse ring — Valhalla: animate-pulse on the outer ring */}
-      <span className="absolute left-[5px] top-[4px] size-[10px] rounded-full bg-cb-primary/50 animate-pulse" />
+      <span className="absolute left-[5px] top-[4px] size-[10px] rounded-full bg-cb-brand-purple/50 animate-pulse" />
       {/* Solid dot */}
-      <span className="relative size-[7px] rounded-full bg-cb-primary shrink-0" />
+      <span className="relative size-[7px] rounded-full bg-cb-brand-purple shrink-0" />
       <span className="text-[11px] font-medium text-cb-foreground-2 leading-none">Live</span>
     </div>
   )

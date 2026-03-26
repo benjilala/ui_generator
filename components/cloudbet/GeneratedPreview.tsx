@@ -28,6 +28,8 @@ export interface GeneratedPreviewProps {
   entry: GeneratedEntry
   onRegenerate?: (entry: GeneratedEntry) => void
   onMarkUseful?: (id: string) => void
+  /** When true, hides prompt-driven actions (regenerate, refine, etc.). */
+  readOnly?: boolean
   className?: string
 }
 
@@ -60,7 +62,7 @@ function VIPLobbyPreview() {
       <div className="relative rounded-[var(--cb-radius-xl)] overflow-hidden bg-cb-surface-3 border border-cb-border p-8"
         style={{ background: "linear-gradient(135deg, oklch(0.25 0.08 290 / 0.9) 0%, var(--cb-surface-2) 100%)" }}>
         <div className="pointer-events-none absolute -right-12 -top-12 h-64 w-64 rounded-full opacity-20 blur-3xl"
-          style={{ background: "radial-gradient(circle, var(--cb-primary) 0%, transparent 70%)" }} aria-hidden />
+          style={{ background: "radial-gradient(circle, var(--cb-brand-purple) 0%, transparent 70%)" }} aria-hidden />
         <span className="inline-flex items-center rounded-full bg-purple-600 px-2.5 py-1 text-xs font-semibold uppercase tracking-wider text-white mb-3">
           VIP
         </span>
@@ -213,7 +215,13 @@ const PATTERN_PREVIEW_MAP: Record<PatternKey, React.FC> = {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export function GeneratedPreview({ entry, onRegenerate, onMarkUseful, className }: GeneratedPreviewProps) {
+export function GeneratedPreview({
+  entry,
+  onRegenerate,
+  onMarkUseful,
+  readOnly = false,
+  className,
+}: GeneratedPreviewProps) {
   const PreviewComponent = PATTERN_PREVIEW_MAP[entry.detectedPattern] ?? GenericScreenPreview
 
   return (
@@ -228,33 +236,34 @@ export function GeneratedPreview({ entry, onRegenerate, onMarkUseful, className 
           </p>
         </div>
 
-        {/* Action buttons — below title */}
-        <div className="flex items-center gap-2 flex-wrap">
-          <Button
-            size="sm"
-            variant="secondary"
-            onClick={() => onRegenerate?.(entry)}
-          >
-            <RotateCcw className="size-3.5 mr-1.5" />
-            Regenerate
-          </Button>
-          <Button size="sm" variant="secondary">
-            <PenLine className="size-3.5 mr-1.5" />
-            Refine
-          </Button>
-          <Button size="sm" variant="secondary">
-            <ExternalLink className="size-3.5 mr-1.5" />
-            Send to Cursor
-          </Button>
-          <Button
-            size="sm"
-            variant="secondary"
-            onClick={() => onMarkUseful?.(entry.id)}
-          >
-            <Star className={cn("size-3.5 mr-1.5", entry.status === "useful" && "fill-cb-jackpot text-cb-jackpot")} />
-            {entry.status === "useful" ? "Marked useful" : "Mark useful"}
-          </Button>
-        </div>
+        {!readOnly ? (
+          <div className="flex items-center gap-2 flex-wrap">
+            <Button
+              size="sm"
+              variant="secondary"
+              onClick={() => onRegenerate?.(entry)}
+            >
+              <RotateCcw className="size-3.5 mr-1.5" />
+              Regenerate
+            </Button>
+            <Button size="sm" variant="secondary">
+              <PenLine className="size-3.5 mr-1.5" />
+              Refine
+            </Button>
+            <Button size="sm" variant="secondary">
+              <ExternalLink className="size-3.5 mr-1.5" />
+              Send to Cursor
+            </Button>
+            <Button
+              size="sm"
+              variant="secondary"
+              onClick={() => onMarkUseful?.(entry.id)}
+            >
+              <Star className={cn("size-3.5 mr-1.5", entry.status === "useful" && "fill-cb-jackpot text-cb-jackpot")} />
+              {entry.status === "useful" ? "Marked useful" : "Mark useful"}
+            </Button>
+          </div>
+        ) : null}
 
         <Separator className="bg-cb-border" />
 
@@ -262,7 +271,7 @@ export function GeneratedPreview({ entry, onRegenerate, onMarkUseful, className 
         <div className="flex flex-wrap gap-4 text-xs">
           <div className="flex flex-col gap-1">
             <span className="text-[10px] font-semibold text-cb-foreground-disabled uppercase tracking-widest">Pattern</span>
-            <span className="inline-flex items-center rounded-[var(--cb-radius-sm)] border border-cb-primary/30 bg-cb-primary/10 px-2 py-0.5 text-xs font-medium text-cb-primary">
+            <span className="inline-flex items-center rounded-[var(--cb-radius-sm)] border border-cb-primary/30 bg-cb-primary/10 px-2 py-0.5 text-xs font-medium text-cb-purple-50">
               {entry.detectedPattern}
             </span>
           </div>

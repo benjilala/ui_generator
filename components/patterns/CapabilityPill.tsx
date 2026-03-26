@@ -10,7 +10,7 @@ export interface CapabilityPillProps {
 
 const STATUS_STYLES: Record<NonNullable<CapabilityPillProps["status"]>, string> = {
   live:   "border-cb-live/30 bg-cb-live-bg text-cb-live",
-  next:   "border-cb-primary/30 bg-cb-primary/10 text-cb-primary",
+  next:   "border-cb-primary/30 bg-cb-primary/10 text-cb-purple-50",
   future: "border-cb-border text-cb-foreground-disabled",
 }
 

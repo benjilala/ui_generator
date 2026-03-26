@@ -16,7 +16,7 @@ export interface GeneratedNavProps {
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 const STATUS_STYLES: Record<GeneratedStatus, string> = {
-  preview: "border-cb-primary/30 bg-cb-primary/10 text-cb-primary",
+  preview: "border-cb-primary/30 bg-cb-primary/10 text-cb-purple-50",
   draft:   "border-cb-border text-cb-foreground-disabled bg-transparent",
   useful:  "border-cb-live/30 bg-cb-live-bg text-cb-live",
 }

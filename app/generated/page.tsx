@@ -2,16 +2,18 @@
 
 import * as React from "react"
 import { useState, useCallback } from "react"
-import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
+import { LabPageHeader } from "@/components/patterns/lab-page-header"
+import { ThemeSwitcher } from "@/components/ui/theme-switcher"
 import { GeneratedNav } from "@/components/cloudbet/GeneratedNav"
 import { PromptGenerator } from "@/components/cloudbet/PromptGenerator"
 import { GeneratedPreview } from "@/components/cloudbet/GeneratedPreview"
 import { SEED_GENERATED_SCREENS } from "@/lib/system/generated-screens"
 import type { GeneratedEntry } from "@/lib/system/generated-screens"
 import { interpretPrompt } from "@/lib/system/prompt-interpreter"
+
+/** Set to `true` to restore prompt input, regenerate, and mark useful. */
+const GENERATION_ENABLED = false
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
@@ -22,6 +24,7 @@ export default function GeneratedPage() {
   const selectedEntry = entries.find((e) => e.id === selectedId) ?? null
 
   const handleGenerate = useCallback((partial: Omit<GeneratedEntry, "id" | "createdAt">) => {
+    if (!GENERATION_ENABLED) return
     const newEntry: GeneratedEntry = {
       ...partial,
       id: `gen-${Date.now()}`,
@@ -32,6 +35,7 @@ export default function GeneratedPage() {
   }, [])
 
   const handleRegenerate = useCallback((entry: GeneratedEntry) => {
+    if (!GENERATION_ENABLED) return
     const reinterpreted = interpretPrompt(entry.prompt)
     const newEntry: GeneratedEntry = {
       ...reinterpreted,
@@ -43,6 +47,7 @@ export default function GeneratedPage() {
   }, [])
 
   const handleMarkUseful = useCallback((id: string) => {
+    if (!GENERATION_ENABLED) return
     setEntries((prev) =>
       prev.map((e) =>
         e.id === id
@@ -54,26 +59,24 @@ export default function GeneratedPage() {
 
   return (
     <div className="min-h-screen bg-cb-surface-1 flex flex-col">
-      {/* Sticky header */}
-      <header className="sticky top-0 z-40 border-b border-cb-border bg-cb-surface-0/90 backdrop-blur-sm">
-        <div className="flex h-12 w-full items-center gap-4 px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/"
-            className="flex items-center gap-1.5 text-xs text-cb-foreground-muted hover:text-cb-foreground transition-colors"
-          >
-            <ArrowLeft className="size-3.5" />
-            Lab
-          </Link>
-          <Separator orientation="vertical" className="h-4 bg-cb-border" />
-          <span className="text-sm font-semibold text-cb-foreground">Generated from Prompts</span>
-          <Badge
-            variant="outline"
-            className="ml-auto border-cb-primary/30 bg-cb-primary/10 text-cb-primary text-[9px] uppercase tracking-wider"
-          >
-            Generation Workspace
-          </Badge>
-        </div>
-      </header>
+      <LabPageHeader
+        title="Generated from Prompts"
+        trailing={
+          <>
+            <Badge
+              variant="outline"
+              className={
+                GENERATION_ENABLED
+                  ? "border-cb-primary/30 bg-cb-primary/10 text-cb-purple-50 text-[9px] uppercase tracking-wider"
+                  : "border-cb-border text-cb-foreground-disabled text-[9px] uppercase tracking-wider"
+              }
+            >
+              {GENERATION_ENABLED ? "Generation Workspace" : "View only"}
+            </Badge>
+            <ThemeSwitcher />
+          </>
+        }
+      />
 
       {/* Body */}
       <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-8 flex gap-6 flex-1 min-h-0">
@@ -89,19 +92,23 @@ export default function GeneratedPage() {
 
         {/* Main content */}
         <main className="flex-1 min-w-0 flex flex-col gap-5">
+          {GENERATION_ENABLED ? (
+            <PromptGenerator onGenerate={handleGenerate} />
+          ) : (
+            <div className="rounded-[var(--cb-radius-lg)] border border-cb-border bg-cb-surface-3 px-4 py-3 text-sm text-cb-foreground-muted">
+              Generation from prompts is turned off. Browse the examples on the left to see what the workspace produced.
+            </div>
+          )}
 
-          {/* Prompt input */}
-          <PromptGenerator onGenerate={handleGenerate} />
-
-          {/* Preview area */}
           {selectedEntry ? (
             <GeneratedPreview
               entry={selectedEntry}
+              readOnly={!GENERATION_ENABLED}
               onRegenerate={handleRegenerate}
               onMarkUseful={handleMarkUseful}
             />
           ) : (
-            <EmptyState />
+            <EmptyState generationEnabled={GENERATION_ENABLED} />
           )}
 
         </main>
@@ -112,7 +119,7 @@ export default function GeneratedPage() {
 
 // ─── Empty state ──────────────────────────────────────────────────────────────
 
-function EmptyState() {
+function EmptyState({ generationEnabled }: { generationEnabled: boolean }) {
   return (
     <div className="flex flex-col items-center justify-center rounded-[var(--cb-radius-lg)] border border-dashed border-cb-border bg-cb-surface-2 py-20 px-8 text-center gap-3">
       <div className="size-12 rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border flex items-center justify-center text-2xl">
@@ -120,7 +127,9 @@ function EmptyState() {
       </div>
       <p className="text-sm font-semibold text-cb-foreground">No screen selected</p>
       <p className="text-xs text-cb-foreground-muted max-w-xs leading-relaxed">
-        Submit a prompt above to generate a UI preview, or select an existing entry from the left navigation.
+        {generationEnabled
+          ? "Submit a prompt above to generate a UI preview, or select an existing entry from the left navigation."
+          : "Select an entry from the left to view a saved example."}
       </p>
     </div>
   )

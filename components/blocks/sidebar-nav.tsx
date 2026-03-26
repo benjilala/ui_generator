@@ -159,7 +159,7 @@ const rowTransition = cn(
 
 function focusRingForSurface(surface: 0 | 1) {
   return cn(
-    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-primary focus-visible:ring-offset-2",
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cb-brand-purple focus-visible:ring-offset-2",
     surface === 1
       ? "focus-visible:ring-offset-cb-surface-1"
       : "focus-visible:ring-offset-cb-surface-0"
@@ -292,7 +292,7 @@ export function SidebarNav({
                       focusRing,
                       "active:scale-[0.99]",
                       isActive
-                        ? cn("bg-cb-primary/15", brand.purple50)
+                        ? cn("bg-cb-brand-purple/15", brand.purple50)
                         : cn(
                             foreground.muted,
                             iconColor.muted,

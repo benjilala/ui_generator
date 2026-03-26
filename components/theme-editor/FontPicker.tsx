@@ -102,7 +102,7 @@ export function FontPicker({ value, onChange, label }: FontPickerProps) {
               )}
             >
               <span className="text-sm" style={{ fontFamily: font.value }}>{font.label}</span>
-              {isActive && <span className="text-cb-primary text-xs">&#10003;</span>}
+              {isActive && <span className="text-cb-purple-50 text-xs">&#10003;</span>}
             </button>
           )
         })}

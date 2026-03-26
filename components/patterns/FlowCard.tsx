@@ -29,12 +29,12 @@ const STATUS_CONFIG: Record<
   { stepClass: string; titleClass: string; rowClass: string }
 > = {
   active: {
-    stepClass: "bg-cb-primary/20 text-cb-primary",
+    stepClass: "bg-cb-primary/20 text-cb-purple-50",
     titleClass: "text-cb-foreground",
     rowClass: "",
   },
   next: {
-    stepClass: "bg-cb-primary/10 text-cb-primary/60",
+    stepClass: "bg-cb-primary/10 text-cb-purple-50/60",
     titleClass: "text-cb-foreground-muted",
     rowClass: "",
   },

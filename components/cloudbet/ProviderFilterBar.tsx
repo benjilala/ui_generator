@@ -50,7 +50,7 @@ export function ProviderFilterBar({
           className={cn(
             "pl-9 pr-9 h-10 bg-cb-surface-3 border-cb-border",
             "text-cb-foreground placeholder:text-cb-foreground-muted",
-            "focus-visible:border-cb-primary focus-visible:ring-cb-primary/30",
+            "focus-visible:border-cb-brand-purple focus-visible:ring-cb-brand-purple/30",
           )}
           aria-label="Search games"
         />
@@ -71,7 +71,7 @@ export function ProviderFilterBar({
           className={cn(
             "w-full sm:w-48 h-10 bg-cb-surface-3 border-cb-border",
             "text-cb-foreground",
-            "focus:ring-cb-primary/30 focus:border-cb-primary",
+            "focus:ring-cb-brand-purple/30 focus:border-cb-brand-purple",
           )}
           aria-label="Filter by provider"
         >

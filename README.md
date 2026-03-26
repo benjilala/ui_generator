@@ -69,7 +69,7 @@ cloudbet-ui-lab/
 │   │   ├── GameGrid.tsx        # CSS grid with Skeleton loading
 │   │   └── JackpotSection.tsx
 │   └── patterns/               # Cross-product layout patterns
-│       ├── LabNav.tsx          # Lab navigation bar
+│       ├── lab-page-header.tsx # Sticky lab chrome (brandmark, title, actions)
 │       └── SectionHeader.tsx   # Section heading + action slot
 ├── lib/
 │   ├── tokens/cloudbet.ts      # Typed token maps for CVA variants

@@ -138,7 +138,7 @@ export function AppBarHeader({
                 variant="secondary"
                 className="hidden h-auto gap-2 rounded-full py-2 pl-3 pr-4 sm:inline-flex"
               >
-                <Gift className="size-5 shrink-0 text-cb-primary" />
+                <Gift className="size-5 shrink-0 text-cb-purple-50" />
                 <span className="flex flex-col items-start gap-0 leading-tight">
                   <span className="text-[13px] font-bold">Rewards</span>
                   <span className="text-[11px] font-normal text-cb-icon-default">

@@ -4,7 +4,6 @@ import * as React from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import {
-  ArrowLeft,
   Check,
   ChevronDown,
   ChevronRight,
@@ -152,7 +151,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { Separator } from "@/components/ui/separator"
+import { LabPageHeader } from "@/components/patterns/lab-page-header"
 import { Alert, AlertContent, AlertDescription, AlertIcon, AlertTitle } from "@/components/ui/alert"
 import { Chip, ChipSkeleton } from "@/components/ui/chip"
 
@@ -169,31 +168,30 @@ import { CasinoCategoryNav } from "@/components/blocks/casino-category-nav"
 import { SidebarNav } from "@/components/blocks/sidebar-nav"
 import { CompetitionCard, CompetitionCardSkeleton } from "@/components/blocks/competition-card"
 import type { SportEvent as CompetitionEvent, MarketGroup as CompetitionMarketGroup } from "@/components/blocks/competition-card"
+import { MatchScoreboard } from "@/components/cloudbet/MatchScoreboard"
+import type { MatchStat } from "@/components/cloudbet/MatchScoreboard"
 
 // Casino icon library
 import { CasinoIcon } from "@/components/icons/casino"
 import { CASINO_ICON_NAMES, type CasinoIconName } from "@/components/icons/casino/names"
 
-// Cloudbet shared components
-import { GameTile } from "@/components/cloudbet/GameTile"
-import { JackpotCard } from "@/components/cloudbet/JackpotCard"
-import { ProviderFilterBar } from "@/components/cloudbet/ProviderFilterBar"
-import { StudioRail } from "@/components/cloudbet/StudioRail"
-import { FeedSectionShell } from "@/components/cloudbet/FeedSectionShell"
-import { SectionHeader } from "@/components/patterns/SectionHeader"
-
-import { OddsButton, OddsButtonStyles } from "@/components/cloudbet/OddsButton"
 import { useTheme } from "@/components/providers/ThemeProvider"
 import { ThemeSwitcher } from "@/components/ui/theme-switcher"
-
-// Mock data
 import {
-  MOCK_GAMES,
-  MOCK_JACKPOTS,
-  MOCK_PROVIDERS,
-  MOCK_BET_FEED,
-  MOCK_WIN_FEED,
-} from "@/lib/mocks"
+  STYLES_HEADING_BAR,
+  STYLES_SECTION_SHELL,
+  StylesColorsContent,
+  StylesLayoutContent,
+  StylesTypographyContent,
+} from "@/components/ui-lab/styles-guide-sections"
+
+import { MOCK_GAMES } from "@/lib/mocks"
+
+const UI_LAB_MATCH_SCOREBOARD_STATS: MatchStat[] = [
+  { type: "corners", home: 0, away: 1 },
+  { type: "yellow-card", home: 0, away: 0 },
+  { type: "red-card", home: 2, away: 0 },
+]
 
 const UI_LAB_DESIGN_CONTEXT = `## Design system (required)
 
@@ -332,26 +330,6 @@ function SubSection({
   )
 }
 
-function Swatch({
-  label,
-  className,
-  style,
-}: {
-  label: string
-  className?: string
-  style?: React.CSSProperties
-}) {
-  return (
-    <div className="flex flex-col gap-1.5 items-start">
-      <div
-        className={`h-10 w-full rounded-[var(--cb-radius-md)] border border-cb-border ${className ?? ""}`}
-        style={style}
-      />
-      <span className="text-[10px] text-cb-foreground-muted font-mono leading-tight">{label}</span>
-    </div>
-  )
-}
-
 // ─── Chart mock data ──────────────────────────────────────────────────────────
 
 const BET_VOLUME_DATA = [
@@ -383,7 +361,7 @@ const JACKPOT_HISTORY_DATA = [
 ]
 
 const CATEGORY_SPLIT_DATA = [
-  { name: "Slots", value: 58, color: "var(--cb-primary)" },
+  { name: "Slots", value: 58, color: "var(--cb-brand-purple)" },
   { name: "Live Casino", value: 24, color: "var(--cb-live)" },
   { name: "Table Games", value: 12, color: "var(--cb-info)" },
   { name: "Other", value: 6, color: "var(--cb-foreground-disabled)" },
@@ -456,10 +434,8 @@ function SliderDemo() {
 
 export default function UICheatSheetPage() {
   const { resetToProductionTheme } = useTheme()
-  const [searchValue, setSearchValue] = React.useState("")
-  const [selectedProvider, setSelectedProvider] = React.useState("all")
   const [progress, setProgress] = React.useState(62)
-  const [activeSection, setActiveSection] = React.useState("foundations")
+  const [activeSection, setActiveSection] = React.useState("styles-colors")
 
   // Synchronously reset scroll before first paint so the browser never
   // has a chance to restore a previous position.
@@ -469,7 +445,23 @@ export default function UICheatSheetPage() {
   }, [])
 
   React.useEffect(() => {
-    const sectionIds = ["competition-card", "casino-category-slider", "sidebar-nav", "app-bar-header", "foundations", "primitives", "cloudbet", "states", "extended", "charts", "animations", "themes", "casino-icons"]
+    const sectionIds = [
+      "styles-colors",
+      "styles-typography",
+      "styles-layout",
+      "competition-card",
+      "match-scoreboard",
+      "casino-category-slider",
+      "sidebar-nav",
+      "app-bar-header",
+      "primitives",
+      "states",
+      "extended",
+      "charts",
+      "animations",
+      "themes",
+      "casino-icons",
+    ]
     let observers: IntersectionObserver[] = []
 
     // Two rAF frames: first lets Next.js finish any internal scroll work,
@@ -500,19 +492,10 @@ export default function UICheatSheetPage() {
   return (
     <TooltipProvider>
       <div className="min-h-screen bg-cb-surface-1">
-        {/* Sticky header */}
-        <header className="sticky top-0 z-40 border-b border-cb-border bg-cb-surface-0/90 backdrop-blur-sm">
-          <div className="flex h-12 w-full items-center gap-4 px-4 sm:px-6 lg:px-8">
-            <Link
-              href="/"
-              className="flex items-center gap-1.5 text-xs text-cb-foreground-muted hover:text-cb-foreground transition-colors"
-            >
-              <ArrowLeft className="size-3.5" />
-              Lab
-            </Link>
-            <Separator orientation="vertical" className="h-4 bg-cb-border" />
-            <span className="text-sm font-semibold text-cb-foreground">UI Components, Blocks, Themes</span>
-            <div className="ml-auto flex items-center gap-3">
+        <LabPageHeader
+          title="Styles, Blocks, Components, Libraries"
+          trailing={
+            <>
               <ThemeSwitcher />
               <Badge
                 variant="outline"
@@ -520,18 +503,27 @@ export default function UICheatSheetPage() {
               >
                 Design System
               </Badge>
-            </div>
-          </div>
-        </header>
+            </>
+          }
+        />
 
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-10 flex gap-8">
           {/* Sidebar nav */}
           <aside className="hidden lg:flex flex-col gap-0.5 w-44 shrink-0 sticky top-20 self-start max-h-[calc(100vh-5rem)] overflow-y-auto">
             {([
               {
+                group: "Styles",
+                items: [
+                  { id: "styles-colors", label: "Color palette" },
+                  { id: "styles-typography", label: "Typography" },
+                  { id: "styles-layout", label: "Layout & tokens" },
+                ],
+              },
+              {
                 group: "Blocks",
                 items: [
                   { id: "competition-card", label: "Competition Card" },
+                  { id: "match-scoreboard", label: "Match scoreboard" },
                   { id: "casino-category-slider", label: "Casino Category Slider" },
                   { id: "sidebar-nav", label: "Sidebar Nav" },
                   { id: "app-bar-header", label: "App Bar Header" },
@@ -540,9 +532,7 @@ export default function UICheatSheetPage() {
               {
                 group: "Components",
                 items: [
-                  { id: "foundations", label: "Foundations" },
                   { id: "primitives", label: "Primitives" },
-                  { id: "cloudbet", label: "Cloudbet" },
                   { id: "states", label: "States" },
                   { id: "extended", label: "Extended" },
                   { id: "charts", label: "Charts" },
@@ -550,7 +540,7 @@ export default function UICheatSheetPage() {
                 ],
               },
               {
-                group: "Themes and Libraries",
+                group: "Libraries",
                 items: [
                   { id: "themes", label: "Themes" },
                   { id: "casino-icons", label: "Casino Icons" },
@@ -561,29 +551,63 @@ export default function UICheatSheetPage() {
                 <p className="text-[9px] font-semibold uppercase tracking-widest text-white px-2 py-1.5">
                   {group.group}
                 </p>
-                {group.items.map((item) => (
-                  <button
-                    key={item.id}
-                    onClick={() => {
-                      document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth", block: "start" })
-                      setActiveSection(item.id)
-                    }}
-                    className={[
-                      "w-full text-xs transition-colors py-1 px-2 rounded text-left",
-                      activeSection === item.id
-                        ? "text-cb-foreground bg-cb-surface-3 font-medium"
-                        : "text-cb-foreground-muted hover:text-cb-foreground hover:bg-cb-surface-3",
-                    ].join(" ")}
-                  >
-                    {item.label}
-                  </button>
-                ))}
+                {group.items.map((item) => {
+                  const isActive = activeSection === item.id
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() => {
+                        document.getElementById(item.id)?.scrollIntoView({ behavior: "smooth", block: "start" })
+                        setActiveSection(item.id)
+                      }}
+                      className={cn(
+                        "w-full text-xs transition-colors py-1 px-2 rounded text-left",
+                        isActive
+                          ? "text-cb-foreground bg-cb-surface-3 font-medium"
+                          : "text-cb-foreground-muted hover:text-cb-foreground hover:bg-cb-surface-3",
+                      )}
+                    >
+                      {item.label}
+                    </button>
+                  )
+                })}
               </div>
             ))}
           </aside>
 
           {/* Main content */}
           <main className="flex-1 min-w-0 flex flex-col gap-14">
+
+            {/* ── STYLES ────────────────────────────────────────────── */}
+            <Section
+              id="styles-colors"
+              title="Color palette"
+              subtitle="Mosaic overview plus continuous strips — step, role, and live hex (theme-aware)"
+              sectionClassName={STYLES_SECTION_SHELL}
+              headingBarClassName={STYLES_HEADING_BAR}
+            >
+              <StylesColorsContent />
+            </Section>
+
+            <Section
+              id="styles-typography"
+              title="Typography"
+              subtitle="Large specimen, charset, weights, scale, mono, display, and micro tokens"
+              sectionClassName={STYLES_SECTION_SHELL}
+              headingBarClassName={STYLES_HEADING_BAR}
+            >
+              <StylesTypographyContent />
+            </Section>
+
+            <Section
+              id="styles-layout"
+              title="Layout & tokens"
+              subtitle="Radius, spacing, focus, motion — aligned with design-system.css"
+              sectionClassName={STYLES_SECTION_SHELL}
+              headingBarClassName={STYLES_HEADING_BAR}
+            >
+              <StylesLayoutContent />
+            </Section>
 
             {/* ── BLOCKS: Competition Card ──────────────────────────── */}
             <Section
@@ -963,6 +987,52 @@ export default function UICheatSheetPage() {
               </div>
             </Section>
 
+            {/* ── BLOCKS: Match scoreboard ───────────────────────────── */}
+            <Section
+              id="match-scoreboard"
+              title="Match scoreboard"
+              subtitle="Compact live / pre-match header — corners, cards, and goals; BALI Playground scoreboard pattern"
+              sourcePaths={["components/cloudbet/MatchScoreboard.tsx"]}
+              usageMarkdown={`- \`MatchScoreboard\` — pass \`homeTeam\`, \`awayTeam\`, optional crest URLs, \`clock\`, \`isLive\`, \`periodScores\` (three muted columns), \`totalScore\` (goals), optional \`stats\` (\`MatchStat[]\` corners / yellow / red) to drive stat columns.
+- Live: pulsing dot + purple clock. Header row shows corner icon, card swatches, and goal column hint.`}
+              usage={<>
+                <p><span className="font-mono text-cb-foreground">MatchScoreboard</span> — event / match page score strip. Three muted stacks plus a goals column on <span className="font-mono text-cb-foreground">bg-cb-surface-2</span>.</p>
+                <p>Optional <span className="font-mono text-cb-foreground">stats</span> with three entries (corners, yellow, red) overrides the numeric columns; otherwise use <span className="font-mono text-cb-foreground">periodScores</span>.</p>
+              </>}
+            >
+              <div className="flex flex-col gap-10">
+                <SubSection title="Live (Arsenal vs Chelsea)">
+                  <div className="max-w-[320px] sm:max-w-[360px]">
+                    <MatchScoreboard
+                      homeTeam="Arsenal"
+                      awayTeam="Chelsea"
+                      clock="05:24"
+                      isLive
+                      periodScores={[[0, 0], [0, 0], [0, 0]]}
+                      totalScore={[2, 0]}
+                      stats={UI_LAB_MATCH_SCOREBOARD_STATS}
+                    />
+                  </div>
+                </SubSection>
+                <SubSection title="Pre-match">
+                  <div className="max-w-[320px] sm:max-w-[360px]">
+                    <MatchScoreboard
+                      homeTeam="Man City"
+                      awayTeam="Liverpool"
+                      clock="20:00"
+                      isLive={false}
+                      periodScores={[
+                        [0, 0],
+                        [0, 0],
+                        [0, 0],
+                      ]}
+                      totalScore={[0, 0]}
+                    />
+                  </div>
+                </SubSection>
+              </div>
+            </Section>
+
             {/* ── BLOCKS: Casino Category Slider ──────────────────── */}
             <Section
               id="casino-category-slider"
@@ -1039,137 +1109,6 @@ export default function UICheatSheetPage() {
               </div>
             </Section>
 
-            {/* ── 1. FOUNDATIONS ─────────────────────────────────────── */}
-            <Section
-              id="foundations"
-              title="1. Foundations"
-              subtitle="Core tokens: surfaces, color, type, spacing, radius, motion"
-              sectionClassName="border-0 border-none border-transparent pt-6"
-              headingBarClassName="border-0 border-b border-b-[rgb(44,37,50)]"
-            >
-              <div className="flex flex-col gap-8">
-
-                {/* Surfaces */}
-                <SubSection title="Surface scale">
-                  <div className="grid grid-cols-4 sm:grid-cols-7 gap-3">
-                    {[0, 1, 2, 3, 4, 5, 6].map((n) => (
-                      <Swatch
-                        key={n}
-                        label={`surface-${n}`}
-                        className={`bg-cb-surface-${n}`}
-                      />
-                    ))}
-                  </div>
-                </SubSection>
-
-                {/* Text colors */}
-                <SubSection title="Text colors">
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    {[
-                      { label: "foreground", cls: "text-cb-foreground" },
-                      { label: "foreground-muted", cls: "text-cb-foreground-muted" },
-                      { label: "foreground-disabled", cls: "text-cb-foreground-disabled" },
-                      { label: "primary", cls: "text-cb-primary" },
-                      { label: "accent", cls: "text-cb-accent" },
-                      { label: "jackpot", cls: "text-cb-jackpot" },
-                      { label: "live", cls: "text-cb-live" },
-                      { label: "featured", cls: "text-cb-featured" },
-                    ].map(({ label, cls }) => (
-                      <div key={label} className="flex items-center gap-2 rounded-[var(--cb-radius-md)] bg-cb-surface-3 px-3 py-2">
-                        <span className={`text-sm font-semibold ${cls}`}>Aa</span>
-                        <span className="text-[10px] text-cb-foreground-disabled font-mono truncate">{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </SubSection>
-
-                {/* Borders */}
-                <SubSection title="Border treatments">
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    {[
-                      { label: "subtle", cls: "border-cb-border-subtle" },
-                      { label: "default", cls: "border-cb-border" },
-                      { label: "visible", cls: "border-cb-border-visible" },
-                      { label: "strong", cls: "border-cb-border-strong" },
-                    ].map(({ label, cls }) => (
-                      <div key={label} className={`rounded-[var(--cb-radius-md)] border-2 ${cls} bg-cb-surface-3 px-3 py-3`}>
-                        <span className="text-[10px] text-cb-foreground-muted font-mono">{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </SubSection>
-
-                {/* Radius */}
-                <SubSection title="Radius scale">
-                  <div className="flex flex-wrap gap-4 items-end">
-                    {[
-                      { label: "sm — 4px", style: "0.25rem" },
-                      { label: "md — 12px", style: "0.75rem" },
-                      { label: "lg — 16px", style: "1rem" },
-                      { label: "xl — 24px", style: "1.5rem" },
-                      { label: "2xl — 32px", style: "2rem" },
-                      { label: "full", style: "9999px" },
-                    ].map(({ label, style }) => (
-                      <div key={label} className="flex flex-col items-center gap-1.5">
-                        <div
-                          className="size-12 bg-cb-primary/20 border border-cb-primary/40"
-                          style={{ borderRadius: style }}
-                        />
-                        <span className="text-[10px] text-cb-foreground-muted font-mono whitespace-nowrap">{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </SubSection>
-
-                {/* Typography */}
-                <SubSection title="Typography scale">
-                  <div className="flex flex-col rounded-[var(--cb-radius-lg)] bg-cb-surface-3 px-5 border border-cb-border divide-y divide-cb-border-subtle">
-                    {[
-                      { cls: "text-4xl font-bold", label: "4xl / bold — Hero" },
-                      { cls: "text-3xl font-bold", label: "3xl / bold — Display" },
-                      { cls: "text-2xl font-semibold", label: "2xl / semibold — Section" },
-                      { cls: "text-xl font-semibold", label: "xl / semibold — Title" },
-                      { cls: "text-lg font-medium", label: "lg / medium — Subtitle" },
-                      { cls: "text-base", label: "base — Body" },
-                      { cls: "text-sm", label: "sm — Secondary" },
-                      { cls: "text-xs", label: "xs — Caption" },
-                      { cls: "text-[10px] uppercase tracking-widest font-semibold text-cb-foreground-muted", label: "10px / caps — Label" },
-                    ].map(({ cls, label }) => (
-                      <div key={label} className="flex items-baseline gap-4 py-4">
-                        <span className={`${cls} text-cb-foreground leading-none`}>Get in there me ol&apos; fruit</span>
-                        <span className="text-[10px] text-cb-foreground-disabled font-mono shrink-0">{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </SubSection>
-
-                {/* Spacing */}
-                <SubSection title="Spacing rhythm">
-                  <div className="flex flex-wrap items-end gap-4">
-                    {[
-                      { label: "2px", px: "2px" },
-                      { label: "4px", px: "4px" },
-                      { label: "8px", px: "8px" },
-                      { label: "12px", px: "12px" },
-                      { label: "16px", px: "16px" },
-                      { label: "24px", px: "24px" },
-                      { label: "32px", px: "32px" },
-                      { label: "48px", px: "48px" },
-                    ].map(({ label, px }) => (
-                      <div key={label} className="flex flex-col items-center gap-1">
-                        <div
-                          className="bg-cb-primary/40 border border-cb-primary/30 rounded-sm"
-                          style={{ width: px, height: "24px" }}
-                        />
-                        <span className="text-[9px] text-cb-foreground-disabled font-mono">{label}</span>
-                      </div>
-                    ))}
-                  </div>
-                </SubSection>
-
-              </div>
-            </Section>
-
             {/* ── 2. SHADCN PRIMITIVES ───────────────────────────────── */}
             <Section
               id="primitives"
@@ -1192,7 +1131,9 @@ export default function UICheatSheetPage() {
 
                 <SubSection title="Buttons — sizes">
                   <div className="flex flex-wrap gap-3 items-center">
-                    <Button size="lg">Large</Button>
+                    <Button size="lg" className="w-[157px]">
+                      Large
+                    </Button>
                     <Button size="default">Default</Button>
                     <Button size="sm">Small</Button>
                     <Button size="icon"><Star className="size-4" /></Button>
@@ -1271,7 +1212,7 @@ export default function UICheatSheetPage() {
                     <Badge variant="outline">Outline</Badge>
                     <Badge variant="destructive">Destructive</Badge>
                     <Badge className="border-cb-live/30 bg-cb-live-bg text-cb-live border">Live</Badge>
-                    <Badge className="border-cb-primary/30 bg-cb-primary/15 text-cb-primary border">New</Badge>
+                    <Badge className="border-cb-primary/30 bg-cb-primary/15 text-cb-purple-50 border">New</Badge>
                     <Badge className="border-cb-jackpot/30 bg-cb-jackpot/10 text-cb-jackpot border">Jackpot</Badge>
                     <Badge className="border-cb-featured/30 bg-cb-featured-bg text-cb-featured border">Hot</Badge>
                     <Badge className="border-cb-odds-up/30 bg-cb-odds-up-bg text-cb-odds-up border">Win</Badge>
@@ -1282,7 +1223,7 @@ export default function UICheatSheetPage() {
                 <SubSection title="Inputs">
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
                     <Input placeholder="Default input" className="bg-cb-surface-3 border-cb-border" />
-                    <Input placeholder="Focused" className="bg-cb-surface-3 border-cb-primary ring-1 ring-cb-primary/30" />
+                    <Input placeholder="Focused" className="bg-cb-surface-3 border-cb-brand-purple ring-1 ring-cb-brand-purple/30" />
                     <Input placeholder="Disabled" disabled className="bg-cb-surface-2 border-cb-border-subtle" />
                   </div>
                 </SubSection>
@@ -1621,133 +1562,6 @@ export default function UICheatSheetPage() {
               </div>
             </Section>
 
-            {/* ── 3. CLOUDBET COMPONENTS ─────────────────────────────── */}
-            <Section
-              id="cloudbet"
-              title="3. Cloudbet Components"
-              subtitle="Shared domain components built on the token system"
-            >
-              <div className="flex flex-col gap-10">
-
-                {/* SectionHeader */}
-                <SubSection title="SectionHeader">
-                  <div className="flex flex-col gap-3 rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-5">
-                    <SectionHeader title="Popular Games" subtitle="Most played in the last 24 hours" />
-                    <Separator className="bg-cb-border" />
-                    <SectionHeader
-                      title="Live Casino"
-                      action={<Button size="sm" variant="ghost" className="text-xs text-cb-foreground-muted">View all</Button>}
-                    />
-                  </div>
-                </SubSection>
-
-                {/* GameTile */}
-                <SubSection title="GameTile">
-                  <div className="flex flex-wrap gap-3">
-                    <GameTile game={MOCK_GAMES[0]} size="sm" />
-                    <GameTile game={MOCK_GAMES[1]} size="sm" />
-                    <GameTile game={MOCK_GAMES[15]} size="sm" />
-                    <GameTile game={MOCK_GAMES[11]} size="sm" featured />
-                    <GameTile game={MOCK_GAMES[5]} size="lg" />
-                  </div>
-                </SubSection>
-
-                {/* JackpotCard */}
-                <SubSection title="JackpotCard">
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl">
-                    {MOCK_JACKPOTS.map((j) => (
-                      <JackpotCard key={j.id} jackpot={j} />
-                    ))}
-                  </div>
-                </SubSection>
-
-                {/* ProviderFilterBar */}
-                <SubSection title="ProviderFilterBar">
-                  <div className="rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-4">
-                    <ProviderFilterBar
-                      providers={MOCK_PROVIDERS.slice(0, 6)}
-                      searchValue={searchValue}
-                      onSearchChange={setSearchValue}
-                      selectedProvider={selectedProvider}
-                      onProviderChange={setSelectedProvider}
-                    />
-                  </div>
-                </SubSection>
-
-                {/* StudioRail */}
-                <SubSection title="StudioRail">
-                  <div className="rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-4">
-                    <StudioRail providers={MOCK_PROVIDERS.slice(0, 8)} />
-                  </div>
-                </SubSection>
-
-                {/* FeedSectionShell */}
-                <SubSection title="FeedSectionShell">
-                  <FeedSectionShell betFeed={MOCK_BET_FEED} winFeed={MOCK_WIN_FEED} />
-                </SubSection>
-
-                {/* OddsButton */}
-                <SubSection title="OddsButton">
-                  <div className="flex flex-col gap-4">
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">default</span>
-                      <div className="flex gap-1 w-48">
-                        <OddsButton odds="2.45" />
-                        <OddsButton odds="3.10" />
-                        <OddsButton odds="4.20" />
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">selected</span>
-                      <div className="flex gap-1 w-48">
-                        <OddsButton odds="2.45" selected />
-                        <OddsButton odds="3.10" />
-                        <OddsButton odds="4.20" />
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">suspended</span>
-                      <div className="flex gap-1 w-48">
-                        <OddsButton odds="2.45" suspended />
-                        <OddsButton odds="3.10" suspended />
-                        <OddsButton odds="4.20" suspended />
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">closed</span>
-                      <div className="flex gap-1 w-48">
-                        <OddsButton odds="2.45" closed />
-                        <OddsButton odds="3.10" closed />
-                        <OddsButton odds="4.20" closed />
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">trend up</span>
-                      <div className="flex gap-1 w-48">
-                        <OddsButton odds="2.60" trend="up" />
-                        <OddsButton odds="3.20" trend="up" />
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">trend down</span>
-                      <div className="flex gap-1 w-48">
-                        <OddsButton odds="2.30" trend="down" />
-                        <OddsButton odds="2.95" trend="down" />
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] text-cb-foreground-disabled font-mono w-20 shrink-0">with label</span>
-                      <div className="flex gap-1 w-64">
-                        <OddsButton odds="1.90" label="Over 2.5" />
-                        <OddsButton odds="1.90" label="Under 2.5" />
-                      </div>
-                    </div>
-                  </div>
-                </SubSection>
-
-              </div>
-            </Section>
-
             {/* ── 4. STATES ──────────────────────────────────────────── */}
             <Section
               id="states"
@@ -1800,7 +1614,7 @@ export default function UICheatSheetPage() {
                     <Checkbox id="sel-1" defaultChecked />
                     <label htmlFor="sel-1" className="text-sm text-cb-foreground">Selected option</label>
                   </div>
-                  <Badge className="w-fit border-cb-primary/40 bg-cb-primary/15 text-cb-primary border">Selected</Badge>
+                  <Badge className="w-fit border-cb-primary/40 bg-cb-primary/15 text-cb-purple-50 border">Selected</Badge>
                 </div>
 
                 {/* Disabled */}
@@ -1865,7 +1679,7 @@ export default function UICheatSheetPage() {
                   <div className="flex flex-wrap gap-4 items-end">
                     {[
                       { size: "size-10", fallback: "CB" },
-                      { size: "size-10", fallback: "VIP", className: "bg-cb-primary/20 text-cb-primary" },
+                      { size: "size-10", fallback: "VIP", className: "bg-cb-primary/20 text-cb-purple-50" },
                       { size: "size-8", fallback: "JD" },
                       { size: "size-12", fallback: "★", className: "bg-cb-jackpot/20 text-cb-jackpot" },
                     ].map(({ size, fallback, className }, i) => (
@@ -2128,7 +1942,7 @@ export default function UICheatSheetPage() {
                   <div className="rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-4">
                     <ChartContainer
                       config={{
-                        bets: { label: "Bets", color: "var(--cb-primary)" },
+                        bets: { label: "Bets", color: "var(--cb-brand-purple)" },
                         wins: { label: "Wins", color: "var(--cb-odds-up)" },
                       }}
                       className="h-48 w-full"
@@ -2136,8 +1950,8 @@ export default function UICheatSheetPage() {
                       <AreaChart data={BET_VOLUME_DATA} margin={{ top: 4, right: 4, bottom: 0, left: -20 }}>
                         <defs>
                           <linearGradient id="betGrad" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="var(--cb-primary)" stopOpacity={0.3} />
-                            <stop offset="95%" stopColor="var(--cb-primary)" stopOpacity={0} />
+                            <stop offset="5%" stopColor="var(--cb-brand-purple)" stopOpacity={0.3} />
+                            <stop offset="95%" stopColor="var(--cb-brand-purple)" stopOpacity={0} />
                           </linearGradient>
                           <linearGradient id="winGrad" x1="0" y1="0" x2="0" y2="1">
                             <stop offset="5%" stopColor="var(--cb-odds-up)" stopOpacity={0.3} />
@@ -2148,7 +1962,7 @@ export default function UICheatSheetPage() {
                         <XAxis dataKey="day" tick={{ fontSize: 10, fill: "var(--cb-foreground-muted)" }} axisLine={false} tickLine={false} />
                         <YAxis tick={{ fontSize: 10, fill: "var(--cb-foreground-muted)" }} axisLine={false} tickLine={false} />
                         <ChartTooltip content={<ChartTooltipContent />} />
-                        <Area type="monotone" dataKey="bets" stroke="var(--cb-primary)" fill="url(#betGrad)" strokeWidth={2} dot={false} />
+                        <Area type="monotone" dataKey="bets" stroke="var(--cb-brand-purple)" fill="url(#betGrad)" strokeWidth={2} dot={false} />
                         <Area type="monotone" dataKey="wins" stroke="var(--cb-odds-up)" fill="url(#winGrad)" strokeWidth={2} dot={false} />
                       </AreaChart>
                     </ChartContainer>
@@ -2160,7 +1974,7 @@ export default function UICheatSheetPage() {
                   <div className="rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-4">
                     <ChartContainer
                       config={{
-                        players: { label: "Players", color: "var(--cb-primary)" },
+                        players: { label: "Players", color: "var(--cb-brand-purple)" },
                       }}
                       className="h-44 w-full"
                     >
@@ -2169,7 +1983,7 @@ export default function UICheatSheetPage() {
                         <XAxis dataKey="game" tick={{ fontSize: 9, fill: "var(--cb-foreground-muted)" }} axisLine={false} tickLine={false} />
                         <YAxis tick={{ fontSize: 10, fill: "var(--cb-foreground-muted)" }} axisLine={false} tickLine={false} />
                         <ChartTooltip content={<ChartTooltipContent />} />
-                        <Bar dataKey="players" fill="var(--cb-primary)" radius={[4, 4, 0, 0]} />
+                        <Bar dataKey="players" fill="var(--cb-brand-purple)" radius={[4, 4, 0, 0]} />
                       </BarChart>
                     </ChartContainer>
                   </div>
@@ -2200,7 +2014,7 @@ export default function UICheatSheetPage() {
                   <div className="rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-4 flex items-center gap-6 flex-wrap">
                     <ChartContainer
                       config={{
-                        slots: { label: "Slots", color: "var(--cb-primary)" },
+                        slots: { label: "Slots", color: "var(--cb-brand-purple)" },
                         live: { label: "Live", color: "var(--cb-live)" },
                         table: { label: "Table", color: "var(--cb-info)" },
                         other: { label: "Other", color: "var(--cb-foreground-muted)" },
@@ -2276,7 +2090,7 @@ export default function UICheatSheetPage() {
                 <SubSection title="AnimatedGradientText — hero headings">
                   <div className="flex flex-col gap-4 rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-6">
                     <AnimatedGradientText
-                      colorFrom="var(--cb-primary)"
+                      colorFrom="var(--cb-brand-purple)"
                       colorTo="var(--cb-purple-50)"
                       className="text-4xl font-bold"
                     >
@@ -2305,7 +2119,7 @@ export default function UICheatSheetPage() {
                 <SubSection title="ShimmerButton — premium CTAs">
                   <div className="flex flex-wrap gap-4 items-center rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-6">
                     <ShimmerButton
-                      background="var(--cb-primary)"
+                      background="var(--cb-brand-purple)"
                       shimmerColor="rgba(0,0,0,0.5)"
                       className="text-black font-bold text-sm px-6 py-2.5"
                     >
@@ -2313,7 +2127,7 @@ export default function UICheatSheetPage() {
                     </ShimmerButton>
                     <ShimmerButton
                       background="var(--cb-surface-4)"
-                      shimmerColor="var(--cb-primary)"
+                      shimmerColor="var(--cb-brand-purple)"
                       shimmerDuration="2s"
                       className="text-cb-foreground font-semibold text-sm px-6 py-2.5"
                     >
@@ -2336,11 +2150,11 @@ export default function UICheatSheetPage() {
                 <SubSection title="BorderBeam — animated card borders">
                   <div className="flex flex-wrap gap-4">
                     <div className="relative rounded-[var(--cb-radius-xl)] bg-cb-surface-3 border border-cb-border p-5 overflow-hidden w-52">
-                      <BorderBeam colorFrom="var(--cb-primary)" colorTo="var(--cb-purple-50)" duration={4} />
+                      <BorderBeam colorFrom="var(--cb-brand-purple)" colorTo="var(--cb-purple-50)" duration={4} />
                       <p className="text-xs text-cb-foreground-muted">Featured</p>
                       <p className="text-sm font-bold text-cb-foreground mt-1">Gates of Olympus</p>
                       <p className="text-[10px] text-cb-foreground-disabled mt-0.5">Pragmatic Play</p>
-                      <Badge className="mt-2 border-cb-primary/30 bg-cb-primary/15 text-cb-primary border text-[10px]">Hot</Badge>
+                      <Badge className="mt-2 border-cb-primary/30 bg-cb-primary/15 text-cb-purple-50 border text-[10px]">Hot</Badge>
                     </div>
                     <div className="relative rounded-[var(--cb-radius-xl)] bg-cb-surface-3 border border-cb-border p-5 overflow-hidden w-52">
                       <BorderBeam colorFrom="var(--cb-jackpot)" colorTo="var(--cb-odds-up)" duration={3} />
@@ -2365,7 +2179,7 @@ export default function UICheatSheetPage() {
                 <SubSection title="SparklesText — celebration moments">
                   <div className="flex flex-col gap-6 rounded-[var(--cb-radius-lg)] bg-cb-surface-3 border border-cb-border p-6 items-start">
                     <SparklesText
-                      colors={{ first: "var(--cb-primary)", second: "var(--cb-jackpot)" }}
+                      colors={{ first: "var(--cb-brand-purple)", second: "var(--cb-jackpot)" }}
                       sparklesCount={8}
                       className="text-4xl font-bold text-cb-foreground"
                     >
@@ -2450,7 +2264,7 @@ export default function UICheatSheetPage() {
                         <p className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.521 0 0)" }}>Brand</p>
                         <div className="flex gap-2">
                           {[
-                            { bg: "oklch(0.542 0.207 299)", label: "Primary", text: "oklch(0.972 0.012 303)" },
+                            { bg: "rgba(131, 70, 212, 1)", label: "Primary", text: "oklch(0.972 0.012 303)" },
                             { bg: "oklch(0.942 0.192 119)", label: "Accent", text: "#000" },
                             { bg: "oklch(0.788 0.155 70)", label: "Jackpot", text: "#000" },
                           ].map(({ bg, label, text }) => (
@@ -2484,7 +2298,7 @@ export default function UICheatSheetPage() {
                   <div className="rounded-[var(--cb-radius-lg)] border overflow-hidden" style={{ borderColor: "oklch(0.90 0.02 273)" }}>
                     <div className="px-4 py-3 border-b flex items-center justify-between" style={{ background: "oklch(0.95 0.01 273)", borderColor: "oklch(0.90 0.02 273)" }}>
                       <span className="text-sm font-semibold" style={{ color: "oklch(0.15 0 0)" }}>Clean Slate Light</span>
-                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded" style={{ background: "oklch(0.59 0.20 277.06 / 12%)", color: "oklch(0.50 0.18 277)" }}>light</span>
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded" style={{ background: "rgb(225 231 253 / 90%)", color: "oklch(0.25 0.05 277)" }}>light</span>
                     </div>
                     <div className="p-4 flex flex-col gap-4" style={{ background: "oklch(0.97 0.01 273)" }}>
                       <div>
@@ -2510,8 +2324,8 @@ export default function UICheatSheetPage() {
                         <p className="text-[10px] font-semibold uppercase tracking-widest mb-2" style={{ color: "oklch(0.65 0 0)" }}>Brand</p>
                         <div className="flex gap-2">
                           {[
-                            { bg: "oklch(0.59 0.20 277.06)", label: "Primary", text: "#fff" },
-                            { bg: "oklch(0.93 0.03 273.66)", label: "Accent", text: "oklch(0.25 0.05 277)" },
+                            { bg: "#E1E7FD", label: "Primary", text: "oklch(0.15 0 0)" },
+                            { bg: "#8346D4", label: "Accent", text: "#fff" },
                             { bg: "oklch(0.70 0.14 70)", label: "Jackpot", text: "#fff" },
                           ].map(({ bg, label, text }) => (
                             <div key={label} className="flex-1 h-10 rounded-md flex items-center justify-center text-[10px] font-medium" style={{ background: bg, color: text }}>

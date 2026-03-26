@@ -61,9 +61,9 @@ export type ForegroundRole = keyof typeof foreground
 // ─── Brand colors ─────────────────────────────────────────────────────────────
 
 export const brand = {
-  primary:          "text-cb-primary",            /* #8346D4 — Purple 80 (CDS "secondary") */
+  primary:          "text-cb-purple-50",          /* purple emphasis on surfaces (cb-primary fill may be lilac on light themes) */
   primaryBg:        "bg-cb-primary",
-  primaryFg:        "text-cb-primary-fg",         /* #F8F2FF — on-secondary */
+  primaryFg:        "text-cb-primary-fg",         /* on-primary fill */
   purple50:         "text-cb-purple-50",          /* #A067EB — Purple 50 (extended palette, AA 5.64:1) */
   purple50Bg:       "bg-cb-purple-50",
   onPrimaryInverse: "text-cb-on-primary-inverse", /* #696969 — disabled/inverse */
