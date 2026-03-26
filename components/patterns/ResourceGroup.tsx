@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { ArrowRight, Download } from "lucide-react"
+import { ArrowRight, Download, Link2 } from "lucide-react"
 
 import { THEMES, useTheme } from "@/components/providers/ThemeProvider"
 import { Button } from "@/components/ui/button"
@@ -25,6 +25,11 @@ function titleWithExtension(entry: ResourceEntry): string {
   if (!entry.path) return entry.title
   const ext = extensionFromPath(entry.path)
   return ext ? `${entry.title} ${ext}` : entry.title
+}
+
+function isExternalHref(href: string | undefined): boolean {
+  if (!href) return false
+  return href.startsWith("http://") || href.startsWith("https://")
 }
 
 function DownloadGlyph({
@@ -61,6 +66,26 @@ function ArrowGlyph({
       stroke={stroke}
       strokeWidth={RESOURCE_ICON_STROKE}
       fill="none"
+      className={cn(
+        "shrink-0 [&_path]:fill-none [&_circle]:fill-none [&_line]:fill-none [&_polyline]:fill-none [&_rect]:fill-none",
+        className,
+      )}
+    />
+  )
+}
+
+function LinkGlyph({
+  stroke,
+  className,
+}: {
+  stroke: string
+  className?: string
+}) {
+  return (
+    <Link2
+      aria-hidden
+      stroke={stroke}
+      strokeWidth={RESOURCE_ICON_STROKE}
       className={cn(
         "shrink-0 [&_path]:fill-none [&_circle]:fill-none [&_line]:fill-none [&_polyline]:fill-none [&_rect]:fill-none",
         className,
@@ -139,14 +164,24 @@ function ResourceEntryRow({
   iconStroke: string
   isLight: boolean
 }) {
-  const isPageLink = !!entry.href && entry.status !== "planned" && entry.status !== "future"
   const status = entry.status ?? "available"
+  const external = isExternalHref(entry.href)
+  const isInternalPageLink =
+    !!entry.href &&
+    !external &&
+    entry.status !== "planned" &&
+    entry.status !== "future"
   const canDownloadFile = !!entry.path && status === "available"
   const downloadHref = canDownloadFile
     ? `/api/lab-file?path=${encodeURIComponent(entry.path!)}`
     : null
   const rowMuted = status === "planned" || status === "future"
+  const showLeftLinkIcon =
+    external && !!entry.href && !entry.path && !rowMuted
+  const externalActive = external && !!entry.href && !rowMuted
   const label = titleWithExtension(entry)
+  const linkTitleClass =
+    "break-all text-sm font-medium leading-snug text-foreground transition-colors duration-200 ease-out group-hover/row:text-cb-purple-50 hover:text-cb-purple-50"
 
   return (
     <li
@@ -168,12 +203,33 @@ function ResourceEntryRow({
           </a>
         </ResourceRowAction>
       ) : null}
+      {showLeftLinkIcon && entry.href ? (
+        <ResourceRowAction asChild isLight={isLight}>
+          <a
+            href={entry.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Open link: ${entry.title}`}
+          >
+            <LinkGlyph stroke={iconStroke} className="size-3.5" />
+          </a>
+        </ResourceRowAction>
+      ) : null}
       <div className="min-w-0 flex-1 flex flex-col gap-0">
         <div className="flex flex-wrap items-center gap-2">
-          {isPageLink && entry.href ? (
+          {externalActive ? (
+            <a
+              href={entry.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkTitleClass}
+            >
+              {label}
+            </a>
+          ) : isInternalPageLink && entry.href ? (
             <Link
               href={entry.href}
-              className="text-sm font-medium leading-snug text-foreground transition-colors duration-200 ease-out group-hover/row:text-cb-purple-50 hover:text-cb-purple-50"
+              className={linkTitleClass}
             >
               {label}
             </Link>
@@ -202,7 +258,7 @@ function ResourceEntryRow({
           </p>
         )}
       </div>
-      {isPageLink && entry.href ? (
+      {isInternalPageLink && entry.href ? (
         <div className="flex w-8 shrink-0 justify-end">
           <ResourceRowAction asChild isLight={isLight}>
             <Link href={entry.href} aria-label={`Open ${entry.title}`}>
@@ -228,7 +284,7 @@ export function ResourceGroup({ heading, entries, className }: ResourceGroupProp
       <ul className="flex flex-col">
         {entries.map((entry) => (
           <ResourceEntryRow
-            key={entry.title}
+            key={entry.href ?? entry.path ?? entry.title}
             entry={entry}
             iconStroke={iconStroke}
             isLight={isLight}

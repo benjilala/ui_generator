@@ -8,6 +8,8 @@ import {
   DESIGN_SYSTEM_RESOURCES,
   PATTERNS_RESOURCES,
   PROMPTS_RESOURCES,
+  USEFUL_LINKS_SHADCN_ANIMATIONS,
+  USEFUL_LINKS_SHADCN_RESOURCES,
 } from "@/lib/lab-catalog"
 
 // ─── Blog entries ─────────────────────────────────────────────────────────────
@@ -170,7 +172,20 @@ export default function LabIndexPage() {
             title="Resource and reference files"
             description="The files, prompts, tokens, and system definitions that make the lab work — organised by layer."
           />
-          <div className="mt-8 grid gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="flex flex-col gap-5">
+              <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-foreground/55 sm:text-sm">
+                Useful links
+              </h3>
+              <ResourceGroup
+                heading="Shadcn resources"
+                entries={USEFUL_LINKS_SHADCN_RESOURCES}
+              />
+              <ResourceGroup
+                heading="Shadcn animations"
+                entries={USEFUL_LINKS_SHADCN_ANIMATIONS}
+              />
+            </div>
             <ResourceGroup heading="Design system" entries={DESIGN_SYSTEM_RESOURCES} />
             <ResourceGroup heading="Prompts and agents" entries={PROMPTS_RESOURCES} />
             <ResourceGroup heading="Patterns and generation" entries={PATTERNS_RESOURCES} />

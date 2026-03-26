@@ -1,5 +1,46 @@
 import type { ResourceEntry } from "@/lib/resource-entry"
 
+export const USEFUL_LINKS_SHADCN_RESOURCES: ResourceEntry[] = [
+  {
+    title: "https://shadcnstudio.com/",
+    description: "",
+    href: "https://shadcnstudio.com/",
+  },
+  {
+    title: "https://www.shadcnblocks.com/",
+    description: "",
+    href: "https://www.shadcnblocks.com/",
+  },
+  {
+    title: "https://skiper-ui.com/components",
+    description: "",
+    href: "https://skiper-ui.com/components",
+  },
+  {
+    title: "https://tailark.com/",
+    description: "",
+    href: "https://tailark.com/",
+  },
+]
+
+export const USEFUL_LINKS_SHADCN_ANIMATIONS: ResourceEntry[] = [
+  {
+    title: "https://smoothui.dev/docs/components/expandable-cards",
+    description: "",
+    href: "https://smoothui.dev/docs/components/expandable-cards",
+  },
+  {
+    title: "https://pro.magicui.design/",
+    description: "",
+    href: "https://pro.magicui.design/",
+  },
+  {
+    title: "https://ui.aceternity.com/components/background-ripple-effect",
+    description: "",
+    href: "https://ui.aceternity.com/components/background-ripple-effect",
+  },
+]
+
 export const DESIGN_SYSTEM_RESOURCES: ResourceEntry[] = [
   {
     title: "Design system",
