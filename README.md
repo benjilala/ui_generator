@@ -84,6 +84,8 @@ cloudbet-ui-lab/
 │   │   ├── ux-explorer.md
 │   │   ├── design-critic.md
 │   │   ├── cloudbet-ui-agent.md
+│   │   ├── designer-agent-team.md
+│   │   ├── designer-agent-team-presentation.md
 │   │   └── casino-migration-auditor.md
 │   ├── audit/
 │   │   └── casino-shadcn-audit.md  # Migration audit table
@@ -146,7 +148,7 @@ radio-group, switch, progress, **sheet**, sonner, toggle
 
 ## AI prompt library
 
-Six Cursor-ready prompts in `lib/prompts/`:
+Eight Cursor-ready prompts in `lib/prompts/`:
 
 | Prompt | Use case |
 |---|---|
@@ -155,6 +157,8 @@ Six Cursor-ready prompts in `lib/prompts/`:
 | `ux-explorer.md` | Explore UX alternatives for a flow |
 | `design-critic.md` | Review UI against brand standards |
 | `cloudbet-ui-agent.md` | Master agent — knows the full system |
+| `designer-agent-team.md` | Designer-facing foreground/background agent team kit |
+| `designer-agent-team-presentation.md` | Presentation outline for using Cursor as a designer-led team |
 | `casino-migration-auditor.md` | Audit components for shadcn migration |
 
 To use a prompt in Cursor: open the prompt file and use it as a system prompt in a new chat, or reference it with `@lib/prompts/[prompt-name].md`.
