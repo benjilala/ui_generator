@@ -1,129 +1,250 @@
 # Designer Agent Team Presentation
 
-Use this deck outline to explain how a designer can use Cursor as a generic, reusable product team with foreground and background agents.
+Phone-friendly format for explaining how a designer can use Cursor as a reusable product team with foreground and background agents.
 
-## Slide 1: From engineering agent to designer-led team
+---
 
-**Message:** Cursor can act as more than a single coding assistant. It can become a designer-directed team of specialists.
+## 1. Big idea
 
-- Designer remains the decision maker
-- Foreground agent acts as the live design lead
-- Background agents handle focused specialist work
-- Output can be a prototype, critique, handoff, PR, or presentation
+Cursor can be more than one engineering assistant.
 
-**Speaker note:** The goal is not to replace design judgment. The goal is to give the designer access to engineering, UX, QA, and critique skills on demand.
+It can act like a small designer-led team.
 
-## Slide 2: The operating model
+You stay the decision maker.
+
+The agents provide:
+
+- UX options
+- UI system thinking
+- Prototype building
+- Critique
+- Accessibility QA
+- Handoff support
+
+**Key message:** The agents add specialist skills. They do not replace design judgment.
+
+---
+
+## 2. How the team works
 
 ```text
-Designer
+You, the designer
   |
   v
-Foreground Design Lead Agent
+Foreground Design Lead
   |
-  +-- UX Strategy Agent
-  +-- UI Systems Agent
-  +-- Prototype Builder Agent
-  +-- Design Critic Agent
-  +-- Accessibility QA Agent
-  +-- Content and Naming Agent
-  +-- Handoff Agent
+  +-- UX Strategy
+  +-- UI Systems
+  +-- Prototype Builder
+  +-- Design Critic
+  +-- Accessibility QA
+  +-- Content and Naming
+  +-- Handoff
 ```
 
-**Message:** One agent stays in conversation with the designer. Other agents work in the background and return focused outputs.
+One agent stays with you in the main chat.
 
-## Slide 3: Foreground agent
+Other agents work in the background on focused tasks.
 
-**Role:** Live collaborator and coordinator.
+The foreground agent collects the results and explains what matters.
 
-Use the foreground agent for:
+---
 
-- Clarifying the design brief
-- Translating design intent into implementation tasks
-- Choosing which specialists should help
-- Synthesizing results into designer-readable decisions
-- Reviewing final work against success criteria
+## 3. Foreground agent
 
-**Good prompt:** "Act as my Design Lead Agent. Help me turn this rough idea into options, then coordinate specialists to make it buildable."
+**Role:** Your live collaborator.
 
-## Slide 4: Background agents
+Use it to:
 
-**Role:** Specialists that run focused tasks.
+- Clarify the brief
+- Choose the right specialists
+- Turn design intent into tasks
+- Compare options
+- Review final output
 
-Use background agents for:
+**Simple prompt:**
 
-- Auditing existing flows or components
-- Generating multiple UX approaches
-- Mapping components and states
-- Building scoped prototypes
-- Checking accessibility and responsive behavior
-- Preparing handoff notes
+```text
+Act as my Design Lead Agent.
+Help me turn this rough idea into options.
+Then coordinate specialists to make it buildable.
+```
 
-**Rule of thumb:** If a task can be done independently and summarized clearly, it is a background-agent task.
+---
 
-## Slide 5: The agent team
+## 4. Background agents
 
-| Agent | Skill | Best output |
-|---|---|---|
-| Design Lead | Orchestration and synthesis | Plan, decisions, next steps |
-| UX Strategy | Flow and interaction options | 3 approaches and recommendation |
-| UI Systems | Component architecture | Props, variants, states, tokens |
-| Prototype Builder | Implementation | Working branch or prototype |
-| Design Critic | Review and quality | Ordered issues and fixes |
-| Accessibility QA | Inclusive interaction | Pass/fail checklist |
-| Content and Naming | Product language | Labels, CTAs, empty/error states |
-| Handoff | Packaging | Engineer-ready brief |
+**Role:** Focused specialists.
 
-## Slide 6: What agents need to be successful
+Use them for work that can happen independently.
 
-Give the team:
+Good background tasks:
 
-- **Goal:** What outcome should exist?
-- **Audience:** Who is it for?
-- **Current artifact:** Screenshot, route, file path, prototype, or notes
-- **Brand rules:** Tokens, tone, constraints, design system guidance
-- **Must keep / must avoid:** Non-negotiables
-- **Acceptance criteria:** What makes the work done?
-- **Output format:** Deck, prototype, critique, ticket, PR, or handoff
+- Audit an existing screen
+- Generate 3 UX directions
+- Map components and states
+- Build a prototype branch
+- Check accessibility
+- Improve copy
+- Package handoff notes
 
-**Speaker note:** You do not need every detail up front. The foreground agent should identify important gaps and make reasonable choices when the brief is clear.
+**Rule of thumb:** If the task can be summarized clearly, it can be a background-agent task.
 
-## Slide 7: Designer control loop
+---
 
-1. Frame the outcome
-2. Assign agent roles
-3. Generate options
-4. Choose and refine
-5. Build or package
-6. Review against success criteria
+## 5. The agent team
 
-**Message:** The designer controls direction and quality gates. Agents supply speed, structure, and specialist execution.
+### Design Lead
 
-## Slide 8: Example workflow
+Coordinates the work.
 
-**Brief:** "Create a mobile-first VIP dashboard concept."
+Best output: plan, decisions, next steps.
 
-1. Foreground Design Lead restates the goal and unknowns
-2. UX Strategy Agent proposes 3 flow options
-3. Designer picks one direction
-4. UI Systems Agent defines components, states, and responsive rules
-5. Prototype Builder Agent implements the lab prototype
-6. Design Critic and Accessibility QA review the result
-7. Handoff Agent packages the final direction
+### UX Strategy
 
-## Slide 9: Success checklist
+Explores flow and interaction options.
+
+Best output: 3 approaches and a recommendation.
+
+### UI Systems
+
+Turns a direction into components.
+
+Best output: props, variants, states, tokens.
+
+### Prototype Builder
+
+Builds in the repo.
+
+Best output: working prototype or branch.
+
+### Design Critic
+
+Reviews quality.
+
+Best output: issues ordered by severity.
+
+### Accessibility QA
+
+Checks inclusive interaction.
+
+Best output: pass/fail checklist.
+
+### Content and Naming
+
+Improves product language.
+
+Best output: labels, CTAs, empty states, error states.
+
+### Handoff
+
+Packages the result.
+
+Best output: engineer-ready brief.
+
+---
+
+## 6. What agents need
+
+Give the team whatever you have.
+
+You do not need every detail.
+
+### Goal
+
+What outcome should exist?
+
+### Audience
+
+Who is this for?
+
+### Current artifact
+
+Screenshot, route, file path, prototype, or notes.
+
+### Brand rules
+
+Tokens, tone, constraints, design system guidance.
+
+### Must keep / must avoid
+
+Important decisions and boundaries.
+
+### Acceptance criteria
+
+What makes the work done?
+
+### Output format
+
+Deck, prototype, critique, ticket, PR, or handoff.
+
+---
+
+## 7. Designer control loop
+
+1. Frame the outcome.
+2. Assign agent roles.
+3. Generate options.
+4. Choose a direction.
+5. Refine the details.
+6. Build or package.
+7. Review against success criteria.
+
+**Key message:** You control direction and quality gates. Agents supply speed, structure, and specialist execution.
+
+---
+
+## 8. Example workflow
+
+**Brief:** Create a mobile-first VIP dashboard concept.
+
+### Step 1
+
+Foreground Design Lead restates the goal and unknowns.
+
+### Step 2
+
+UX Strategy Agent proposes 3 flow options.
+
+### Step 3
+
+You pick one direction.
+
+### Step 4
+
+UI Systems Agent defines components, states, and responsive rules.
+
+### Step 5
+
+Prototype Builder Agent implements the lab prototype.
+
+### Step 6
+
+Design Critic and Accessibility QA review the result.
+
+### Step 7
+
+Handoff Agent packages the final direction.
+
+---
+
+## 9. Success checklist
 
 The agent team is working when:
 
-- The designer can explain the direction without reading code
-- The selected option is justified against alternatives
-- Components, states, and responsive rules are explicit
-- Accessibility and content have been reviewed
-- Technical constraints and risks are visible
-- The handoff is useful to engineering
-- Open questions are separated from decisions
+- You can explain the direction without reading code
+- The selected option is justified
+- Components and states are clear
+- Mobile behavior is clear
+- Accessibility has been reviewed
+- Content has been reviewed
+- Technical risks are visible
+- Handoff is useful to engineering
+- Open questions are separate from decisions
 
-## Slide 10: Copy-paste kickoff prompt
+---
+
+## 10. Copy-paste kickoff prompt
 
 ```text
 You are my foreground Design Lead Agent.
@@ -143,12 +264,23 @@ Success criteria:
 Output I want:
 [Presentation, prototype, critique, handoff, PR, prompt pack, etc.]
 
-Work like a small agent team. Decide which specialist background agents are useful, assign them clear tasks, synthesize their results, and give me designer-readable decisions. If implementation is needed, produce scoped engineering tasks and review the result before calling it done.
+Work like a small agent team.
+Decide which specialist background agents are useful.
+Assign them clear tasks.
+Synthesize their results.
+Give me designer-readable decisions.
+
+If implementation is needed, produce scoped engineering tasks.
+Review the result before calling it done.
 ```
 
-## Slide 11: Recommended next step
+---
 
-Start with a low-risk design task:
+## 11. Best first tasks
+
+Start small.
+
+Good first tasks:
 
 - Existing screen critique
 - New empty state
@@ -156,4 +288,4 @@ Start with a low-risk design task:
 - Stakeholder presentation
 - Prototype for one flow
 
-Then expand to implementation and QA once the designer-agent loop feels reliable.
+Then expand into implementation and QA once the designer-agent loop feels reliable.
